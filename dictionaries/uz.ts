@@ -333,66 +333,96 @@ export const uz: DictionaryEntry = {
     },
   },
   sectors: {
-    title: "Qo'lda nazorat ko'p bo'lgan kompaniyalar uchun",
-    viewSector: "Sektor haqida batafsil",
+    title: "Qo'lda kuzatuv, tasdiqlash va maydon nazorati bo'lgan bizneslar uchun",
+    subtitle:
+      "Sektoringiz boshqacha bo'lishi mumkin; ehtiyoj odatda bir xil: arizalar yo'qolmasin, mas'ul aniq bo'lsin, tasdiqlashlar qayd etilgan holda davom etsin, fayllar jarayonda qolsin va rahbariyat umumiy holatni ko'rsin.",
+    positioningLine:
+      "Proklix eng ko'p Telegram, Excel, veb-sayt, CRM yoki ombor tizimi orasida ish kuzatadigan jamoalar uchun foyda beradi.",
+    exampleLabel: "Misol jarayon",
     items: [
       {
         title: "B2B kataloglar va savdo",
         description:
-          "Arizalar, mahsulotlar, narxlar, tijorat takliflari, tasdiqlashlar va Telegram bildirishnomalari.",
+          "Mahsulot arizalari, narx savollari, tijorat takliflari, mijoz yozuvlari va tasdiqlash oqimlari bitta oqimda boshqarilishi mumkin.",
+        pills: ["Arizalar", "Taklif", "CRM"],
+        example: "mijoz arizasi → taklif → rahbar tasdiqlashi",
         sectorSlug: "b2b-katalog",
       },
       {
         title: "Tozalash va maydon xizmati",
         description:
-          "Mijoz arizalari, maydon vazifalari, chek-listlar, foto hisobotlar va bajarilish nazorati.",
+          "Maydon vazifalari, chek-listlar, foto bilan yakunlash, smena nazorati va rahbar hisobotlari Telegram orqali ketishi mumkin.",
+        pills: ["Maydon vazifasi", "Foto", "Chek-list"],
+        example: "vazifa tayinlash → maydon nazorati → foto natija",
       },
       {
         title: "Omborlar va distribyutorlar",
         description:
-          "Qoldiqlar, inventarizatsiya, ko'chirishlar, diler arizalari va yetkazib berish statuslari.",
+          "Ombor hisobi, omborlar o'rtasida ko'chirish, diler arizalari, mahsulot harakati va yetkazib berish nazorati qayd etilishi mumkin.",
+        pills: ["Qoldiq", "Transfer", "Hisob"],
+        example: "mahsulot ro'yxati → hisob vazifasi → tasdiqlangan natija",
         sectorSlug: "agro",
       },
       {
         title: "Uskunalar savdosi",
         description:
-          "Katalog, maslahatlar, arizalar, tijorat takliflari va tasdiqlashlar.",
+          "Katalog arizalari, maslahat so'rovlari, taklif tayyorlash, narx tasdiqlash va sotuvdan keyingi servis kuzatilishi mumkin.",
+        pills: ["Katalog", "Taklif", "Servis"],
+        example: "ariza → taklif → tasdiqlash → mijoz javobi",
         sectorSlug: "oborudovanie",
       },
       {
         title: "Qurilish va maydon brigadalari",
         description:
-          "Ob'ektdagi vazifalar, tasdiqlashlar, foto hisobotlar, arizalar va muddat nazorati.",
+          "Maydon ishlari, material arizalari, foto hisobotlar, ish yakuni va rahbar tasdiqlashlari bitta jarayonda jamlanishi mumkin.",
+        pills: ["Maydon", "Material", "Hisobot"],
+        example: "material arizasi → maydon vazifasi → foto hisobot",
         sectorSlug: "stroitelstvo",
       },
       {
         title: "Logistika va tashqi savdo",
         description:
-          "Arizalar, hujjatlar, yetkazib berish bosqichlari, statuslar va ishtirokchilarga bildirishnomalar.",
+          "Hujjat kuzatuvi, yetkazish bosqichlari, mijoz bildirishnomalari, vazifa tayinlash va status yangilanishlari boshqarilishi mumkin.",
+        pills: ["Hujjat", "Yetkazish", "Status"],
+        example: "hujjat kiritish → nazorat → yetkazish xabari",
         sectorSlug: "logistika",
       },
       {
         title: "Ko'chmas mulk va ijaraga berish",
         description:
-          "Arizalar, ob'ektlar, ko'rishlar, shartnomalar, to'lovlar va muloqot tarixi.",
+          "Mulk arizalari, ko'rsatish uchrashuvlari, shartnoma bosqichlari, mijoz eslatmalari va tasdiqlash tarixi tartibli saqlanishi mumkin.",
+        pills: ["Ariza", "Uchrashuv", "Shartnoma"],
+        example: "mijoz arizasi → ko'rsatish → shartnoma tasdiqlash",
         sectorSlug: "nedvizhimost",
       },
       {
         title: "Klinikalar va xizmat biznesi",
         description:
-          "Yozuvlar, ichki arizalar, xodimlarga vazifalar, tasdiqlashlar va hisobotlar.",
+          "Uchrashuvdan keyingi ichki vazifalar, xodim arizalari, hujjat tasdiqlashlari, texnik xizmat va hisobotlar kuzatilishi mumkin.",
+        pills: ["Uchrashuv", "Ichki vazifa", "Hisobot"],
+        example: "ichki ariza → mas'ul tayinlash → yakunlandi",
       },
       {
         title: "Restoranlar va kafelar",
         description:
-          "Xarid arizalari, smenalar, ta'mirlash, tasdiqlashlar va nazorat.",
+          "Xarid arizalari, smena nazorati, nosozlik xabarlari, xodim vazifalari va rahbar tasdiqlashlari qayd etilgan holda ketishi mumkin.",
+        pills: ["Xarid", "Smena", "Nosozlik"],
+        example: "ehtiyoj xabari → tasdiqlash → vazifa bajarildi",
       },
       {
         title: "Kichik ishlab chiqarish",
         description:
-          "Xom ashyo arizalari, tasdiqlashlar, brigadalarga vazifalar, hisob va operatsiyalar tarixi.",
+          "Xom ashyo arizalari, ishlab chiqarish vazifalari, sifat nazorati, jamoa ishlari va operatsion tarix bitta ekrandan kuzatilishi mumkin.",
+        pills: ["Xom ashyo", "Ishlab chiqarish", "Sifat"],
+        example: "xom ashyo arizasi → ishlab chiqarish vazifasi → sifat nazorati",
       },
     ],
+    callout: {
+      title: "Sektoringiz bu yerda bo'lmasa ham muammo emas",
+      description:
+        "Kompaniyangizda takrorlanadigan ariza, tasdiqlash, vazifa, fayl, hisobot yoki integratsiya ehtiyoji bo'lsa, Proklix o jarayonga moslashtirilishi mumkin.",
+      cta: "Jarayonimni tahlil qiling",
+    },
   },
   sectorPageLabels: {
     breadcrumbHome: "Proklix",

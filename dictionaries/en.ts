@@ -333,66 +333,96 @@ export const en: DictionaryEntry = {
     },
   },
   sectors: {
-    title: "For companies with a lot of manual control",
-    viewSector: "Learn more",
+    title: "For businesses with manual tracking, approvals and field control",
+    subtitle:
+      "Your industry may differ, but the need is usually the same: requests should not get lost, owners should be clear, approvals should move on record, files should stay in the process and management should see the overall picture.",
+    positioningLine:
+      "Proklix creates the most value for teams tracking work between Telegram, Excel, website, CRM or warehouse systems.",
+    exampleLabel: "Example workflow",
     items: [
       {
         title: "B2B catalogs & trading",
         description:
-          "Requests, products, prices, commercial proposals, approvals and Telegram notifications.",
+          "Product requests, price inquiries, commercial proposals, customer records and approval flows can be managed in one stream.",
+        pills: ["Requests", "Proposal", "CRM"],
+        example: "customer request → proposal → manager approval",
         sectorSlug: "b2b-katalog",
       },
       {
         title: "Cleaning & field service",
         description:
-          "Customer requests, field tasks, checklists, photo reports and execution control.",
+          "Field tasks, checklists, photo completion, shift checks and manager reports can progress through Telegram.",
+        pills: ["Field task", "Photo", "Checklist"],
+        example: "task assignment → field check → photo result",
       },
       {
         title: "Warehouses & distributors",
         description:
-          "Stock, inventory, transfers, dealer requests and delivery statuses.",
+          "Stock counts, warehouse transfers, dealer requests, product movement and delivery checks can be recorded.",
+        pills: ["Stock", "Transfer", "Count"],
+        example: "product list → count task → approved result",
         sectorSlug: "agro",
       },
       {
         title: "Equipment sales",
         description:
-          "Catalog, consultations, requests, commercial proposals and approvals.",
+          "Catalog requests, consultation inquiries, proposal preparation, price approval and after-sales service can be tracked.",
+        pills: ["Catalog", "Proposal", "Service"],
+        example: "request → proposal → approval → client follow-up",
         sectorSlug: "oborudovanie",
       },
       {
         title: "Construction & field teams",
         description:
-          "On-site tasks, approvals, photo reports, requests and deadline control.",
+          "Field work, material requests, photo reports, job completion and manager approvals can sit in one workflow.",
+        pills: ["Field", "Material", "Report"],
+        example: "material request → field task → photo report",
         sectorSlug: "stroitelstvo",
       },
       {
         title: "Logistics & import/export",
         description:
-          "Requests, documents, delivery stages, statuses and participant notifications.",
+          "Document tracking, delivery stages, customer notifications, task assignments and status updates can be managed.",
+        pills: ["Document", "Delivery", "Status"],
+        example: "document entry → review → delivery notification",
         sectorSlug: "logistika",
       },
       {
         title: "Real estate & rental",
         description:
-          "Requests, properties, viewings, contracts, payments and interaction history.",
+          "Property requests, viewing appointments, contract steps, customer notes and approval history can stay organized.",
+        pills: ["Request", "Appointment", "Contract"],
+        example: "customer request → viewing → contract approval",
         sectorSlug: "nedvizhimost",
       },
       {
         title: "Clinics & service businesses",
         description:
-          "Appointments, internal requests, staff tasks, approvals and reports.",
+          "Post-appointment internal tasks, staff requests, document approvals, maintenance jobs and reports can be tracked.",
+        pills: ["Appointment", "Internal task", "Report"],
+        example: "internal request → owner assigned → completed",
       },
       {
         title: "Restaurants & cafes",
         description:
-          "Internal purchase requests, shifts, repairs, approvals and control.",
+          "Purchase requests, shift checks, fault reports, staff tasks and manager approvals can move on record.",
+        pills: ["Purchase", "Shift", "Fault"],
+        example: "need reported → approval → task completed",
       },
       {
         title: "Small factories & production",
         description:
-          "Raw material requests, approvals, team tasks, tracking and operation history.",
+          "Raw material requests, production tasks, quality control, team jobs and operation history can be viewed from one place.",
+        pills: ["Raw material", "Production", "Quality"],
+        example: "raw material request → production task → quality check",
       },
     ],
+    callout: {
+      title: "If your sector is not listed, that is fine",
+      description:
+        "If your company has recurring request, approval, task, file, reporting or integration needs, Proklix can be adapted to that workflow.",
+      cta: "Analyze my process",
+    },
   },
   sectorPageLabels: {
     breadcrumbHome: "Proklix",

@@ -32,7 +32,7 @@ export function LandingPage({ locale, dict }: Props) {
         <IntegrationSection dict={dict} />
         <UseCasesSection dict={dict} />
         <BeforeAfterSection dict={dict} />
-        <SectorsSection dict={dict} locale={locale} />
+        <SectorsSection dict={dict} />
         <HowWeStartSection dict={dict} />
         <ModulesSection dict={dict} />
         <WorkflowSection dict={dict} />

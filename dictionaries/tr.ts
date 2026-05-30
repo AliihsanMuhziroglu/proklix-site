@@ -333,66 +333,96 @@ export const tr: DictionaryEntry = {
     },
   },
   sectors: {
-    title: "Çok manuel kontrol gerektiren işletmeler için",
-    viewSector: "Sektör hakkında",
+    title: "Manuel takip, onay ve saha kontrolü olan işletmeler için",
+    subtitle:
+      "Sektörünüz farklı olabilir; ihtiyaç genelde aynıdır: talepler kaybolmasın, sorumlu belli olsun, onaylar kayıtlı ilerlesin, dosyalar sürece bağlı kalsın ve yönetici genel durumu görebilsin.",
+    positioningLine:
+      "Proklix en çok; Telegram, Excel, web sitesi, CRM veya depo sistemi arasında iş takip eden ekiplerde değer üretir.",
+    exampleLabel: "Örnek süreç",
     items: [
       {
         title: "B2B kataloglar ve ticaret",
         description:
-          "Talepler, ürünler, fiyatlar, ticari teklifler, onaylar ve Telegram bildirimleri.",
+          "Ürün talepleri, fiyat soruları, ticari teklifler, müşteri kayıtları ve onay süreçleri tek akışta yönetilebilir.",
+        pills: ["Talepler", "Teklif", "CRM"],
+        example: "müşteri talebi → teklif → yönetici onayı",
         sectorSlug: "b2b-katalog",
       },
       {
         title: "Temizlik ve saha hizmeti",
         description:
-          "Müşteri talepleri, saha görevleri, kontrol listeleri, foto raporlar ve uygulama kontrolü.",
+          "Saha görevleri, kontrol listeleri, fotoğraflı tamamlama, vardiya kontrolleri ve yönetici raporları Telegram üzerinden ilerler.",
+        pills: ["Saha görevi", "Fotoğraf", "Kontrol listesi"],
+        example: "görev atama → saha kontrolü → fotoğraflı sonuç",
       },
       {
         title: "Depolar ve distribütörler",
         description:
-          "Stok, envanter, transferler, bayi talepleri ve teslimat durumları.",
+          "Stok sayımı, depo transferi, bayi talepleri, ürün hareketleri ve teslimat kontrolleri kayıt altına alınır.",
+        pills: ["Stok", "Transfer", "Sayım"],
+        example: "ürün listesi → sayım görevi → onaylı sonuç",
         sectorSlug: "agro",
       },
       {
         title: "Ekipman satışı",
         description:
-          "Katalog, danışmanlık, talepler, ticari teklifler ve onaylar.",
+          "Katalog talepleri, danışmanlık istekleri, teklif hazırlama, fiyat onayı ve satış sonrası servis süreçleri izlenebilir.",
+        pills: ["Katalog", "Teklif", "Servis"],
+        example: "talep → teklif → onay → müşteri dönüşü",
         sectorSlug: "oborudovanie",
       },
       {
         title: "İnşaat ve saha ekipleri",
         description:
-          "Saha görevleri, onaylar, foto raporlar, talepler ve deadline kontrolü.",
+          "Saha işleri, malzeme talepleri, fotoğraflı raporlar, iş tamamlama ve yönetici onayları tek süreçte toplanır.",
+        pills: ["Saha", "Malzeme", "Rapor"],
+        example: "malzeme talebi → saha görevi → fotoğraflı rapor",
         sectorSlug: "stroitelstvo",
       },
       {
         title: "Lojistik ve dış ticaret",
         description:
-          "Talepler, belgeler, teslimat aşamaları, durumlar ve katılımcı bildirimleri.",
+          "Belge takibi, teslim aşamaları, müşteri bildirimleri, görev atamaları ve durum güncellemeleri yönetilebilir.",
+        pills: ["Belge", "Teslimat", "Durum"],
+        example: "belge girişi → kontrol → teslimat bildirimi",
         sectorSlug: "logistika",
       },
       {
         title: "Emlak ve kiralama",
         description:
-          "Talepler, mülkler, gösterimler, sözleşmeler, ödemeler ve etkileşim geçmişi.",
+          "Mülk talepleri, gösterim randevuları, sözleşme adımları, müşteri notları ve onay geçmişi düzenli tutulur.",
+        pills: ["Talep", "Randevu", "Sözleşme"],
+        example: "müşteri talebi → gösterim → sözleşme onayı",
         sectorSlug: "nedvizhimost",
       },
       {
         title: "Klinikler ve hizmet işletmeleri",
         description:
-          "Randevular, dahili talepler, personel görevleri, onaylar ve raporlar.",
+          "Randevu sonrası iç görevler, personel talepleri, belge onayları, bakım işleri ve raporlar takip edilebilir.",
+        pills: ["Randevu", "İç görev", "Rapor"],
+        example: "iç talep → sorumlu atama → tamamlandı",
       },
       {
         title: "Restoranlar ve kafeler",
         description:
-          "Dahili satın alma talepleri, vardiyalar, onarım, onaylar ve kontrol.",
+          "Satın alma talepleri, vardiya kontrolleri, arıza bildirimleri, personel görevleri ve yönetici onayları kayıtlı ilerler.",
+        pills: ["Satın alma", "Vardiya", "Arıza"],
+        example: "ihtiyaç bildirimi → onay → görev tamamlama",
       },
       {
         title: "Küçük üretim tesisleri",
         description:
-          "Hammadde talepleri, onaylar, ekip görevleri, takip ve operasyon geçmişi.",
+          "Hammadde talepleri, üretim görevleri, kalite kontrol, ekip işleri ve operasyon geçmişi tek ekrandan izlenebilir.",
+        pills: ["Hammadde", "Üretim", "Kalite"],
+        example: "hammadde talebi → üretim görevi → kalite kontrol",
       },
     ],
+    callout: {
+      title: "Sektörünüz burada yoksa sorun değil",
+      description:
+        "Firmanızda tekrar eden talep, onay, görev, dosya, rapor veya entegrasyon ihtiyacı varsa Proklix o sürece göre uyarlanabilir.",
+      cta: "Bir sürecimi analiz et",
+    },
   },
   sectorPageLabels: {
     breadcrumbHome: "Proklix",

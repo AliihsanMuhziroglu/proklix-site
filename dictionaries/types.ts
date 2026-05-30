@@ -63,6 +63,8 @@ export interface WorkflowTab {
 }
 
 export interface SectorCardItem extends CardItem {
+  pills: string[];
+  example: string;
   sectorSlug?: SectorSlug;
 }
 
@@ -178,8 +180,15 @@ export interface DictionaryEntry {
   };
   sectors: {
     title: string;
+    subtitle: string;
+    positioningLine: string;
+    exampleLabel: string;
     items: SectorCardItem[];
-    viewSector: string;
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   sectorPageLabels: {
     breadcrumbHome: string;
