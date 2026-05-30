@@ -583,120 +583,68 @@ export const uz: DictionaryEntry = {
   },
   workflow: {
     title: "Ish jarayoni misoli",
+    subtitle:
+      "Ariza kelganda Proklix uni shunchaki yozib qo'ymaydi; ma'lumot oladi, mas'ulga vazifa beradi, tasdiqlashni boshqaradi, Telegram xabarlarini yuboradi va butun tarixni saqlaydi.",
     tabs: [
       {
         id: "proposal",
         label: "Tijorat taklifi",
         steps: [
-          {
-            title: "Trigger",
-            description: "Mijoz sayt, Telegram yoki forma orqali ariza qoldiradi.",
-          },
-          {
-            title: "Ma'lumot manbasi",
-            description: "Mijoz ma'lumotlari va mahsulotlar CRM yoki katalogdan olinadi.",
-          },
-          {
-            title: "Mas'ul",
-            description: "Menejer vazifa oladi, tafsilotlarni aniqlaydi va TT shakllantiradi.",
-          },
-          {
-            title: "Tasdiqlash",
-            description: "Rahbar narx va shartlarni tekshiradi, tasdiqlaydi yoki qaytaradi.",
-          },
-          {
-            title: "Telegram bildirishnomasi",
-            description: "Ishtirokchilar har bir muhim bosqichda bildirishnoma oladi.",
-          },
-          {
-            title: "Natija",
-            description: "Mijoz yakuniy taklifni oladi, status yangilanadi.",
-          },
-          {
-            title: "Tarix",
-            description: "Barcha versiyalar va harakatlar audit va hisobotlar uchun saqlanadi.",
-          },
+          { badge: "Form", title: "Tetikleyici", description: "Mijoz veb-sayt, Telegram yoki forma orqali ariza qoldiradi." },
+          { badge: "CRM", title: "Ma'lumot manbasi", description: "Mijoz, mahsulot va narx ma'lumotlari CRM, katalog yoki mavjud tizimdan olinishi mumkin." },
+          { badge: "Task", title: "Mas'ul", description: "Savdo mas'uli vazifani oladi, tafsilotlarni aniqlaydi va taklifni tayyorlaydi." },
+          { badge: "Approval", title: "Tasdiqlash", description: "Rahbar narx, shartlar va chegirmani tekshiradi; tasdiqlaydi yoki qayta ishlash so'raydi." },
+          { badge: "Telegram", title: "Telegram bildirishnomasi", description: "Ishtirokchilar muhim bosqichlarda Telegram orqali xabardor qilinadi." },
+          { badge: "Result", title: "Natija", description: "Mijozga yakuniy taklif yuboriladi, status yangilanadi va jarayon yopiladi." },
+          { badge: "Audit", title: "Tarix", description: "Barcha versiyalar, qarorlar, izohlar va fayllar audit/hisobot uchun saqlanadi." },
         ],
       },
       {
         id: "stock",
         label: "Inventarizatsiya",
         steps: [
-          {
-            title: "Ma'lumot manbasi",
-            description: "Mahsulot ro'yxati sayt, ombor yoki jadvaldan olinadi.",
-          },
-          {
-            title: "Telegram vazifasi",
-            description: "Mas'ul inventarizatsiya vazifasini Telegram'da oladi.",
-          },
-          {
-            title: "Bajarish",
-            description: "Xodim mahsulotlarni sanaydi va foto biriktiradi.",
-          },
-          {
-            title: "Tasdiqlash",
-            description: "Rahbar natija va farqlarni tekshiradi.",
-          },
-          {
-            title: "Natija",
-            description: "Yakun tarixda saqlanadi va tizimga qaytarilishi mumkin.",
-          },
+          { badge: "Plan", title: "Tetikleyici", description: "Hisob jarayoni rahbar yoki rejalashtirilgan nazorat orqali boshlanadi." },
+          { badge: "Warehouse", title: "Ma'lumot manbasi", description: "Mahsulot ro'yxati ombor tizimi, veb-sayt, Excel yoki API orqali olinishi mumkin." },
+          { badge: "Task", title: "Mas'ul", description: "Ombor xodimlariga Telegram orqali hisob vazifasi beriladi." },
+          { badge: "Approval", title: "Tasdiqlash", description: "Rahbar hisob natijasi, farqlar va qo'shilgan fotolarni tekshiradi." },
+          { badge: "Telegram", title: "Telegram bildirishnomasi", description: "Vazifa tayinlash, qaytarish va tasdiqlash xabarlari Telegram orqali ketadi." },
+          { badge: "Result", title: "Natija", description: "Tasdiqlangan hisob natijasi qayd etiladi va kerak bo'lsa mavjud tizimga qaytariladi." },
+          { badge: "Audit", title: "Tarix", description: "Kim sanagan, kim tasdiqlagan, qanday farqlar va fotolar bo'lgani saqlanadi." },
         ],
       },
       {
         id: "purchase",
         label: "Xarid tasdiqlash",
         steps: [
-          {
-            title: "Trigger",
-            description: "Xodim forma orqali xarid arizasi beradi.",
-          },
-          {
-            title: "Tasdiqlash",
-            description: "Rahbar va buxgalteriya qadam-baqadam tasdiqlaydi.",
-          },
-          {
-            title: "Telegram bildirishnomasi",
-            description: "Har bir ishtirokchi o'z bosqichi uchun vazifa oladi.",
-          },
-          {
-            title: "Natija",
-            description: "Xarid tasdiqlanadi yoki izoh bilan rad etiladi.",
-          },
-          {
-            title: "Tarix",
-            description: "To'liq tasdiqlash zanjiri audit uchun saqlanadi.",
-          },
+          { badge: "Request", title: "Tetikleyici", description: "Xodim xarid ehtiyoji uchun ariza yaratadi." },
+          { badge: "ERP", title: "Ma'lumot manbasi", description: "Yetkazib beruvchi, mahsulot, byudjet yoki oldingi xarid ma'lumotlari jarayonga ulanishi mumkin." },
+          { badge: "Task", title: "Mas'ul", description: "Ariza tegishli rahbar yoki bo'lim mas'uliga tayinlanadi." },
+          { badge: "Approval", title: "Tasdiqlash", description: "Rahbar, buxgalteriya yoki direktor qadam-baqadam tasdiqlaydi." },
+          { badge: "Telegram", title: "Telegram bildirishnomasi", description: "Kutilayotgan tasdiqlashlar va qayta ishlash so'rovlari Telegram'da ko'rinadi." },
+          { badge: "Result", title: "Natija", description: "Tasdiqlangan xarid arizasi buxgalteriya yoki operatsiyaga uzatiladi." },
+          { badge: "Audit", title: "Tarix", description: "Butun qaror zanjiri, izohlar va hujjatlar qayd etilgan holda qoladi." },
         ],
       },
       {
         id: "service",
         label: "Servis vazifasi",
         steps: [
-          {
-            title: "Trigger",
-            description: "Mijoz yoki menejer servis arizasi yaratadi.",
-          },
-          {
-            title: "Mas'ul",
-            description: "Ijrochi tayinlanadi, vazifa Telegram'ga ketadi.",
-          },
-          {
-            title: "Bajarish",
-            description: "Ijrochi ishni bajaradi, foto va status biriktiradi.",
-          },
-          {
-            title: "Telegram bildirishnomasi",
-            description: "Mijoz va menejer jarayon yangilanishlarini oladi.",
-          },
-          {
-            title: "Natija",
-            description: "Ariza yopiladi, tarix va fayllar saqlanadi.",
-          },
+          { badge: "Request", title: "Tetikleyici", description: "Mijoz, rahbar yoki maydon jamoasi servis arizasi yaratadi." },
+          { badge: "CRM", title: "Ma'lumot manbasi", description: "Mijoz, qurilma, joylashuv yoki oldingi servis ma'lumotlari mavjud tizimdan olinishi mumkin." },
+          { badge: "Task", title: "Mas'ul", description: "Texnik yoki maydon xodimiga vazifa beriladi." },
+          { badge: "Approval", title: "Tasdiqlash", description: "Kerak bo'lsa rahbar natija, fotolar va izohlarni tekshiradi." },
+          { badge: "Telegram", title: "Telegram bildirishnomasi", description: "Mas'ul vazifani Telegram'dan oladi, yangilanishlarni shu oqimda ko'radi." },
+          { badge: "Result", title: "Natija", description: "Servis yakunlanadi, status yopiladi, mijoz/jamoa xabardor qilinishi mumkin." },
+          { badge: "Audit", title: "Tarix", description: "Bajarilgan ish, fotolar, izohlar va vaqt ma'lumotlari saqlanadi." },
         ],
       },
     ],
+    summary: {
+      title: "Bu faqat bitta namuna oqim",
+      description:
+        "Xuddi shu mantiq mijoz arizalari, ombor hisobi, xarid, maydon vazifalari, hujjat tasdiqlash va kompaniyaga xos jarayonlarga moslashtirilishi mumkin.",
+      cta: "O'xshash jarayonimni tahlil qiling",
+    },
   },
   projects: {
     title: "Real B2B jarayonlaridagi tajriba",

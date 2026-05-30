@@ -583,38 +583,54 @@ export const tr: DictionaryEntry = {
   },
   workflow: {
     title: "Örnek iş akışı",
+    subtitle:
+      "Bir talep geldiğinde Proklix onu sadece kaydetmez; veriyi alır, sorumluya görev verir, onayı yönetir, Telegram bildirimlerini gönderir ve tüm geçmişi saklar.",
     tabs: [
       {
         id: "proposal",
         label: "Ticari teklif",
         steps: [
           {
+            badge: "Form",
             title: "Tetikleyici",
-            description: "Müşteri web sitesi, Telegram veya form ile talep bırakır.",
+            description:
+              "Müşteri web sitesi, Telegram veya form üzerinden talep bırakır.",
           },
           {
+            badge: "CRM",
             title: "Veri kaynağı",
-            description: "Müşteri verileri ve ürünler CRM veya katalogdan çekilir.",
+            description:
+              "Müşteri, ürün ve fiyat bilgileri CRM, katalog veya mevcut sistemden çekilebilir.",
           },
           {
+            badge: "Görev",
             title: "Sorumlu",
-            description: "Yönetici görev alır, detayları netleştirir ve teklifi hazırlar.",
+            description:
+              "Satış sorumlusu görevi alır, detayları netleştirir ve teklifi hazırlar.",
           },
           {
+            badge: "Onay",
             title: "Onay",
-            description: "Direktör fiyat ve koşulları kontrol eder, onaylar veya geri gönderir.",
+            description:
+              "Yönetici fiyatı, koşulları ve iskonto bilgisini kontrol eder; onaylar veya revizyon ister.",
           },
           {
+            badge: "Telegram",
             title: "Telegram bildirimi",
-            description: "Katılımcılar her kritik aşamada bildirim alır.",
+            description:
+              "Katılımcılar kritik aşamalarda Telegram üzerinden bilgilendirilir.",
           },
           {
+            badge: "Sonuç",
             title: "Sonuç",
-            description: "Müşteri nihai teklifi alır, durum güncellenir.",
+            description:
+              "Müşteriye nihai teklif iletilir, durum güncellenir ve süreç kapanır.",
           },
           {
+            badge: "Audit",
             title: "Geçmiş",
-            description: "Tüm versiyonlar ve işlemler audit ve raporlar için kaydedilir.",
+            description:
+              "Tüm versiyonlar, kararlar, yorumlar ve dosyalar audit/rapor için saklanır.",
           },
         ],
       },
@@ -623,24 +639,46 @@ export const tr: DictionaryEntry = {
         label: "Envanter sayımı",
         steps: [
           {
+            badge: "Plan",
+            title: "Tetikleyici",
+            description:
+              "Sayım süreci yönetici veya planlı kontrol üzerinden başlatılır.",
+          },
+          {
+            badge: "Depo",
             title: "Veri kaynağı",
-            description: "Ürün listesi web sitesi, depo veya tablodan gelir.",
+            description:
+              "Ürün listesi depo sistemi, web sitesi, Excel veya API üzerinden alınabilir.",
           },
           {
-            title: "Telegram görevi",
-            description: "Sorumlu envanter görevini Telegram'da alır.",
+            badge: "Görev",
+            title: "Sorumlu",
+            description:
+              "Depo personeline Telegram üzerinden sayım görevi atanır.",
           },
           {
-            title: "Uygulama",
-            description: "Çalışan ürünleri sayar ve foto ekler.",
-          },
-          {
+            badge: "Onay",
             title: "Onay",
-            description: "Yönetici sonucu ve farkları kontrol eder.",
+            description:
+              "Yönetici sayım sonucunu, farkları ve eklenen fotoğrafları kontrol eder.",
           },
           {
+            badge: "Telegram",
+            title: "Telegram bildirimi",
+            description:
+              "Görev atama, iade ve onay bildirimleri Telegram'dan gider.",
+          },
+          {
+            badge: "Sonuç",
             title: "Sonuç",
-            description: "Sonuç geçmişe kaydedilir ve sisteme geri gönderilebilir.",
+            description:
+              "Onaylanan sayım sonucu kayıt altına alınır ve gerekirse mevcut sisteme geri aktarılır.",
+          },
+          {
+            badge: "Audit",
+            title: "Geçmiş",
+            description:
+              "Kim saydı, kim onayladı, hangi farklar çıktı ve hangi fotoğraflar eklendi saklanır.",
           },
         ],
       },
@@ -649,24 +687,41 @@ export const tr: DictionaryEntry = {
         label: "Satın alma onayı",
         steps: [
           {
+            badge: "Talep",
             title: "Tetikleyici",
-            description: "Çalışan form ile satın alma talebi verir.",
+            description: "Çalışan satın alma ihtiyacı için talep oluşturur.",
           },
           {
+            badge: "ERP",
+            title: "Veri kaynağı",
+            description:
+              "Tedarikçi, ürün, bütçe veya geçmiş satın alma verileri sürece bağlanabilir.",
+          },
+          {
+            badge: "Görev",
+            title: "Sorumlu",
+            description: "Talep ilgili yöneticiye veya departman sorumlusuna atanır.",
+          },
+          {
+            badge: "Onay",
             title: "Onay",
-            description: "Yönetici ve muhasebe adım adım onaylar.",
+            description: "Yönetici, muhasebe veya direktör adım adım onay verir.",
           },
           {
+            badge: "Telegram",
             title: "Telegram bildirimi",
-            description: "Her katılımcı kendi aşaması için görev alır.",
+            description: "Bekleyen onaylar ve revizyon talepleri Telegram'da görünür.",
           },
           {
+            badge: "Sonuç",
             title: "Sonuç",
-            description: "Satın alma onaylanır veya yorumla reddedilir.",
+            description:
+              "Onaylanan satın alma talebi muhasebe veya operasyon tarafına aktarılır.",
           },
           {
+            badge: "Audit",
             title: "Geçmiş",
-            description: "Tam onay zinciri audit için kaydedilir.",
+            description: "Tüm karar zinciri, yorumlar ve belgeler kayıtlı kalır.",
           },
         ],
       },
@@ -675,28 +730,55 @@ export const tr: DictionaryEntry = {
         label: "Servis görevi",
         steps: [
           {
+            badge: "Talep",
             title: "Tetikleyici",
-            description: "Müşteri veya yönetici servis talebi oluşturur.",
+            description:
+              "Müşteri, yönetici veya saha ekibi servis talebi oluşturur.",
           },
           {
+            badge: "CRM",
+            title: "Veri kaynağı",
+            description:
+              "Müşteri, cihaz, lokasyon veya önceki servis bilgileri mevcut sistemden alınabilir.",
+          },
+          {
+            badge: "Görev",
             title: "Sorumlu",
-            description: "Sorumlu atanır, görev Telegram'a gider.",
+            description: "Teknisyen veya saha personeline görev atanır.",
           },
           {
-            title: "Uygulama",
-            description: "Sorumlu işi tamamlar, foto ve durum ekler.",
+            badge: "Onay",
+            title: "Onay",
+            description:
+              "Gerekirse yönetici müdahale sonucunu, fotoğrafları ve açıklamaları kontrol eder.",
           },
           {
+            badge: "Telegram",
             title: "Telegram bildirimi",
-            description: "Müşteri ve yönetici ilerleme güncellemeleri alır.",
+            description:
+              "Sorumlu kişi görevi Telegram'dan alır, güncellemeleri aynı akışta görür.",
           },
           {
+            badge: "Sonuç",
             title: "Sonuç",
-            description: "Talep kapatılır, geçmiş ve dosyalar kaydedilir.",
+            description:
+              "Servis tamamlanır, durum kapanır ve müşteri/ekip bilgilendirilebilir.",
+          },
+          {
+            badge: "Audit",
+            title: "Geçmiş",
+            description:
+              "Yapılan işlem, eklenen fotoğraflar, yorumlar ve süre bilgisi saklanır.",
           },
         ],
       },
     ],
+    summary: {
+      title: "Bu sadece örnek bir akış",
+      description:
+        "Aynı mantık müşteri talepleri, stok sayımı, satın alma, saha görevleri, belge onayı ve firmaya özel süreçlere uyarlanabilir.",
+      cta: "Benzer sürecimi analiz et",
+    },
   },
   projects: {
     title: "Gerçek B2B operasyonlarındaki deneyim",

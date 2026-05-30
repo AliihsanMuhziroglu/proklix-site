@@ -583,38 +583,52 @@ export const en: DictionaryEntry = {
   },
   workflow: {
     title: "Example workflow",
+    subtitle:
+      "When a request arrives, Proklix does not just record it; it pulls data, assigns tasks, manages approvals, sends Telegram notifications and saves the full history.",
     tabs: [
       {
         id: "proposal",
         label: "Commercial proposal",
         steps: [
           {
+            badge: "Form",
             title: "Trigger",
-            description: "Client submits a request via website, Telegram or form.",
+            description: "The client submits a request via website, Telegram or form.",
           },
           {
+            badge: "CRM",
             title: "Data source",
-            description: "Client data and products pulled from CRM or catalog.",
+            description:
+              "Customer, product and price data can be pulled from CRM, catalog or an existing system.",
           },
           {
+            badge: "Task",
             title: "Owner",
-            description: "Manager gets a task, clarifies details and prepares the proposal.",
+            description:
+              "The sales owner receives the task, clarifies details and prepares the proposal.",
           },
           {
+            badge: "Approval",
             title: "Approval",
-            description: "Director checks price and terms, approves or returns for revision.",
+            description:
+              "The manager checks price, terms and discount; approves or requests revision.",
           },
           {
+            badge: "Telegram",
             title: "Telegram notification",
-            description: "Participants get notifications at each key stage.",
+            description: "Participants are notified in Telegram at critical stages.",
           },
           {
+            badge: "Result",
             title: "Result",
-            description: "Client receives the final proposal, status is updated.",
+            description:
+              "The final proposal is sent to the client, status is updated and the process closes.",
           },
           {
+            badge: "Audit",
             title: "History",
-            description: "All versions and actions saved for audit and reports.",
+            description:
+              "All versions, decisions, comments and files are saved for audit and reporting.",
           },
         ],
       },
@@ -623,24 +637,43 @@ export const en: DictionaryEntry = {
         label: "Stock count",
         steps: [
           {
+            badge: "Plan",
+            title: "Trigger",
+            description: "The count process starts from a manager or scheduled control.",
+          },
+          {
+            badge: "Warehouse",
             title: "Data source",
-            description: "Product list comes from website, warehouse or spreadsheet.",
+            description:
+              "Product list can come from warehouse system, website, Excel or API.",
           },
           {
-            title: "Telegram task",
-            description: "Owner receives inventory task in Telegram.",
+            badge: "Task",
+            title: "Owner",
+            description: "Warehouse staff receive a count task through Telegram.",
           },
           {
-            title: "Execution",
-            description: "Employee counts products and attaches photos.",
-          },
-          {
+            badge: "Approval",
             title: "Approval",
-            description: "Manager checks result and discrepancies.",
+            description:
+              "The manager checks count results, variances and attached photos.",
           },
           {
+            badge: "Telegram",
+            title: "Telegram notification",
+            description: "Task assignment, return and approval notifications go via Telegram.",
+          },
+          {
+            badge: "Result",
             title: "Result",
-            description: "Outcome saved in history and can be sent back to the system.",
+            description:
+              "Approved count is recorded and can be sent back to the existing system if needed.",
+          },
+          {
+            badge: "Audit",
+            title: "History",
+            description:
+              "Who counted, who approved, what variances appeared and which photos were added are stored.",
           },
         ],
       },
@@ -649,24 +682,41 @@ export const en: DictionaryEntry = {
         label: "Purchase approval",
         steps: [
           {
+            badge: "Request",
             title: "Trigger",
-            description: "Employee submits purchase request via form.",
+            description: "An employee creates a request for a purchase need.",
           },
           {
+            badge: "ERP",
+            title: "Data source",
+            description:
+              "Supplier, product, budget or past purchase data can connect to the process.",
+          },
+          {
+            badge: "Task",
+            title: "Owner",
+            description: "The request is assigned to the relevant manager or department owner.",
+          },
+          {
+            badge: "Approval",
             title: "Approval",
-            description: "Manager and finance approve step by step.",
+            description: "Manager, finance or director approve step by step.",
           },
           {
+            badge: "Telegram",
             title: "Telegram notification",
-            description: "Each participant gets a task for their stage.",
+            description: "Pending approvals and revision requests appear in Telegram.",
           },
           {
+            badge: "Result",
             title: "Result",
-            description: "Purchase approved or rejected with comment.",
+            description:
+              "Approved purchase request is passed to finance or operations.",
           },
           {
+            badge: "Audit",
             title: "History",
-            description: "Full approval chain saved for audit.",
+            description: "The full decision chain, comments and documents stay on record.",
           },
         ],
       },
@@ -675,28 +725,54 @@ export const en: DictionaryEntry = {
         label: "Service task",
         steps: [
           {
+            badge: "Request",
             title: "Trigger",
-            description: "Client or manager creates a service request.",
+            description: "Client, manager or field team creates a service request.",
           },
           {
+            badge: "CRM",
+            title: "Data source",
+            description:
+              "Customer, device, location or prior service data can come from existing systems.",
+          },
+          {
+            badge: "Task",
             title: "Owner",
-            description: "Assignee is set, task goes to Telegram.",
+            description: "A technician or field worker is assigned the task.",
           },
           {
-            title: "Execution",
-            description: "Assignee completes work, attaches photos and status.",
+            badge: "Approval",
+            title: "Approval",
+            description:
+              "If needed, the manager checks outcome, photos and notes.",
           },
           {
+            badge: "Telegram",
             title: "Telegram notification",
-            description: "Client and manager get progress updates.",
+            description:
+              "The owner receives the task in Telegram and sees updates in the same flow.",
           },
           {
+            badge: "Result",
             title: "Result",
-            description: "Request closed, history and files saved.",
+            description:
+              "Service is completed, status closes and client/team can be informed.",
+          },
+          {
+            badge: "Audit",
+            title: "History",
+            description:
+              "Work done, photos added, comments and timing information are stored.",
           },
         ],
       },
     ],
+    summary: {
+      title: "This is just one example flow",
+      description:
+        "The same logic can be adapted to customer requests, stock counts, purchasing, field tasks, document approval and company-specific processes.",
+      cta: "Analyze a similar process",
+    },
   },
   projects: {
     title: "Experience with real B2B operations",

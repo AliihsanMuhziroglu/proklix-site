@@ -67,10 +67,14 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface WorkflowStep extends StepItem {
+  badge: string;
+}
+
 export interface WorkflowTab {
   id: string;
   label: string;
-  steps: StepItem[];
+  steps: WorkflowStep[];
 }
 
 export interface SectorCardItem extends CardItem {
@@ -231,7 +235,13 @@ export interface DictionaryEntry {
   };
   workflow: {
     title: string;
+    subtitle: string;
     tabs: WorkflowTab[];
+    summary: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   projects: {
     title: string;
