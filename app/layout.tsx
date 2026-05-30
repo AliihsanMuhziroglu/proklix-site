@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://proklix.uz"),
   icons: {
-    icon: [{ url: "/proklix-logo.png", type: "image/png" }],
-    apple: [{ url: "/proklix-logo.png", type: "image/png" }],
+    icon: [{ url: "/proklix-icon-512.png", type: "image/png" }],
+    apple: [{ url: "/proklix-avatar.png", type: "image/png" }],
   },
 };
 

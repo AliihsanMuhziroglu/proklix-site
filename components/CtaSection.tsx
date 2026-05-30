@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/dictionaries";
-import { PHONE, TELEGRAM_URL } from "@/lib/constants";
+import { TELEGRAM_URL } from "@/lib/constants";
+import { ContactForm } from "./ContactForm";
 
 type Props = {
   dict: Dictionary;
@@ -26,11 +27,16 @@ export function CtaSection({ dict }: Props) {
               {dict.cta.ctaTelegram}
             </a>
             <a
-              href={`tel:${PHONE}`}
+              href={`tel:${dict.cta.phone.replace(/\s/g, "")}`}
               className="inline-flex min-h-[52px] items-center justify-center rounded-2xl border-2 border-white/30 px-6 py-4 text-base font-semibold text-white transition hover:bg-white/10"
             >
               {dict.cta.ctaCall}: {dict.cta.phone}
             </a>
+          </div>
+
+          <div className="mx-auto mt-8 max-w-md">
+            <p className="mb-2 text-sm font-semibold text-white">{dict.cta.formTitle}</p>
+            <ContactForm dict={dict} />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
-import type { Dictionary } from "./types";
+import type { DictionaryEntry } from "./types";
 
-export const uz: Dictionary = {
+export const uz: DictionaryEntry = {
   meta: {
     title: "Proklix | CRM, workflow va Telegram biznes tizimlari",
     description:
@@ -10,8 +10,11 @@ export const uz: Dictionary = {
     solutions: "Yechimlar",
     processes: "Jarayonlar",
     forWhom: "Kimlar uchun",
+    pricing: "Tariflar",
+    blog: "Blog",
     contact: "Aloqa",
     cta: "Telegram'da yozish",
+    phone: "+998 77 257 43 54",
   },
   hero: {
     title: "So'rovlar, takliflar, tasdiqlar va vazifalar — bitta tizimda",
@@ -20,6 +23,35 @@ export const uz: Dictionary = {
     trustTag: "Toshkent va O'zbekiston kompaniyalari uchun",
     ctaTelegram: "Telegram'da yozish",
     ctaAnalysis: "Bepul jarayon tahlilini olish",
+    watchDemo: "Demoni ko'rish",
+  },
+  socialProof: {
+    testimonials: [
+      {
+        name: "Aziza Karimova",
+        company: "B2B katalog, Toshkent",
+        result: "Haftasiga 6 soat tejash",
+        quote:
+          "Ilgari so'rovlar Telegramda yo'qolardi. Endi har bir so'rov tizimda, rahbar voronkani ko'radi.",
+      },
+      {
+        name: "Rustam Toshpulatov",
+        company: "Agro distribyutsiya",
+        result: "Buyurtmalarni qayta ishlash 60% tezroq",
+        quote:
+          "Dilerlar forma orqali buyurtma beradi, ombor darhol xabardor bo'ladi. Excel endi kerak emas.",
+      },
+      {
+        name: "Dilnoza Mirzaeva",
+        company: "Ko'chmas mulk agentligi",
+        result: "So'rovdan ko'rsatishgacha — 4 soat",
+        quote:
+          "Ko'rsatishlar, ob'ektlar va tasdiqlar bitta panelda. Jamoa tezroq va tartibsizliksiz ishlaydi.",
+      },
+    ],
+    logoWallTitle: "Ishonch bildirganlar",
+    stats: "50+ kompaniya · 200+ avtomatlashtirilgan jarayon · 3 mamlakat",
+    learnMore: "Batafsil",
   },
   problem: {
     title:
@@ -95,6 +127,7 @@ export const uz: Dictionary = {
   sectors: {
     title:
       "Ko'p so'rov, savdo va qo'lda nazorat bo'lgan kompaniyalar uchun ayniqsa foydali",
+    viewSector: "Sektor haqida batafsil",
     items: [
       {
         title: "Ko'chmas mulk va ijaraga berish",
@@ -128,6 +161,11 @@ export const uz: Dictionary = {
       },
     ],
   },
+  sectorPageLabels: {
+    challenge: "Vazifa",
+    solution: "Yechim",
+    result: "Natija",
+  },
   howWeStart: {
     title: "Katta tizim emas, bitta jarayondan boshlaymiz",
     steps: [
@@ -158,6 +196,61 @@ export const uz: Dictionary = {
       "Telegram bildirishnoma yuboradi",
       "Tarix panelda saqlanadi",
     ],
+    stepDetails: [
+      "Mijoz sayt, Telegram yoki forma orqali so'rov qoldiradi — u darhol CRMga tushadi.",
+      "Menejer tafsilotlarni aniqlashtiradi, izoh qo'shadi va mas'ul tayinlaydi.",
+      "Narx, zaxira yoki texnik shartlar tekshiriladi — ma'lumotlar kartochkada qayd etiladi.",
+      "Rahbar Telegram bildirishnomasini oladi va tasdiqlaydi yoki qayta ishlashga qaytaradi.",
+      "Mijoz yakuniy taklifni oladi — barcha versiyalar tarixda saqlanadi.",
+      "Telegram har bir muhim bosqichda butun jamoaga bildirishnoma yuboradi.",
+      "To'liq harakatlar tarixi audit va hisobotlar uchun panelda mavjud.",
+    ],
+  },
+  pricing: {
+    title: "Proklix paketlari",
+    subtitle:
+      "Belgilangan narx yo'q — jarayoningizga mos yechimni tanlaymiz. Har bir paketda nimalar bor:",
+    plans: [
+      {
+        name: "Start",
+        description: "Bitta jarayon, tez MVP",
+        features: [
+          "1 asosiy jarayon (so'rovlar yoki KP)",
+          "Web panel + Telegram bildirishnomalari",
+          "5 foydalanuvchigacha",
+          "Asosiy statuslar va rollar",
+          "2–3 haftada ishga tushirish",
+        ],
+        cta: "Taklif olish",
+      },
+      {
+        name: "O'sish",
+        description: "Bir nechta jarayon va integratsiyalar",
+        features: [
+          "3 tagacha bog'langan jarayon",
+          "CRM + katalog yoki so'rovlar",
+          "Tasdiqlash workflow",
+          "Hisobotlar va dashboard",
+          "20 foydalanuvchigacha",
+          "Ustuvor qo'llab-quvvatlash",
+        ],
+        cta: "Taklif olish",
+        highlighted: true,
+      },
+      {
+        name: "Korporativ",
+        description: "Biznesingiz uchun to'liq tizim",
+        features: [
+          "Cheksiz jarayonlar",
+          "Maxsus integratsiyalar",
+          "Ko'p tilli (RU/UZ/TR/EN)",
+          "Rollar, huquqlar, audit",
+          "Jamoa o'qitishi",
+          "Maxsus qo'llab-quvvatlash",
+        ],
+        cta: "Taklif olish",
+      },
+    ],
   },
   trust: {
     title: "Haqiqiy biznes uchun amaliy yondashuv",
@@ -179,6 +272,37 @@ export const uz: Dictionary = {
     ctaTelegram: "Telegram'da yozish",
     ctaCall: "Qo'ng'iroq",
     phone: "+998 77 257 43 54",
+    formTitle: "Yoki so'rov qoldiring — qo'ng'iroq qilamiz",
+  },
+  contactForm: {
+    name: "Ism",
+    company: "Kompaniya",
+    phone: "Telefon",
+    process: "Qaysi jarayon?",
+    processPlaceholder: "Jarayonni tanlang",
+    processOptions: [
+      "So'rovlar va CRM",
+      "Tijorat takliflari",
+      "Tasdiqlar",
+      "B2B katalog",
+      "Telegram avtomatizatsiyasi",
+      "Boshqa",
+    ],
+    submit: "So'rov yuborish",
+    submitting: "Yuborilmoqda…",
+    success: "Rahmat! Tez orada siz bilan bog'lanamiz.",
+    error: "Yuborib bo'lmadi. Telegram orqali yozing.",
+  },
+  blog: {
+    meta: {
+      title: "Proklix blogi | CRM, avtomatizatsiya va B2B",
+      description:
+        "O'zbekistondagi bizneslar uchun CRM, Telegram avtomatizatsiyasi va B2B kataloglari haqida maqolalar.",
+    },
+    title: "Proklix blogi",
+    subtitle: "B2B uchun CRM, avtomatizatsiya va raqamli jarayonlar bo'yicha amaliy materiallar.",
+    readMore: "O'qish",
+    backToBlog: "Barcha maqolalar",
   },
   mobileCta: {
     telegram: "Telegram",
@@ -190,6 +314,7 @@ export const uz: Dictionary = {
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Toshkent / O'zbekiston",
+    blog: "Blog",
   },
   dashboard: {
     title: "Proklix paneli",
@@ -204,5 +329,14 @@ export const uz: Dictionary = {
       "Mas'ul tayinlandi",
       "Jarayon yakunlandi",
     ],
+    sidebarRequests: "So'rovlar",
+    sidebarClients: "Mijozlar",
+    sidebarReports: "Hisobotlar",
+    tableHeaderClient: "Mijoz",
+    tableHeaderStatus: "Status",
+    tableHeaderManager: "Menejer",
+    statusNew: "Yangi",
+    statusInProgress: "Jarayonda",
+    statusApproved: "Tasdiqlangan",
   },
 };

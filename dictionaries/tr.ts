@@ -1,6 +1,6 @@
-import type { Dictionary } from "./types";
+import type { DictionaryEntry } from "./types";
 
-export const tr: Dictionary = {
+export const tr: DictionaryEntry = {
   meta: {
     title: "Proklix | Web, CRM, Workflow ve Telegram İş Takip Sistemleri",
     description:
@@ -10,8 +10,11 @@ export const tr: Dictionary = {
     solutions: "Çözümler",
     processes: "Süreçler",
     forWhom: "Kimler İçin",
+    pricing: "Fiyatlandırma",
+    blog: "Blog",
     contact: "İletişim",
     cta: "Telegram'dan Yaz",
+    phone: "+998 77 257 43 54",
   },
   hero: {
     title: "Talep, teklif, onay ve görevler tek sistemde",
@@ -20,6 +23,35 @@ export const tr: Dictionary = {
     trustTag: "Taşkent ve Özbekistan'daki işletmeler için",
     ctaTelegram: "Telegram'dan Yaz",
     ctaAnalysis: "Ücretsiz Süreç Analizi Al",
+    watchDemo: "Demoyu izle",
+  },
+  socialProof: {
+    testimonials: [
+      {
+        name: "Aziza Karimova",
+        company: "B2B katalog, Taşkent",
+        result: "Haftada 6 saat tasarruf",
+        quote:
+          "Eskiden talepler Telegram'da kayboluyordu. Artık her talep sistemde, yönetici huniyi görüyor.",
+      },
+      {
+        name: "Rustam Toshpulatov",
+        company: "Tarım distribütörlüğü",
+        result: "Sipariş işleme %60 daha hızlı",
+        quote:
+          "Bayiler form üzerinden sipariş veriyor, depo anında bildirim alıyor. Excel artık gerekli değil.",
+      },
+      {
+        name: "Dilnoza Mirzaeva",
+        company: "Emlak ajansı",
+        result: "Talepten gösterime 4 saat",
+        quote:
+          "Gösterimler, portföy ve onaylar tek panelde. Ekip daha hızlı ve kaos olmadan çalışıyor.",
+      },
+    ],
+    logoWallTitle: "Güvenenler",
+    stats: "50+ şirket · 200+ otomatik süreç · 3 ülke",
+    learnMore: "Daha fazla",
   },
   problem: {
     title: "Her şey Telegram, Excel ve çalışanların hafızasındaysa kontrol kaybolur",
@@ -93,6 +125,7 @@ export const tr: Dictionary = {
   },
   sectors: {
     title: "Çok talep, satış ve manuel kontrol olan işletmeler için özellikle uygun",
+    viewSector: "Sektör hakkında daha fazla",
     items: [
       {
         title: "Emlak ve kiralama",
@@ -126,6 +159,11 @@ export const tr: Dictionary = {
       },
     ],
   },
+  sectorPageLabels: {
+    challenge: "Görev",
+    solution: "Çözüm",
+    result: "Sonuç",
+  },
   howWeStart: {
     title: "Dev bir sistemle değil, tek bir süreçle başlıyoruz",
     steps: [
@@ -156,6 +194,61 @@ export const tr: Dictionary = {
       "Telegram bildirim gönderir",
       "Geçmiş panelde saklanır",
     ],
+    stepDetails: [
+      "Müşteri site, Telegram veya form üzerinden talep bırakır — doğrudan CRM'e düşer.",
+      "Satış temsilcisi detayları netleştirir, yorum ekler ve sorumlu atar.",
+      "Fiyat, stok veya teknik koşullar kontrol edilir — veriler karta kaydedilir.",
+      "Yönetici Telegram bildirimi alır ve onaylar veya revizyona geri gönderir.",
+      "Müşteri nihai teklifi alır — tüm sürümler geçmişte saklanır.",
+      "Telegram her kritik aşamada tüm ekibe bildirim gönderir.",
+      "Tam işlem geçmişi denetim ve raporlar için panelde mevcuttur.",
+    ],
+  },
+  pricing: {
+    title: "Proklix paketleri",
+    subtitle:
+      "Sabit fiyat yok — sürecinize uygun çözümü birlikte belirleriz. Her pakette neler var:",
+    plans: [
+      {
+        name: "Başlangıç",
+        description: "Tek süreç, hızlı MVP",
+        features: [
+          "1 ana süreç (talepler veya teklifler)",
+          "Web panel + Telegram bildirimleri",
+          "5 kullanıcıya kadar",
+          "Temel statüler ve roller",
+          "2–3 haftada devreye alma",
+        ],
+        cta: "Teklif al",
+      },
+      {
+        name: "Büyüme",
+        description: "Birden fazla süreç ve entegrasyon",
+        features: [
+          "3'e kadar bağlı süreç",
+          "CRM + katalog veya talepler",
+          "Onay workflow'ları",
+          "Raporlar ve dashboard",
+          "20 kullanıcıya kadar",
+          "Öncelikli destek",
+        ],
+        cta: "Teklif al",
+        highlighted: true,
+      },
+      {
+        name: "Kurumsal",
+        description: "İşletmenize özel tam sistem",
+        features: [
+          "Sınırsız süreç",
+          "Özel entegrasyonlar",
+          "Çok dilli (RU/UZ/TR/EN)",
+          "Roller, yetkiler, denetim",
+          "Ekip eğitimi",
+          "Özel destek",
+        ],
+        cta: "Teklif al",
+      },
+    ],
   },
   trust: {
     title: "Gerçek işletmeler için pratik yaklaşım",
@@ -177,6 +270,37 @@ export const tr: Dictionary = {
     ctaTelegram: "Telegram'dan Yaz",
     ctaCall: "Ara",
     phone: "+998 77 257 43 54",
+    formTitle: "Veya talep bırakın — sizi arayalım",
+  },
+  contactForm: {
+    name: "Ad",
+    company: "Şirket",
+    phone: "Telefon",
+    process: "Hangi süreç?",
+    processPlaceholder: "Süreç seçin",
+    processOptions: [
+      "Talepler ve CRM",
+      "Ticari teklifler",
+      "Onaylar",
+      "B2B katalog",
+      "Telegram otomasyonu",
+      "Diğer",
+    ],
+    submit: "Talep gönder",
+    submitting: "Gönderiliyor…",
+    success: "Teşekkürler! En kısa sürede sizinle iletişime geçeceğiz.",
+    error: "Gönderilemedi. Lütfen Telegram'dan yazın.",
+  },
+  blog: {
+    meta: {
+      title: "Proklix Blog | CRM, Otomasyon ve B2B",
+      description:
+        "Özbekistan'daki işletmeler için CRM, Telegram otomasyonu ve B2B katalogları hakkında makaleler.",
+    },
+    title: "Proklix Blog",
+    subtitle: "B2B için CRM, otomasyon ve dijital süreçler hakkında pratik içerikler.",
+    readMore: "Oku",
+    backToBlog: "Tüm makaleler",
   },
   mobileCta: {
     telegram: "Telegram",
@@ -188,6 +312,7 @@ export const tr: Dictionary = {
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Taşkent / Özbekistan",
+    blog: "Blog",
   },
   dashboard: {
     title: "Proklix Paneli",
@@ -202,5 +327,14 @@ export const tr: Dictionary = {
       "Sorumlu atandı",
       "Süreç tamamlandı",
     ],
+    sidebarRequests: "Talepler",
+    sidebarClients: "Müşteriler",
+    sidebarReports: "Raporlar",
+    tableHeaderClient: "Müşteri",
+    tableHeaderStatus: "Durum",
+    tableHeaderManager: "Yönetici",
+    statusNew: "Yeni",
+    statusInProgress: "İşlemde",
+    statusApproved: "Onaylandı",
   },
 };

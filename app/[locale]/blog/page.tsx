@@ -1,28 +1,25 @@
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/dictionaries";
-import { buildPageMetadata } from "@/lib/metadata";
+import { buildMetadata } from "@/lib/metadata";
 import { isValidLocale, type Locale } from "@/lib/i18n";
-import { LandingPage } from "@/components/LandingPage";
+import { BlogListPage } from "@/components/BlogListPage";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateStaticParams() {
-  return [{ locale: "tr" }, { locale: "ru" }, { locale: "uz" }, { locale: "en" }];
-}
-
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   if (!isValidLocale(locale)) return {};
-  return buildPageMetadata(locale as Locale, getDictionary(locale as Locale));
+  const dict = getDictionary(locale);
+  return buildMetadata(locale, dict.blog.meta, `/${locale}/blog`);
 }
 
-export default async function LocalePage({ params }: Props) {
+export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
 
-  return <LandingPage locale={locale as Locale} dict={dict} />;
+  return <BlogListPage locale={locale as Locale} dict={dict} />;
 }

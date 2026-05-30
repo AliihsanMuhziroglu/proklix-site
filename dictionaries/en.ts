@@ -1,6 +1,6 @@
-import type { Dictionary } from "./types";
+import type { DictionaryEntry } from "./types";
 
-export const en: Dictionary = {
+export const en: DictionaryEntry = {
   meta: {
     title: "Proklix | CRM, Workflow and Telegram Business Systems in Uzbekistan",
     description:
@@ -10,8 +10,11 @@ export const en: Dictionary = {
     solutions: "Solutions",
     processes: "Processes",
     forWhom: "Who It's For",
+    pricing: "Pricing",
+    blog: "Blog",
     contact: "Contact",
     cta: "Message on Telegram",
+    phone: "+998 77 257 43 54",
   },
   hero: {
     title: "Requests, offers, approvals and tasks — in one system",
@@ -20,6 +23,35 @@ export const en: Dictionary = {
     trustTag: "For companies in Tashkent and Uzbekistan",
     ctaTelegram: "Message on Telegram",
     ctaAnalysis: "Get a Free Process Review",
+    watchDemo: "Watch demo",
+  },
+  socialProof: {
+    testimonials: [
+      {
+        name: "Aziza Karimova",
+        company: "B2B catalog, Tashkent",
+        result: "Saving 6 hours per week",
+        quote:
+          "Requests used to get lost in Telegram. Now every request is in the system and leadership sees the pipeline.",
+      },
+      {
+        name: "Rustam Toshpulatov",
+        company: "Agro distribution",
+        result: "60% faster order processing",
+        quote:
+          "Dealers submit orders through a form, the warehouse gets notified instantly. Excel is no longer needed.",
+      },
+      {
+        name: "Dilnoza Mirzaeva",
+        company: "Real estate agency",
+        result: "From request to viewing in 4 hours",
+        quote:
+          "Viewings, listings and approvals in one panel. The team works faster without the chaos.",
+      },
+    ],
+    logoWallTitle: "Trusted by",
+    stats: "50+ companies · 200+ automated processes · 3 countries",
+    learnMore: "Learn more",
   },
   problem: {
     title: "When everything lives in Telegram, Excel and people's heads — control slips away",
@@ -93,6 +125,7 @@ export const en: Dictionary = {
   },
   sectors: {
     title: "Especially useful where there are many requests, sales and manual oversight",
+    viewSector: "Learn more about this sector",
     items: [
       {
         title: "Real estate and rentals",
@@ -126,6 +159,11 @@ export const en: Dictionary = {
       },
     ],
   },
+  sectorPageLabels: {
+    challenge: "Challenge",
+    solution: "Solution",
+    result: "Result",
+  },
   howWeStart: {
     title: "We start with one process, not a huge system",
     steps: [
@@ -156,6 +194,61 @@ export const en: Dictionary = {
       "Telegram sends notifications",
       "History is saved in the panel",
     ],
+    stepDetails: [
+      "The client submits a request via the website, Telegram or a form — it goes straight into the CRM.",
+      "The manager clarifies details, adds comments and assigns an owner.",
+      "Price, stock or technical conditions are checked — data is recorded in the card.",
+      "The director gets a Telegram notification and approves or sends back for revision.",
+      "The client receives the final offer — all versions are saved in history.",
+      "Telegram sends notifications at every key stage to the whole team.",
+      "Full action history is available in the panel for audit and reporting.",
+    ],
+  },
+  pricing: {
+    title: "Proklix packages",
+    subtitle:
+      "There is no fixed price — we'll tailor a solution to your process. Here's what each package includes:",
+    plans: [
+      {
+        name: "Start",
+        description: "One process, fast MVP",
+        features: [
+          "1 key process (requests or offers)",
+          "Web panel + Telegram notifications",
+          "Up to 5 users",
+          "Basic statuses and roles",
+          "Launch in 2–3 weeks",
+        ],
+        cta: "Get a quote",
+      },
+      {
+        name: "Growth",
+        description: "Multiple processes and integrations",
+        features: [
+          "Up to 3 linked processes",
+          "CRM + catalog or requests",
+          "Approval workflows",
+          "Reports and dashboard",
+          "Up to 20 users",
+          "Priority support",
+        ],
+        cta: "Get a quote",
+        highlighted: true,
+      },
+      {
+        name: "Enterprise",
+        description: "Full system for your business",
+        features: [
+          "Unlimited processes",
+          "Custom integrations",
+          "Multilingual (RU/UZ/TR/EN)",
+          "Roles, permissions, audit",
+          "Team training",
+          "Dedicated support",
+        ],
+        cta: "Get a quote",
+      },
+    ],
   },
   trust: {
     title: "A practical approach for real businesses",
@@ -177,6 +270,37 @@ export const en: Dictionary = {
     ctaTelegram: "Message on Telegram",
     ctaCall: "Call",
     phone: "+998 77 257 43 54",
+    formTitle: "Or leave a request — we'll call you back",
+  },
+  contactForm: {
+    name: "Name",
+    company: "Company",
+    phone: "Phone",
+    process: "Which process?",
+    processPlaceholder: "Select a process",
+    processOptions: [
+      "Requests and CRM",
+      "Commercial offers",
+      "Approvals",
+      "B2B catalog",
+      "Telegram automation",
+      "Other",
+    ],
+    submit: "Submit request",
+    submitting: "Sending…",
+    success: "Thank you! We'll contact you shortly.",
+    error: "Failed to send. Please message us on Telegram.",
+  },
+  blog: {
+    meta: {
+      title: "Proklix Blog | CRM, Automation and B2B",
+      description:
+        "Articles on CRM, Telegram automation and B2B catalogs for businesses in Uzbekistan.",
+    },
+    title: "Proklix Blog",
+    subtitle: "Practical insights on CRM, automation and digital processes for B2B.",
+    readMore: "Read",
+    backToBlog: "All articles",
   },
   mobileCta: {
     telegram: "Telegram",
@@ -188,6 +312,7 @@ export const en: Dictionary = {
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Tashkent / Uzbekistan",
+    blog: "Blog",
   },
   dashboard: {
     title: "Proklix Panel",
@@ -202,5 +327,14 @@ export const en: Dictionary = {
       "Owner assigned",
       "Process completed",
     ],
+    sidebarRequests: "Requests",
+    sidebarClients: "Clients",
+    sidebarReports: "Reports",
+    tableHeaderClient: "Client",
+    tableHeaderStatus: "Status",
+    tableHeaderManager: "Manager",
+    statusNew: "New",
+    statusInProgress: "In progress",
+    statusApproved: "Approved",
   },
 };

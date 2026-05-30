@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ProklixLogo } from "@/components/ProklixLogo";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { TELEGRAM_URL } from "@/lib/constants";
+import { PHONE, PHONE_DISPLAY, TELEGRAM_URL } from "@/lib/constants";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type Props = {
@@ -20,6 +20,8 @@ export function Header({ locale, dict }: Props) {
     { href: "#solutions", label: dict.header.solutions },
     { href: "#processes", label: dict.header.processes },
     { href: "#sectors", label: dict.header.forWhom },
+    { href: "#pricing", label: dict.header.pricing },
+    { href: `/${locale}/blog`, label: dict.header.blog, isRoute: true },
     { href: "#contact", label: dict.header.contact },
   ];
 
@@ -36,19 +38,35 @@ export function Header({ locale, dict }: Props) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
-            >
-              {item.label}
-            </a>
-          ))}
+        <nav className="hidden items-center gap-5 lg:flex">
+          {nav.map((item) =>
+            item.isRoute ? (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
+              >
+                {item.label}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <a
+            href={`tel:${PHONE}`}
+            className="hidden text-sm font-semibold text-navy-900 transition hover:text-blue-600 md:inline-flex"
+          >
+            {dict.header.phone}
+          </a>
           <LanguageSwitcher locale={locale} />
           <a
             href={TELEGRAM_URL}
@@ -61,7 +79,7 @@ export function Header({ locale, dict }: Props) {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 md:hidden"
+            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 lg:hidden"
             aria-expanded={menuOpen}
             aria-label="Menu"
           >
@@ -79,18 +97,35 @@ export function Header({ locale, dict }: Props) {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
+        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
           <nav className="flex flex-col gap-1">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
-              >
-                {item.label}
-              </a>
-            ))}
+            {nav.map((item) =>
+              item.isRoute ? (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
+                >
+                  {item.label}
+                </a>
+              ),
+            )}
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-lg px-3 py-3 text-sm font-semibold text-blue-600"
+            >
+              {PHONE_DISPLAY}
+            </a>
             <a
               href={TELEGRAM_URL}
               target="_blank"

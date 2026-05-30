@@ -3,26 +3,43 @@ import type { Dictionary } from "@/dictionaries";
 import { defaultLocale, locales, type Locale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/constants";
 
-export function buildMetadata(locale: Locale, dict: Dictionary): Metadata {
-  const path = `/${locale}`;
+type MetaInput = {
+  title: string;
+  description: string;
+};
+
+export function buildMetadata(
+  locale: Locale,
+  meta: MetaInput,
+  path = `/${locale}`,
+): Metadata {
+  const canonical = `${SITE_URL}${path}`;
 
   return {
-    title: dict.meta.title,
-    description: dict.meta.description,
+    title: meta.title,
+    description: meta.description,
     alternates: {
-      canonical: `${SITE_URL}${path}`,
-      languages: {
-        ...Object.fromEntries(locales.map((l) => [l, `${SITE_URL}/${l}`])),
-        "x-default": `${SITE_URL}/${defaultLocale}`,
-      },
+      canonical,
+      languages: buildAlternateLanguages(path.replace(`/${locale}`, "") || ""),
     },
     openGraph: {
-      title: dict.meta.title,
-      description: dict.meta.description,
-      url: `${SITE_URL}${path}`,
+      title: meta.title,
+      description: meta.description,
+      url: canonical,
       siteName: "Proklix",
       locale,
       type: "website",
     },
   };
+}
+
+function buildAlternateLanguages(suffix: string) {
+  return {
+    ...Object.fromEntries(locales.map((l) => [l, `${SITE_URL}/${l}${suffix}`])),
+    "x-default": `${SITE_URL}/${defaultLocale}${suffix}`,
+  };
+}
+
+export function buildPageMetadata(locale: Locale, dict: Dictionary, pathSuffix = "") {
+  return buildMetadata(locale, dict.meta, `/${locale}${pathSuffix}`);
 }

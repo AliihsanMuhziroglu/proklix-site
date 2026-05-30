@@ -1,12 +1,15 @@
+import Link from "next/link";
 import { ProklixLogo } from "@/components/ProklixLogo";
 import type { Dictionary } from "@/dictionaries";
+import type { Locale } from "@/lib/i18n";
 import { PHONE, PHONE_DISPLAY, TELEGRAM_URL } from "@/lib/constants";
 
 type Props = {
   dict: Dictionary;
+  locale?: Locale;
 };
 
-export function Footer({ dict }: Props) {
+export function Footer({ dict, locale = "ru" }: Props) {
   return (
     <footer className="border-t border-slate-200 bg-navy-950 py-10 text-slate-400">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -30,6 +33,9 @@ export function Footer({ dict }: Props) {
             >
               {dict.footer.telegram}
             </a>
+            <Link href={`/${locale}/blog`} className="transition hover:text-white">
+              {dict.footer.blog}
+            </Link>
             <span>{dict.footer.location}</span>
           </div>
         </div>

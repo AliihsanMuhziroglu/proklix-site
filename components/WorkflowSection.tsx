@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { Dictionary } from "@/dictionaries";
 
 type Props = {
@@ -5,6 +8,9 @@ type Props = {
 };
 
 export function WorkflowSection({ dict }: Props) {
+  const [activeStep, setActiveStep] = useState(0);
+  const details = dict.workflow.stepDetails;
+
   return (
     <section id="processes" className="bg-gradient-to-b from-navy-950 to-navy-900 py-14 text-white sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -12,44 +18,78 @@ export function WorkflowSection({ dict }: Props) {
           {dict.workflow.title}
         </h2>
 
-        {/* Mobile: vertical stepper */}
-        <ol className="relative mt-10 space-y-0 md:hidden">
-          {dict.workflow.steps.map((step, i) => (
-            <li key={step} className="relative flex gap-4 pb-8 last:pb-0">
-              {i < dict.workflow.steps.length - 1 && (
-                <span
-                  className="absolute left-[15px] top-8 bottom-0 w-px bg-blue-500/40"
-                  aria-hidden="true"
-                />
-              )}
-              <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold">
-                {i + 1}
-              </div>
-              <p className="pt-1 text-sm font-medium leading-relaxed text-slate-200">{step}</p>
-            </li>
-          ))}
-        </ol>
-
-        {/* Desktop: horizontal cards */}
-        <div className="mt-12 hidden md:block">
-          <div className="grid grid-cols-7 gap-2 lg:gap-3">
+        {/* Progress bar */}
+        <div className="mx-auto mt-10 hidden max-w-4xl md:block">
+          <div className="relative flex justify-between">
+            <div className="absolute left-0 right-0 top-5 h-0.5 bg-blue-500/30" aria-hidden="true" />
             {dict.workflow.steps.map((step, i) => (
-              <div key={step} className="relative flex flex-col">
-                {i < dict.workflow.steps.length - 1 && (
-                  <span
-                    className="absolute left-[calc(50%+1rem)] top-5 hidden h-0.5 w-[calc(100%-2rem)] bg-blue-500/40 lg:block"
-                    aria-hidden="true"
-                  />
-                )}
-                <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-sm font-bold shadow-lg shadow-blue-900/30">
+              <button
+                key={step}
+                type="button"
+                onClick={() => setActiveStep(i)}
+                className="group relative z-10 flex flex-col items-center gap-2"
+                aria-expanded={activeStep === i}
+              >
+                <div
+                  className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold transition ${
+                    activeStep >= i
+                      ? "bg-blue-600 shadow-lg shadow-blue-900/40"
+                      : "bg-navy-800 text-slate-400"
+                  } ${activeStep === i ? "ring-2 ring-white/30 ring-offset-2 ring-offset-navy-950" : ""}`}
+                >
                   {i + 1}
                 </div>
-                <p className="mt-3 text-xs font-medium leading-snug text-slate-200 lg:text-sm">
+                <span
+                  className={`max-w-[5.5rem] text-center text-[10px] font-medium leading-tight lg:max-w-[7rem] lg:text-xs ${
+                    activeStep === i ? "text-white" : "text-slate-400 group-hover:text-slate-200"
+                  }`}
+                >
                   {step}
-                </p>
-              </div>
+                </span>
+              </button>
             ))}
           </div>
+        </div>
+
+        {/* Mobile accordion */}
+        <div className="mt-8 space-y-2 md:hidden">
+          {dict.workflow.steps.map((step, i) => (
+            <div key={step} className="overflow-hidden rounded-xl border border-white/10">
+              <button
+                type="button"
+                onClick={() => setActiveStep(activeStep === i ? -1 : i)}
+                className="flex w-full items-center gap-3 px-4 py-3.5 text-left"
+                aria-expanded={activeStep === i}
+              >
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold">
+                  {i + 1}
+                </span>
+                <span className="flex-1 text-sm font-medium">{step}</span>
+                <svg
+                  className={`h-4 w-4 shrink-0 transition ${activeStep === i ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {activeStep === i && details[i] && (
+                <div className="border-t border-white/10 px-4 py-3 text-sm leading-relaxed text-slate-300">
+                  {details[i]}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop detail panel */}
+        <div className="mx-auto mt-8 hidden max-w-2xl rounded-2xl border border-white/10 bg-white/5 p-6 text-center md:block">
+          <p className="text-lg font-semibold text-white">{dict.workflow.steps[activeStep]}</p>
+          {details[activeStep] && (
+            <p className="mt-3 text-sm leading-relaxed text-slate-300">{details[activeStep]}</p>
+          )}
         </div>
       </div>
     </section>

@@ -1,36 +1,45 @@
-"use client";
+import Image from "next/image";
 
-import { useId } from "react";
+type Variant = "primary" | "icon" | "mono";
 
 type Props = {
+  variant?: Variant;
   className?: string;
+  priority?: boolean;
 };
 
-export function ProklixLogo({ className = "h-9 w-9" }: Props) {
-  const gradientId = useId();
+const sources: Record<Variant, { src: string; width: number; height: number; alt: string }> = {
+  primary: {
+    src: "/proklix-logo-primary.png",
+    width: 320,
+    height: 80,
+    alt: "Proklix",
+  },
+  icon: {
+    src: "/proklix-icon.png",
+    width: 48,
+    height: 48,
+    alt: "Proklix",
+  },
+  mono: {
+    src: "/proklix-logo-mono.png",
+    width: 280,
+    height: 64,
+    alt: "Proklix",
+  },
+};
+
+export function ProklixLogo({ variant = "icon", className = "", priority = false }: Props) {
+  const { src, width, height, alt } = sources[variant];
 
   return (
-    <svg
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      priority={priority}
       className={className}
-      aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id={gradientId} x1="6" y1="4" x2="34" y2="36" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#3B82F6" />
-          <stop offset="1" stopColor="#1D4ED8" />
-        </linearGradient>
-      </defs>
-      <rect width="40" height="40" rx="11" fill={`url(#${gradientId})`} />
-      <path
-        d="M12.5 20.5L17.5 25.5L27.5 14.5"
-        stroke="white"
-        strokeWidth="3.25"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    />
   );
 }

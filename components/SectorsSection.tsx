@@ -1,12 +1,16 @@
+import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
+import type { Locale } from "@/lib/i18n";
+import { sectorSlugs } from "@/lib/sectors";
 
 type Props = {
   dict: Dictionary;
+  locale: Locale;
 };
 
-const icons = ["🏢", "📦", "🌾", "🧹", "🚚", "🏗️"];
+const icons = ["🏢", "📦", "🌾", "🔧", "🚚", "🏗️"];
 
-export function SectorsSection({ dict }: Props) {
+export function SectorsSection({ dict, locale }: Props) {
   return (
     <section id="sectors" className="bg-white py-14 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -15,9 +19,10 @@ export function SectorsSection({ dict }: Props) {
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {dict.sectors.items.map((item, i) => (
-            <div
+            <Link
               key={item.title}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-200 hover:shadow-md"
+              href={`/${locale}/${sectorSlugs[i]}`}
+              className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-200 hover:shadow-md"
             >
               <span className="text-2xl" aria-hidden="true">
                 {icons[i]}
@@ -26,7 +31,10 @@ export function SectorsSection({ dict }: Props) {
                 {item.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.description}</p>
-            </div>
+              <span className="mt-3 inline-flex text-sm font-semibold text-blue-600 group-hover:underline">
+                {dict.sectors.viewSector} →
+              </span>
+            </Link>
           ))}
         </div>
       </div>

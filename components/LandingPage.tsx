@@ -2,11 +2,13 @@ import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { Header } from "./Header";
 import { Hero } from "./Hero";
+import { SocialProofSection } from "./SocialProofSection";
 import { ProblemSection } from "./ProblemSection";
 import { SolutionSection } from "./SolutionSection";
 import { SectorsSection } from "./SectorsSection";
 import { HowWeStartSection } from "./HowWeStartSection";
 import { WorkflowSection } from "./WorkflowSection";
+import { PricingSection } from "./PricingSection";
 import { TrustSection } from "./TrustSection";
 import { CtaSection } from "./CtaSection";
 import { Footer } from "./Footer";
@@ -23,15 +25,17 @@ export function LandingPage({ locale, dict }: Props) {
       <Header locale={locale} dict={dict} />
       <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <Hero dict={dict} />
+        <SocialProofSection dict={dict} />
         <ProblemSection dict={dict} />
         <SolutionSection dict={dict} />
-        <SectorsSection dict={dict} />
+        <SectorsSection dict={dict} locale={locale} />
         <HowWeStartSection dict={dict} />
         <WorkflowSection dict={dict} />
+        <PricingSection dict={dict} />
         <TrustSection dict={dict} />
         <CtaSection dict={dict} />
       </main>
-      <Footer dict={dict} />
+      <Footer dict={dict} locale={locale} />
       <MobileStickyCta dict={dict} />
     </>
   );
