@@ -68,6 +68,7 @@ export interface RelatedSectorItem {
 export interface FaqItem {
   question: string;
   answer: string;
+  category: "system" | "integration" | "setup" | "pricing" | "usage";
 }
 
 export interface WorkflowStep extends StepItem {
@@ -274,7 +275,26 @@ export interface DictionaryEntry {
   };
   faq: {
     title: string;
+    subtitle: string;
+    categories: {
+      system: string;
+      integration: string;
+      setup: string;
+      pricing: string;
+      usage: string;
+    };
+    intro: {
+      title: string;
+      description: string;
+      cta: string;
+      phone: string;
+    };
     items: FaqItem[];
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   cta: {
     title: string;

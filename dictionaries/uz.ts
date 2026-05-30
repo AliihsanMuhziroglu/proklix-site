@@ -773,38 +773,90 @@ export const uz: DictionaryEntry = {
   },
   faq: {
     title: "Tez-tez beriladigan savollar",
+    subtitle:
+      "Proklix CRM, Telegram, integratsiya, narx va o'rnatish modeli bo'yicha eng ko'p beriladigan savollar.",
+    categories: {
+      system: "Tizim",
+      integration: "Integratsiya",
+      setup: "O'rnatish",
+      pricing: "Narx",
+      usage: "Til va foydalanish",
+    },
+    intro: {
+      title: "Javob topilmasa, jarayoningizni ayting",
+      description:
+        "Proklix odatda bitta haqiqiy jarayon orqali baholanadi: ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va natija qayerda saqlanadi?",
+      cta: "Telegram'dan yozish",
+      phone: "+998 77 257 43 54",
+    },
     items: [
       {
+        category: "system",
         question: "Proklix: bu CRM, bot yoki ERP?",
         answer:
-          "Proklix hammasini birdan almashtirmaydi. Bu workflow platformasi: arizalar, formalar, tasdiqlashlar, vazifalar, bildirishnomalar va mavjud tizimlar bilan integratsiyalar.",
+          "Proklix bularning o'rnini bosadigan bitta klassik tizim emas. Bu arizalar, formalar, tasdiqlashlar, vazifalar, Telegram bildirishnomalari, harakatlar tarixi va integratsiyalarni birlashtirgan Telegram markazli workflow va operatsion platformadir. Mavjud CRM, veb-sayt, ombor dasturi yoki Excel tuzilmasi bilan birga ishlaydi.",
       },
       {
+        category: "integration",
         question: "Saytimiz, CRM yoki omborni ulash mumkinmi?",
         answer:
-          "Ha, agar API, eksport/import yoki boshqa texnik kirish bo'lsa. Integratsiyalar aniq jarayon bo'yicha muhokama qilinadi.",
+          "Ha, texnik kirish imkon bo'lsa ulanadi. Integratsiya API, import/eksport, fayl uzatish yoki loyihaga xos ulanishlar orqali rejalashtiriladi. To'g'ri usul jarayon tahlilidan keyin aniqlanadi.",
       },
       {
+        category: "setup",
         question: "Bitta jarayondan boshlash mumkinmi?",
         answer:
-          "Ha. Odatda bitta jarayondan boshlash yaxshi: arizalar, TT, xaridlar, inventarizatsiya yoki xarajatlarni tasdiqlash.",
+          "Ha — va bu odatda eng to'g'ri boshlang'ich nuqtadir. Avval xarid tasdiqlash, mijoz arizasi, ombor hisobi, tijorat taklifi yoki maydon vazifasi kabi bitta jarayonni ishlaydigan qilamiz. Keyin kerak bo'lsa yangi jarayonlar va integratsiyalar qo'shiladi.",
       },
       {
+        category: "usage",
         question: "Xodimlar yangi ilova o'rnatishi kerakmi?",
         answer:
-          "Asosiy harakatlar Telegram/WebApp orqali qilinadi. Bu allaqachon Telegram'da ishlaydigan jamoalar uchun qulay.",
+          "Asosiy foydalanish Telegram orqali ketadi. Xodimlar vazifalar, tasdiqlashlar va bildirishnomalarni Telegram'da ko'radi. Bu ayniqsa maydonda ishlaydigan yoki kompyuter kam ishlatadigan jamoalar uchun o'rganish yukini kamaytiradi.",
       },
       {
+        category: "usage",
         question: "Rus va o'zbek tillari qo'llab-quvvatlanadimi?",
         answer:
-          "Ha, sayt va jarayonlar loyiha bo'yicha RU / UZ / EN / TR tillarida qilinishi mumkin.",
+          "Ha. Proklix jarayonlari va ekranlari rus, o'zbek, turk va ingliz tillariga mos tayyorlanishi mumkin. O'zbekistondagi jamoalar uchun RU/UZ ustuvor foydalanish qo'llab-quvvatlanadi.",
       },
       {
-        question: "Bu faqat savdo uchunmi?",
+        category: "system",
+        question: "Bu faqat savdo jamoasi uchunmi?",
         answer:
-          "Yo'q. Proklix har qanday takrorlanadigan jarayonlar uchun mos: arizalar, tasdiqlashlar, vazifalar, ombor, servis, hujjatlar, xaridlar, xarajatlar.",
+          "Yo'q. Savdodan tashqari Proklix xarid, xarajat tasdiqlash, ombor hisobi, ombor transferi, servis vazifasi, maydon nazorati, hujjat tasdiqlash, HR/admin arizalari va kompaniyaga xos operatsion jarayonlar uchun ham ishlatiladi.",
+      },
+      {
+        category: "pricing",
+        question: "Narx nima uchun saytda qattiq ko'rsatilmagan?",
+        answer:
+          "Proklix'da narx faqat foydalanuvchilar soni bilan belgilanmaydi. Jarayonlar soni, tasdiqlash bosqichlari, integratsiya ehtiyoji, hisobotlar, fayllar, rollar va qo'llab-quvvatlash hajmi narxni o'zgartiradi. Shuning uchun avval qisqa jarayon tahlili qilinadi.",
+      },
+      {
+        category: "integration",
+        question: "Proklix mavjud tizimimiz o'rnini bosadimi?",
+        answer:
+          "Har doim emas. Ko'p hollarda Proklix mavjud tizim ustida ishlaydigan operatsion va tasdiqlash qatlami bo'ladi. Veb-sayt, CRM, ombor, Excel yoki maxsus API ma'lumotlari Proklix jarayonlariga ulanishi mumkin.",
+      },
+      {
+        category: "setup",
+        question: "O'rnatish qancha vaqt oladi?",
+        answer:
+          "Bu tanlangan jarayon va integratsiya ehtiyoriga bog'liq. Oddiy jarayon tezroq boshlanishi mumkin; maxsus integratsiya, hisobot va rol tuzilmasi bo'lgan loyihalarda muddat tahlildan keyin aniqlanadi.",
+      },
+      {
+        category: "system",
+        question: "Telegram operatsiyalar uchun xavfsizmi?",
+        answer:
+          "Telegram bu yerda xodimlar vazifa va bildirishnoma kanalidir. Muhim nazoratlar, jarayon yozuvlari, fayllar, tarix va ruxsatlar Proklix tomonda sozlanadi. Kirish va ruxsat modeli loyiha ehtiyojiga qarab belgilanadi.",
       },
     ],
+    callout: {
+      title: "Javob yetarli bo'lmasa, bitta jarayoningizni birga ko'rib chiqamiz.",
+      description:
+        "Ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va natija qayerda saqlanadi — birga aniqlaymiz.",
+      cta: "Telegram'dan yozish",
+    },
   },
   cta: {
     title: "Bitta tartibsiz jarayoningizni ko'rsating, biz uni Proklix'da qanday yig'ishni ko'rsatamiz",

@@ -907,38 +907,90 @@ export const tr: DictionaryEntry = {
   },
   faq: {
     title: "Sık sorulan sorular",
+    subtitle:
+      "Proklix'in CRM, Telegram, entegrasyon, fiyatlandırma ve kurulum modeliyle ilgili en çok sorulan sorular.",
+    categories: {
+      system: "Sistem",
+      integration: "Entegrasyon",
+      setup: "Kurulum",
+      pricing: "Fiyat",
+      usage: "Dil ve kullanım",
+    },
+    intro: {
+      title: "Cevabınız yoksa sürecinizi anlatın",
+      description:
+        "Proklix genelde tek bir gerçek süreç üzerinden değerlendirilir: talep nereden geliyor, kim onaylıyor, hangi sistemlere bağlanıyor ve sonuç nerede tutuluyor?",
+      cta: "Telegram'dan yaz",
+      phone: "+998 77 257 43 54",
+    },
     items: [
       {
+        category: "system",
         question: "Proklix CRM, bot veya ERP mi?",
         answer:
-          "Proklix her şeyi birden değiştirmez. Bu bir workflow platformudur: talepler, formlar, onaylar, görevler, bildirimler ve mevcut sistemlerle entegrasyonlar.",
+          "Proklix bunların yerine geçen tek bir klasik sistem değildir. Proklix; talepler, formlar, onaylar, görevler, Telegram bildirimleri, işlem geçmişi ve entegrasyonları bir araya getiren Telegram odaklı workflow ve operasyon platformudur. Mevcut CRM, web sitesi, depo yazılımı veya Excel düzeninizle birlikte çalışabilir.",
       },
       {
+        category: "integration",
         question: "Web sitemizi, CRM'imizi veya depomuzu bağlayabilir misiniz?",
         answer:
-          "Evet, API erişimi, export/import veya başka teknik yol varsa. Entegrasyonlar süreç bazında belirlenir.",
+          "Evet, teknik erişim uygunsa bağlanabilir. Entegrasyon API, import/export, dosya aktarımı veya projeye özel bağlantılarla planlanabilir. Hangi yöntemin doğru olduğu süreç analizinden sonra netleşir.",
       },
       {
+        category: "setup",
         question: "Tek bir süreçle başlayabilir miyiz?",
         answer:
-          "Evet. Genellikle tek süreçle başlamak en iyisidir: talepler, teklifler, satın almalar, envanter veya gider onayı.",
+          "Evet. Hatta en sağlıklı başlangıç budur. Önce satın alma onayı, müşteri talebi, stok sayımı, ticari teklif veya saha görevi gibi tek bir süreci çalışır hale getiririz. Sonra ihtiyaç olursa yeni süreçler ve entegrasyonlar eklenir.",
       },
       {
+        category: "usage",
         question: "Çalışanların yeni uygulama yüklemesi gerekiyor mu?",
         answer:
-          "Ana işlemler Telegram/WebApp üzerinden yapılabilir. Zaten Telegram kullanan ekipler için uygundur.",
+          "Temel kullanım Telegram üzerinden ilerler. Çalışanlar görevleri, onayları ve bildirimleri Telegram'da görebilir. Böylece özellikle sahada çalışan veya bilgisayar kullanmayan ekipler için öğrenme yükü azalır.",
       },
       {
+        category: "usage",
         question: "Rusça ve Özbekçe destekleniyor mu?",
         answer:
-          "Evet, site ve süreçler proje gereksinimlerine göre RU / UZ / EN / TR dillerinde yapılabilir.",
+          "Evet. Proklix süreçleri ve ekranları Rusça, Özbekçe, Türkçe ve İngilizce yapıya uygun hazırlanabilir. Özbekistan'daki ekipler için RU/UZ öncelikli kullanım desteklenir.",
       },
       {
-        question: "Bu sadece satış için mi?",
+        category: "system",
+        question: "Bu sadece satış ekipleri için mi?",
         answer:
-          "Hayır. Proklix tekrarlanan her süreç için uygundur: talepler, onaylar, görevler, depo, servis, belgeler, satın almalar, giderler.",
+          "Hayır. Proklix satış dışında satın alma, gider onayı, stok sayımı, depo transferi, servis görevi, saha kontrolü, belge onayı, İK/admin talepleri ve firmaya özel operasyon süreçleri için de kullanılabilir.",
+      },
+      {
+        category: "pricing",
+        question: "Fiyat neden sitede sabit yazmıyor?",
+        answer:
+          "Çünkü Proklix'te fiyatı belirleyen şey sadece kullanıcı sayısı değildir. Süreç sayısı, onay adımları, entegrasyon ihtiyacı, raporlar, dosya kullanımı, kullanıcı rolleri ve destek kapsamı fiyatı değiştirir. Bu yüzden önce kısa bir süreç analizi yapılır.",
+      },
+      {
+        category: "integration",
+        question: "Proklix mevcut sistemimizin yerine mi geçer?",
+        answer:
+          "Her zaman gerekmez. Çoğu durumda Proklix mevcut sistemin üzerinde çalışan bir operasyon ve onay katmanı olur. Web sitesi, CRM, depo, Excel veya özel API verileri Proklix süreçlerine bağlanabilir.",
+      },
+      {
+        category: "setup",
+        question: "Kurulum ne kadar sürer?",
+        answer:
+          "Bu seçilen sürece ve entegrasyon ihtiyacına bağlıdır. Basit bir süreç daha hızlı başlatılabilir; özel entegrasyon, raporlama ve rol yapısı olan projelerde süre analizden sonra netleşir.",
+      },
+      {
+        category: "system",
+        question: "Telegram kullanmak güvenli mi?",
+        answer:
+          "Telegram burada çalışanların görev ve bildirim kanalıdır. Kritik kontroller, süreç kayıtları, dosyalar, geçmiş ve yetkilendirme Proklix tarafında kurgulanır. Yetki ve erişim modeli proje ihtiyacına göre belirlenir.",
       },
     ],
+    callout: {
+      title: "Cevap yeterli değilse, bir sürecinizi birlikte inceleyelim.",
+      description:
+        "Talep nereden geliyor, kim onaylıyor, hangi sistemlere bağlanıyor ve sonuç nerede tutuluyor birlikte çıkaralım.",
+      cta: "Telegram'dan yaz",
+    },
   },
   cta: {
     title: "Bize kaotik bir sürecinizi gösterin, Proklix'te nasıl toplanacağını gösterelim",

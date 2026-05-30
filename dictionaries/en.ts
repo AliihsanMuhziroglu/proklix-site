@@ -901,38 +901,90 @@ export const en: DictionaryEntry = {
   },
   faq: {
     title: "Frequently asked questions",
+    subtitle:
+      "The most common questions about Proklix as CRM, Telegram, integrations, pricing and how setup works.",
+    categories: {
+      system: "System",
+      integration: "Integration",
+      setup: "Setup",
+      pricing: "Pricing",
+      usage: "Language and usage",
+    },
+    intro: {
+      title: "If your question isn't here, tell us about your process",
+      description:
+        "Proklix is usually evaluated through one real process: where requests come from, who approves, which systems connect and where results are stored.",
+      cta: "Message on Telegram",
+      phone: "+998 77 257 43 54",
+    },
     items: [
       {
+        category: "system",
         question: "Is Proklix a CRM, bot or ERP?",
         answer:
-          "Proklix doesn't replace everything at once. It's a workflow platform: requests, forms, approvals, tasks, notifications and integrations with existing systems.",
+          "Proklix is not a single classic system meant to replace all of them. It is a Telegram-focused workflow and operations platform that brings together requests, forms, approvals, tasks, Telegram notifications, activity history and integrations. It can work alongside your existing CRM, website, warehouse software or Excel setup.",
       },
       {
+        category: "integration",
         question: "Can you connect our website, CRM or warehouse?",
         answer:
-          "Yes, if there is API access, export/import or another technical path. Integrations are scoped per process.",
+          "Yes, if technical access allows. Integration can be planned via API, import/export, file transfer or project-specific connections. The right approach is clarified after process analysis.",
       },
       {
+        category: "setup",
         question: "Can we start with one process?",
         answer:
-          "Yes. It's usually best to start with one process: requests, proposals, purchases, inventory or expense approval.",
+          "Yes — and that is usually the healthiest start. We first get one process working: purchase approval, customer request, stock count, commercial proposal or field task. New processes and integrations can be added when needed.",
       },
       {
+        category: "usage",
         question: "Do employees need to install a new app?",
         answer:
-          "Main actions can be done via Telegram/WebApp. This works well for teams already using Telegram.",
+          "Core usage runs through Telegram. Employees see tasks, approvals and notifications in Telegram. This reduces the learning curve, especially for field teams or staff who rarely use a computer.",
       },
       {
+        category: "usage",
         question: "Are Russian and Uzbek supported?",
         answer:
-          "Yes, site and processes can be built in RU / UZ / EN / TR per project requirements.",
+          "Yes. Proklix processes and screens can be built for Russian, Uzbek, Turkish and English. RU/UZ-first usage is supported for teams in Uzbekistan.",
       },
       {
-        question: "Is this only for sales?",
+        category: "system",
+        question: "Is this only for sales teams?",
         answer:
-          "No. Proklix fits any repeatable process: requests, approvals, tasks, warehouse, service, documents, purchases, expenses.",
+          "No. Beyond sales, Proklix can be used for purchasing, expense approval, stock counts, warehouse transfers, service tasks, field checks, document approval, HR/admin requests and company-specific operational processes.",
+      },
+      {
+        category: "pricing",
+        question: "Why isn't pricing fixed on the site?",
+        answer:
+          "Because in Proklix, cost is not driven by user count alone. Number of processes, approval steps, integration needs, reports, file usage, user roles and support scope all affect pricing. That is why a short process analysis comes first.",
+      },
+      {
+        category: "integration",
+        question: "Does Proklix replace our existing system?",
+        answer:
+          "Not always. In most cases Proklix acts as an operations and approval layer on top of your current system. Website, CRM, warehouse, Excel or custom API data can connect to Proklix workflows.",
+      },
+      {
+        category: "setup",
+        question: "How long does setup take?",
+        answer:
+          "It depends on the chosen process and integration needs. A simple process can start faster; projects with custom integrations, reporting and role structures are scoped after analysis.",
+      },
+      {
+        category: "system",
+        question: "Is Telegram secure enough for operations?",
+        answer:
+          "Telegram is the channel where employees receive tasks and notifications. Critical controls, process records, files, history and authorization are configured on the Proklix side. Access and permission models are defined per project needs.",
       },
     ],
+    callout: {
+      title: "If the answer isn't enough, let's review one of your processes together.",
+      description:
+        "Let's map where requests come from, who approves, which systems connect and where results are stored.",
+      cta: "Message on Telegram",
+    },
   },
   cta: {
     title: "Show us one chaotic process, we'll show you how to build it in Proklix",
