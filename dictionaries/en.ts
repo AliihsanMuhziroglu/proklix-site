@@ -432,34 +432,47 @@ export const en: DictionaryEntry = {
     step: "Step",
   },
   howWeStart: {
-    title: "Start with one workflow",
+    title: "Launch your first real process, not a big system overhaul",
+    subtitle:
+      "We do not start by transforming the whole company at once. We pick the process that wastes the most time, get it working, then expand to others.",
     steps: [
       {
-        title: "Analyze current process",
+        label: "Analysis",
+        title: "We analyze the process together",
         description:
-          "We review where requests, tasks and approvals get lost today.",
+          "We clarify where requests start, who approves, which files are attached and where things get lost.",
       },
       {
-        title: "Build first workflow",
+        label: "Setup",
+        title: "We build the first workflow",
         description:
-          "We create the form, steps, owners, statuses and notifications.",
+          "We create form fields, steps, owners, statuses and Telegram notifications.",
       },
       {
-        title: "Connect data & systems",
+        label: "Integration",
+        title: "We connect required data",
         description:
-          "If needed, we connect website, CRM, warehouse, Excel or API.",
+          "If needed, sources like website, CRM, warehouse, Excel or custom API are integrated into the process.",
       },
       {
-        title: "Launch in Telegram",
+        label: "Go live",
+        title: "We open it in Telegram",
         description:
-          "Employees receive tasks and approvals directly in Telegram.",
+          "Staff receive tasks and approvals through Telegram; managers track status in the system.",
       },
       {
-        title: "Improve and expand",
+        label: "Expansion",
+        title: "We measure, improve and expand",
         description:
-          "We add new processes, reports, roles and integrations.",
+          "Once the first process is stable, we add reports, roles, new workflows and extra integrations.",
       },
     ],
+    callout: {
+      title: "Best start: pick one painful process",
+      description:
+        "Starting with purchase approval, a customer request, stock count, commercial proposal or field task and seeing results quickly is the healthiest path.",
+      cta: "Analyze my first process",
+    },
   },
   modules: {
     title: "What Proklix includes",

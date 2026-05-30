@@ -432,34 +432,47 @@ export const tr: DictionaryEntry = {
     step: "Adım",
   },
   howWeStart: {
-    title: "Tek bir süreçle başlayın",
+    title: "Büyük sistemi değil, ilk gerçek süreci başlatın",
+    subtitle:
+      "Proklix'i kurmaya tüm şirketi aynı anda dönüştürerek başlamayız. Önce en çok zaman kaybettiren bir süreci seçer, çalışır hale getirir, sonra diğer süreçlere yayarız.",
     steps: [
       {
-        title: "Mevcut süreci analiz edin",
+        label: "Analiz",
+        title: "Süreci birlikte analiz ederiz",
         description:
-          "Taleplerin, görevlerin ve onayların şu an nerede kaybolduğunu inceleriz.",
+          "Talepler nerede başlıyor, kim onaylıyor, hangi dosyalar ekleniyor ve nerede kayboluyor netleştiririz.",
       },
       {
-        title: "İlk workflow'u oluşturun",
+        label: "Kurulum",
+        title: "İlk workflow'u kurarız",
         description:
-          "Form, adımlar, sorumlular, durumlar ve bildirimleri oluştururuz.",
+          "Form alanlarını, adımları, sorumluları, durumları ve Telegram bildirimlerini oluştururuz.",
       },
       {
-        title: "Veri ve sistemleri bağlayın",
+        label: "Entegrasyon",
+        title: "Gerekli verileri bağlarız",
         description:
-          "Gerekirse web sitesi, CRM, depo, Excel veya API bağlarız.",
+          "Web sitesi, CRM, depo, Excel veya özel API gibi kaynaklar gerekiyorsa sürece entegre edilir.",
       },
       {
-        title: "Telegram'da başlatın",
+        label: "Canlı kullanım",
+        title: "Telegram'da kullanıma açarız",
         description:
-          "Çalışanlar görevleri ve onayları doğrudan Telegram'da alır.",
+          "Çalışanlar görevleri ve onayları Telegram üzerinden alır; yöneticiler durumu sistemden izler.",
       },
       {
-        title: "Geliştirin ve genişletin",
+        label: "Genişleme",
+        title: "Ölçer, geliştirir ve yayarız",
         description:
-          "Yeni süreçler, raporlar, roller ve entegrasyonlar ekleriz.",
+          "İlk süreç oturduktan sonra raporlar, roller, yeni süreçler ve ek entegrasyonlar eklenir.",
       },
     ],
+    callout: {
+      title: "En iyi başlangıç: tek bir acıtan süreci seçmek",
+      description:
+        "Satın alma onayı, müşteri talebi, stok sayımı, ticari teklif veya saha görevi gibi bir süreçle başlayıp sonucu hızlıca görmek daha sağlıklıdır.",
+      cta: "İlk sürecimi analiz et",
+    },
   },
   modules: {
     title: "Proklix nelerden oluşur",

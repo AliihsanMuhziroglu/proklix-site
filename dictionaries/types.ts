@@ -29,6 +29,10 @@ export interface StepItem {
   description: string;
 }
 
+export interface HowWeStartStep extends StepItem {
+  label: string;
+}
+
 export interface ProjectItem {
   title: string;
   website: string;
@@ -199,7 +203,13 @@ export interface DictionaryEntry {
   };
   howWeStart: {
     title: string;
-    steps: StepItem[];
+    subtitle: string;
+    steps: HowWeStartStep[];
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   modules: {
     title: string;

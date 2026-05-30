@@ -432,34 +432,47 @@ export const uz: DictionaryEntry = {
     step: "Qadam",
   },
   howWeStart: {
-    title: "Bitta jarayondan boshlaymiz",
+    title: "Katta tizim emas, birinchi haqiqiy jarayonni boshlang",
+    subtitle:
+      "Proklix'ni butun kompaniyani bir vaqtning o'zida o'zgartirishdan boshlamaymiz. Avval eng ko'p vaqt oladigan jarayonni tanlaymiz, ishlaydigan qilamiz, keyin boshqalarga kengaytiramiz.",
     steps: [
       {
-        title: "Joriy jarayonni tahlil qilamiz",
+        label: "Tahlil",
+        title: "Jarayonni birgalikda tahlil qilamiz",
         description:
-          "Hozir arizalar, vazifalar va tasdiqlashlar qayerda yo'qolayotganini ko'rib chiqamiz.",
+          "Arizalar qayerdan boshlanishini, kim tasdiqlashini, qaysi fayllar qo'shilishini va qayerda yo'qolishini aniqlaymiz.",
       },
       {
-        title: "Birinchi workflow yaratamiz",
+        label: "Sozlash",
+        title: "Birinchi workflow'ni quramiz",
         description:
-          "Forma, qadamlar, mas'ullar, statuslar va bildirishnomalarni yaratamiz.",
+          "Forma maydonlari, qadamlar, mas'ullar, statuslar va Telegram bildirishnomalarini yaratamiz.",
       },
       {
-        title: "Ma'lumot va tizimlarni ulaymiz",
+        label: "Integratsiya",
+        title: "Kerakli ma'lumotlarni ulaymiz",
         description:
-          "Kerak bo'lsa sayt, CRM, ombor, Excel yoki API ulaymiz.",
+          "Veb-sayt, CRM, ombor, Excel yoki maxsus API kerak bo'lsa, jarayonga integratsiya qilinadi.",
       },
       {
-        title: "Telegram'da ishga tushiramiz",
+        label: "Ishga tushirish",
+        title: "Telegram'da foydalanishga ochamiz",
         description:
-          "Xodimlar vazifalar va tasdiqlashlarni to'g'ridan-to'g'ri Telegram'da oladi.",
+          "Xodimlar vazifa va tasdiqlashlarni Telegram orqali oladi; rahbarlar holatni tizimdan kuzatadi.",
       },
       {
-        title: "Yaxshilaymiz va kengaytiramiz",
+        label: "Kengayish",
+        title: "O'lchaymiz, yaxshilaymiz va kengaytiramiz",
         description:
-          "Yangi jarayonlar, hisobotlar, rollar va integratsiyalar qo'shamiz.",
+          "Birinchi jarayon o'rganib qolgach, hisobotlar, rollar, yangi jarayonlar va qo'shimcha integratsiyalar qo'shiladi.",
       },
     ],
+    callout: {
+      title: "Eng yaxshi boshlash: bitta og'ritadigan jarayonni tanlash",
+      description:
+        "Xarid tasdiqlash, mijoz arizasi, ombor hisobi, tijorat taklifi yoki maydon vazifasi kabi bir jarayondan boshlab natijani tez ko'rish sog'lomroq yo'l.",
+      cta: "Birinchi jarayonimni tahlil qiling",
+    },
   },
   modules: {
     title: "Proklix nimalardan iborat",
