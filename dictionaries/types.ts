@@ -336,10 +336,17 @@ export interface DictionaryEntry {
   };
   footer: {
     tagline: string;
-    phone: string;
-    telegram: string;
     location: string;
-    blog: string;
+    platformTitle: string;
+    platformLinks: { href: string; label: string }[];
+    solutionsTitle: string;
+    solutionsLinks: { href: string; label: string }[];
+    contactTitle: string;
+    phone: string;
+    telegramCta: string;
+    telegramHelper: string;
+    copyright: string;
+    bottomTagline: string;
   };
   dashboard: {
     title: string;

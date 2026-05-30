@@ -9,7 +9,7 @@ export function CtaSection({ dict }: Props) {
   const { cta } = dict;
 
   return (
-    <section id="contact" className="bg-white py-12 sm:py-14">
+    <section id="contact" className="bg-white py-10 sm:py-12">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-slate-200 bg-navy-950 p-6 shadow-lg sm:p-10 lg:p-12">
           <div className="mx-auto max-w-2xl text-center">
