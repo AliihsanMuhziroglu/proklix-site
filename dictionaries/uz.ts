@@ -475,49 +475,111 @@ export const uz: DictionaryEntry = {
     },
   },
   modules: {
-    title: "Proklix nimalardan iborat",
-    items: [
+    title: "Proklix'ning asosiy qurilish bloklari",
+    subtitle:
+      "Har bir modul alohida emas, bir xil jarayonning bir qismi sifatida ishlaydi: ma'lumot yig'iladi, vazifa beriladi, tasdiqlash davom etadi, fayllar qo'shiladi, tarix saqlanadi va rahbariyat natijani ko'radi.",
+    flowSteps: ["Forma", "Workflow", "Vazifa", "Tasdiqlash", "Tarix", "Hisobot", "Integratsiya"],
+    categories: [
       {
-        title: "Dinamik formalar",
-        description: "Jarayoningiz uchun maydonlar, fayllar va shartlar bilan forma konstruktori.",
+        id: "build",
+        title: "Jarayon yaratish",
+        description: "Forma, qadamlar va qoidalar bilan jarayonni belgilang.",
+        items: [
+          {
+            title: "Dinamik formalar",
+            description:
+              "Jarayoningiz uchun kerakli maydonlar, tavsiflar, fayllar va tekshiruvlarni belgilang.",
+          },
+          {
+            title: "Ish oqimini loyihalash",
+            description:
+              "Qadamlar, mas'ullar, tasdiqlash yo'llari va qaror variantlarini jarayon bo'yicha sozlang.",
+          },
+          {
+            title: "Maxsus qoidalar va qadamlar",
+            description:
+              "Shartli o'tishlar, majburiy maydonlar, tasdiqlash variantlari va jarayon qoidalarini belgilang.",
+          },
+        ],
       },
       {
-        title: "Workflow builder",
-        description: "Qadamlar, statuslar, tasdiqlash marshrutlari va o'tish qoidalari.",
+        id: "daily",
+        title: "Kundalik foydalanish",
+        description: "Jamoa kundalik ishni shu yerda bajaradi.",
+        items: [
+          {
+            title: "Vazifa qutisi",
+            description:
+              "Foydalanuvchilar o'zlariga tayinlangan vazifalar va kutilayotgan harakatlarni bitta ekranda ko'radi.",
+          },
+          {
+            title: "Ariza kuzatuvi",
+            description:
+              "Har bir ariza raqam, status, mas'ul, qadam va tarix bilan kuzatiladi.",
+          },
+          {
+            title: "Telegram bildirishnomalari",
+            description:
+              "Yangi vazifa, tasdiqlash, qaytarish va natija xabarlari Telegram orqali tegishli shaxslarga boradi.",
+          },
+          {
+            title: "Fayl va foto yuklash",
+            description:
+              "Fotolar, PDF va hujjatlar chatlarda yo'qolmaydi; to'g'ridan-to'g'ri jarayonga biriktiriladi.",
+          },
+        ],
       },
       {
-        title: "Vazifalar inbox",
-        description: "Shaxsiy va jamoa inbox: nima tayinlangan, nima harakat talab qiladi.",
+        id: "control",
+        title: "Boshqaruv va nazorat",
+        description: "Status, tarix va kirish bitta joydan boshqariladi.",
+        items: [
+          {
+            title: "Jarayon tarixi",
+            description:
+              "Kim, qachon, qanday qaror qildi; izohlar, fayllar va status o'zgarishlari saqlanadi.",
+          },
+          {
+            title: "Hisobotlar va dashboard",
+            description:
+              "Rahbariyat ochiq arizalar, kutilayotgan tasdiqlashlar, yakunlangan ishlar va jamoa holatini ko'radi.",
+          },
+          {
+            title: "Foydalanuvchi va rol boshqaruvi",
+            description:
+              "Foydalanuvchilar, rollar, kirishlar va kompaniya/jamoaga asoslangan tuzilma nazoratli boshqariladi.",
+          },
+        ],
       },
       {
-        title: "Arizalarni kuzatish",
-        description: "Har bir ariza raqam, status, mas'ul va tarix bilan.",
-      },
-      {
-        title: "Telegram bildirishnomalari",
-        description: "Yangi arizalar, tasdiqlashlar va vazifalar haqida Telegram bildirishnomalari.",
-      },
-      {
-        title: "Fayl va foto yuklash",
-        description: "Fayllar va fotolar jarayonga biriktiriladi, chatlarda yo'qolmaydi.",
-      },
-      {
-        title: "Jarayonlar tarixi",
-        description: "To'liq audit trail: kim, qachon va nima o'zgartirdi.",
-      },
-      {
-        title: "Hisobotlar va dashboard",
-        description: "Arizalar, tasdiqlashlar, vazifalar va tor joylar bo'yicha umumiy ko'rinish.",
-      },
-      {
-        title: "Foydalanuvchilarni boshqarish",
-        description: "Rollar, kirish huquqlari, bo'limlar va multi-tenant tuzilma.",
-      },
-      {
-        title: "Maxsus integratsiyalar",
-        description: "Sayt, CRM, ombor, Excel yoki API ga loyiha bo'yicha ulanish.",
+        id: "integration",
+        title: "Integratsiya",
+        description: "Mavjud tizimlar jarayonga loyiha ehtiyojiga ko'ra ulanadi.",
+        items: [
+          {
+            title: "Veb-sayt / CRM / ombor / Excel ulanishlari",
+            description:
+              "Mavjud manbalardan ma'lumot olinishi yoki natija qaytarilishi mumkin; doira birgalikda rejalashtiriladi.",
+          },
+          {
+            title: "Maxsus API integratsiyalari",
+            description:
+              "Kompaniyangizga xos tizimlar API yoki maxsus ulanishlar orqali jarayonga integratsiya qilinishi mumkin.",
+          },
+          {
+            title: "Import / export jarayonlari",
+            description:
+              "Excel va jadval ma'lumotlari import, export yoki nazoratli uzatish orqali ulanishi mumkin.",
+          },
+        ],
       },
     ],
+    callout: {
+      title: "Modullar alohida emas, bitta jarayonda birlashtiriladi",
+      description:
+        "Masalan, xarid arizasida forma to'ldiriladi, rahbar tasdiqlaydi, buxgalteriyaga vazifa boradi, fayllar qo'shiladi, barcha qarorlar tarixga yoziladi va kerak bo'lsa natija mavjud tizimga uzatiladi.",
+      cta: "Jarayonimni tahlil qiling",
+    },
   },
   workflow: {
     title: "Ish jarayoni misoli",

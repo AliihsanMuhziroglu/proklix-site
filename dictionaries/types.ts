@@ -6,6 +6,13 @@ export interface CardItem {
   description: string;
 }
 
+export interface ModuleCategory {
+  id: string;
+  title: string;
+  description: string;
+  items: CardItem[];
+}
+
 export interface PositioningCardItem extends CardItem {
   badge: string;
 }
@@ -213,7 +220,14 @@ export interface DictionaryEntry {
   };
   modules: {
     title: string;
-    items: CardItem[];
+    subtitle: string;
+    flowSteps: string[];
+    categories: ModuleCategory[];
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   workflow: {
     title: string;

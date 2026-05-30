@@ -475,49 +475,111 @@ export const en: DictionaryEntry = {
     },
   },
   modules: {
-    title: "What Proklix includes",
-    items: [
+    title: "Proklix building blocks",
+    subtitle:
+      "Each module works as part of the same process: data is collected, tasks are assigned, approvals move forward, files are attached, history is saved and management sees the outcome.",
+    flowSteps: ["Form", "Workflow", "Task", "Approval", "History", "Report", "Integration"],
+    categories: [
       {
-        title: "Dynamic forms",
-        description: "Form builder with fields, files and conditions for your process.",
+        id: "build",
+        title: "Process design",
+        description: "Define the process with forms, steps and rules.",
+        items: [
+          {
+            title: "Dynamic forms",
+            description:
+              "Define the fields, notes, files and validations your process needs.",
+          },
+          {
+            title: "Workflow design",
+            description:
+              "Set up steps, owners, approval paths and decision options per process.",
+          },
+          {
+            title: "Custom rules and steps",
+            description:
+              "Define conditional transitions, required fields, approval options and process rules.",
+          },
+        ],
       },
       {
-        title: "Workflow builder",
-        description: "Steps, statuses, approval routes and transition rules.",
+        id: "daily",
+        title: "Daily use",
+        description: "Teams run day-to-day work from here.",
+        items: [
+          {
+            title: "Task inbox",
+            description:
+              "Users see assigned tasks and pending actions on one screen.",
+          },
+          {
+            title: "Request tracking",
+            description:
+              "Every request is tracked with number, status, owner, step and history.",
+          },
+          {
+            title: "Telegram notifications",
+            description:
+              "New task, approval, return and outcome notifications go to the right people in Telegram.",
+          },
+          {
+            title: "File and photo uploads",
+            description:
+              "Photos, PDFs and documents stay in the process instead of getting lost in chats.",
+          },
+        ],
       },
       {
-        title: "Task inbox",
-        description: "Personal and team inbox: what's assigned, what needs action.",
+        id: "control",
+        title: "Management and control",
+        description: "Status, history and access from one place.",
+        items: [
+          {
+            title: "Process history",
+            description:
+              "Who decided what and when; comments, files and status changes stay on record.",
+          },
+          {
+            title: "Reports and dashboard",
+            description:
+              "Management can see open requests, pending approvals, completed work and team status.",
+          },
+          {
+            title: "User and role management",
+            description:
+              "Users, roles, access and company/team structure are managed in a controlled way.",
+          },
+        ],
       },
       {
-        title: "Submission tracking",
-        description: "Every request with number, status, owner and history.",
-      },
-      {
-        title: "Telegram notifications",
-        description: "Notifications for new requests, approvals and tasks in Telegram.",
-      },
-      {
-        title: "File & photo uploads",
-        description: "Files and photos attach to the process, not lost in chats.",
-      },
-      {
-        title: "Process history",
-        description: "Full audit trail: who changed what and when.",
-      },
-      {
-        title: "Reports & dashboard",
-        description: "Summary of requests, approvals, tasks and bottlenecks.",
-      },
-      {
-        title: "User management",
-        description: "Roles, access rights, departments and multi-tenant structure.",
-      },
-      {
-        title: "Custom integrations",
-        description: "Connect to website, CRM, warehouse, Excel or API per project.",
+        id: "integration",
+        title: "Integration",
+        description: "Existing systems connect to the process as needed.",
+        items: [
+          {
+            title: "Website / CRM / warehouse / Excel connections",
+            description:
+              "Data can be pulled from existing sources or sent back; scope is planned together.",
+          },
+          {
+            title: "Custom API integrations",
+            description:
+              "Your own systems can be integrated into the process via API or custom connections.",
+          },
+          {
+            title: "Import / export workflows",
+            description:
+              "Excel and spreadsheet data can connect through import, export or controlled transfer.",
+          },
+        ],
       },
     ],
+    callout: {
+      title: "Modules connect in one process, not in isolation",
+      description:
+        "In a purchase request, for example, a form is filled, a manager approves, accounting gets a task, files are attached, all decisions are saved to history and the result can be sent back to an existing system if needed.",
+      cta: "Analyze my process",
+    },
   },
   workflow: {
     title: "Example workflow",

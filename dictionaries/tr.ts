@@ -475,49 +475,111 @@ export const tr: DictionaryEntry = {
     },
   },
   modules: {
-    title: "Proklix nelerden oluşur",
-    items: [
+    title: "Proklix'in temel yapı taşları",
+    subtitle:
+      "Her modül tek başına değil, aynı sürecin parçası olarak çalışır: veri toplanır, görev atanır, onay ilerler, dosyalar eklenir, geçmiş kaydedilir ve yönetim sonucu görür.",
+    flowSteps: ["Form", "Workflow", "Görev", "Onay", "Geçmiş", "Rapor", "Entegrasyon"],
+    categories: [
       {
-        title: "Dinamik formlar",
-        description: "Süreciniz için alanlar, dosyalar ve koşullarla form oluşturucu.",
+        id: "build",
+        title: "Süreç oluşturma",
+        description: "Form, adımlar ve kurallarla süreci tanımlayın.",
+        items: [
+          {
+            title: "Dinamik formlar",
+            description:
+              "Süreciniz için gerekli alanları, açıklamaları, dosyaları ve doğrulamaları tanımlayın.",
+          },
+          {
+            title: "İş akışı tasarlama",
+            description:
+              "Adımları, sorumluları, onay yollarını ve karar seçeneklerini süreç bazlı kurun.",
+          },
+          {
+            title: "Özel kurallar ve adımlar",
+            description:
+              "Koşullu geçişler, zorunlu alanlar, onay seçenekleri ve süreç kurallarını tanımlayın.",
+          },
+        ],
       },
       {
-        title: "Workflow builder",
-        description: "Adımlar, durumlar, onay rotaları ve geçiş kuralları.",
+        id: "daily",
+        title: "Günlük kullanım",
+        description: "Ekip günlük işlerini buradan yürütür.",
+        items: [
+          {
+            title: "Görev kutusu",
+            description:
+              "Kullanıcılar kendilerine atanan görevleri ve bekleyen aksiyonları tek ekranda görür.",
+          },
+          {
+            title: "Talep takibi",
+            description:
+              "Her talep numara, durum, sorumlu, adım ve geçmiş bilgisiyle takip edilir.",
+          },
+          {
+            title: "Telegram bildirimleri",
+            description:
+              "Yeni görev, onay, iade ve sonuç bildirimleri Telegram üzerinden ilgili kişilere gider.",
+          },
+          {
+            title: "Dosya ve fotoğraf yükleme",
+            description:
+              "Fotoğraflar, PDF'ler ve belgeler sohbetlerde kaybolmaz; doğrudan ilgili sürece eklenir.",
+          },
+        ],
       },
       {
-        title: "Görev inbox'u",
-        description: "Kişisel ve ekip inbox'u: ne atandı, ne aksiyon bekliyor.",
+        id: "control",
+        title: "Yönetim ve kontrol",
+        description: "Durum, geçmiş ve erişim tek yerden yönetilir.",
+        items: [
+          {
+            title: "Süreç geçmişi",
+            description:
+              "Kim, ne zaman, hangi kararı verdi; yorumlar, dosyalar ve durum değişiklikleri kayıtlı kalır.",
+          },
+          {
+            title: "Raporlar ve dashboard",
+            description:
+              "Yönetim açık talepleri, bekleyen onayları, tamamlanan işleri ve ekip durumunu görebilir.",
+          },
+          {
+            title: "Kullanıcı ve rol yönetimi",
+            description:
+              "Kullanıcılar, roller, erişimler ve şirket/ekip bazlı yapı kontrollü şekilde yönetilir.",
+          },
+        ],
       },
       {
-        title: "Talep takibi",
-        description: "Her talep numara, durum, sorumlu ve geçmişle.",
-      },
-      {
-        title: "Telegram bildirimleri",
-        description: "Yeni talepler, onaylar ve görevler için Telegram bildirimleri.",
-      },
-      {
-        title: "Dosya ve foto yükleme",
-        description: "Dosyalar ve fotolar sürece eklenir, sohbetlerde kaybolmaz.",
-      },
-      {
-        title: "Süreç geçmişi",
-        description: "Tam audit trail: kim, ne zaman, ne değiştirdi.",
-      },
-      {
-        title: "Raporlar ve dashboard",
-        description: "Talepler, onaylar, görevler ve darboğazlar özeti.",
-      },
-      {
-        title: "Kullanıcı yönetimi",
-        description: "Roller, erişim hakları, departmanlar ve multi-tenant yapı.",
-      },
-      {
-        title: "Özel entegrasyonlar",
-        description: "Web sitesi, CRM, depo, Excel veya API'ye projeye göre bağlantı.",
+        id: "integration",
+        title: "Entegrasyon",
+        description: "Mevcut sistemler sürece proje ihtiyacına göre bağlanır.",
+        items: [
+          {
+            title: "Web sitesi / CRM / depo / Excel bağlantıları",
+            description:
+              "Mevcut kaynaklardan veri alınır veya sonuç geri aktarılır; bağlantı kapsamı birlikte planlanır.",
+          },
+          {
+            title: "Özel API entegrasyonları",
+            description:
+              "Firmanıza özel sistemler API veya özel bağlantılarla sürece entegre edilebilir.",
+          },
+          {
+            title: "Import / export süreçleri",
+            description:
+              "Excel ve tablo tabanlı veriler import, export veya kontrollü aktarım ile bağlanabilir.",
+          },
+        ],
       },
     ],
+    callout: {
+      title: "Modüller ayrı ayrı değil, tek süreçte birleşir",
+      description:
+        "Örneğin bir satın alma talebinde form doldurulur, yönetici onaylar, muhasebeye görev gider, dosyalar eklenir, tüm kararlar geçmişe kaydedilir ve gerekirse sonuç mevcut sisteme aktarılır.",
+      cta: "Bir sürecimi analiz et",
+    },
   },
   workflow: {
     title: "Örnek iş akışı",
