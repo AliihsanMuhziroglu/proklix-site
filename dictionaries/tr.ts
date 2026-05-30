@@ -97,46 +97,75 @@ export const tr: DictionaryEntry = {
   integration: {
     title: "Mevcut sistemlerinizin üzerinde çalışır",
     subtitle:
-          "Web sitenizi, CRM'inizi, depo yazılımınızı veya Excel'i hemen değiştirmeniz gerekmez. Proklix mevcut verilere bağlanabilir, iş akışlarını çalıştırabilir ve sonuçları geri gönderebilir.",
-    flowLabels: [
-      "Web sitesi / CRM / Depo / Excel",
-      "Proklix süreci",
-      "Telegram görevi",
-      "Sonuç ve geçmiş",
-      "Veri güncelleme",
+      "Web sitenizi, CRM'inizi, depo yazılımınızı veya Excel tablolarınızı hemen değiştirmeniz gerekmez. Proklix mevcut verilerinize bağlanır, süreçleri çalıştırır, görevleri Telegram'a taşır ve sonuçları tekrar kayıt altına alır.",
+    flowSteps: [
+      {
+        title: "Veri kaynağı",
+        description: "Web sitesi, CRM, depo, Excel, API",
+      },
+      {
+        title: "Proklix süreci",
+        description: "Form, iş akışı, kurallar, sorumlular",
+      },
+      {
+        title: "Telegram görevi",
+        description: "Bildirim, görev, onay, yorum",
+      },
+      {
+        title: "Sonuç ve geçmiş",
+        description: "Durum, dosya, karar, işlem geçmişi",
+      },
+      {
+        title: "Geri güncelleme",
+        description: "API, export veya manuel kontrol",
+      },
     ],
+    flowHint:
+      "Yani Proklix mevcut sisteminizin yerine geçmek zorunda değil; onunla birlikte çalışan operasyon ve onay katmanı olabilir.",
     items: [
       {
         title: "Web sitesi / e-ticaret",
         description:
-          "Talepler, ürünler, siparişler ve müşteri formları, API veya import ile bağlanabilir.",
+          "Web sitenizden gelen talepler, ürünler, siparişler veya müşteri formları Proklix sürecine bağlanabilir.",
+        examples: ["Talepler", "Ürünler", "Siparişler"],
       },
       {
         title: "CRM",
         description:
-          "Müşteriler, durumlar, yöneticiler ve iletişim geçmişi, CRM'inizle projeye göre entegre edilebilir.",
+          "Müşteri kayıtları, satış aşamaları, sorumlu kişiler ve iletişim geçmişi süreçlerde kullanılabilir.",
+        examples: ["Müşteri", "Durum", "Sorumlu"],
       },
       {
         title: "Depo / stok",
         description:
-          "Stok seviyeleri, envanter, transferler ve foto raporlar, API, export veya manuel değişimle.",
+          "Stok sayımı, ürün hareketi, transfer, fotoğraflı kontrol ve envanter süreçleri Telegram üzerinden yönetilebilir.",
+        examples: ["Stok", "Sayım", "Transfer"],
       },
       {
         title: "ERP / muhasebe",
         description:
-          "Satın almalar, giderler, faturalar ve onaylar, belirli süreç ve erişim seviyesine göre bağlanır.",
+          "Satın alma, masraf, fatura ve ödeme onayları mevcut muhasebe düzeninize göre akışa bağlanabilir.",
+        examples: ["Satın alma", "Masraf", "Fatura"],
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Verilerin hâlâ tablolarda olduğu işletmeler için hızlı başlangıç, Excel'i değiştirmeden import/export.",
+          "Verileri hâlâ tablolarda tutan işletmeler için hızlı başlangıç: import, export veya kontrollü veri aktarımı.",
+        examples: ["Import", "Export", "Hızlı başlangıç"],
       },
       {
-        title: "Custom API",
+        title: "Özel API",
         description:
-          "Mevcut sisteminiz için özel entegrasyonlar, süreç analizinden sonra görüşülür.",
+          "Firmanıza özel sistemlerle entegrasyon, süreç analizi sonrası API veya özel bağlantılarla planlanır.",
+        examples: ["API", "Özel kurulum", "Proje bazlı"],
       },
     ],
+    example: {
+      title: "Örnek: stok sayımı süreci",
+      flow:
+        "Depo sisteminden ürün listesi gelir → Personel Telegram'da sayım yapar → Fotoğraf ve açıklama eklenir → Yönetici sonucu onaylar → Sonuç kayıt altına alınır",
+      chips: ["Satın alma onayı", "Servis görevi", "Müşteri talebi", "Teklif onayı"],
+    },
   },
   useCases: {
     title: "Proklix'te hangi süreçler çalıştırılabilir?",

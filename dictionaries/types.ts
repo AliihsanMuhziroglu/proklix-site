@@ -10,6 +10,10 @@ export interface PositioningCardItem extends CardItem {
   badge: string;
 }
 
+export interface IntegrationCardItem extends CardItem {
+  examples: string[];
+}
+
 export interface StepItem {
   title: string;
   description: string;
@@ -118,8 +122,14 @@ export interface DictionaryEntry {
   integration: {
     title: string;
     subtitle: string;
-    flowLabels: string[];
-    items: CardItem[];
+    flowSteps: StepItem[];
+    flowHint: string;
+    items: IntegrationCardItem[];
+    example: {
+      title: string;
+      flow: string;
+      chips: string[];
+    };
   };
   useCases: {
     title: string;

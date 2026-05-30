@@ -97,46 +97,75 @@ export const uz: DictionaryEntry = {
   integration: {
     title: "Mavjud tizimlaringiz ustida ishlaydi",
     subtitle:
-      "Siz darhol sayt, CRM, ombor dasturi yoki Excel'ni almashtirishingiz shart emas. Proklix mavjud ma'lumotlarga ulanib, jarayonlarni ishga tushirishi va natijani qaytarishi mumkin.",
-    flowLabels: [
-      "Sayt / CRM / Ombor / Excel",
-      "Proklix jarayoni",
-      "Telegram vazifasi",
-      "Natija va tarix",
-      "Ma'lumot yangilanishi",
+      "Veb-saytingizni, CRM'ingizni, ombor dasturingizni yoki Excel jadvallaringizni darhol almashtirishingiz shart emas. Proklix mavjud ma'lumotlaringizga ulanadi, jarayonlarni ishga tushiradi, vazifalarni Telegram'ga olib chiqadi va natijalarni qayta qayd etadi.",
+    flowSteps: [
+      {
+        title: "Ma'lumot manbasi",
+        description: "Veb-sayt, CRM, ombor, Excel, API",
+      },
+      {
+        title: "Proklix jarayoni",
+        description: "Forma, ish oqimi, qoidalar, mas'ullar",
+      },
+      {
+        title: "Telegram vazifasi",
+        description: "Bildirishnoma, vazifa, tasdiqlash, izoh",
+      },
+      {
+        title: "Natija va tarix",
+        description: "Status, fayl, qaror, harakatlar tarixi",
+      },
+      {
+        title: "Orqaga yangilash",
+        description: "API, eksport yoki qo'lda nazorat",
+      },
     ],
+    flowHint:
+      "Proklix joriy tizimingiz o'rnini bosishi shart emas; u bilan birga ishlaydigan operatsion va tasdiqlash qatlami bo'lishi mumkin.",
     items: [
       {
         title: "Sayt / e-commerce",
         description:
-          "Arizalar, mahsulotlar, buyurtmalar va mijoz formasi, API yoki import orqali ulanishi mumkin.",
+          "Veb-saytingizdan kelgan arizalar, mahsulotlar, buyurtmalar yoki mijoz formasi Proklix jarayoniga ulanishi mumkin.",
+        examples: ["Arizalar", "Mahsulotlar", "Buyurtmalar"],
       },
       {
         title: "CRM",
         description:
-          "Mijozlar, statuslar, menejerlar va muloqot tarixi, CRM bilan loyiha bo'yicha integratsiya qilinishi mumkin.",
+          "Mijoz yozuvlari, savdo bosqichlari, mas'ullar va muloqot tarixi jarayonlarda ishlatilishi mumkin.",
+        examples: ["Mijoz", "Status", "Mas'ul"],
       },
       {
         title: "Ombor / qoldiqlar",
         description:
-          "Qoldiqlar, inventarizatsiya, ko'chirishlar va foto hisobotlar, API, eksport yoki qo'lda almashinuv orqali.",
+          "Ombor hisobi, mahsulot harakati, transfer, foto bilan nazorat va inventar jarayonlari Telegram orqali boshqarilishi mumkin.",
+        examples: ["Qoldiq", "Hisob", "Transfer"],
       },
       {
         title: "ERP / buxgalteriya",
         description:
-          "Xaridlar, xarajatlar, hisob-fakturalar va tasdiqlashlar, aniq jarayon va kirish huquqi bo'yicha ulanadi.",
+          "Xarid, xarajat, hisob-faktura va to'lov tasdiqlashlari mavjud buxgalteriya tartibingizga ko'ra oqimga ulanishi mumkin.",
+        examples: ["Xarid", "Xarajat", "Faktura"],
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Ma'lumotlar hali jadvalda bo'lgan kompaniyalar uchun tez start, Excel'ni almashtirmasdan import/eksport.",
+          "Ma'lumotlar hali jadvallarda bo'lgan kompaniyalar uchun tez start: import, eksport yoki nazoratli ma'lumot uzatish.",
+        examples: ["Import", "Export", "Tez start"],
       },
       {
-        title: "Custom API",
+        title: "Maxsus API",
         description:
-          "Joriy tizimingiz uchun maxsus integratsiyalar, jarayon tahlilidan keyin muhokama qilinadi.",
+          "Kompaniyangizga xos tizimlar bilan integratsiya jarayon tahlilidan keyin API yoki maxsus ulanishlar bilan rejalashtiriladi.",
+        examples: ["API", "Maxsus sozlash", "Loyiha asosida"],
       },
     ],
+    example: {
+      title: "Misol: ombor hisobi jarayoni",
+      flow:
+        "Ombor tizimidan mahsulot ro'yxati keladi → Xodim Telegram'da hisob qiladi → Foto va izoh qo'shiladi → Rahbar natijani tasdiqlaydi → Natija qayd etiladi",
+      chips: ["Xarid tasdiqlash", "Servis vazifasi", "Mijoz arizasi", "Taklif tasdiqlash"],
+    },
   },
   useCases: {
     title: "Proklix'da qanday jarayonlarni yuritish mumkin?",

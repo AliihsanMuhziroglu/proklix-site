@@ -97,46 +97,75 @@ export const en: DictionaryEntry = {
   integration: {
     title: "Works on top of your existing systems",
     subtitle:
-      "You do not need to replace your website, CRM, warehouse software or Excel immediately. Proklix can connect to existing data, run workflows and send results back.",
-    flowLabels: [
-      "Website / CRM / Warehouse / Excel",
-      "Proklix workflow",
-      "Telegram task",
-      "Result & history",
-      "Data update",
+      "You do not need to replace your website, CRM, warehouse software or Excel spreadsheets right away. Proklix connects to your existing data, runs workflows, moves tasks to Telegram and records results back into the process.",
+    flowSteps: [
+      {
+        title: "Data source",
+        description: "Website, CRM, warehouse, Excel, API",
+      },
+      {
+        title: "Proklix workflow",
+        description: "Form, workflow, rules, owners",
+      },
+      {
+        title: "Telegram task",
+        description: "Notification, task, approval, comment",
+      },
+      {
+        title: "Result & history",
+        description: "Status, file, decision, action history",
+      },
+      {
+        title: "Update back",
+        description: "API, export or manual review",
+      },
     ],
+    flowHint:
+      "Proklix does not have to replace your current system; it can be the operations and approval layer that works alongside it.",
     items: [
       {
         title: "Website / e-commerce",
         description:
-          "Requests, products, orders and customer forms, can connect via API or import.",
+          "Requests, products, orders or customer forms from your website can connect into a Proklix workflow.",
+        examples: ["Requests", "Products", "Orders"],
       },
       {
         title: "CRM",
         description:
-          "Clients, statuses, managers and communication history, can integrate with your CRM per project.",
+          "Customer records, sales stages, owners and communication history can be used inside workflows.",
+        examples: ["Customer", "Stage", "Owner"],
       },
       {
         title: "Warehouse / stock",
         description:
-          "Stock levels, inventory, transfers and photo reports, via API, export or manual exchange.",
+          "Stock counts, product movement, transfers, photo checks and inventory processes can be managed through Telegram.",
+        examples: ["Stock", "Count", "Transfer"],
       },
       {
         title: "ERP / accounting",
         description:
-          "Purchases, expenses, invoices and approvals, connected for a specific process and access level.",
+          "Purchase, expense, invoice and payment approvals can connect to flows based on your accounting setup.",
+        examples: ["Purchase", "Expense", "Invoice"],
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Quick start for companies where data still lives in spreadsheets, import/export without replacing Excel.",
+          "A quick start for companies that still keep data in spreadsheets: import, export or controlled data transfer.",
+        examples: ["Import", "Export", "Quick start"],
       },
       {
         title: "Custom API",
         description:
-          "Custom integrations for your current system, discussed after process analysis.",
+          "Integration with your own systems is planned after process analysis via API or custom connections.",
+        examples: ["API", "Custom setup", "Project-based"],
       },
     ],
+    example: {
+      title: "Example: stock count workflow",
+      flow:
+        "Product list arrives from warehouse system → Staff count in Telegram → Photo and notes added → Manager approves result → Outcome is recorded",
+      chips: ["Purchase approval", "Service task", "Customer request", "Quote approval"],
+    },
   },
   useCases: {
     title: "What can you run in Proklix?",
