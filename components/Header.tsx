@@ -40,7 +40,7 @@ export function Header({ locale, dict }: Props) {
     "rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-brand-50 hover:text-brand-600";
 
   return (
-    <header className="sticky top-0 z-50 w-full max-w-full overflow-x-clip border-b border-slate-100 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full max-w-full border-b border-slate-100 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-2 px-4 py-2.5 sm:px-6 lg:gap-3 lg:px-8 lg:py-3">
         <Link
           href={`/${locale}`}
