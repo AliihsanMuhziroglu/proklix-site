@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ProklixLogo } from "@/components/ProklixLogo";
 import type { Dictionary } from "@/dictionaries";
 import { PHONE, PHONE_DISPLAY, TELEGRAM_URL } from "@/lib/constants";
 
@@ -13,13 +13,7 @@ export function Footer({ dict }: Props) {
         <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
             <div className="flex items-center justify-center gap-2.5 sm:justify-start">
-              <Image
-                src="/proklix-logo.png"
-                alt="Proklix"
-                width={32}
-                height={32}
-                className="h-8 w-8"
-              />
+              <ProklixLogo size={32} className="h-8 w-8 shrink-0" />
               <span className="text-lg font-bold text-white">Proklix</span>
             </div>
             <p className="mt-2 max-w-sm text-sm leading-relaxed">{dict.footer.tagline}</p>

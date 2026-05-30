@@ -3,6 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://proklix.uz"),
+  icons: {
+    icon: [{ url: "/proklix-logo.png", type: "image/png" }],
+    apple: [{ url: "/proklix-logo.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

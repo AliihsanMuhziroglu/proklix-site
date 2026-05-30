@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { ProklixLogo } from "@/components/ProklixLogo";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { TELEGRAM_URL } from "@/lib/constants";
@@ -27,14 +27,7 @@ export function Header({ locale, dict }: Props) {
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="flex shrink-0 items-center gap-2.5">
-          <Image
-            src="/proklix-logo.png"
-            alt="Proklix"
-            width={36}
-            height={36}
-            className="h-9 w-9"
-            priority
-          />
+          <ProklixLogo size={36} className="h-9 w-9 shrink-0" />
           <span className="text-lg font-bold tracking-tight text-navy-950">Proklix</span>
         </Link>
 
