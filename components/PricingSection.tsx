@@ -1,64 +1,99 @@
 import type { Dictionary } from "@/dictionaries";
-import { TELEGRAM_URL } from "@/lib/constants";
 
 type Props = {
   dict: Dictionary;
 };
 
 export function PricingSection({ dict }: Props) {
+  const { pricing } = dict;
+
   return (
-    <section id="pricing" className="bg-slate-50 py-14 sm:py-20">
+    <section id="pricing" className="border-t border-slate-100 bg-slate-50 py-12 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-3xl">
-            {dict.pricing.title}
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-lg font-bold tracking-tight text-navy-950 sm:text-2xl">
+            {pricing.title}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
-            {dict.pricing.subtitle}
+            {pricing.subtitle}
+          </p>
+          <p className="mx-auto mt-4 inline-flex max-w-xl rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-medium leading-snug text-slate-600 sm:text-xs">
+            {pricing.startNote}
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3 lg:gap-6">
-          {dict.pricing.plans.map((plan) => (
-            <div
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
+          {pricing.plans.map((plan) => (
+            <article
               key={plan.name}
-              className={`relative flex flex-col rounded-2xl border p-6 shadow-sm ${
+              className={`relative flex h-full flex-col rounded-2xl border bg-white p-5 shadow-sm sm:p-6 ${
                 plan.highlighted
-                  ? "border-blue-600 bg-white shadow-lg shadow-blue-600/10 ring-2 ring-blue-600"
-                  : "border-slate-200 bg-white"
+                  ? "border-blue-600 shadow-md shadow-blue-600/5 ring-1 ring-blue-600/20 lg:-mt-1 lg:mb-1"
+                  : "border-slate-200"
               }`}
             >
-              {plan.highlighted && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-3 py-0.5 text-xs font-semibold text-white">
-                  ★
+              {plan.badge ? (
+                <span className="mb-3 inline-flex w-fit rounded-full bg-blue-600 px-2.5 py-1 text-[10px] font-semibold text-white sm:text-[11px]">
+                  {plan.badge}
                 </span>
+              ) : (
+                <span className="mb-3 block h-[26px]" aria-hidden="true" />
               )}
-              <h3 className="text-lg font-bold text-navy-950">{plan.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{plan.description}</p>
-              <ul className="mt-5 flex-1 space-y-2.5">
+
+              <h3 className="text-base font-bold text-navy-950 sm:text-lg">{plan.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{plan.subtitle}</p>
+
+              <p className="mt-3 rounded-xl border border-slate-100 bg-slate-50/80 px-3 py-2.5 text-[12px] leading-relaxed text-slate-600 sm:text-[13px]">
+                <span className="font-semibold text-navy-950">{pricing.bestForLabel}:</span>{" "}
+                {plan.bestFor}
+              </p>
+
+              <ul className="mt-4 flex-1 space-y-2">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm text-slate-700">
-                    <span className="mt-0.5 text-emerald-500" aria-hidden="true">
+                  <li key={feature} className="flex items-start gap-2 text-[13px] text-slate-700 sm:text-sm">
+                    <span className="mt-0.5 shrink-0 text-emerald-600" aria-hidden="true">
                       ✓
                     </span>
                     {feature}
                   </li>
                 ))}
               </ul>
+
               <a
-                href={TELEGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`mt-6 inline-flex min-h-[48px] items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold transition ${
+                href="#contact"
+                className={`mt-5 inline-flex min-h-[44px] w-full items-center justify-center rounded-2xl px-5 py-2.5 text-sm font-semibold transition sm:mt-6 ${
                   plan.highlighted
                     ? "bg-blue-600 text-white hover:bg-blue-700"
-                    : "border-2 border-navy-900 text-navy-900 hover:bg-navy-950 hover:text-white"
+                    : "border border-navy-900 text-navy-900 hover:bg-navy-950 hover:text-white"
                 }`}
               >
                 {plan.cta}
               </a>
-            </div>
+            </article>
           ))}
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:mt-8 sm:p-5 lg:p-6">
+          <h3 className="text-sm font-bold text-navy-950 sm:text-base">{pricing.explanation.title}</h3>
+          <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-slate-600 sm:text-sm">
+            {pricing.explanation.description}
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {pricing.explanation.factors.map((factor) => (
+              <span
+                key={factor}
+                className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600 sm:text-xs"
+              >
+                {factor}
+              </span>
+            ))}
+          </div>
+          <a
+            href="#contact"
+            className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-2xl border border-slate-300 bg-slate-50 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:border-slate-400 hover:bg-white sm:w-auto"
+          >
+            {pricing.finalCta}
+          </a>
         </div>
       </div>
     </section>

@@ -830,48 +830,74 @@ export const en: DictionaryEntry = {
     },
   },
   pricing: {
-    title: "Proklix packages",
+    title: "Proklix packages that start from your needs",
     subtitle:
-      "Scope and timeline are defined after process analysis. Here is what each package typically includes:",
+      "Every company's processes, integration needs and user structure are different. That is why scope and pricing are defined after a short process analysis.",
+    startNote: "Starting point: pick one real process and get it working.",
+    bestForLabel: "Best for",
     plans: [
       {
         name: "First process",
-        description: "For companies that need one workflow: requests, approvals or commercial proposals.",
+        subtitle: "For companies that want to organize one workflow quickly.",
+        bestFor:
+          "One core process such as purchasing, proposals, customer requests, stock counts or service tasks.",
         features: [
-          "1 key workflow",
+          "Setup of 1 core process",
+          "Dynamic forms and status tracking",
           "Telegram notifications",
-          "Basic dashboard",
-          "Limited number of users",
+          "Basic task and approval flow",
+          "Simple dashboard view",
           "Scope defined after analysis",
         ],
-        cta: "Get a proposal",
+        cta: "Analyze my first process",
       },
       {
-        name: "Multiple processes + integrations",
-        description: "For companies with 2–3 workflows, reports and one or more integrations.",
+        name: "Multiple processes + integration",
+        subtitle:
+          "For companies that need 2–3 linked processes, reports and data flow with existing systems.",
+        bestFor:
+          "Teams managing CRM/catalog/request flow, purchasing, stock or proposal processes together.",
         features: [
-          "Multiple linked workflows",
+          "Multiple linked processes",
           "CRM / catalog / request flow",
           "Reports and dashboard",
           "Basic integration or import/export",
+          "Telegram task and approval notifications",
           "Scope defined after analysis",
         ],
         cta: "Get a proposal",
         highlighted: true,
+        badge: "Smartest starting point",
       },
       {
         name: "Operations system for your business",
-        description: "For companies needing custom CRM, workflow, integrations and reporting.",
+        subtitle:
+          "For companies needing custom CRM, workflows, integrations, roles and reporting.",
+        bestFor:
+          "Companies with multiple departments, custom API connections and full operational control.",
         features: [
           "Custom API integrations",
-          "Roles, audit, reports",
-          "Multiple departments",
+          "Roles, access, audit and reports",
+          "Multiple departments and processes",
+          "Custom dashboards and operations screens",
           "Training and support",
           "Scope defined after analysis",
         ],
-        cta: "Get a proposal",
+        cta: "Book a custom project call",
       },
     ],
+    explanation: {
+      title: "Why is pricing defined after analysis?",
+      description:
+        "Because in Proklix, cost is not driven by user count alone. Number of processes, approval steps, file usage, reporting needs, Telegram flows and integration scope all affect the price.",
+      factors: [
+        "Number of processes",
+        "Integration needs",
+        "Users / role structure",
+        "Reporting and support scope",
+      ],
+    },
+    finalCta: "Tell us about one process and we'll outline the scope together.",
   },
   faq: {
     title: "Frequently asked questions",

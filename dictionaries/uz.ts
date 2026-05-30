@@ -702,48 +702,74 @@ export const uz: DictionaryEntry = {
     },
   },
   pricing: {
-    title: "Proklix paketlari",
+    title: "Ehtiyojga qarab boshlanadigan Proklix paketlari",
     subtitle:
-      "Hajm va muddatlar jarayon tahlilidan keyin belgilanadi. Har bir paket tarkibi:",
+      "Har bir kompaniyaning jarayoni, integratsiya ehtiyoji va foydalanuvchi tuzilishi boshqacha. Shuning uchun aniq hajm va taklif qisqa jarayon tahlilidan keyin belgilanadi.",
+    startNote: "Boshlang'ich nuqta: bitta haqiqiy jarayonni tanlab ishlaydigan holga keltirish.",
+    bestForLabel: "Kimlar uchun",
     plans: [
       {
         name: "Birinchi jarayon",
-        description: "Bitta workflow kerak bo'lgan kompaniyalar uchun: arizalar, tasdiqlashlar yoki TT.",
+        subtitle: "Bitta ish oqimini tez tartibga solmoqchi bo'lgan kompaniyalar uchun.",
+        bestFor:
+          "Xarid, taklif, mijoz arizasi, ombor hisobi yoki servis vazifasi kabi bitta asosiy jarayon.",
         features: [
-          "1 asosiy jarayon",
+          "1 asosiy jarayon sozlash",
+          "Dinamik forma va status kuzatuvi",
           "Telegram bildirishnomalari",
-          "Asosiy dashboard",
-          "Cheklangan foydalanuvchilar soni",
+          "Asosiy vazifa va tasdiqlash oqimi",
+          "Oddiy dashboard ko'rinishi",
           "Hajm tahlildan keyin belgilanadi",
         ],
-        cta: "Taklif olish",
+        cta: "Birinchi jarayonimni tahlil qiling",
       },
       {
-        name: "Bir nechta jarayon + integratsiyalar",
-        description: "2–3 jarayon, hisobotlar va bir yoki bir nechta integratsiya kerak bo'lgan kompaniyalar uchun.",
+        name: "Bir nechta jarayon + integratsiya",
+        subtitle:
+          "2–3 bog'langan jarayon, hisobotlar va mavjud tizimlar bilan ma'lumot oqimini istagan kompaniyalar uchun.",
+        bestFor:
+          "CRM/katalog/ariza oqimi, xarid, ombor yoki taklif jarayonlarini birga boshqarishni istagan jamoalar.",
         features: [
           "Bir nechta bog'langan jarayonlar",
           "CRM / katalog / ariza oqimi",
           "Hisobotlar va dashboard",
           "Asosiy integratsiya yoki import/eksport",
+          "Telegram vazifa va tasdiqlash bildirishnomalari",
           "Hajm tahlildan keyin belgilanadi",
         ],
         cta: "Taklif olish",
         highlighted: true,
+        badge: "Eng mantiqli boshlang'ich",
       },
       {
         name: "Biznes uchun operatsion tizim",
-        description: "Maxsus CRM, workflow, integratsiyalar va hisobot kerak bo'lgan kompaniyalar uchun.",
+        subtitle:
+          "Maxsus CRM, workflow, integratsiya, rol tuzilishi va hisobot kerak bo'lgan kompaniyalar uchun.",
+        bestFor:
+          "Bir nechta bo'lim, maxsus API ulanishlari va keng operatsion nazorat istagan kompaniyalar.",
         features: [
           "Maxsus API integratsiyalari",
-          "Rollar, audit, hisobotlar",
-          "Bir nechta bo'lim",
+          "Rollar, kirishlar, audit va hisobotlar",
+          "Bir nechta bo'lim va jarayon",
+          "Maxsus dashboard va operatsion ekranlar",
           "O'qitish va qo'llab-quvvatlash",
           "Hajm tahlildan keyin belgilanadi",
         ],
-        cta: "Taklif olish",
+        cta: "Maxsus loyiha uchrashuvi olish",
       },
     ],
+    explanation: {
+      title: "Nima uchun narx tahlildan keyin belgilanadi?",
+      description:
+        "Proklix'da narx faqat foydalanuvchilar soni bilan belgilanmaydi. Jarayonlar soni, tasdiqlash bosqichlari, fayllar, hisobot ehtiyoji, Telegram oqimlari va mavjud tizimlar bilan integratsiya hajmi narxni o'zgartiradi.",
+      factors: [
+        "Jarayonlar soni",
+        "Integratsiya ehtiyoji",
+        "Foydalanuvchi / rol tuzilishi",
+        "Hisobot va qo'llab-quvvatlash hajmi",
+      ],
+    },
+    finalCta: "Bitta jarayonni ayting, taxminiy hajmni birga aniqlaymiz.",
   },
   faq: {
     title: "Tez-tez beriladigan savollar",

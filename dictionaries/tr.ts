@@ -836,48 +836,74 @@ export const tr: DictionaryEntry = {
     },
   },
   pricing: {
-    title: "Proklix paketleri",
+    title: "İhtiyaca göre başlayan Proklix paketleri",
     subtitle:
-      "Kapsam ve süre süreç analizinden sonra belirlenir. Her paketin tipik içeriği:",
+      "Her işletmenin süreci, entegrasyon ihtiyacı ve kullanıcı yapısı farklıdır. Bu yüzden net kapsam ve teklif, kısa bir süreç analizinden sonra belirlenir.",
+    startNote: "Başlangıç noktası: tek bir gerçek süreci seçip çalışır hale getirmek.",
+    bestForLabel: "Kimler için",
     plans: [
       {
         name: "İlk süreç",
-        description: "Tek workflow isteyen işletmeler için: talepler, onaylar veya ticari teklifler.",
+        subtitle: "Tek bir iş akışını hızlıca düzenlemek isteyen işletmeler için.",
+        bestFor:
+          "Satın alma, teklif, müşteri talebi, stok sayımı veya servis görevi gibi tek bir ana süreç.",
         features: [
-          "1 ana süreç",
+          "1 ana süreç kurulumu",
+          "Dinamik form ve durum takibi",
           "Telegram bildirimleri",
-          "Temel dashboard",
-          "Sınırlı kullanıcı sayısı",
+          "Temel görev ve onay akışı",
+          "Basit dashboard görünümü",
           "Kapsam analizden sonra belirlenir",
         ],
-        cta: "Teklif al",
+        cta: "İlk sürecimi analiz et",
       },
       {
-        name: "Birden fazla süreç + entegrasyonlar",
-        description: "2–3 süreç, raporlar ve bir veya daha fazla entegrasyon isteyen işletmeler için.",
+        name: "Birden fazla süreç + entegrasyon",
+        subtitle:
+          "2–3 bağlı süreci, raporları ve mevcut sistemlerle veri akışını isteyen işletmeler için.",
+        bestFor:
+          "CRM/katalog/talep akışı, satın alma, stok veya teklif süreçlerini birlikte yönetmek isteyen ekipler.",
         features: [
           "Birden fazla bağlı süreç",
           "CRM / katalog / talep akışı",
           "Raporlar ve dashboard",
           "Temel entegrasyon veya import/export",
+          "Telegram görev ve onay bildirimleri",
           "Kapsam analizden sonra belirlenir",
         ],
         cta: "Teklif al",
         highlighted: true,
+        badge: "En mantıklı başlangıç",
       },
       {
         name: "İşletmenize özel operasyon sistemi",
-        description: "Özel CRM, workflow, entegrasyonlar ve raporlama isteyen işletmeler için.",
+        subtitle:
+          "Özel CRM, workflow, entegrasyon, rol yapısı ve raporlama isteyen işletmeler için.",
+        bestFor:
+          "Birden fazla departman, özel API bağlantıları ve kapsamlı operasyon kontrolü isteyen şirketler.",
         features: [
           "Özel API entegrasyonları",
-          "Roller, audit, raporlar",
-          "Birden fazla departman",
+          "Roller, erişimler, audit ve raporlar",
+          "Birden fazla departman ve süreç",
+          "Özel dashboard ve operasyon ekranları",
           "Eğitim ve destek",
           "Kapsam analizden sonra belirlenir",
         ],
-        cta: "Teklif al",
+        cta: "Özel proje görüşmesi al",
       },
     ],
+    explanation: {
+      title: "Fiyat neden analizden sonra belirleniyor?",
+      description:
+        "Çünkü Proklix'te maliyeti belirleyen şey sadece kullanıcı sayısı değildir. Süreç sayısı, onay adımları, dosya kullanımı, rapor ihtiyacı, Telegram akışı ve mevcut sistemlerle entegrasyon kapsamı fiyatı değiştirir.",
+      factors: [
+        "Süreç sayısı",
+        "Entegrasyon ihtiyacı",
+        "Kullanıcı / rol yapısı",
+        "Raporlama ve destek kapsamı",
+      ],
+    },
+    finalCta: "Bir süreci anlatın, yaklaşık kapsamı birlikte çıkaralım.",
   },
   faq: {
     title: "Sık sorulan sorular",

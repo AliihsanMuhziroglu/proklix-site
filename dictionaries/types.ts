@@ -52,10 +52,12 @@ export interface ProjectItem {
 
 export interface PricingPlan {
   name: string;
-  description: string;
+  subtitle: string;
+  bestFor: string;
   features: string[];
   cta: string;
   highlighted?: boolean;
+  badge?: string;
 }
 
 export interface RelatedSectorItem {
@@ -260,7 +262,15 @@ export interface DictionaryEntry {
   pricing: {
     title: string;
     subtitle: string;
+    startNote: string;
+    bestForLabel: string;
     plans: PricingPlan[];
+    explanation: {
+      title: string;
+      description: string;
+      factors: string[];
+    };
+    finalCta: string;
   };
   faq: {
     title: string;
