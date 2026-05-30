@@ -61,40 +61,43 @@ export const uz: DictionaryEntry = {
     ],
   },
   problem: {
-    title:
-      "Hammasi Telegram, Excel va xodimlar xotirasida bo'lsa — nazorat yo'qoladi",
+    title: "Telegram tezkor kanal. Lekin jarayon tizimga tushmasa, ishlar tarqalib ketadi.",
+    subtitle:
+      "So'rovlar, takliflar, tasdiqlar va vazifalar faqat chatlarda qolsa, kim nima qilgani, jarayon qayerda kutayotgani va mijozga qachon javob berilishi noaniq bo'lib qoladi.",
     items: [
       {
-        title: "Mijoz so'rovlari yozishmalarda yo'qoladi",
+        title: "So'rov keldi — lekin kimga tushgani aniq emas",
         description:
-          "So'rovlar chatlarda qoladi, topish va mas'ul menejerga uzatish qiyinlashadi.",
+          "Mijoz Telegramdan yozadi, biri ko'radi, biri unutadi. So'rov tizimga tushmaguncha kuzatuv xodimlar xotirasida qoladi.",
       },
       {
-        title: "Tijorat takliflari juda uzoq tasdiqlanadi",
+        title: "Taklifning yakuniy ko'rinishi xabarlarda yo'qoladi",
         description:
-          "Narx va shartlar shaxsiy xabarlarga tarqaladi, tasdiqlash kunlarga cho'ziladi.",
+          "Narx, chegirma, qoldiq va shartlar turli suhbatlarga tarqaladi. Rahbar qaysi taklif tasdiqlanganini kech biladi.",
       },
       {
-        title: "Rahbar kim nima qilganini ko'rmaydi",
+        title: "Tasdiq qayerda kutayotgani tushunarsiz",
         description:
-          "Yagona manzara yo'q: so'rovni kim oldi, taklif qaysi bosqichda, nima qaror kutmoqda.",
+          "Savdo, ombor, buxgalteriya yoki rahbar alohida so'raladi. Jarayon qaysi bosqichda ekanligi bitta ekranda ko'rinmaydi.",
       },
       {
-        title: "Excel tez eskiradi",
+        title: "Excel haqiqiy holatni ko'rsatmaydi",
         description:
-          "Jadvallar haqiqat bilan mos kelmaydi, versiyalar aralashadi, ma'lumot kech kiritiladi.",
+          "Jadval yangilanmaydi, versiyalar aralashadi, jamoa boshqa ma'lumot bilan ishlaydi. Hisobot olish uchun qayta-qayta so'rash kerak bo'ladi.",
       },
       {
-        title: "Vazifalar xodimlar xotirasiga bog'liq",
+        title: "Vazifalar odamlarga bog'liq qoladi",
         description:
-          "Eslatma boshda yoki chatda qolsa — muhim qadamlar va muddatlar o'tkazib yuboriladi.",
+          "Kim qo'ng'iroq qiladi, kim taklif yuboradi, kim to'lovni eslatadi — aniq bo'lmasa, ishlar kechikadi.",
       },
       {
-        title: "Aniq harakatlar tarixi yo'q",
+        title: "Tarix bo'lmasa, nazorat ham bo'lmaydi",
         description:
-          "Yozishmadan keyin kim statusni o'zgartirdi, qachon tasdiqlangan — noaniq qoladi.",
+          "So'rovni kim oldi, narxni kim o'zgartirdi, kim tasdiqladi, mijozga qachon javob berildi — hammasi tarqoq qoladi.",
       },
     ],
+    footer:
+      "Proklix bu tartibsizlikni almashtirmaydi — mavjud Telegram odatlaringizni veb-panel, mas'ul shaxs, holat kuzatuvi va tasdiq oqimi bilan tartibga soladi.",
   },
   solution: {
     title: "Proklix biznesingiz uchun nima qurishi mumkin?",

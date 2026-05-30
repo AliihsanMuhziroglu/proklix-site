@@ -61,39 +61,43 @@ export const tr: DictionaryEntry = {
     ],
   },
   problem: {
-    title: "Her şey Telegram, Excel ve çalışanların hafızasındaysa kontrol kaybolur",
+    title: "Telegram hızlıdır. Ama süreç kayıt altına alınmazsa işler dağılır.",
+    subtitle:
+      "Talep, teklif, onay ve görevler sadece sohbetlerde kalırsa kimin ne yaptığı, hangi işin nerede beklediği ve müşteriye ne zaman dönüldüğü belirsizleşir.",
     items: [
       {
-        title: "Müşteri talepleri yazışmalarda kayboluyor",
+        title: "Talep geldi ama kime düştü belli değil",
         description:
-          "İstekler sohbetlerde kalıyor, bulunması ve ilgili yöneticiye aktarılması zorlaşıyor.",
+          "Müşteri Telegram'dan yazar, biri görür, biri unutur. Talep sisteme düşmediği için takip kişilerin hafızasına kalır.",
       },
       {
-        title: "Teklifler çok uzun sürede onaylanıyor",
+        title: "Teklifin son hali mesajlarda kaybolur",
         description:
-          "Fiyat ve koşullar kişisel mesajlara dağılıyor, onay süreci günlerce uzuyor.",
+          "Fiyat, iskonto, stok ve şartlar farklı konuşmalara dağılır. Yönetici hangi teklifin onaylandığını geç görür.",
       },
       {
-        title: "Yönetici kim ne yaptı göremiyor",
+        title: "Onay nerede bekliyor anlaşılmaz",
         description:
-          "Tek ekranda yok: talebi kim aldı, teklif hangi aşamada, ne karar bekliyor.",
+          "Satış, depo, muhasebe veya yönetici onayı ayrı ayrı sorulur. Sürecin hangi aşamada olduğu tek ekranda görünmez.",
       },
       {
-        title: "Excel hızla eskiyor",
+        title: "Excel gerçek durumu göstermez",
         description:
-          "Tablolar gerçekle uyuşmuyor, sürümler karışıyor, veri geç giriliyor.",
+          "Tablo güncellenmez, sürümler karışır, ekip başka bilgiyle çalışır. Rapor almak için tekrar tekrar sormak gerekir.",
       },
       {
-        title: "Görevler çalışanların hafızasına bağlı",
+        title: "Görevler kişilere bağlı kalır",
         description:
-          "Hatırlatma kafada veya sohbette kalınca kritik adımlar ve terminler kaçıyor.",
+          "Kim arayacak, kim teklif gönderecek, kim ödeme hatırlatacak net değilse işler gecikir.",
       },
       {
-        title: "Net bir işlem geçmişi yok",
+        title: "Geçmiş yoksa kontrol de yok",
         description:
-          "Yazışma bittikten sonra statüyü kim değiştirdi, ne zaman onaylandı belirsiz kalıyor.",
+          "Talebi kim aldı, fiyatı kim değiştirdi, onayı kim verdi, müşteriye ne zaman dönüldü — hepsi dağınık kalır.",
       },
     ],
+    footer:
+      "Proklix bu dağınıklığı değiştirmez; mevcut Telegram alışkanlığınızı web panel, sorumlu kişi, durum takibi ve onay akışıyla düzenli hale getirir.",
   },
   solution: {
     title: "Proklix işletmeniz için ne kurabilir?",

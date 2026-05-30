@@ -61,39 +61,43 @@ export const en: DictionaryEntry = {
     ],
   },
   problem: {
-    title: "When everything lives in Telegram, Excel and people's heads — control slips away",
+    title: "Telegram is fast. But without a system, processes get lost.",
+    subtitle:
+      "When requests, offers, approvals and tasks stay only in chats, it becomes unclear who owns what, where the process is waiting and when the customer will get a response.",
     items: [
       {
-        title: "Customer requests get lost in chats",
+        title: "A request came in — but who owns it?",
         description:
-          "Inquiries stay in messaging threads and are hard to find or hand off to the right manager.",
+          "The client writes on Telegram, someone sees it, someone forgets. Until it enters the system, follow-up lives in people's heads.",
       },
       {
-        title: "Commercial offers take too long to approve",
+        title: "The final quote version disappears in messages",
         description:
-          "Pricing and terms scatter across DMs, and sign-off drags on for days.",
+          "Price, discount, stock and terms spread across different threads. Management only learns late which quote was approved.",
       },
       {
-        title: "Leadership can't see who did what",
+        title: "Hard to see where approval is stuck",
         description:
-          "No single view of who owns a request, which stage an offer is in, or what's waiting for a decision.",
+          "Sales, warehouse, finance or management are asked separately. The stage of the process isn't visible on one screen.",
       },
       {
-        title: "Excel goes stale fast",
+        title: "Excel doesn't reflect what's really happening",
         description:
-          "Spreadsheets drift from reality, versions clash, and updates land late.",
+          "The sheet isn't updated, versions get mixed up, the team works from other sources. Getting a report means asking again and again.",
       },
       {
-        title: "Tasks depend on staff memory",
+        title: "Tasks stay tied to individuals",
         description:
-          "Reminders live in heads or chats — critical steps and deadlines get missed.",
+          "Who will call back, send the quote or remind about payment — if that isn't clear, work slips.",
       },
       {
-        title: "No clear action history",
+        title: "No history means no control",
         description:
-          "After the chat ends, it's unclear who changed status, when it was approved, or what went to the client.",
+          "Who took the request, who changed the price, who approved, when the client was answered — it all stays scattered.",
       },
     ],
+    footer:
+      "Proklix doesn't replace your Telegram workflow — it structures it with a web panel, clear ownership, status tracking and approval flows.",
   },
   solution: {
     title: "What can Proklix build for your business?",

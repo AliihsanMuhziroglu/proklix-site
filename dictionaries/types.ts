@@ -95,7 +95,9 @@ export interface DictionaryEntry {
   };
   problem: {
     title: string;
+    subtitle: string;
     items: CardItem[];
+    footer: string;
   };
   solution: {
     title: string;
