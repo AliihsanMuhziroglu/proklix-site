@@ -36,7 +36,7 @@ export const nedvizhimostTr: SectorPageContent = {
       {
         title: "Danışmanlar görevleri elle takip ediyor",
         description:
-          "Hatırlatmalar hafızada veya kişisel sohbetlerde — terminler kaçıyor.",
+          "Hatırlatmalar hafızada veya kişisel sohbetlerde, terminler kaçıyor.",
       },
       {
         title: "Kira sözleşmeleri ve ödemeler ayrı yürütülüyor",
@@ -46,7 +46,7 @@ export const nedvizhimostTr: SectorPageContent = {
       {
         title: "Yönetici gerçek durumu göremiyor",
         description:
-          "Huni, iş yükü ve gecikmeler tek panelde değil — ancak sorunca öğreniliyor.",
+          "Huni, iş yükü ve gecikmeler tek panelde değil, ancak sorunca öğreniliyor.",
       },
       {
         title: "Müşteriye dönüş gecikiyor",

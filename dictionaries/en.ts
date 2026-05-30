@@ -3,7 +3,7 @@ import type { DictionaryEntry } from "./types";
 export const en: DictionaryEntry = {
   meta: {
     title:
-      "Proklix — CRM, workflow, requests, approvals and Telegram integrations for business in Uzbekistan",
+      "Proklix: CRM, workflow, requests, approvals and Telegram integrations for business in Uzbekistan",
     description:
       "Proklix helps companies in Uzbekistan manage requests, approvals, tasks, Telegram notifications and integrations with existing systems.",
   },
@@ -20,7 +20,7 @@ export const en: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Requests, approvals, tasks and integrations — in one Telegram-first system",
+    title: "Requests, approvals, tasks and integrations in one Telegram-first system",
     subtitle:
       "Proklix helps companies manage operations without chat chaos: requests, forms, approvals, tasks, files, action history, reports and integrations with existing systems.",
     trustTag: "For companies in Tashkent and Uzbekistan",
@@ -33,17 +33,17 @@ export const en: DictionaryEntry = {
       {
         title: "Forms",
         description:
-          "Collect data through website forms, Telegram or internal forms — without losing fields or files.",
+          "Collect data through website forms, Telegram or internal forms, without losing fields or files.",
       },
       {
         title: "Approvals",
         description:
-          "Run step-by-step approvals: manager, warehouse, finance, director — each sees their stage.",
+          "Run step-by-step approvals: manager, warehouse, finance, director, each sees their stage.",
       },
       {
         title: "Tasks",
         description:
-          "Assign tasks to owners with deadlines, status and history — they don't get lost in private chats.",
+          "Assign tasks to owners with deadlines, status and history, they don't get lost in private chats.",
       },
       {
         title: "Telegram",
@@ -58,7 +58,7 @@ export const en: DictionaryEntry = {
       {
         title: "Control",
         description:
-          "See status, history and outcome of every process — management gets the full picture on one screen.",
+          "See status, history and outcome of every process, management gets the full picture on one screen.",
       },
     ],
   },
@@ -77,32 +77,32 @@ export const en: DictionaryEntry = {
       {
         title: "Website / e-commerce",
         description:
-          "Requests, products, orders and customer forms — can connect via API or import.",
+          "Requests, products, orders and customer forms, can connect via API or import.",
       },
       {
         title: "CRM",
         description:
-          "Clients, statuses, managers and communication history — can integrate with your CRM per project.",
+          "Clients, statuses, managers and communication history, can integrate with your CRM per project.",
       },
       {
         title: "Warehouse / stock",
         description:
-          "Stock levels, inventory, transfers and photo reports — via API, export or manual exchange.",
+          "Stock levels, inventory, transfers and photo reports, via API, export or manual exchange.",
       },
       {
         title: "ERP / accounting",
         description:
-          "Purchases, expenses, invoices and approvals — connected for a specific process and access level.",
+          "Purchases, expenses, invoices and approvals, connected for a specific process and access level.",
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Quick start for companies where data still lives in spreadsheets — import/export without replacing Excel.",
+          "Quick start for companies where data still lives in spreadsheets, import/export without replacing Excel.",
       },
       {
         title: "Custom API",
         description:
-          "Custom integrations for your current system — discussed after process analysis.",
+          "Custom integrations for your current system, discussed after process analysis.",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const en: DictionaryEntry = {
       {
         title: "HR / admin requests",
         description:
-          "Leave, purchases, access, certificates — internal requests with approval route and history.",
+          "Leave, purchases, access, certificates, internal requests with approval route and history.",
       },
     ],
   },
@@ -565,7 +565,7 @@ export const en: DictionaryEntry = {
     ],
   },
   cta: {
-    title: "Show us one chaotic process — we'll show you how to build it in Proklix",
+    title: "Show us one chaotic process, we'll show you how to build it in Proklix",
     description:
       "In 20 minutes we'll review your process and suggest where to start the MVP. No obligation.",
     ctaTelegram: "Message on Telegram",
@@ -617,7 +617,7 @@ export const en: DictionaryEntry = {
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix — operations panel",
+    title: "Proklix: operations panel",
     metricRequests: "24 requests",
     metricInProgress: "8 in progress",
     metricPendingApproval: "5 pending approval",

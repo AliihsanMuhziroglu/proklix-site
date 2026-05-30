@@ -36,7 +36,7 @@ export const nedvizhimostUz: SectorPageContent = {
       {
         title: "Rieltorlar vazifalarni qo'lda kuzatadi",
         description:
-          "Eslatmalar xotirada yoki shaxsiy chatlarda — muddatlar o'tkazib yuboriladi.",
+          "Eslatmalar xotirada yoki shaxsiy chatlarda, muddatlar o'tkazib yuboriladi.",
       },
       {
         title: "Ijara shartnomalari va to'lovlar alohida yuritiladi",
@@ -46,7 +46,7 @@ export const nedvizhimostUz: SectorPageContent = {
       {
         title: "Rahbar real holatni ko'ra olmaydi",
         description:
-          "Voronka, yuklama va kechikishlar bir panelda emas — faqat so'rov bilan bilinadi.",
+          "Voronka, yuklama va kechikishlar bir panelda emas, faqat so'rov bilan bilinadi.",
       },
       {
         title: "Mijozga qayta aloqa kechikadi",

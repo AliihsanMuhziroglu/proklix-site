@@ -364,7 +364,7 @@ export const otherSectorsUz: Record<
     problem: {
       title: "Muammo: vazifalar chatda, kelishuvlar qog'ozda qoladi.",
       items: [
-        { title: "Vazifalar WhatsAppda", description: "Usta chatda beradi — bajarilish kuzatilmaydi." },
+        { title: "Vazifalar WhatsAppda", description: "Usta chatda beradi, bajarilish kuzatilmaydi." },
         { title: "Qog'ozdagi kelishuvlar", description: "O'zgarishlar kunlar davomida imzo kutadi." },
         { title: "Foto hisobotlar yo'qoladi", description: "Suratlar chatlarga tarqalgan." },
         { title: "Rahbar kech biladi", description: "Ob'ekt holati bir panelda emas." },

@@ -26,17 +26,17 @@ export const nedvizhimostEn: SectorPageContent = {
       {
         title: "Client inquiries get lost in chats",
         description:
-          "Requests scatter across messengers — owner and status stay unclear.",
+          "Requests scatter across messengers, owner and status stay unclear.",
       },
       {
         title: "Unclear who saw which property",
         description:
-          "Viewing history sits in separate notes — hard to follow up with options.",
+          "Viewing history sits in separate notes, hard to follow up with options.",
       },
       {
         title: "Agents track tasks manually",
         description:
-          "Reminders live in memory or personal chats — deadlines slip.",
+          "Reminders live in memory or personal chats, deadlines slip.",
       },
       {
         title: "Rental contracts and payments run separately",
@@ -46,12 +46,12 @@ export const nedvizhimostEn: SectorPageContent = {
       {
         title: "Managers can't see the real picture",
         description:
-          "Pipeline, workload and delays aren't in one panel — only on request.",
+          "Pipeline, workload and delays aren't in one panel, only on request.",
       },
       {
         title: "Client follow-up is slow",
         description:
-          "No response-time tracking — clients move on while waiting.",
+          "No response-time tracking, clients move on while waiting.",
       },
     ],
   },

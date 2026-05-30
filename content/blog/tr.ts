@@ -10,7 +10,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
     },
     title: "CRM nedir? B2B işletmeler için basit açıklama",
     excerpt:
-      "CRM soyut bir 'büyük sistem' değil — müşterilerin, başvuruların ve deal geçmişinin yaşadığı yerdir.",
+      "CRM soyut bir 'büyük sistem' değil, müşterilerin, başvuruların ve deal geçmişinin yaşadığı yerdir.",
     date: "2026-05-15",
     readTime: "5 dk",
     sections: [
@@ -24,7 +24,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
         heading: "CRM Excel'den nasıl farklıdır",
         paragraphs: [
           "Excel bir tablodur. CRM bir süreçtir: başvuru → sorumlu → aşama → bildirim → geçmiş. CRM'de her eylem kaydedilir, hücreye yazılıp üzerine yazılmaz.",
-          "Yerel B2B için iyi bir CRM bir yıllık devreye alma gerektirmez. Tek bir süreçle başlayın — örneğin web sitesinden gelen başvurular — ve büyüdükçe genişletin.",
+          "Yerel B2B için iyi bir CRM bir yıllık devreye alma gerektirmez. Tek bir süreçle başlayın, örneğin web sitesinden gelen başvurular, ve büyüdükçe genişletin.",
         ],
       },
       {
@@ -33,7 +33,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
           "1. Bir süreç seçin: başvurular, teklifler veya onaylar.",
           "2. Sohbetlerden Telegram bildirimli bir sisteme taşıyın.",
           "3. Rolleri ekleyin: yönetici, lider, raporlar.",
-          "Proklix tam bu tür sistemleri kurar — 'bir yıllık platform projesi' yerine MVP ile başlayarak.",
+          "Proklix tam bu tür sistemleri kurar, 'bir yıllık platform projesi' yerine MVP ile başlayarak.",
         ],
       },
     ],
@@ -53,7 +53,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
       {
         paragraphs: [
           "Özbekistan'da B2B iletişimin büyük bölümü Telegram üzerinden yürür. Yöneticiler başvuruları grup sohbetlerinde alır, liderler fiyatları özel mesajlarda onaylar, depo siparişlerden geç haberdar olur.",
-          "Sorun Telegram değil — sorun sürecin yalnızca mesajlaşmada yaşamasıdır. Çözüm: Telegram bildirim kanalı + web paneli tek doğruluk kaynağı olarak.",
+          "Sorun Telegram değil, sorun sürecin yalnızca mesajlaşmada yaşamasıdır. Çözüm: Telegram bildirim kanalı + web paneli tek doğruluk kaynağı olarak.",
         ],
       },
       {
@@ -68,7 +68,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
       {
         heading: "Telegram + CRM: doğru kombinasyon",
         paragraphs: [
-          "Telegram CRM'in yerini almaz — onu tamamlar. Tüm veriler, geçmiş ve raporlar panelde yaşar. Telegram hızlı sinyaller ve aksiyonlar içindir.",
+          "Telegram CRM'in yerini almaz, onu tamamlar. Tüm veriler, geçmiş ve raporlar panelde yaşar. Telegram hızlı sinyaller ve aksiyonlar içindir.",
           "Proklix Telegram-first sistemler kurar: ekip alışık olduğu aracı kullanır, yönetim panel üzerinden kontrol kazanır.",
         ],
       },
@@ -78,7 +78,7 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
     meta: {
       title: "B2B katalog nasıl kurulur? | Proklix Blog",
       description:
-        "Başvurular, fiyatlandırma ve CRM ile B2B katalog nasıl oluşturulur — ticaret şirketleri için adım adım rehber.",
+        "Başvurular, fiyatlandırma ve CRM ile B2B katalog nasıl oluşturulur, ticaret şirketleri için adım adım rehber.",
     },
     title: "B2B katalog nasıl kurulur? Adım adım plan",
     excerpt:
@@ -88,17 +88,17 @@ export const blogArticlesTr: Record<BlogSlug, BlogArticle> = {
     sections: [
       {
         paragraphs: [
-          "Ticaret şirketleri genelde PDF fiyat listesi veya Excel tablosuyla başlar. Müşteri arar, yönetici fiyat arar, Word'de teklif hazırlar — süreç saatler sürer.",
+          "Ticaret şirketleri genelde PDF fiyat listesi veya Excel tablosuyla başlar. Müşteri arar, yönetici fiyat arar, Word'de teklif hazırlar, süreç saatler sürer.",
           "Modern B2B katalog üç işi çözer: ürün yelpazesini göstermek, başvuru almak ve bunları CRM ile onay sürecine bağlamak.",
         ],
       },
       {
         heading: "B2B katalog yapısı",
         paragraphs: [
-          "1. Kategoriler ve filtreler — müşteri ihtiyacını hızla bulur",
-          "2. Ürün sayfası — açıklama, özellikler, stok durumu",
-          "3. Başvuru formu veya 'fiyat iste' — telefon araması gerekmez",
-          "4. Müşteri portalı (isteğe bağlı) — başvuru geçmişi ve statüler",
+          "1. Kategoriler ve filtreler, müşteri ihtiyacını hızla bulur",
+          "2. Ürün sayfası, açıklama, özellikler, stok durumu",
+          "3. Başvuru formu veya 'fiyat iste', telefon araması gerekmez",
+          "4. Müşteri portalı (isteğe bağlı), başvuru geçmişi ve statüler",
         ],
       },
       {

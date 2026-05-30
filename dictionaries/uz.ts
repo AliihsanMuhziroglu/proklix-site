@@ -3,7 +3,7 @@ import type { DictionaryEntry } from "./types";
 export const uz: DictionaryEntry = {
   meta: {
     title:
-      "Proklix — CRM, workflow, arizalar, tasdiqlashlar va Telegram integratsiyalari O'zbekiston biznesi uchun",
+      "Proklix: CRM, workflow, arizalar, tasdiqlashlar va Telegram integratsiyalari O'zbekiston biznesi uchun",
     description:
       "Proklix O'zbekistondagi kompaniyalarga arizalar, tasdiqlashlar, vazifalar, Telegram bildirishnomalari va mavjud tizimlar bilan integratsiyani boshqarishga yordam beradi.",
   },
@@ -20,7 +20,7 @@ export const uz: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Arizalar, tasdiqlashlar, vazifalar va integratsiyalar — bitta Telegram-first tizimda",
+    title: "Arizalar, tasdiqlashlar, vazifalar va integratsiyalar bitta Telegram-first tizimda",
     subtitle:
       "Proklix kompaniyalarga chatlardagi tartibsizliksiz ish jarayonlarini boshqarishga yordam beradi: arizalar, formalar, tasdiqlashlar, vazifalar, fayllar, harakatlar tarixi, hisobotlar va mavjud tizimlar bilan integratsiya.",
     trustTag: "Toshkent va O'zbekiston kompaniyalari uchun",
@@ -33,17 +33,17 @@ export const uz: DictionaryEntry = {
       {
         title: "Formalar",
         description:
-          "Sayt, Telegram yoki ichki formalar orqali ma'lumot to'plang — maydonlar va fayllar yo'qolmaydi.",
+          "Sayt, Telegram yoki ichki formalar orqali ma'lumot to'plang, maydonlar va fayllar yo'qolmaydi.",
       },
       {
         title: "Tasdiqlashlar",
         description:
-          "Qadam-baqadam tasdiqlash: menejer, ombor, buxgalteriya, rahbar — har biri o'z bosqichini ko'radi.",
+          "Qadam-baqadam tasdiqlash: menejer, ombor, buxgalteriya, rahbar, har biri o'z bosqichini ko'radi.",
       },
       {
         title: "Vazifalar",
         description:
-          "Mas'ul shaxslarga muddat, status va tarix bilan vazifa bering — shaxsiy chatlarda yo'qolmaydi.",
+          "Mas'ul shaxslarga muddat, status va tarix bilan vazifa bering, shaxsiy chatlarda yo'qolmaydi.",
       },
       {
         title: "Telegram",
@@ -58,7 +58,7 @@ export const uz: DictionaryEntry = {
       {
         title: "Nazorat",
         description:
-          "Har bir jarayonning statusi, tarixi va natijasini ko'ring — rahbar bitta ekranda umumiy manzarani ko'radi.",
+          "Har bir jarayonning statusi, tarixi va natijasini ko'ring, rahbar bitta ekranda umumiy manzarani ko'radi.",
       },
     ],
   },
@@ -77,32 +77,32 @@ export const uz: DictionaryEntry = {
       {
         title: "Sayt / e-commerce",
         description:
-          "Arizalar, mahsulotlar, buyurtmalar va mijoz formasi — API yoki import orqali ulanishi mumkin.",
+          "Arizalar, mahsulotlar, buyurtmalar va mijoz formasi, API yoki import orqali ulanishi mumkin.",
       },
       {
         title: "CRM",
         description:
-          "Mijozlar, statuslar, menejerlar va muloqot tarixi — CRM bilan loyiha bo'yicha integratsiya qilinishi mumkin.",
+          "Mijozlar, statuslar, menejerlar va muloqot tarixi, CRM bilan loyiha bo'yicha integratsiya qilinishi mumkin.",
       },
       {
         title: "Ombor / qoldiqlar",
         description:
-          "Qoldiqlar, inventarizatsiya, ko'chirishlar va foto hisobotlar — API, eksport yoki qo'lda almashinuv orqali.",
+          "Qoldiqlar, inventarizatsiya, ko'chirishlar va foto hisobotlar, API, eksport yoki qo'lda almashinuv orqali.",
       },
       {
         title: "ERP / buxgalteriya",
         description:
-          "Xaridlar, xarajatlar, hisob-fakturalar va tasdiqlashlar — aniq jarayon va kirish huquqi bo'yicha ulanadi.",
+          "Xaridlar, xarajatlar, hisob-fakturalar va tasdiqlashlar, aniq jarayon va kirish huquqi bo'yicha ulanadi.",
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Ma'lumotlar hali jadvalda bo'lgan kompaniyalar uchun tez start — Excel'ni almashtirmasdan import/eksport.",
+          "Ma'lumotlar hali jadvalda bo'lgan kompaniyalar uchun tez start, Excel'ni almashtirmasdan import/eksport.",
       },
       {
         title: "Custom API",
         description:
-          "Joriy tizimingiz uchun maxsus integratsiyalar — jarayon tahlilidan keyin muhokama qilinadi.",
+          "Joriy tizimingiz uchun maxsus integratsiyalar, jarayon tahlilidan keyin muhokama qilinadi.",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const uz: DictionaryEntry = {
       {
         title: "Ichki HR/admin arizalar",
         description:
-          "Ta'til, xarid, kirish, ma'lumotnomalar — ichki arizalar tasdiqlash marshruti va tarix bilan.",
+          "Ta'til, xarid, kirish, ma'lumotnomalar, ichki arizalar tasdiqlash marshruti va tarix bilan.",
       },
     ],
   },
@@ -169,7 +169,7 @@ export const uz: DictionaryEntry = {
       items: [
         "Arizalar chatlarda yo'qoladi",
         "Excel yangilanmaydi",
-        "Kim mas'ul — noaniq",
+        "Kim mas'ul, noaniq",
         "Tasdiqlashlar qo'lda ketadi",
         "Fayllar xabarlar bo'ylab tarqalgan",
         "To'liq harakatlar tarixi yo'q",
@@ -533,7 +533,7 @@ export const uz: DictionaryEntry = {
     title: "Tez-tez beriladigan savollar",
     items: [
       {
-        question: "Proklix — bu CRM, bot yoki ERP?",
+        question: "Proklix: bu CRM, bot yoki ERP?",
         answer:
           "Proklix hammasini birdan almashtirmaydi. Bu workflow platformasi: arizalar, formalar, tasdiqlashlar, vazifalar, bildirishnomalar va mavjud tizimlar bilan integratsiyalar.",
       },
@@ -565,7 +565,7 @@ export const uz: DictionaryEntry = {
     ],
   },
   cta: {
-    title: "Bitta tartibsiz jarayoningizni ko'rsating — biz uni Proklix'da qanday yig'ishni ko'rsatamiz",
+    title: "Bitta tartibsiz jarayoningizni ko'rsating, biz uni Proklix'da qanday yig'ishni ko'rsatamiz",
     description:
       "20 daqiqada jarayoningizni ko'rib chiqamiz va MVP uchun qayerdan boshlashni taklif qilamiz. Majburiyat yo'q.",
     ctaTelegram: "Telegram'da yozish",
@@ -617,7 +617,7 @@ export const uz: DictionaryEntry = {
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix — operatsion panel",
+    title: "Proklix: operatsion panel",
     metricRequests: "24 ariza",
     metricInProgress: "8 jarayonda",
     metricPendingApproval: "5 tasdiqlash kutilmoqda",

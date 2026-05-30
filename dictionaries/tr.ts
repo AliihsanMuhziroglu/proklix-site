@@ -3,7 +3,7 @@ import type { DictionaryEntry } from "./types";
 export const tr: DictionaryEntry = {
   meta: {
     title:
-      "Proklix — CRM, workflow, talepler, onaylar ve Telegram entegrasyonları Özbekistan işletmeleri için",
+      "Proklix: CRM, workflow, talepler, onaylar ve Telegram entegrasyonları Özbekistan işletmeleri için",
     description:
       "Proklix, Özbekistan'daki işletmelerin talepleri, onayları, görevleri, Telegram bildirimlerini ve mevcut sistemlerle entegrasyonları yönetmesine yardımcı olur.",
   },
@@ -20,7 +20,7 @@ export const tr: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Talepler, onaylar, görevler ve entegrasyonlar — tek Telegram-first sistemde",
+    title: "Talepler, onaylar, görevler ve entegrasyonlar tek Telegram-first sistemde",
     subtitle:
       "Proklix, işletmelerin sohbet kaosunu yönetmeden operasyonları yürütmesine yardımcı olur: talepler, formlar, onaylar, görevler, dosyalar, işlem geçmişi, raporlar ve mevcut sistemlerle entegrasyon.",
     trustTag: "Taşkent ve Özbekistan'daki işletmeler için",
@@ -33,17 +33,17 @@ export const tr: DictionaryEntry = {
       {
         title: "Formlar",
         description:
-          "Web sitesi, Telegram veya dahili formlarla veri toplayın — alanlar ve dosyalar kaybolmaz.",
+          "Web sitesi, Telegram veya dahili formlarla veri toplayın, alanlar ve dosyalar kaybolmaz.",
       },
       {
         title: "Onaylar",
         description:
-          "Adım adım onay süreçleri: yönetici, depo, muhasebe, direktör — herkes kendi aşamasını görür.",
+          "Adım adım onay süreçleri: yönetici, depo, muhasebe, direktör, herkes kendi aşamasını görür.",
       },
       {
         title: "Görevler",
         description:
-          "Sorumlulara deadline, durum ve geçmişle görev atayın — özel sohbetlerde kaybolmaz.",
+          "Sorumlulara deadline, durum ve geçmişle görev atayın, özel sohbetlerde kaybolmaz.",
       },
       {
         title: "Telegram",
@@ -58,7 +58,7 @@ export const tr: DictionaryEntry = {
       {
         title: "Kontrol",
         description:
-          "Her sürecin durumunu, geçmişini ve sonucunu görün — yönetim tek ekranda genel resmi görür.",
+          "Her sürecin durumunu, geçmişini ve sonucunu görün, yönetim tek ekranda genel resmi görür.",
       },
     ],
   },
@@ -77,32 +77,32 @@ export const tr: DictionaryEntry = {
       {
         title: "Web sitesi / e-ticaret",
         description:
-          "Talepler, ürünler, siparişler ve müşteri formları — API veya import ile bağlanabilir.",
+          "Talepler, ürünler, siparişler ve müşteri formları, API veya import ile bağlanabilir.",
       },
       {
         title: "CRM",
         description:
-          "Müşteriler, durumlar, yöneticiler ve iletişim geçmişi — CRM'inizle projeye göre entegre edilebilir.",
+          "Müşteriler, durumlar, yöneticiler ve iletişim geçmişi, CRM'inizle projeye göre entegre edilebilir.",
       },
       {
         title: "Depo / stok",
         description:
-          "Stok seviyeleri, envanter, transferler ve foto raporlar — API, export veya manuel değişimle.",
+          "Stok seviyeleri, envanter, transferler ve foto raporlar, API, export veya manuel değişimle.",
       },
       {
         title: "ERP / muhasebe",
         description:
-          "Satın almalar, giderler, faturalar ve onaylar — belirli süreç ve erişim seviyesine göre bağlanır.",
+          "Satın almalar, giderler, faturalar ve onaylar, belirli süreç ve erişim seviyesine göre bağlanır.",
       },
       {
         title: "Google Sheets / Excel",
         description:
-          "Verilerin hâlâ tablolarda olduğu işletmeler için hızlı başlangıç — Excel'i değiştirmeden import/export.",
+          "Verilerin hâlâ tablolarda olduğu işletmeler için hızlı başlangıç, Excel'i değiştirmeden import/export.",
       },
       {
         title: "Custom API",
         description:
-          "Mevcut sisteminiz için özel entegrasyonlar — süreç analizinden sonra görüşülür.",
+          "Mevcut sisteminiz için özel entegrasyonlar, süreç analizinden sonra görüşülür.",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const tr: DictionaryEntry = {
       {
         title: "İK / admin talepleri",
         description:
-          "İzin, satın alma, erişim, belgeler — onay rotası ve geçmişi olan dahili talepler.",
+          "İzin, satın alma, erişim, belgeler, onay rotası ve geçmişi olan dahili talepler.",
       },
     ],
   },
@@ -565,7 +565,7 @@ export const tr: DictionaryEntry = {
     ],
   },
   cta: {
-    title: "Bize kaotik bir sürecinizi gösterin — Proklix'te nasıl toplanacağını gösterelim",
+    title: "Bize kaotik bir sürecinizi gösterin, Proklix'te nasıl toplanacağını gösterelim",
     description:
       "20 dakikada sürecinizi inceler ve MVP için nereden başlanacağını öneririz. Taahhüt yok.",
     ctaTelegram: "Telegram'dan Yaz",
@@ -617,7 +617,7 @@ export const tr: DictionaryEntry = {
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix — operasyon paneli",
+    title: "Proklix: operasyon paneli",
     metricRequests: "24 talep",
     metricInProgress: "8 devam ediyor",
     metricPendingApproval: "5 onay bekliyor",
