@@ -3,15 +3,17 @@
 import { useState } from "react";
 import type { Dictionary } from "@/dictionaries";
 import { TELEGRAM_URL } from "@/lib/constants";
+import { Button } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 const FEATURED_CATEGORY_IDS = ["sales", "finance", "warehouse"];
 const MAX_VISIBLE = 3;
 
-export function UseCasesSection({ dict }: Props) {
+export function UseCasesSection({ dict, className = "bg-brand-tint" }: Props) {
   const { useCases } = dict;
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
@@ -25,7 +27,7 @@ export function UseCasesSection({ dict }: Props) {
       : useCases.items.filter((item) => item.categoryId === activeCategory).slice(0, MAX_VISIBLE);
 
   return (
-    <section id="use-cases" className="overflow-hidden bg-slate-50 py-10 sm:py-14">
+    <section id="use-cases" className={`overflow-hidden py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
@@ -42,8 +44,8 @@ export function UseCasesSection({ dict }: Props) {
             onClick={() => setActiveCategory(null)}
             className={`shrink-0 rounded-full border px-3.5 py-2 text-[12px] font-semibold transition sm:px-4 sm:text-[13px] ${
               activeCategory === null
-                ? "border-navy-900 bg-navy-950 text-white shadow-sm"
-                : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-navy-950"
+                ? "border-brand-600 bg-brand-600 text-white shadow-sm"
+                : "border-slate-200 bg-white text-slate-600 hover:border-brand-200 hover:text-brand-800"
             }`}
           >
             {useCases.featuredLabel ?? "Öne çıkanlar"}
@@ -57,8 +59,8 @@ export function UseCasesSection({ dict }: Props) {
                 onClick={() => setActiveCategory(category.id)}
                 className={`shrink-0 rounded-full border px-3.5 py-2 text-[12px] font-semibold transition sm:px-4 sm:text-[13px] ${
                   isActive
-                    ? "border-navy-900 bg-navy-950 text-white shadow-sm"
-                    : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-navy-950"
+                    ? "border-brand-600 bg-brand-600 text-white shadow-sm"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-brand-200 hover:text-brand-800"
                 }`}
               >
                 {category.label}
@@ -95,14 +97,9 @@ export function UseCasesSection({ dict }: Props) {
           {useCases.footerNote}
         </p>
         <div className="mt-4 text-center">
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
-          >
+          <Button variant="secondary" size="md" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
             {useCases.customCard.cta}
-          </a>
+          </Button>
         </div>
       </div>
     </section>

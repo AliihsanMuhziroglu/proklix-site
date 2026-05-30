@@ -1,15 +1,17 @@
 import type { Dictionary } from "@/dictionaries";
 import { TELEGRAM_URL } from "@/lib/constants";
+import { Button } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
-export function PricingSection({ dict }: Props) {
+export function PricingSection({ dict, className = "bg-white" }: Props) {
   const { pricing } = dict;
 
   return (
-    <section id="pricing" className="border-t border-slate-100 bg-slate-50 py-10 sm:py-14">
+    <section id="pricing" className={`border-t border-slate-100 py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-lg font-bold tracking-tight text-navy-950 sm:text-2xl">
@@ -29,12 +31,12 @@ export function PricingSection({ dict }: Props) {
               key={plan.name}
               className={`relative flex h-full flex-col rounded-2xl border bg-white p-5 shadow-sm sm:p-6 ${
                 plan.highlighted
-                  ? "border-blue-600 shadow-md shadow-blue-600/5 ring-1 ring-blue-600/20"
+                  ? "border-brand-600 shadow-md shadow-brand-600/5 ring-1 ring-brand-600/20"
                   : "border-slate-200"
               }`}
             >
               {plan.badge ? (
-                <span className="mb-3 inline-flex w-fit rounded-full bg-blue-600 px-2.5 py-1 text-[10px] font-semibold text-white sm:text-[11px]">
+                <span className="mb-3 inline-flex w-fit rounded-full bg-brand-600 px-2.5 py-1 text-[10px] font-semibold text-white sm:text-[11px]">
                   {plan.badge}
                 </span>
               ) : (
@@ -52,7 +54,7 @@ export function PricingSection({ dict }: Props) {
               <ul className="mt-4 flex-1 space-y-1.5">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2 text-[13px] text-slate-700 sm:text-sm">
-                    <span className="mt-0.5 shrink-0 text-emerald-600" aria-hidden="true">
+                    <span className="mt-0.5 shrink-0 text-success" aria-hidden="true">
                       ✓
                     </span>
                     {feature}
@@ -60,18 +62,16 @@ export function PricingSection({ dict }: Props) {
                 ))}
               </ul>
 
-              <a
+              <Button
+                variant={plan.highlighted ? "primary" : "ghost"}
+                size="md"
                 href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-5 inline-flex min-h-[44px] w-full items-center justify-center rounded-2xl px-5 py-2.5 text-sm font-semibold transition sm:mt-6 ${
-                  plan.highlighted
-                    ? "bg-blue-600 text-white hover:bg-blue-700"
-                    : "border border-navy-900 text-navy-900 hover:bg-navy-950 hover:text-white"
-                }`}
+                className="mt-5 w-full sm:mt-6"
               >
                 {plan.cta}
-              </a>
+              </Button>
             </article>
           ))}
         </div>

@@ -2,6 +2,7 @@ import type { Dictionary } from "@/dictionaries";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 type IconProps = { className?: string };
@@ -61,34 +62,31 @@ const TELEGRAM_STEP_INDEX = 2;
 
 function stepCardClass(index: number) {
   if (index === PROKLIX_STEP_INDEX) {
-    return "border-white/25 bg-white/10 shadow-sm ring-1 ring-white/15";
+    return "border-brand-200 bg-brand-50 ring-1 ring-brand-100";
   }
   if (index === TELEGRAM_STEP_INDEX) {
-    return "border-blue-400/40 bg-blue-600/15 ring-1 ring-blue-500/30";
+    return "border-brand-400/40 bg-brand-50 ring-1 ring-brand-500/20";
   }
-  return "border-white/10 bg-white/[0.06]";
+  return "border-slate-200 bg-white";
 }
 
 function stepTitleClass(index: number) {
-  if (index === TELEGRAM_STEP_INDEX) return "text-blue-200";
-  if (index === PROKLIX_STEP_INDEX) return "text-white";
-  return "text-slate-100";
+  if (index === TELEGRAM_STEP_INDEX) return "text-brand-800";
+  if (index === PROKLIX_STEP_INDEX) return "text-brand-900";
+  return "text-navy-950";
 }
 
-export function IntegrationSection({ dict }: Props) {
+export function IntegrationSection({ dict, className = "bg-white" }: Props) {
   const { integration } = dict;
 
   return (
-    <section
-      id="integrations"
-      className="relative isolate overflow-hidden bg-navy-950 py-10 text-white sm:py-14"
-    >
+    <section id="integrations" className={`relative isolate overflow-hidden py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
+          <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
             {integration.title}
           </h2>
-          <p className="mx-auto mt-3 max-w-[760px] text-sm leading-relaxed text-slate-300 sm:mt-4 sm:text-base">
+          <p className="mx-auto mt-3 max-w-[760px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
             {integration.subtitle}
           </p>
         </div>
@@ -98,18 +96,18 @@ export function IntegrationSection({ dict }: Props) {
             {integration.flowSteps.map((step, i) => (
               <div key={step.title} className="contents">
                 <div
-                  className={`flex flex-col rounded-2xl border p-3.5 sm:p-4 lg:min-w-0 lg:flex-1 ${stepCardClass(i)}`}
+                  className={`flex flex-col rounded-2xl border p-3.5 shadow-sm sm:p-4 lg:min-w-0 lg:flex-1 ${stepCardClass(i)}`}
                 >
                   <h3 className={`text-[13px] font-semibold leading-snug sm:text-sm ${stepTitleClass(i)}`}>
                     {step.title}
                   </h3>
-                  <p className="mt-1.5 text-[12px] leading-relaxed text-slate-400 sm:text-[13px]">
+                  <p className="mt-1.5 text-[12px] leading-relaxed text-slate-600 sm:text-[13px]">
                     {step.description}
                   </p>
                 </div>
                 {i < integration.flowSteps.length - 1 && (
                   <div
-                    className="flex shrink-0 items-center justify-center py-1.5 text-slate-500 lg:px-1.5 lg:py-0"
+                    className="flex shrink-0 items-center justify-center py-1.5 text-slate-300 lg:px-1.5 lg:py-0"
                     aria-hidden="true"
                   >
                     <span className="text-base leading-none lg:hidden">↓</span>
@@ -121,7 +119,7 @@ export function IntegrationSection({ dict }: Props) {
           </div>
         </div>
 
-        <p className="mx-auto mt-5 max-w-[760px] text-center text-[13px] leading-relaxed text-slate-400 sm:mt-6 sm:text-sm">
+        <p className="mx-auto mt-5 max-w-[760px] text-center text-[13px] leading-relaxed text-slate-500 sm:mt-6 sm:text-sm">
           {integration.flowHint}
         </p>
 
@@ -131,20 +129,20 @@ export function IntegrationSection({ dict }: Props) {
             return (
               <div
                 key={item.title}
-                className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.06] p-4 transition hover:border-white/20 hover:bg-white/[0.09]"
+                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-brand-200 hover:shadow-md"
               >
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-200">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600">
                   <Icon className="h-[18px] w-[18px]" />
                 </div>
-                <h3 className="mt-3 text-sm font-bold leading-snug text-white">{item.title}</h3>
-                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400 sm:text-sm">
+                <h3 className="mt-3 text-sm font-bold leading-snug text-navy-950">{item.title}</h3>
+                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
                   {item.description}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {item.examples.map((example) => (
                     <span
                       key={example}
-                      className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] font-medium text-slate-300 sm:text-[11px]"
+                      className="rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-medium text-brand-800 sm:text-[11px]"
                     >
                       {example}
                     </span>

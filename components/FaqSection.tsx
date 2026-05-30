@@ -3,17 +3,19 @@
 import { useState } from "react";
 import type { Dictionary } from "@/dictionaries";
 import { PHONE, TELEGRAM_URL } from "@/lib/constants";
+import { Button, TelegramIcon } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
-export function FaqSection({ dict }: Props) {
+export function FaqSection({ dict, className = "bg-brand-tint" }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const { faq } = dict;
 
   return (
-    <section id="faq" className="border-t border-slate-100 bg-slate-50 py-12 sm:py-14">
+    <section id="faq" className={`border-t border-slate-100 py-12 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-lg font-bold tracking-tight text-navy-950 sm:text-2xl">{faq.title}</h2>
@@ -27,17 +29,20 @@ export function FaqSection({ dict }: Props) {
               <p className="mt-2 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
                 {faq.intro.description}
               </p>
-              <a
+              <Button
+                variant="primary"
+                size="md"
                 href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-2xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                icon={<TelegramIcon className="h-4 w-4" />}
+                className="mt-4 w-full"
               >
                 {faq.intro.cta}
-              </a>
+              </Button>
               <a
                 href={`tel:${PHONE}`}
-                className="mt-3 block text-center text-sm font-medium text-slate-600 transition hover:text-navy-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="mt-3 block text-center text-sm font-medium text-slate-600 transition hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
               >
                 {faq.intro.phone}
               </a>
@@ -61,7 +66,7 @@ export function FaqSection({ dict }: Props) {
                   )}
                   <article
                     className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:border-slate-300 hover:shadow ${
-                      isOpen ? "border-slate-300 ring-1 ring-slate-200/80" : "border-slate-200"
+                      isOpen ? "border-brand-200 ring-1 ring-brand-100" : "border-slate-200"
                     }`}
                   >
                     <button
@@ -69,7 +74,7 @@ export function FaqSection({ dict }: Props) {
                       id={`faq-button-${i}`}
                       onClick={() => setOpenIndex(isOpen ? null : i)}
                       aria-controls={`faq-panel-${i}`}
-                      className="flex w-full items-start justify-between gap-3 px-4 py-3.5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-600 sm:px-5 sm:py-4"
+                      className="flex w-full items-start justify-between gap-3 px-4 py-3.5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-600 sm:px-5 sm:py-4"
                       aria-expanded={isOpen}
                     >
                       <span className="text-[13px] font-semibold leading-snug text-navy-950 sm:text-sm">
@@ -109,14 +114,9 @@ export function FaqSection({ dict }: Props) {
           <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-slate-600 sm:text-sm">
             {faq.callout.description}
           </p>
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-2xl border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-navy-950 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:w-auto"
-          >
+          <Button variant="ghost" size="sm" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="mt-4 w-full sm:w-auto">
             {faq.callout.cta}
-          </a>
+          </Button>
         </div>
       </div>
     </section>

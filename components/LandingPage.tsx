@@ -22,23 +22,29 @@ type Props = {
   dict: Dictionary;
 };
 
+const sectionBg = {
+  white: "bg-white dark:bg-slate-950",
+  muted: "bg-[#F9F9F8] dark:bg-gray-900",
+  tint: "bg-brand-tint dark:bg-[#0D1F35]",
+} as const;
+
 export function LandingPage({ locale, dict }: Props) {
   return (
     <>
       <Header locale={locale} dict={dict} />
       <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
-        <Hero dict={dict} />
-        <PositioningSection dict={dict} />
-        <IntegrationSection dict={dict} />
-        <UseCasesSection dict={dict} />
-        <BeforeAfterSection dict={dict} />
-        <HowWeStartSection dict={dict} />
-        <SectorsSection dict={dict} />
-        <ModulesSection dict={dict} />
-        <WorkflowSection dict={dict} />
-        <ProjectsSection dict={dict} />
-        <PricingSection dict={dict} />
-        <FaqSection dict={dict} />
+        <Hero dict={dict} className={sectionBg.white} />
+        <PositioningSection dict={dict} className={sectionBg.muted} />
+        <IntegrationSection dict={dict} className={sectionBg.white} />
+        <UseCasesSection dict={dict} className={sectionBg.tint} />
+        <BeforeAfterSection dict={dict} className={sectionBg.muted} />
+        <HowWeStartSection dict={dict} className={sectionBg.white} />
+        <SectorsSection dict={dict} className={sectionBg.white} />
+        <ModulesSection dict={dict} className={sectionBg.muted} />
+        <WorkflowSection dict={dict} className={sectionBg.tint} />
+        <ProjectsSection dict={dict} className={sectionBg.white} />
+        <PricingSection dict={dict} className={sectionBg.white} />
+        <FaqSection dict={dict} className={sectionBg.tint} />
         <CtaSection dict={dict} />
       </main>
       <Footer dict={dict} locale={locale} />

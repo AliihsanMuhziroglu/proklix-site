@@ -5,8 +5,8 @@ type Props = {
 };
 
 const DOT_COLORS = {
-  green: "bg-proklix-green",
-  amber: "bg-proklix-amber",
+  green: "bg-success",
+  amber: "bg-pending",
 } as const;
 
 const BOT_COLORS = {
@@ -49,7 +49,7 @@ function NotifCard({
         <div className="mt-1.5 flex gap-1">
           <button
             type="button"
-            className="rounded bg-proklix px-2 py-0.5 text-[9px] font-medium text-white"
+            className="rounded bg-brand-600 px-2 py-0.5 text-[9px] font-medium text-white"
           >
             {actionPrimary}
           </button>
@@ -125,7 +125,7 @@ export function PhoneMockup({ dict }: Props) {
         <div className="mx-auto mb-2 h-[10px] w-[60px] rounded-b-lg bg-[#0e0e10]" />
 
         <div className="min-h-[380px] overflow-hidden rounded-[22px] bg-[#f0f4f8] dark:bg-slate-900">
-          <div className="flex items-center justify-between bg-proklix px-3 py-2">
+          <div className="flex items-center justify-between bg-brand-600 px-3 py-2">
             <div className="flex items-center gap-1.5">
               <div className="flex h-[22px] w-[22px] items-center justify-center rounded-md bg-white/20">
                 <BoltIcon className="h-3 w-3 text-white" />

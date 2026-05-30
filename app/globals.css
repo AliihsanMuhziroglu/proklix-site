@@ -4,13 +4,39 @@
   --color-navy-950: #0a1628;
   --color-navy-900: #0f2240;
   --color-navy-800: #1a3a6b;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
+  --color-brand-50: #e6f1fb;
+  --color-brand-100: #b5d4f4;
+  --color-brand-400: #378add;
+  --color-brand-600: #185fa5;
+  --color-brand-800: #0c447c;
+  --color-brand-900: #042c53;
+  --color-brand-tint: #eef5fc;
+  --color-success: #1d9e75;
+  --color-success-dark: #0f6e56;
+  --color-success-50: #e1f5ee;
+  --color-success-900: #085041;
+  --color-pending: #ba7517;
+  --color-pending-dark: #854f0b;
+  --color-pending-50: #faeeda;
+  --color-pending-900: #633806;
+  /* legacy aliases */
   --color-proklix: #185fa5;
   --color-proklix-dark: #0c447c;
   --color-proklix-amber: #ba7517;
   --color-proklix-green: #1d9e75;
+}
+
+:root {
+  --proklix-blue-50: #e6f1fb;
+  --proklix-blue-100: #b5d4f4;
+  --proklix-blue-400: #378add;
+  --proklix-blue-600: #185fa5;
+  --proklix-blue-800: #0c447c;
+  --proklix-blue-900: #042c53;
+  --proklix-teal-400: #1d9e75;
+  --proklix-teal-600: #0f6e56;
+  --proklix-amber-400: #ba7517;
+  --proklix-amber-600: #854f0b;
 }
 
 @keyframes slideUp {
@@ -24,8 +50,22 @@
   }
 }
 
+@keyframes ctaPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(24, 95, 165, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(24, 95, 165, 0);
+  }
+}
+
 .animate-slide-up {
   animation: slideUp 0.5s ease both;
+}
+
+.cta-pulse {
+  animation: ctaPulse 2.5s ease infinite;
 }
 
 html {

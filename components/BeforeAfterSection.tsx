@@ -2,6 +2,7 @@ import type { Dictionary } from "@/dictionaries";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 function IconX({ className }: { className?: string }) {
@@ -20,11 +21,11 @@ function IconCheck({ className }: { className?: string }) {
   );
 }
 
-export function BeforeAfterSection({ dict }: Props) {
+export function BeforeAfterSection({ dict, className = "bg-[#F9F9F8]" }: Props) {
   const { beforeAfter } = dict;
 
   return (
-    <section className="overflow-hidden bg-white py-10 sm:py-14">
+    <section className={`overflow-hidden py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">

@@ -19,8 +19,8 @@ export function LanguageSwitcher({ locale }: Props) {
           href={`/${l}`}
           className={`rounded-md px-2 py-1.5 text-[11px] font-semibold uppercase tracking-wide transition sm:px-2.5 sm:text-xs ${
             l === locale
-              ? "bg-white text-blue-700 shadow-sm"
-              : "text-slate-500 hover:text-navy-900"
+              ? "bg-brand-50 text-brand-800 shadow-sm"
+              : "text-slate-500 hover:text-brand-600"
           }`}
           aria-current={l === locale ? "page" : undefined}
         >

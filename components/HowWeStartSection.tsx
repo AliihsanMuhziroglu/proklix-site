@@ -1,32 +1,34 @@
 import type { Dictionary } from "@/dictionaries";
 import { TELEGRAM_URL } from "@/lib/constants";
+import { Button } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 const TELEGRAM_STEP_INDEX = 3;
 
 function stepNumberClass(index: number) {
   if (index === TELEGRAM_STEP_INDEX) {
-    return "border-blue-200 bg-blue-600 text-white ring-4 ring-blue-100";
+    return "border-brand-200 bg-brand-600 text-white ring-4 ring-brand-100";
   }
-  return "border-slate-200 bg-navy-950 text-white";
+  return "border-slate-200 bg-gray-100 text-gray-400";
 }
 
 function stepCardClass(index: number) {
   if (index === TELEGRAM_STEP_INDEX) {
-    return "border-blue-200 ring-1 ring-blue-100";
+    return "border-brand-200 ring-1 ring-brand-100";
   }
   return "border-slate-200";
 }
 
-export function HowWeStartSection({ dict }: Props) {
+export function HowWeStartSection({ dict, className = "bg-white" }: Props) {
   const { howWeStart } = dict;
   const { steps } = howWeStart;
 
   return (
-    <section id="how-we-start" className="overflow-hidden bg-slate-50 py-10 sm:py-14">
+    <section id="how-we-start" className={`overflow-hidden py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
@@ -57,7 +59,7 @@ export function HowWeStartSection({ dict }: Props) {
                 </p>
                 <h3
                   className={`mt-1 text-sm font-bold leading-snug sm:text-[15px] ${
-                    i === TELEGRAM_STEP_INDEX ? "text-blue-900" : "text-navy-950"
+                    i === TELEGRAM_STEP_INDEX ? "text-brand-900" : "text-navy-950"
                   }`}
                 >
                   {step.title}
@@ -74,14 +76,9 @@ export function HowWeStartSection({ dict }: Props) {
           {howWeStart.callout.description}
         </p>
         <div className="mt-4 text-center">
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
-          >
+          <Button variant="secondary" size="md" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
             {howWeStart.callout.cta}
-          </a>
+          </Button>
         </div>
       </div>
     </section>

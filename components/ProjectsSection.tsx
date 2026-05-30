@@ -1,9 +1,11 @@
 import Image from "next/image";
 import type { Dictionary } from "@/dictionaries";
 import { TELEGRAM_URL } from "@/lib/constants";
+import { Button } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 const LOGO_AREA_HEIGHT = "h-16 sm:h-20";
@@ -79,11 +81,11 @@ function ProjectLogo({ title }: { title: string }) {
   return image;
 }
 
-export function ProjectsSection({ dict }: Props) {
+export function ProjectsSection({ dict, className = "bg-white" }: Props) {
   const { projects } = dict;
 
   return (
-    <section id="projects" className="border-t border-slate-100 bg-white py-10 sm:py-14">
+    <section id="projects" className={`border-t border-slate-100 py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-lg font-bold tracking-tight text-navy-950 sm:text-2xl">
@@ -113,7 +115,7 @@ export function ProjectsSection({ dict }: Props) {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[11px] font-medium text-blue-600 hover:underline"
+                    className="text-[11px] font-medium text-brand-600 hover:underline"
                   >
                     {project.website}
                   </a>
@@ -147,14 +149,9 @@ export function ProjectsSection({ dict }: Props) {
         </div>
 
         <div className="mt-5 text-center">
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center justify-center rounded-2xl border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-navy-950 hover:text-white"
-          >
+          <Button variant="secondary" size="md" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
             {projects.callout.cta}
-          </a>
+          </Button>
         </div>
       </div>
     </section>

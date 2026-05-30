@@ -1,8 +1,10 @@
 import type { Dictionary } from "@/dictionaries";
 import { TELEGRAM_URL } from "@/lib/constants";
+import { Button } from "./ui/Button";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 type IconProps = { className?: string };
@@ -58,11 +60,11 @@ function IconFactory({ className }: IconProps) {
 
 const sectorIcons = [IconB2b, IconClean, IconWarehouse, IconEquipment, IconLogistics, IconFactory];
 
-export function SectorsSection({ dict }: Props) {
+export function SectorsSection({ dict, className = "bg-white" }: Props) {
   const { sectors } = dict;
 
   return (
-    <section id="sectors" className="overflow-hidden bg-slate-50 py-10 sm:py-14">
+    <section id="sectors" className={`overflow-hidden py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
@@ -113,14 +115,9 @@ export function SectorsSection({ dict }: Props) {
 
         <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm sm:p-5">
           <h3 className="text-sm font-bold text-navy-950">{sectors.callout.title}</h3>
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
-          >
+          <Button variant="secondary" size="md" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="mt-3">
             {sectors.callout.cta}
-          </a>
+          </Button>
         </div>
       </div>
     </section>

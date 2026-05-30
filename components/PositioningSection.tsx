@@ -2,6 +2,7 @@ import type { Dictionary } from "@/dictionaries";
 
 type Props = {
   dict: Dictionary;
+  className?: string;
 };
 
 type IconProps = { className?: string };
@@ -60,11 +61,11 @@ function IconEye({ className }: IconProps) {
 const cardIcons = [IconForm, IconCheck, IconTask, IconTelegram, IconPlug, IconEye];
 const TELEGRAM_FLOW_STEP_INDEX = 2;
 
-export function PositioningSection({ dict }: Props) {
+export function PositioningSection({ dict, className = "bg-[#F9F9F8]" }: Props) {
   const { title, subtitle, flowSteps, items } = dict.positioning;
 
   return (
-    <section id="platform" className="border-b border-slate-100 bg-slate-50 py-10 sm:py-14">
+    <section id="platform" className={`border-b border-slate-100 py-10 sm:py-14 ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
@@ -82,20 +83,20 @@ export function PositioningSection({ dict }: Props) {
               <div key={step.title} className="contents">
                 <div
                   className={`flex flex-col rounded-xl border bg-white p-3 shadow-sm lg:min-w-0 lg:flex-1 ${
-                    isTelegram ? "border-blue-200 ring-1 ring-blue-100" : "border-slate-200"
+                    isTelegram ? "border-brand-200 ring-1 ring-brand-100" : "border-slate-200"
                   }`}
                 >
                   <div className="flex items-center gap-2">
                     <span
                       className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
-                        isTelegram ? "bg-blue-600 text-white" : "bg-slate-100 text-navy-900"
+                        isTelegram ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-400"
                       }`}
                     >
                       {i + 1}
                     </span>
                     <h3
                       className={`text-[12px] font-semibold leading-snug sm:text-[13px] ${
-                        isTelegram ? "text-blue-800" : "text-navy-950"
+                        isTelegram ? "text-brand-800" : "text-navy-950"
                       }`}
                     >
                       {step.title}
@@ -131,7 +132,7 @@ export function PositioningSection({ dict }: Props) {
                 <div
                   className={`flex h-8 w-8 items-center justify-center rounded-lg border ${
                     isTelegram
-                      ? "border-blue-200 bg-blue-50 text-blue-600"
+                      ? "border-brand-200 bg-brand-50 text-brand-600"
                       : "border-slate-200 bg-slate-50 text-navy-800/80"
                   }`}
                 >

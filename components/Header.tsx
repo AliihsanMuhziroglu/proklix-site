@@ -7,6 +7,7 @@ import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { PHONE, PHONE_DISPLAY, TELEGRAM_URL } from "@/lib/constants";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Button } from "./ui/Button";
 
 type Props = {
   locale: Locale;
@@ -26,14 +27,14 @@ export function Header({ locale, dict }: Props) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/90">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href={`/${locale}`}
           className="group flex shrink-0 items-center gap-3 rounded-xl py-1 pr-1 transition-opacity hover:opacity-90"
         >
           <ProklixLogo className="h-10 w-10 shrink-0 drop-shadow-sm" />
-          <span className="text-[1.125rem] font-bold leading-none tracking-tight text-navy-950">
+          <span className="text-[1.125rem] font-bold leading-none tracking-tight text-navy-950 dark:text-white">
             Proklix
           </span>
         </Link>
@@ -43,7 +44,7 @@ export function Header({ locale, dict }: Props) {
             <a
               key={item.href}
               href={item.href}
-              className="whitespace-nowrap text-[12px] font-medium text-slate-600 transition hover:text-navy-950 lg:text-[13px] xl:text-sm"
+              className="whitespace-nowrap text-[12px] font-medium text-slate-600 transition hover:text-brand-600 lg:text-[13px] xl:text-sm"
             >
               {item.label}
             </a>
@@ -53,23 +54,25 @@ export function Header({ locale, dict }: Props) {
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <a
             href={`tel:${PHONE}`}
-            className="hidden text-sm font-semibold text-navy-900 transition hover:text-blue-600 lg:inline-flex"
+            className="hidden text-sm font-semibold text-navy-900 transition hover:text-brand-600 lg:inline-flex dark:text-slate-200"
           >
             {dict.header.phone}
           </a>
           <LanguageSwitcher locale={locale} />
-          <a
+          <Button
+            variant="primary"
+            size="sm"
             href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 sm:inline-flex"
+            className="hidden sm:inline-flex"
           >
             {dict.header.cta}
-          </a>
+          </Button>
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 lg:hidden"
+            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 lg:hidden dark:border-slate-700 dark:text-white"
             aria-expanded={menuOpen}
             aria-label="Menu"
           >
@@ -87,14 +90,14 @@ export function Header({ locale, dict }: Props) {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
+        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden dark:border-slate-800 dark:bg-slate-950">
           <nav className="flex flex-col gap-1">
             {nav.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-brand-50 hover:text-brand-600 dark:text-white dark:hover:bg-slate-800"
               >
                 {item.label}
               </a>
@@ -102,24 +105,26 @@ export function Header({ locale, dict }: Props) {
             <Link
               href={`/${locale}/blog`}
               onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-500 transition hover:bg-slate-50"
+              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-500 transition hover:bg-slate-50 dark:hover:bg-slate-800"
             >
               {dict.header.blog}
             </Link>
             <a
               href={`tel:${PHONE}`}
-              className="rounded-lg px-3 py-3 text-sm font-semibold text-blue-600"
+              className="rounded-lg px-3 py-3 text-sm font-semibold text-brand-600"
             >
               {PHONE_DISPLAY}
             </a>
-            <a
+            <Button
+              variant="primary"
+              size="md"
               href={TELEGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center justify-center rounded-2xl bg-blue-600 px-4 py-3.5 text-sm font-semibold text-white"
+              className="mt-2 w-full"
             >
               {dict.header.cta}
-            </a>
+            </Button>
           </nav>
         </div>
       )}

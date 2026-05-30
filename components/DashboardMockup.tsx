@@ -7,17 +7,17 @@ type Props = {
 const DEMO_VIDEO_URL = process.env.NEXT_PUBLIC_DEMO_VIDEO_URL;
 
 const metricAccents = [
-  "border-t-blue-500",
-  "border-t-amber-500",
-  "border-t-indigo-500",
-  "border-t-emerald-500",
+  "border-t-brand-400",
+  "border-t-pending",
+  "border-t-brand-600",
+  "border-t-success",
 ];
 
 const statusStyles = {
-  new: "border-blue-200 bg-blue-50 text-blue-800",
-  pending: "border-amber-200 bg-amber-50 text-amber-900",
-  telegram: "border-blue-200 bg-blue-50 text-blue-800",
-  completed: "border-emerald-200 bg-emerald-50 text-emerald-900",
+  new: "border-brand-200 bg-brand-50 text-brand-800",
+  pending: "border-pending/30 bg-pending-50 text-pending-900",
+  telegram: "border-brand-200 bg-brand-50 text-brand-800",
+  completed: "border-success/30 bg-success-50 text-success-900",
 } as const;
 
 export function DashboardMockup({ dict }: Props) {
