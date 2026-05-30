@@ -2,9 +2,9 @@ import type { Dictionary } from "./types";
 
 export const en: Dictionary = {
   meta: {
-    title: "Proklix | CRM, Workflow and Telegram Business Systems",
+    title: "Proklix | CRM, Workflow and Telegram Business Systems in Uzbekistan",
     description:
-      "Proklix builds digital operations systems: websites, CRM, customer tracking, offer management, approval workflows, admin panels, and Telegram notifications.",
+      "Proklix helps companies in Tashkent and Uzbekistan manage requests, offers, approvals, tasks and workflows through a web dashboard and Telegram notifications.",
   },
   header: {
     solutions: "Solutions",
@@ -14,93 +14,193 @@ export const en: Dictionary = {
     cta: "Message on Telegram",
   },
   hero: {
-    title: "Control your business processes with a web panel and Telegram notifications.",
+    title: "Requests, offers, approvals and tasks — in one system",
     subtitle:
-      "Proklix brings customer requests, offers, tasks, approvals and follow-up processes into one dashboard. Teams act faster with Telegram notifications, while managers see the full workflow clearly.",
+      "Proklix helps companies in Tashkent and Uzbekistan bring customer requests, commercial offers, tasks, approvals and process control into one web dashboard with Telegram notifications.",
+    trustTag: "For companies in Tashkent and Uzbekistan",
     ctaTelegram: "Message on Telegram",
     ctaAnalysis: "Get a Free Process Review",
   },
   problem: {
-    title: "Don't let work scatter across Telegram, Excel, and memory.",
+    title: "When everything lives in Telegram, Excel and people's heads — control slips away",
     items: [
-      "Customer requests get lost",
-      "Offers and price approvals get mixed up",
-      "No one can track who did what",
-      "Excel never stays up to date",
-      "Managers can't get reports",
+      {
+        title: "Customer requests get lost in chats",
+        description:
+          "Inquiries stay in messaging threads and are hard to find or hand off to the right manager.",
+      },
+      {
+        title: "Commercial offers take too long to approve",
+        description:
+          "Pricing and terms scatter across DMs, and sign-off drags on for days.",
+      },
+      {
+        title: "Leadership can't see who did what",
+        description:
+          "No single view of who owns a request, which stage an offer is in, or what's waiting for a decision.",
+      },
+      {
+        title: "Excel goes stale fast",
+        description:
+          "Spreadsheets drift from reality, versions clash, and updates land late.",
+      },
+      {
+        title: "Tasks depend on staff memory",
+        description:
+          "Reminders live in heads or chats — critical steps and deadlines get missed.",
+      },
+      {
+        title: "No clear action history",
+        description:
+          "After the chat ends, it's unclear who changed status, when it was approved, or what went to the client.",
+      },
     ],
   },
   solution: {
-    title: "What does Proklix build?",
+    title: "What can Proklix build for your business?",
     items: [
-      "Website and product/catalog structure",
-      "CRM and customer tracking",
-      "Offer request system",
-      "Approval/workflow system",
-      "Telegram notifications",
-      "Admin panel and reporting",
+      {
+        title: "Corporate website and catalog",
+        description:
+          "Product structure, inbound requests from the site, and one entry point for clients and your team.",
+      },
+      {
+        title: "CRM and customer database",
+        description:
+          "Client cards, contacts, deal statuses and full interaction history in one place.",
+      },
+      {
+        title: "Request and offer system",
+        description:
+          "From inbound request to commercial offer — with owners and deadlines.",
+      },
+      {
+        title: "Workflow and approvals",
+        description:
+          "Approval routes: manager → director → final decision.",
+      },
+      {
+        title: "Telegram notifications",
+        description:
+          "The team gets instant signals: new request, pending approval, assignment, completion.",
+      },
+      {
+        title: "Admin dashboard and reports",
+        description:
+          "Leaders see workload, process stages and bottlenecks without manual data collection.",
+      },
     ],
   },
   sectors: {
-    title: "Built for companies with field sales and on-the-ground operations.",
+    title: "Especially useful where there are many requests, sales and manual oversight",
     items: [
-      "Real estate and rental management",
-      "B2B product/catalog companies",
-      "Agriculture and fertilizer distributors",
-      "Cleaning equipment / technical product sales",
-      "Logistics and foreign trade",
-      "Construction and field operations",
+      {
+        title: "Real estate and rentals",
+        description:
+          "Requests, listings, viewings, contracts and payments in one process.",
+      },
+      {
+        title: "B2B catalogs and trading companies",
+        description:
+          "Products, requests, pricing, offers and client statuses — in one panel.",
+      },
+      {
+        title: "Agro and distribution",
+        description:
+          "Dealer requests, orders, warehouse, regions and assigned managers.",
+      },
+      {
+        title: "Equipment and technical goods",
+        description:
+          "Catalog, consultations, bundles, requests and commercial offers.",
+      },
+      {
+        title: "Logistics and foreign trade",
+        description:
+          "Requests, documents, delivery stages, statuses and client notifications.",
+      },
+      {
+        title: "Construction and field work",
+        description:
+          "Tasks, approvals, photo reports, requests and execution control.",
+      },
+    ],
+  },
+  howWeStart: {
+    title: "We start with one process, not a huge system",
+    steps: [
+      {
+        title: "We analyze your current process",
+        description:
+          "In 20 minutes we pinpoint where requests, approvals and control break down.",
+      },
+      {
+        title: "We build a fast MVP",
+        description: "We launch a first working version in a short timeframe.",
+      },
+      {
+        title: "We improve from real use",
+        description:
+          "We add reports, roles, statuses, notifications and new processes step by step.",
+      },
     ],
   },
   workflow: {
-    title: "Even a simple offer process can be brought under control.",
+    title: "Example: commercial offer process",
     steps: [
-      "Customer submits a request",
-      "Sales rep records it",
-      "Price/stock is checked",
-      "Manager approves",
-      "Offer is sent to the customer",
-      "Telegram notification goes out",
-      "Process closes in the panel",
+      "Client submits a request",
+      "Manager clarifies details",
+      "Price or stock is checked",
+      "Director approves the offer",
+      "Client receives a response",
+      "Telegram sends notifications",
+      "History is saved in the panel",
     ],
   },
-  why: {
-    title: "Systems that start small and grow with your real processes.",
-    items: [
-      "Not a template — built for your business",
-      "Telegram-first fast communication",
-      "Multilingual structure",
-      "Web + panel + workflow in one stack",
-      "No unnecessary corporate bloat",
-      "Fast MVP, then iterate",
+  trust: {
+    title: "A practical approach for real businesses",
+    description:
+      "We don't sell an abstract platform. First we map your specific process, then we build a clear system: website, CRM, requests, approvals, notifications and reports.",
+    points: [
+      "Local focus: Tashkent and Uzbekistan",
+      "Telegram-first communication",
+      "Multilingual setup: RU / UZ / TR / EN",
+      "Fast launch of the first version",
     ],
+    fitLine:
+      "A good fit for B2B catalogs, trading companies, distributors and service businesses.",
   },
   cta: {
-    title: "First step: free process review.",
+    title: "Get a free review of your process",
     description:
-      "In a 20-minute call we'll walk through your current workflow. We'll identify what can be digitized and outline approximate cost and development steps.",
-    ctaTelegram: "Book via Telegram",
+      "In 20 minutes we'll walk through how requests, offers, approvals and control work today. After the call you'll get a clear proposal: what to automate, where to start, and what MVP to build first.",
+    ctaTelegram: "Message on Telegram",
+    ctaCall: "Call",
     phone: "+998 77 257 43 54",
   },
+  mobileCta: {
+    telegram: "Telegram",
+    call: "Call",
+  },
   footer: {
-    tagline: "Web, CRM, workflow and Telegram-based digital operations systems.",
+    tagline:
+      "Web, CRM, workflow and Telegram — digital systems for requests, offers and process control.",
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Tashkent / Uzbekistan",
   },
   dashboard: {
-    title: "Operations Panel",
-    requests: "Requests",
-    offers: "Offers",
-    approvals: "Approvals",
-    tasks: "Tasks",
-    statusNew: "New",
-    statusPending: "Pending",
-    statusApproved: "Approved",
-    statusDone: "Done",
-    recentActivity: "Recent Activity",
-    activity1: "New customer request received",
-    activity2: "Offer sent for manager approval",
-    activity3: "Telegram notification sent",
+    title: "Proklix Panel",
+    metricRequests: "24 requests",
+    metricInProgress: "8 in progress",
+    metricPendingApproval: "5 pending approval",
+    metricCompleted: "11 completed",
+    feedItems: [
+      "New request from client",
+      "Commercial offer awaiting approval",
+      "Notification sent to Telegram",
+      "Owner assigned",
+      "Process completed",
+    ],
   },
 };

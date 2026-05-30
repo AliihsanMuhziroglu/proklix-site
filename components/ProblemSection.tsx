@@ -4,23 +4,28 @@ type Props = {
   dict: Dictionary;
 };
 
-const icons = ["📋", "💰", "👤", "📊", "📉"];
+const icons = ["📋", "💰", "👤", "📊", "🧠", "🕐"];
 
 export function ProblemSection({ dict }: Props) {
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <section className="bg-white py-14 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mx-auto max-w-2xl text-center text-2xl font-bold tracking-tight text-navy-950 sm:text-3xl">
+        <h2 className="mx-auto max-w-3xl text-center text-xl font-bold tracking-tight text-navy-950 sm:text-3xl">
           {dict.problem.title}
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {dict.problem.items.map((item, i) => (
             <div
-              key={i}
-              className="rounded-2xl border border-red-100 bg-red-50/50 p-5 shadow-sm transition hover:shadow-md"
+              key={item.title}
+              className="rounded-2xl border border-red-100 bg-red-50/40 p-5 shadow-sm"
             >
-              <span className="text-2xl">{icons[i]}</span>
-              <p className="mt-3 text-sm font-medium leading-relaxed text-navy-900 sm:text-base">{item}</p>
+              <span className="text-2xl" aria-hidden="true">
+                {icons[i]}
+              </span>
+              <h3 className="mt-3 text-sm font-semibold leading-snug text-navy-950 sm:text-base">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.description}</p>
             </div>
           ))}
         </div>

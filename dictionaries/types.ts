@@ -1,3 +1,13 @@
+export interface CardItem {
+  title: string;
+  description: string;
+}
+
+export interface StepItem {
+  title: string;
+  description: string;
+}
+
 export interface Dictionary {
   meta: {
     title: string;
@@ -13,34 +23,46 @@ export interface Dictionary {
   hero: {
     title: string;
     subtitle: string;
+    trustTag: string;
     ctaTelegram: string;
     ctaAnalysis: string;
   };
   problem: {
     title: string;
-    items: string[];
+    items: CardItem[];
   };
   solution: {
     title: string;
-    items: string[];
+    items: CardItem[];
   };
   sectors: {
     title: string;
-    items: string[];
+    items: CardItem[];
+  };
+  howWeStart: {
+    title: string;
+    steps: StepItem[];
   };
   workflow: {
     title: string;
     steps: string[];
   };
-  why: {
+  trust: {
     title: string;
-    items: string[];
+    description: string;
+    points: string[];
+    fitLine: string;
   };
   cta: {
     title: string;
     description: string;
     ctaTelegram: string;
+    ctaCall: string;
     phone: string;
+  };
+  mobileCta: {
+    telegram: string;
+    call: string;
   };
   footer: {
     tagline: string;
@@ -50,17 +72,10 @@ export interface Dictionary {
   };
   dashboard: {
     title: string;
-    requests: string;
-    offers: string;
-    approvals: string;
-    tasks: string;
-    statusNew: string;
-    statusPending: string;
-    statusApproved: string;
-    statusDone: string;
-    recentActivity: string;
-    activity1: string;
-    activity2: string;
-    activity3: string;
+    metricRequests: string;
+    metricInProgress: string;
+    metricPendingApproval: string;
+    metricCompleted: string;
+    feedItems: string[];
   };
 }

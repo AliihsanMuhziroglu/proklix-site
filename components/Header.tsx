@@ -43,7 +43,7 @@ export function Header({ locale, dict }: Props) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <LanguageSwitcher locale={locale} />
           <a
             href={TELEGRAM_URL}

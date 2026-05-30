@@ -4,7 +4,7 @@ export const uz: Dictionary = {
   meta: {
     title: "Proklix | CRM, workflow va Telegram biznes tizimlari",
     description:
-      "Proklix veb-sayt, CRM, mijoz kuzatuvi, taklif kuzatuvi, tasdiqlash/workflow, admin panel va Telegram bildirishnomali raqamli operatsion tizimlar quradi.",
+      "Proklix Toshkent va O'zbekistondagi bizneslar uchun mijoz so'rovlari, takliflar, tasdiqlar, vazifalar va jarayon nazoratini web panel va Telegram orqali raqamlashtiradi.",
   },
   header: {
     solutions: "Yechimlar",
@@ -14,93 +14,195 @@ export const uz: Dictionary = {
     cta: "Telegram'da yozish",
   },
   hero: {
-    title: "Biznes jarayonlaringizni web panel va Telegram bildirishnomalari orqali nazorat qiling.",
+    title: "So'rovlar, takliflar, tasdiqlar va vazifalar — bitta tizimda",
     subtitle:
-      "Proklix mijoz so'rovlari, takliflar, vazifalar, tasdiqlash jarayonlari va kuzatuvni bitta panelda jamlaydi. Telegram bildirishnomalari orqali jamoa tez harakat qiladi, rahbar esa jarayonni aniq ko'radi.",
+      "Proklix Toshkent va O'zbekistondagi kompaniyalar uchun mijoz so'rovlarini, tijorat takliflarini, vazifalarni, tasdiqlash va jarayon nazoratini bitta web panelda jamlaydi. Telegram bildirishnomalari orqali jamoa tez harakat qiladi, rahbar jarayonni aniq ko'radi.",
+    trustTag: "Toshkent va O'zbekiston kompaniyalari uchun",
     ctaTelegram: "Telegram'da yozish",
     ctaAnalysis: "Bepul jarayon tahlilini olish",
   },
   problem: {
-    title: "Ishlar Telegram, Excel va xotirada tarqalib ketmasin.",
+    title:
+      "Hammasi Telegram, Excel va xodimlar xotirasida bo'lsa — nazorat yo'qoladi",
     items: [
-      "Mijoz so'rovlari yo'qoladi",
-      "Taklif va narx tasdiqlashlari aralashadi",
-      "Kim nima qilgani kuzatilmaydi",
-      "Excel yangilanmay qoladi",
-      "Rahbar hisobot ololmaydi",
+      {
+        title: "Mijoz so'rovlari yozishmalarda yo'qoladi",
+        description:
+          "So'rovlar chatlarda qoladi, topish va mas'ul menejerga uzatish qiyinlashadi.",
+      },
+      {
+        title: "Tijorat takliflari juda uzoq tasdiqlanadi",
+        description:
+          "Narx va shartlar shaxsiy xabarlarga tarqaladi, tasdiqlash kunlarga cho'ziladi.",
+      },
+      {
+        title: "Rahbar kim nima qilganini ko'rmaydi",
+        description:
+          "Yagona manzara yo'q: so'rovni kim oldi, taklif qaysi bosqichda, nima qaror kutmoqda.",
+      },
+      {
+        title: "Excel tez eskiradi",
+        description:
+          "Jadvallar haqiqat bilan mos kelmaydi, versiyalar aralashadi, ma'lumot kech kiritiladi.",
+      },
+      {
+        title: "Vazifalar xodimlar xotirasiga bog'liq",
+        description:
+          "Eslatma boshda yoki chatda qolsa — muhim qadamlar va muddatlar o'tkazib yuboriladi.",
+      },
+      {
+        title: "Aniq harakatlar tarixi yo'q",
+        description:
+          "Yozishmadan keyin kim statusni o'zgartirdi, qachon tasdiqlangan — noaniq qoladi.",
+      },
     ],
   },
   solution: {
-    title: "Proklix nima quradi?",
+    title: "Proklix biznesingiz uchun nima qurishi mumkin?",
     items: [
-      "Veb-sayt va mahsulot/katalog tuzilmasi",
-      "CRM va mijoz kuzatuvi",
-      "Taklif so'rovi tizimi",
-      "Tasdiqlash/workflow tizimi",
-      "Telegram bildirishnomalari",
-      "Admin panel va hisobotlar",
+      {
+        title: "Korporativ sayt va katalog",
+        description:
+          "Mahsulot tuzilmasi, saytdan kelgan so'rovlar va mijoz hamda jamoa uchun yagona kirish.",
+      },
+      {
+        title: "CRM va mijozlar bazasi",
+        description:
+          "Mijoz kartochkalari, aloqa, bitim statuslari va barcha tarix bir joyda.",
+      },
+      {
+        title: "So'rov va taklif tizimi",
+        description:
+          "Kiruvchi so'rovdan tijorat taklifigacha — mas'ul shaxs va muddatlar bilan.",
+      },
+      {
+        title: "Workflow va tasdiqlashlar",
+        description:
+          "Tasdiqlash yo'nalishi: menejer → rahbar → yakuniy qaror.",
+      },
+      {
+        title: "Telegram bildirishnomalari",
+        description:
+          "Jamoa darhol xabardor: yangi so'rov, tasdiq kutayotgan taklif, tayinlash, yakun.",
+      },
+      {
+        title: "Boshqaruv paneli va hisobotlar",
+        description:
+          "Rahbar yuklama, jarayon bosqichlari va tor joylarni qo'lda yig'masdan ko'radi.",
+      },
     ],
   },
   sectors: {
-    title: "Ayniqsa maydonda va savdoda ishlaydigan kompaniyalar uchun.",
+    title:
+      "Ko'p so'rov, savdo va qo'lda nazorat bo'lgan kompaniyalar uchun ayniqsa foydali",
     items: [
-      "Ko'chmas mulk va ijaraga berish boshqaruvi",
-      "B2B mahsulot/katalog kompaniyalari",
-      "Qishloq xo'jaligi va o'g'it distribyutorlari",
-      "Tozalash uskunalari / texnik mahsulot savdosi",
-      "Logistika va tashqi savdo",
-      "Qurilish va maydon operatsiyalari",
+      {
+        title: "Ko'chmas mulk va ijaraga berish",
+        description:
+          "So'rovlar, ob'ektlar, ko'rsatishlar, shartnomalar va to'lovlar bitta jarayonda.",
+      },
+      {
+        title: "B2B katalog va savdo kompaniyalari",
+        description:
+          "Mahsulotlar, so'rovlar, narxlar, takliflar va mijoz statuslari — bitta panelda.",
+      },
+      {
+        title: "Agro va distribyutsiya",
+        description:
+          "Diler so'rovlari, buyurtmalar, ombor, hududlar va mas'ul menejerlar.",
+      },
+      {
+        title: "Uskuna va texnik mahsulotlar",
+        description:
+          "Katalog, maslahat, to'plamlar, so'rovlar va tijorat takliflari.",
+      },
+      {
+        title: "Logistika va tashqi savdo",
+        description:
+          "So'rovlar, hujjatlar, yetkazish bosqichlari, statuslar va mijozga xabarlar.",
+      },
+      {
+        title: "Qurilish va maydon ishlari",
+        description:
+          "Vazifalar, tasdiqlar, foto hisobotlar, so'rovlar va bajarilish nazorati.",
+      },
+    ],
+  },
+  howWeStart: {
+    title: "Katta tizim emas, bitta jarayondan boshlaymiz",
+    steps: [
+      {
+        title: "Joriy jarayonni tahlil qilamiz",
+        description:
+          "20 daqiqada so'rovlar, tasdiqlar va nazorat qayerda yo'qolishini aniqlaymiz.",
+      },
+      {
+        title: "Tez MVP yig'amiz",
+        description: "Birinchi ishlaydigan versiyani qisqa muddatda ishga tushiramiz.",
+      },
+      {
+        title: "Haqiqiy ish bo'yicha yaxshilaymiz",
+        description:
+          "Hisobot, rollar, statuslar, bildirishnomalar va yangi jarayonlarni qo'shamiz.",
+      },
     ],
   },
   workflow: {
-    title: "Oddiy taklif jarayoni ham nazorat ostiga olinishi mumkin.",
+    title: "Misol: tijorat taklif jarayoni",
     steps: [
       "Mijoz so'rov qoldiradi",
-      "Savdo vakili ro'yxatga oladi",
-      "Narx/zaxira tekshiriladi",
-      "Rahbar tasdiqlaydi",
-      "Mijozga taklif yuboriladi",
-      "Telegram orqali bildirishnoma ketadi",
-      "Jarayon panelda yopiladi",
+      "Menejer tafsilotlarni aniqlashtiradi",
+      "Narx yoki zaxira tekshiriladi",
+      "Rahbar taklifni tasdiqlaydi",
+      "Mijoz javob oladi",
+      "Telegram bildirishnoma yuboradi",
+      "Tarix panelda saqlanadi",
     ],
   },
-  why: {
-    title: "Kichik boshlab, haqiqiy jarayonga qarab o'sadigan tizimlar.",
-    items: [
-      "Tayyor shablon emas, biznesingizga mos sozlash",
-      "Telegram markazli tez aloqa",
-      "Ko'p tilli tuzilma",
-      "Web + panel + workflow bitta yechimda",
-      "Keraksiz korporativ og'irlik yo'q",
-      "Tez MVP, keyin rivojlantirish",
+  trust: {
+    title: "Haqiqiy biznes uchun amaliy yondashuv",
+    description:
+      "Biz abstrakt platforma sotmaymiz. Avval sizning aniq jarayoningizni tahlil qilamiz, keyin tushunarli tizim yig'amiz: sayt, CRM, so'rovlar, tasdiqlar, bildirishnomalar va hisobotlar.",
+    points: [
+      "Mahalliy fokus: Toshkent va O'zbekiston",
+      "Telegram-first aloqa",
+      "Ko'p tilli tuzilma: RU / UZ / TR / EN",
+      "Birinchi versiyani tez ishga tushirish",
     ],
+    fitLine:
+      "B2B katalog, savdo kompaniyalari, distribyutorlar va xizmat bizneslari uchun mos.",
   },
   cta: {
-    title: "Birinchi qadam: bepul jarayon tahlili.",
+    title: "Jarayoningizni bepul tahlil qiling",
     description:
-      "Joriy ish oqimingizni 20 daqiqalik qisqa suhbatda tinglaymiz. Qaysi jarayonni raqamlashtirish mumkinligini, taxminiy narx va rivojlantirish bosqichlarini aniq ko'rsatamiz.",
-    ctaTelegram: "Telegram orqali uchrashuv olish",
+      "20 daqiqada hozirgi so'rov, taklif, tasdiq va nazorat qanday o'tishini ko'rib chiqamiz. Suhbatdan keyin nima avtomatlashtirish mumkin, qayerdan boshlash va birinchi MVP qanday yig'ilishi aniq bo'ladi.",
+    ctaTelegram: "Telegram'da yozish",
+    ctaCall: "Qo'ng'iroq",
     phone: "+998 77 257 43 54",
   },
+  mobileCta: {
+    telegram: "Telegram",
+    call: "Qo'ng'iroq",
+  },
   footer: {
-    tagline: "Web, CRM, workflow va Telegram asosidagi raqamli operatsion tizimlar.",
+    tagline:
+      "Web, CRM, workflow va Telegram — so'rov, taklif va jarayon nazorati uchun raqamli tizimlar.",
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Toshkent / O'zbekiston",
   },
   dashboard: {
-    title: "Operatsion panel",
-    requests: "So'rovlar",
-    offers: "Takliflar",
-    approvals: "Tasdiqlashlar",
-    tasks: "Vazifalar",
-    statusNew: "Yangi",
-    statusPending: "Kutilmoqda",
-    statusApproved: "Tasdiqlandi",
-    statusDone: "Yakunlandi",
-    recentActivity: "So'nggi faollik",
-    activity1: "Yangi mijoz so'rovi qabul qilindi",
-    activity2: "Taklif rahbar tasdig'iga yuborildi",
-    activity3: "Telegram bildirishnomasi yuborildi",
+    title: "Proklix paneli",
+    metricRequests: "24 so'rov",
+    metricInProgress: "8 jarayonda",
+    metricPendingApproval: "5 tasdiq kutmoqda",
+    metricCompleted: "11 yakunlangan",
+    feedItems: [
+      "Mijozdan yangi so'rov",
+      "Tijorat taklif tasdiqni kutmoqda",
+      "Telegram bildirishnoma yuborildi",
+      "Mas'ul tayinlandi",
+      "Jarayon yakunlandi",
+    ],
   },
 };
