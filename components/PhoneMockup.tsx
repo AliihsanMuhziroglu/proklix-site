@@ -3,7 +3,13 @@ import { ProklixLogo } from "./ProklixLogo";
 
 type Props = {
   dict: Dictionary;
+  size?: "md" | "lg";
 };
+
+const FRAME = {
+  md: { width: 220, radius: 36, screenRadius: 24, padding: 10, minHeight: 400 },
+  lg: { width: 272, radius: 40, screenRadius: 26, padding: 11, minHeight: 460 },
+} as const;
 
 const DOT_COLORS = {
   green: "#1D9E75",
@@ -124,22 +130,29 @@ function TgBubble({
   );
 }
 
-export function PhoneMockup({ dict }: Props) {
+export function PhoneMockup({ dict, size = "md" }: Props) {
   const m = dict.phoneMockup;
+  const frame = FRAME[size];
   let animIndex = 0;
   const nextDelay = () => animIndex++ * 80;
 
   return (
-    <div className="w-[220px] flex-shrink-0">
-      <div className="rounded-[36px] p-[10px]" style={{ background: "#2a2a2e" }}>
+    <div className="flex-shrink-0" style={{ width: frame.width }}>
+      <div
+        style={{ background: "#2a2a2e", borderRadius: frame.radius, padding: frame.padding }}
+      >
         <div
-          className="mx-auto mb-2 h-[10px] w-[56px] rounded-b-lg"
-          style={{ background: "#1a1a1c" }}
+          className="mx-auto mb-2 h-[10px] rounded-b-lg"
+          style={{ background: "#1a1a1c", width: frame.width * 0.25 }}
         />
 
         <div
-          className="overflow-hidden rounded-[24px]"
-          style={{ background: "#ffffff", minHeight: 400 }}
+          className="overflow-hidden"
+          style={{
+            background: "#ffffff",
+            minHeight: frame.minHeight,
+            borderRadius: frame.screenRadius,
+          }}
         >
           <div
             className="flex items-center justify-between px-3 py-2"

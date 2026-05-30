@@ -20,14 +20,20 @@ export const en: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Requests, approvals, tasks and integrations in one Telegram-focused system",
+    title: "Run requests, approvals, tasks and integrations through Telegram",
     subtitle:
-      "Proklix brings requests, forms, approvals, tasks, files and action history into one flow. Connect your existing CRM, website, warehouse, Excel or custom API systems and run operations through Telegram.",
+      "Proklix brings forms, approvals, tasks, files and action history into one workflow. Connect your CRM, website, warehouse, Excel or custom API systems and run operations through Telegram.",
     trustTag: "For companies in Tashkent and Uzbekistan",
     ctaTelegram: "Message on Telegram",
     ctaAnalysis: "Get a free process analysis",
     integrationChips: ["CRM", "Website", "Warehouse", "Excel", "Custom API", "Telegram"],
-    ctaHelper: "In the first call, we'll map one of your processes together.",
+    ctaHelper: "In the first call, we'll map one real process together.",
+    visualCards: [
+      "New request",
+      "Approval pending",
+      "Task sent to Telegram",
+      "History saved",
+    ],
   },
   positioning: {
     title: "Not just CRM. Not just a bot. A complete operational workflow.",

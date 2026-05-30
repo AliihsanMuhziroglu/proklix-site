@@ -28,6 +28,12 @@ export const uz: DictionaryEntry = {
     ctaAnalysis: "Jarayonni bepul tahlil qilish",
     integrationChips: ["CRM", "Veb-sayt", "Ombor", "Excel", "Maxsus API", "Telegram"],
     ctaHelper: "Birinchi uchrashuvda bir jarayoningizni birgalikda chizamiz.",
+    visualCards: [
+      "Yangi ariza",
+      "Tasdiqlash kutilmoqda",
+      "Telegram vazifasi",
+      "Tarix saqlandi",
+    ],
   },
   positioning: {
     title: "Oddiy CRM emas. Oddiy bot emas. To'liq operatsion jarayon.",

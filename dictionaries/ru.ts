@@ -28,6 +28,12 @@ export const ru: DictionaryEntry = {
     ctaAnalysis: "Получить бесплатный разбор процесса",
     integrationChips: ["CRM", "Сайт", "Склад", "Excel", "API", "Telegram"],
     ctaHelper: "На первой встрече вместе разберём один из ваших процессов.",
+    visualCards: [
+      "Новая заявка",
+      "Ждёт согласования",
+      "Задача в Telegram",
+      "История сохранена",
+    ],
   },
   positioning: {
     title: "Не просто CRM. Не просто бот. Полный операционный процесс.",

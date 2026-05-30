@@ -28,6 +28,12 @@ export const tr: DictionaryEntry = {
     ctaAnalysis: "Ücretsiz süreç analizi al",
     integrationChips: ["CRM", "Web sitesi", "Depo / stok", "Excel", "Özel API", "Telegram"],
     ctaHelper: "İlk görüşmede bir sürecinizi birlikte çıkaralım.",
+    visualCards: [
+      "Yeni talep",
+      "Onay bekliyor",
+      "Telegram görevi",
+      "Geçmiş kaydedildi",
+    ],
   },
   positioning: {
     title: "Sadece CRM değil. Sadece bot değil. Tam operasyon akışı.",

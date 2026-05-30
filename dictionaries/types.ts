@@ -143,6 +143,7 @@ export interface DictionaryEntry {
     ctaAnalysis: string;
     integrationChips: string[];
     ctaHelper: string;
+    visualCards: string[];
   };
   positioning: {
     title: string;
