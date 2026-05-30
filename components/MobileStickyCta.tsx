@@ -9,7 +9,7 @@ type Props = {
 export function MobileStickyCta({ dict }: Props) {
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-4px_24px_rgba(10,22,40,0.08)] backdrop-blur-md md:hidden dark:border-slate-800 dark:bg-slate-950/95"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-4px_24px_rgba(10,22,40,0.08)] backdrop-blur-md md:hidden"
       style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
     >
       <div className="mx-auto flex max-w-lg gap-3">

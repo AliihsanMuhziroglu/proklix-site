@@ -23,9 +23,9 @@ type Props = {
 };
 
 const sectionBg = {
-  white: "bg-white dark:bg-slate-950",
-  muted: "bg-[#F9F9F8] dark:bg-gray-900",
-  tint: "bg-brand-tint dark:bg-[#0D1F35]",
+  white: "bg-white",
+  muted: "bg-[#F9F9F8]",
+  tint: "bg-brand-tint",
 } as const;
 
 export function LandingPage({ locale, dict }: Props) {

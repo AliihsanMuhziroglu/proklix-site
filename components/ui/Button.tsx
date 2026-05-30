@@ -21,11 +21,9 @@ const base =
   "inline-flex items-center justify-center gap-2 font-medium rounded-lg transition-all duration-150 active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-brand-600 hover:bg-brand-800 active:bg-brand-900 text-white dark:bg-brand-600 dark:hover:bg-brand-800",
-  secondary:
-    "bg-brand-50 hover:bg-brand-100 text-brand-800 dark:bg-[#0D1F35] dark:hover:bg-[#122a45] dark:text-brand-100",
-  ghost:
-    "border border-brand-600 text-brand-600 hover:bg-brand-50 dark:border-brand-400 dark:text-brand-100 dark:hover:bg-[#0D1F35]",
+  primary: "bg-brand-600 hover:bg-brand-800 active:bg-brand-900 text-white",
+  secondary: "bg-brand-50 hover:bg-brand-100 text-brand-800",
+  ghost: "border border-brand-600 text-brand-600 hover:bg-brand-50",
 };
 
 const sizes: Record<Size, string> = {
