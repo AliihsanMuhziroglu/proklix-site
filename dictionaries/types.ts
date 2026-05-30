@@ -10,6 +10,16 @@ export interface PositioningCardItem extends CardItem {
   badge: string;
 }
 
+export interface UseCaseCategory {
+  id: string;
+  label: string;
+}
+
+export interface UseCaseItem extends CardItem {
+  categoryId: string;
+  hasIntegration?: boolean;
+}
+
 export interface IntegrationCardItem extends CardItem {
   examples: string[];
 }
@@ -133,8 +143,17 @@ export interface DictionaryEntry {
   };
   useCases: {
     title: string;
-    flowHint: string;
-    items: CardItem[];
+    subtitle: string;
+    flowSteps: string[];
+    categories: UseCaseCategory[];
+    items: UseCaseItem[];
+    integrationLabel: string;
+    customCard: {
+      title: string;
+      description: string;
+      cta: string;
+    };
+    footerNote: string;
   };
   beforeAfter: {
     title: string;

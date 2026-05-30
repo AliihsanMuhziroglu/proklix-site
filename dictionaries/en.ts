@@ -168,60 +168,124 @@ export const en: DictionaryEntry = {
     },
   },
   useCases: {
-    title: "What can you run in Proklix?",
-    flowHint: "Form → Approval → Task → Result",
+    title: "Different processes for every department",
+    subtitle:
+      "Proklix is not locked into one ready-made template. From sales to warehouse, purchasing to field teams, recurring workflows can be built with form, approval, task and outcome logic.",
+    flowSteps: ["Form", "Approval", "Task", "Result"],
+    categories: [
+      { id: "sales", label: "Sales & customer" },
+      { id: "finance", label: "Purchasing & finance" },
+      { id: "warehouse", label: "Warehouse & ops" },
+      { id: "field", label: "Field teams" },
+      { id: "internal", label: "Internal admin" },
+    ],
+    integrationLabel: "Integration",
     items: [
       {
+        categoryId: "sales",
         title: "Customer request",
         description:
-          "Client submits a request on the website or Telegram. Manager gets a task, status visible to leadership.",
+          "Requests from your website, Telegram or sales team become one record. An owner is assigned and status is visible to management.",
+        hasIntegration: true,
       },
       {
+        categoryId: "sales",
         title: "Commercial proposal approval",
         description:
-          "Manager prepares the proposal, director approves in Telegram, client receives the final version.",
+          "A proposal is prepared, a manager approves in Telegram, and the final version and history stay on record for the client.",
+        hasIntegration: true,
       },
       {
-        title: "Purchase request",
-        description:
-          "Employee submits a purchase request, manager and finance approve step by step, history is saved.",
-      },
-      {
-        title: "Expense approval",
-        description:
-          "Expense is recorded with receipt, approval runs through the chain, result goes to reports.",
-      },
-      {
-        title: "Stock count",
-        description:
-          "Product list comes from warehouse or website. Employee counts in Telegram, attaches photos, manager sees the result.",
-      },
-      {
-        title: "Warehouse transfer",
-        description:
-          "Transfer request between warehouses, approval, task to warehouse staff, recorded in history.",
-      },
-      {
-        title: "Field tasks & checklists",
-        description:
-          "Task to field employee in Telegram: checklist, photos, completion status, report to manager.",
-      },
-      {
+        categoryId: "sales",
         title: "Service request",
         description:
-          "Client or manager creates a request, assignee is set, status and history on one screen.",
+          "A customer or manager creates a service request. An owner is assigned; outcome and files stay in the same record.",
       },
       {
+        categoryId: "finance",
+        title: "Purchase request",
+        description:
+          "An employee creates a purchase request. Manager and finance approve step by step; decisions are saved to history.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "finance",
+        title: "Expense approval",
+        description:
+          "Receipt, description and files are attached. When the approval chain completes, the result goes to reporting.",
+      },
+      {
+        categoryId: "finance",
         title: "Document approval",
         description:
-          "Document goes through approval steps, participants get notifications, versions are saved.",
+          "Contracts, invoices or internal documents go through step-by-step approval. Versions and decisions are not lost.",
       },
       {
+        categoryId: "warehouse",
+        title: "Stock count",
+        description:
+          "Product list arrives from warehouse or website. Staff count in Telegram, attach photos, manager sees the result.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Warehouse transfer",
+        description:
+          "A transfer request between warehouses is opened. Warehouse owner gets the task; action and history are recorded.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Product / stock check",
+        description:
+          "Product list comes from an existing system or spreadsheet. A check task is assigned; variances and photos stay in one record.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "field",
+        title: "Field tasks & checklists",
+        description:
+          "A checklist goes to a field worker. Photos, notes and completion status are reported to management.",
+      },
+      {
+        categoryId: "field",
+        title: "Photo task completion",
+        description:
+          "A field worker receives the task in Telegram. Photos, notes and completion status are reported to management.",
+      },
+      {
+        categoryId: "field",
+        title: "Maintenance / fault report",
+        description:
+          "A fault or maintenance request is opened. An owner is assigned; intervention steps and outcome are saved to history.",
+      },
+      {
+        categoryId: "internal",
         title: "HR / admin requests",
         description:
-          "Leave, purchases, access, certificates, internal requests with approval route and history.",
+          "Leave, access, documents or internal support requests are tracked through defined owners.",
+      },
+      {
+        categoryId: "internal",
+        title: "Access / permission requests",
+        description:
+          "New access or permission requests go through a form. When the approval chain completes, decision and history are stored.",
+      },
+      {
+        categoryId: "internal",
+        title: "Internal approval processes",
+        description:
+          "Internal policy, budget or operations decisions go through step-by-step approval. Who approved when is visible.",
       },
     ],
+    customCard: {
+      title: "Your custom process can be built too",
+      description:
+        "If your company has a recurring job, it can be adapted in Proklix with form, approval, task, file, notification, reporting and integration steps.",
+      cta: "Analyze my process",
+    },
+    footerNote:
+      "Best start: pick one process first and get it running in Proklix. Then expand to other departments.",
   },
   beforeAfter: {
     title: "What changes after Proklix",

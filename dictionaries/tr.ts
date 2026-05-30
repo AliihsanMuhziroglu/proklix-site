@@ -168,60 +168,124 @@ export const tr: DictionaryEntry = {
     },
   },
   useCases: {
-    title: "Proklix'te hangi süreçler çalıştırılabilir?",
-    flowHint: "Form → Onay → Görev → Sonuç",
+    title: "Her departman için farklı süreçler çalıştırılabilir",
+    subtitle:
+      "Proklix tek bir hazır kalıba sıkışmaz. Satıştan depoya, satın almadan saha ekiplerine kadar tekrar eden iş akışları form, onay, görev ve sonuç mantığıyla kurulabilir.",
+    flowSteps: ["Form", "Onay", "Görev", "Sonuç"],
+    categories: [
+      { id: "sales", label: "Satış ve müşteri" },
+      { id: "finance", label: "Satın alma ve finans" },
+      { id: "warehouse", label: "Depo ve operasyon" },
+      { id: "field", label: "Saha ekipleri" },
+      { id: "internal", label: "İç yönetim" },
+    ],
+    integrationLabel: "Entegrasyon",
     items: [
       {
+        categoryId: "sales",
         title: "Müşteri talebi",
         description:
-          "Müşteri web sitesi veya Telegram'dan talep bırakır. Yönetici görev alır, durum yönetime görünür.",
+          "Web sitesi, Telegram veya satış ekibinden gelen talepler tek kayda dönüşür. Sorumlu atanır, durum yönetimde görünür.",
+        hasIntegration: true,
       },
       {
+        categoryId: "sales",
         title: "Ticari teklif onayı",
         description:
-          "Yönetici teklifi hazırlar, direktör Telegram'da onaylar, müşteri nihai versiyonu alır.",
+          "Teklif hazırlanır, yönetici Telegram'da onaylar, müşteri için nihai versiyon ve geçmiş kayıt altında kalır.",
+        hasIntegration: true,
       },
       {
-        title: "Satın alma talebi",
-        description:
-          "Çalışan satın alma talebi verir, yönetici ve muhasebe adım adım onaylar, geçmiş kaydedilir.",
-      },
-      {
-        title: "Gider onayı",
-        description:
-          "Gider fişle kaydedilir, onay zincir boyunca ilerler, sonuç raporlara gider.",
-      },
-      {
-        title: "Envanter sayımı",
-        description:
-          "Ürün listesi depo veya web sitesinden gelir. Çalışan Telegram'da sayar, foto ekler, yönetici sonucu görür.",
-      },
-      {
-        title: "Depo transferi",
-        description:
-          "Depolar arası transfer talebi, onay, depo personeline görev, geçmişe kayıt.",
-      },
-      {
-        title: "Saha görevleri ve kontrol listeleri",
-        description:
-          "Saha çalışanına Telegram görevi: kontrol listesi, foto, tamamlanma durumu, yöneticiye rapor.",
-      },
-      {
+        categoryId: "sales",
         title: "Servis talebi",
         description:
-          "Müşteri veya yönetici talep oluşturur, sorumlu atanır, durum ve geçmiş tek ekranda.",
+          "Müşteri veya yönetici servis talebi oluşturur. Sorumlu atanır, müdahale sonucu ve dosyalar aynı kayıtta tutulur.",
       },
       {
+        categoryId: "finance",
+        title: "Satın alma talebi",
+        description:
+          "Çalışan satın alma talebi oluşturur. Yönetici ve muhasebe adım adım onaylar, karar geçmişe kaydedilir.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "finance",
+        title: "Gider onayı",
+        description:
+          "Masraf fişi, açıklama ve dosyalar eklenir. Onay zinciri tamamlanınca sonuç rapora düşer.",
+      },
+      {
+        categoryId: "finance",
         title: "Belge onayı",
         description:
-          "Belge onay adımlarından geçer, katılımcılar bildirim alır, versiyonlar kaydedilir.",
+          "Sözleşme, fatura veya iç belge adım adım onaydan geçer. Versiyonlar ve kararlar kaybolmaz.",
       },
       {
+        categoryId: "warehouse",
+        title: "Envanter sayımı",
+        description:
+          "Ürün listesi depo veya web sitesinden gelir. Çalışan Telegram'da sayım yapar, fotoğraf ekler, yönetici sonucu görür.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Depo transferi",
+        description:
+          "Depolar arası transfer talebi açılır. Depo sorumlusu görev alır, işlem ve geçmiş kayıt altına alınır.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Ürün / stok kontrolü",
+        description:
+          "Ürün listesi mevcut sistemden veya tablodan gelir. Kontrol görevi atanır, sapma ve fotoğraflar aynı kayıtta toplanır.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "field",
+        title: "Saha görevleri ve kontrol listeleri",
+        description:
+          "Saha çalışanına kontrol listesi gider. Fotoğraf, açıklama ve tamamlanma durumu yönetime raporlanır.",
+      },
+      {
+        categoryId: "field",
+        title: "Fotoğraflı görev tamamlama",
+        description:
+          "Saha çalışanı görevi Telegram'da alır. Fotoğraf, açıklama ve tamamlanma durumu yönetime raporlanır.",
+      },
+      {
+        categoryId: "field",
+        title: "Bakım / arıza bildirimi",
+        description:
+          "Arıza veya bakım talebi açılır. Sorumlu atanır, müdahale adımları ve sonuç geçmişe kaydedilir.",
+      },
+      {
+        categoryId: "internal",
         title: "İK / admin talepleri",
         description:
-          "İzin, satın alma, erişim, belgeler, onay rotası ve geçmişi olan dahili talepler.",
+          "İzin, erişim, belge veya iç destek talepleri belli sorumlular üzerinden takip edilir.",
+      },
+      {
+        categoryId: "internal",
+        title: "Erişim / yetki talepleri",
+        description:
+          "Yeni erişim veya yetki talebi form üzerinden gider. Onay zinciri tamamlanınca karar ve geçmiş saklanır.",
+      },
+      {
+        categoryId: "internal",
+        title: "İç onay süreçleri",
+        description:
+          "İç politika, bütçe veya operasyon kararları adım adım onaydan geçer. Kim ne zaman onayladı görünür.",
       },
     ],
+    customCard: {
+      title: "Bunların dışında özel süreciniz de kurulabilir",
+      description:
+        "Firmanızda tekrar eden bir iş varsa; form, onay, görev, dosya, bildirim, rapor ve entegrasyon adımlarıyla Proklix'e uyarlanabilir.",
+      cta: "Bir sürecimi analiz et",
+    },
+    footerNote:
+      "En iyi başlangıç: önce tek bir süreci seçip Proklix'te çalışır hale getirmek. Sonra diğer departmanlara yaymak.",
   },
   beforeAfter: {
     title: "Proklix'ten sonra ne değişir",

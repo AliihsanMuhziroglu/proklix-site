@@ -168,60 +168,124 @@ export const uz: DictionaryEntry = {
     },
   },
   useCases: {
-    title: "Proklix'da qanday jarayonlarni yuritish mumkin?",
-    flowHint: "Forma → Tasdiqlash → Vazifa → Natija",
+    title: "Har bir bo'lim uchun turli jarayonlar yuritilishi mumkin",
+    subtitle:
+      "Proklix bitta tayyor shablonga siqilmaydi. Savdodan omborga, xariddan maydon jamoalarigacha takrorlanadigan ish oqimlari forma, tasdiqlash, vazifa va natija mantig'i bilan qurilishi mumkin.",
+    flowSteps: ["Forma", "Tasdiqlash", "Vazifa", "Natija"],
+    categories: [
+      { id: "sales", label: "Savdo va mijoz" },
+      { id: "finance", label: "Xarid va moliya" },
+      { id: "warehouse", label: "Ombor va operatsiya" },
+      { id: "field", label: "Maydon jamoalari" },
+      { id: "internal", label: "Ichki boshqaruv" },
+    ],
+    integrationLabel: "Integratsiya",
     items: [
       {
+        categoryId: "sales",
         title: "Mijoz arizasi",
         description:
-          "Mijoz sayt yoki Telegram orqali ariza qoldiradi. Menejer vazifa oladi, status rahbar ko'radi.",
+          "Veb-sayt, Telegram yoki savdo jamoasidan kelgan arizalar bitta yozuvga aylanadi. Mas'ul tayinlanadi, status rahbariyatda ko'rinadi.",
+        hasIntegration: true,
       },
       {
+        categoryId: "sales",
         title: "Tijorat taklifini tasdiqlash",
         description:
-          "Menejer TT shakllantiradi, rahbar Telegram'da tasdiqlaydi, mijoz yakuniy versiyani oladi.",
+          "Taklif tayyorlanadi, rahbar Telegram'da tasdiqlaydi, mijoz uchun yakuniy versiya va tarix qayd etiladi.",
+        hasIntegration: true,
       },
       {
-        title: "Xarid arizasi",
-        description:
-          "Xodim xarid arizasi beradi, rahbar va buxgalteriya qadam-baqadam tasdiqlaydi, tarix saqlanadi.",
-      },
-      {
-        title: "Xarajatlarni tasdiqlash",
-        description:
-          "Xarajat chek bilan qayd etiladi, tasdiqlash zanjir bo'ylab ketadi, natija hisobotga tushadi.",
-      },
-      {
-        title: "Inventarizatsiya",
-        description:
-          "Mahsulot ro'yxati ombor yoki saytdan keladi. Xodim Telegram'da sanaydi, foto biriktiradi, rahbar natijani ko'radi.",
-      },
-      {
-        title: "Mahsulot ko'chirish",
-        description:
-          "Omborlar o'rtasida ko'chirish arizasi, tasdiqlash, omborchiga vazifa, tarixda qayd.",
-      },
-      {
-        title: "Maydon vazifalari va chek-listlar",
-        description:
-          "Maydonga chiqadigan xodimga Telegram vazifasi: chek-list, foto, bajarilish statusi, rahbarga hisobot.",
-      },
-      {
+        categoryId: "sales",
         title: "Servis arizasi",
         description:
-          "Mijoz yoki menejer ariza yaratadi, ijrochi tayinlanadi, status va tarix bir ekranda.",
+          "Mijoz yoki rahbar servis arizasi yaratadi. Mas'ul tayinlanadi, aralashuv natijasi va fayllar bir yozuvda saqlanadi.",
       },
       {
+        categoryId: "finance",
+        title: "Xarid arizasi",
+        description:
+          "Xodim xarid arizasi yaratadi. Rahbar va buxgalteriya qadam-baqadam tasdiqlaydi, qaror tarixga yoziladi.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "finance",
+        title: "Xarajatlarni tasdiqlash",
+        description:
+          "Xarajat cheki, tavsif va fayllar qo'shiladi. Tasdiqlash zanjiri tugagach, natija hisobotga tushadi.",
+      },
+      {
+        categoryId: "finance",
         title: "Hujjatlarni tasdiqlash",
         description:
-          "Hujjat tasdiqlash bosqichlaridan o'tadi, ishtirokchilar bildirishnoma oladi, versiyalar saqlanadi.",
+          "Shartnoma, hisob-faktura yoki ichki hujjat bosqichma-bosqich tasdiqlashdan o'tadi. Versiyalar va qarorlar yo'qolmaydi.",
       },
       {
+        categoryId: "warehouse",
+        title: "Inventarizatsiya",
+        description:
+          "Mahsulot ro'yxati ombor yoki veb-saytdan keladi. Xodim Telegram'da sanaydi, foto qo'shadi, rahbar natijani ko'radi.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Omborlar o'rtasida ko'chirish",
+        description:
+          "Omborlar o'rtasida ko'chirish arizasi ochiladi. Ombor mas'uli vazifa oladi, jarayon va tarix qayd etiladi.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "warehouse",
+        title: "Mahsulot / qoldiq nazorati",
+        description:
+          "Mahsulot ro'yxati mavjud tizim yoki jadvaldan keladi. Nazorat vazifasi tayinlanadi, farq va fotolar bir yozuvda to'planadi.",
+        hasIntegration: true,
+      },
+      {
+        categoryId: "field",
+        title: "Maydon vazifalari va chek-listlar",
+        description:
+          "Maydon xodimiga chek-list yuboriladi. Foto, tavsif va bajarilish holati rahbariyatga hisobot qilinadi.",
+      },
+      {
+        categoryId: "field",
+        title: "Foto bilan vazifa bajarish",
+        description:
+          "Maydon xodimi vazifani Telegram'da oladi. Foto, tavsif va bajarilish holati rahbariyatga hisobot qilinadi.",
+      },
+      {
+        categoryId: "field",
+        title: "Ta'mirlash / nosozlik xabari",
+        description:
+          "Nosozlik yoki ta'mirlash arizasi ochiladi. Mas'ul tayinlanadi, aralashuv bosqichlari va natija tarixga yoziladi.",
+      },
+      {
+        categoryId: "internal",
         title: "Ichki HR/admin arizalar",
         description:
-          "Ta'til, xarid, kirish, ma'lumotnomalar, ichki arizalar tasdiqlash marshruti va tarix bilan.",
+          "Ta'til, kirish, hujjat yoki ichki yordam arizalari belgilangan mas'ullar orqali kuzatiladi.",
+      },
+      {
+        categoryId: "internal",
+        title: "Kirish / ruxsat arizalari",
+        description:
+          "Yangi kirish yoki ruxsat arizasi forma orqali ketadi. Tasdiqlash zanjiri tugagach, qaror va tarix saqlanadi.",
+      },
+      {
+        categoryId: "internal",
+        title: "Ichki tasdiqlash jarayonlari",
+        description:
+          "Ichki siyosat, byudjet yoki operatsion qarorlar bosqichma-bosqich tasdiqlashdan o'tadi. Kim qachon tasdiqlagan ko'rinadi.",
       },
     ],
+    customCard: {
+      title: "Bularning tashqarisida maxsus jarayoningiz ham qurilishi mumkin",
+      description:
+        "Kompaniyangizda takrorlanadigan ish bo'lsa, forma, tasdiqlash, vazifa, fayl, bildirishnoma, hisobot va integratsiya bosqichlari bilan Proklix'ga moslashtirilishi mumkin.",
+      cta: "Jarayonimni tahlil qiling",
+    },
+    footerNote:
+      "Eng yaxshi boshlash: avval bitta jarayonni tanlab Proklix'da ishlaydigan qilish. Keyin boshqa bo'limlarga kengaytirish.",
   },
   beforeAfter: {
     title: "Proklix'dan keyin nima o'zgaradi",
