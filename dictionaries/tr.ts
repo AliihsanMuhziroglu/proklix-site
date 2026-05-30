@@ -1000,6 +1000,47 @@ export const tr: DictionaryEntry = {
     copyright: "© {year} Proklix. Tüm hakları saklıdır.",
     bottomTagline: "Telegram-first workflow platform · Taşkent / Özbekistan",
   },
+  phoneMockup: {
+    notifHeader: "Yeni bildirimler",
+    chatHeader: "Telegram sohbet",
+    botLabel: "Proklix Bot",
+    statusTime: "14:32",
+    notifications: [
+      {
+        color: "amber",
+        title: "Satın alma onayı bekliyor",
+        subtitle: "₸ 4 200 000 — Aziz M.",
+        actionPrimary: "Onayla",
+        actionSecondary: "Reddet",
+      },
+      {
+        color: "green",
+        title: "Yeni sipariş #2847",
+        subtitle: "Clemar — siteden geldi",
+        actionPrimary: "Kabul et",
+        actionSecondary: "Görüntüle",
+      },
+    ],
+    messages: [
+      {
+        from: "bot",
+        text: "Yeni görev atandı: Envanter #112 ✓",
+        time: "14:30",
+        variant: "default",
+      },
+      {
+        from: "user",
+        text: "Tamamlandı, fotoğraf yükledim",
+        time: "14:31 ✓✓",
+      },
+      {
+        from: "bot",
+        text: "Görev kapatıldı. Geçmiş kaydedildi ✓",
+        time: "14:32",
+        variant: "success",
+      },
+    ],
+  },
   dashboard: {
     title: "Proklix operasyon paneli",
     flowLabels: [

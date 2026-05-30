@@ -7,6 +7,25 @@
   --color-blue-500: #3b82f6;
   --color-blue-600: #2563eb;
   --color-blue-700: #1d4ed8;
+  --color-proklix: #185fa5;
+  --color-proklix-dark: #0c447c;
+  --color-proklix-amber: #ba7517;
+  --color-proklix-green: #1d9e75;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease both;
 }
 
 html {

@@ -941,6 +941,47 @@ export const uz: DictionaryEntry = {
     copyright: "© {year} Proklix. Barcha huquqlar himoyalangan.",
     bottomTagline: "Telegram-first platforma · Toshkent / O'zbekiston",
   },
+  phoneMockup: {
+    notifHeader: "Yangi bildirishnomalar",
+    chatHeader: "Telegram chat",
+    botLabel: "Proklix Bot",
+    statusTime: "14:32",
+    notifications: [
+      {
+        color: "amber",
+        title: "Sotib olish tasdiqlash kutmoqda",
+        subtitle: "₸ 4 200 000 — Aziz M.",
+        actionPrimary: "Tasdiqlash",
+        actionSecondary: "Rad etish",
+      },
+      {
+        color: "green",
+        title: "Yangi buyurtma #2847",
+        subtitle: "Clemar — saytdan keldi",
+        actionPrimary: "Qabul qilish",
+        actionSecondary: "Ko'rish",
+      },
+    ],
+    messages: [
+      {
+        from: "bot",
+        text: "Yangi vazifa tayinlandi: Inventarizatsiya #112 ✓",
+        time: "14:30",
+        variant: "default",
+      },
+      {
+        from: "user",
+        text: "Bajarildi, foto yukladim",
+        time: "14:31 ✓✓",
+      },
+      {
+        from: "bot",
+        text: "Vazifa yopildi. Tarix saqlandi ✓",
+        time: "14:32",
+        variant: "success",
+      },
+    ],
+  },
   dashboard: {
     title: "Proklix operatsion paneli",
     flowLabels: [

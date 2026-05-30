@@ -941,6 +941,47 @@ export const ru: DictionaryEntry = {
     copyright: "© {year} Proklix. Все права защищены.",
     bottomTagline: "Telegram-first платформа · Ташкент / Узбекистан",
   },
+  phoneMockup: {
+    notifHeader: "Новые уведомления",
+    chatHeader: "Telegram чат",
+    botLabel: "Proklix Bot",
+    statusTime: "14:32",
+    notifications: [
+      {
+        color: "amber",
+        title: "Согласование закупки ожидает",
+        subtitle: "₸ 4 200 000 — Азиз М.",
+        actionPrimary: "Согласовать",
+        actionSecondary: "Отклонить",
+      },
+      {
+        color: "green",
+        title: "Новый заказ #2847",
+        subtitle: "Clemar — с сайта",
+        actionPrimary: "Принять",
+        actionSecondary: "Открыть",
+      },
+    ],
+    messages: [
+      {
+        from: "bot",
+        text: "Назначена новая задача: Инвентаризация #112 ✓",
+        time: "14:30",
+        variant: "default",
+      },
+      {
+        from: "user",
+        text: "Выполнено, загрузил фото",
+        time: "14:31 ✓✓",
+      },
+      {
+        from: "bot",
+        text: "Задача закрыта. История сохранена ✓",
+        time: "14:32",
+        variant: "success",
+      },
+    ],
+  },
   dashboard: {
     title: "Proklix: операционная панель",
     flowLabels: [

@@ -348,6 +348,25 @@ export interface DictionaryEntry {
     copyright: string;
     bottomTagline: string;
   };
+  phoneMockup: {
+    notifHeader: string;
+    chatHeader: string;
+    botLabel: string;
+    statusTime: string;
+    notifications: {
+      color: "amber" | "green";
+      title: string;
+      subtitle: string;
+      actionPrimary: string;
+      actionSecondary: string;
+    }[];
+    messages: {
+      from: "bot" | "user";
+      text: string;
+      time: string;
+      variant?: "default" | "success";
+    }[];
+  };
   dashboard: {
     title: string;
     flowLabels: string[];

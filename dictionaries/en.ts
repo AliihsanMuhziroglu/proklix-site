@@ -1069,6 +1069,47 @@ export const en: DictionaryEntry = {
     copyright: "© {year} Proklix. All rights reserved.",
     bottomTagline: "Telegram-first workflow platform · Tashkent / Uzbekistan",
   },
+  phoneMockup: {
+    notifHeader: "New notifications",
+    chatHeader: "Telegram chat",
+    botLabel: "Proklix Bot",
+    statusTime: "14:32",
+    notifications: [
+      {
+        color: "amber",
+        title: "Purchase approval pending",
+        subtitle: "₸ 4 200 000 — Aziz M.",
+        actionPrimary: "Approve",
+        actionSecondary: "Reject",
+      },
+      {
+        color: "green",
+        title: "New order #2847",
+        subtitle: "Clemar — from website",
+        actionPrimary: "Accept",
+        actionSecondary: "View",
+      },
+    ],
+    messages: [
+      {
+        from: "bot",
+        text: "New task assigned: Inventory #112 ✓",
+        time: "14:30",
+        variant: "default",
+      },
+      {
+        from: "user",
+        text: "Done, uploaded photos",
+        time: "14:31 ✓✓",
+      },
+      {
+        from: "bot",
+        text: "Task closed. History saved ✓",
+        time: "14:32",
+        variant: "success",
+      },
+    ],
+  },
   dashboard: {
     title: "Proklix operations panel",
     flowLabels: [
