@@ -25,33 +25,40 @@ export const tr: DictionaryEntry = {
     ctaAnalysis: "Ücretsiz Süreç Analizi Al",
     watchDemo: "Demoyu izle",
   },
-  socialProof: {
-    testimonials: [
+  projects: {
+    title: "Örnek projeler",
+    subtitle:
+      "Farklı sektörlerde kurumsal web, katalog yapısı ve dijital süreç ihtiyaçlarına yönelik projeler geliştirdik.",
+    cta: "Siteyi İncele",
+    items: [
       {
-        name: "Aziza Karimova",
-        company: "B2B katalog, Taşkent",
-        result: "Haftada 6 saat tasarruf",
-        quote:
-          "Eskiden talepler Telegram'da kayboluyordu. Artık her talep sistemde, yönetici huniyi görüyor.",
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "Temizlik ekipmanları ve B2B ürün kataloğu",
+        description:
+          "Kurumsal görünüm, ürün/kategori yapısı, çok dilli içerik ve satış odaklı katalog deneyimi üzerine çalışıldı.",
+        badges: ["B2B katalog", "Kurumsal site", "Çok dilli yapı"],
       },
       {
-        name: "Rustam Toshpulatov",
-        company: "Tarım distribütörlüğü",
-        result: "Sipariş işleme %60 daha hızlı",
-        quote:
-          "Bayiler form üzerinden sipariş veriyor, depo anında bildirim alıyor. Excel artık gerekli değil.",
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Dijital ürün sunumu ve sade kullanıcı deneyimi",
+        description:
+          "Marka sunumu, net içerik akışı ve dönüşüm odaklı sayfa yapısı için geliştirilen web projesi.",
+        badges: ["Landing / web", "UX odaklı", "Dönüşüm kurgusu"],
       },
       {
-        name: "Dilnoza Mirzaeva",
-        company: "Emlak ajansı",
-        result: "Talepten gösterime 4 saat",
-        quote:
-          "Gösterimler, portföy ve onaylar tek panelde. Ekip daha hızlı ve kaos olmadan çalışıyor.",
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Kurumsal tanıtım ve güven veren dijital sunum",
+        description:
+          "Kurumsal güveni artıran, hizmetleri net anlatan ve profesyonel görünüm sunan web yapısı geliştirildi.",
+        badges: ["Kurumsal sunum", "Global domain", "Profesyonel görünüm"],
       },
     ],
-    logoWallTitle: "Güvenenler",
-    stats: "50+ şirket · 200+ otomatik süreç · 3 ülke",
-    learnMore: "Daha fazla",
   },
   problem: {
     title: "Her şey Telegram, Excel ve çalışanların hafızasındaysa kontrol kaybolur",

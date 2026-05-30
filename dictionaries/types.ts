@@ -11,11 +11,13 @@ export interface StepItem {
   description: string;
 }
 
-export interface TestimonialItem {
-  name: string;
-  company: string;
-  result: string;
-  quote: string;
+export interface ProjectItem {
+  title: string;
+  website: string;
+  url: string;
+  category: string;
+  description: string;
+  badges: string[];
 }
 
 export interface PricingPlan {
@@ -73,11 +75,11 @@ export interface DictionaryEntry {
     ctaAnalysis: string;
     watchDemo: string;
   };
-  socialProof: {
-    testimonials: TestimonialItem[];
-    logoWallTitle: string;
-    stats: string;
-    learnMore: string;
+  projects: {
+    title: string;
+    subtitle: string;
+    cta: string;
+    items: ProjectItem[];
   };
   problem: {
     title: string;

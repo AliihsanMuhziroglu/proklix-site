@@ -2,7 +2,7 @@ import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { Header } from "./Header";
 import { Hero } from "./Hero";
-import { SocialProofSection } from "./SocialProofSection";
+import { ProjectsSection } from "./ProjectsSection";
 import { ProblemSection } from "./ProblemSection";
 import { SolutionSection } from "./SolutionSection";
 import { SectorsSection } from "./SectorsSection";
@@ -25,7 +25,7 @@ export function LandingPage({ locale, dict }: Props) {
       <Header locale={locale} dict={dict} />
       <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <Hero dict={dict} />
-        <SocialProofSection dict={dict} />
+        <ProjectsSection dict={dict} />
         <ProblemSection dict={dict} />
         <SolutionSection dict={dict} />
         <SectorsSection dict={dict} locale={locale} />

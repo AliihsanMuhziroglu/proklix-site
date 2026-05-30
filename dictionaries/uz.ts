@@ -25,33 +25,40 @@ export const uz: DictionaryEntry = {
     ctaAnalysis: "Bepul jarayon tahlilini olish",
     watchDemo: "Demoni ko'rish",
   },
-  socialProof: {
-    testimonials: [
+  projects: {
+    title: "Namuna loyihalar",
+    subtitle:
+      "Turli sohalarda korporativ veb-saytlar, katalog tuzilmalari va raqamli jarayon ehtiyojlari uchun loyihalar ishlab chiqdik.",
+    cta: "Saytni ko'rish",
+    items: [
       {
-        name: "Aziza Karimova",
-        company: "B2B katalog, Toshkent",
-        result: "Haftasiga 6 soat tejash",
-        quote:
-          "Ilgari so'rovlar Telegramda yo'qolardi. Endi har bir so'rov tizimda, rahbar voronkani ko'radi.",
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "Tozalash uskunalari va B2B mahsulot katalogi",
+        description:
+          "Korporativ ko'rinish, mahsulot/kategoriya tuzilmasi, ko'p tilli kontent va sotuvga yo'naltirilgan katalog tajribasi ustida ishlangan.",
+        badges: ["B2B katalog", "Korporativ sayt", "Ko'p tilli"],
       },
       {
-        name: "Rustam Toshpulatov",
-        company: "Agro distribyutsiya",
-        result: "Buyurtmalarni qayta ishlash 60% tezroq",
-        quote:
-          "Dilerlar forma orqali buyurtma beradi, ombor darhol xabardor bo'ladi. Excel endi kerak emas.",
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Raqamli mahsulot taqdimoti va sodda foydalanuvchi tajribasi",
+        description:
+          "Brend taqdimoti, aniq kontent oqimi va konversiyaga yo'naltirilgan sahifa tuzilmasi uchun ishlab chiqilgan veb loyiha.",
+        badges: ["Landing / web", "UX yo'nalishli", "Konversiya"],
       },
       {
-        name: "Dilnoza Mirzaeva",
-        company: "Ko'chmas mulk agentligi",
-        result: "So'rovdan ko'rsatishgacha — 4 soat",
-        quote:
-          "Ko'rsatishlar, ob'ektlar va tasdiqlar bitta panelda. Jamoa tezroq va tartibsizliksiz ishlaydi.",
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Korporativ tanituv va ishonchli raqamli taqdimot",
+        description:
+          "Korporativ ishonchni oshiradigan, xizmatlarni aniq tushuntiradigan va professional ko'rinish beradigan veb tuzilma ishlab chiqildi.",
+        badges: ["Korporativ taqdimot", "Global domen", "Professional ko'rinish"],
       },
     ],
-    logoWallTitle: "Ishonch bildirganlar",
-    stats: "50+ kompaniya · 200+ avtomatlashtirilgan jarayon · 3 mamlakat",
-    learnMore: "Batafsil",
   },
   problem: {
     title:

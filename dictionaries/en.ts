@@ -25,33 +25,40 @@ export const en: DictionaryEntry = {
     ctaAnalysis: "Get a Free Process Review",
     watchDemo: "Watch demo",
   },
-  socialProof: {
-    testimonials: [
+  projects: {
+    title: "Example projects",
+    subtitle:
+      "We have delivered corporate websites, catalog structures, and digital process solutions across different industries.",
+    cta: "View site",
+    items: [
       {
-        name: "Aziza Karimova",
-        company: "B2B catalog, Tashkent",
-        result: "Saving 6 hours per week",
-        quote:
-          "Requests used to get lost in Telegram. Now every request is in the system and leadership sees the pipeline.",
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "Cleaning equipment and B2B product catalog",
+        description:
+          "Built around a corporate look, product/category structure, multilingual content, and a sales-focused catalog experience.",
+        badges: ["B2B catalog", "Corporate site", "Multilingual"],
       },
       {
-        name: "Rustam Toshpulatov",
-        company: "Agro distribution",
-        result: "60% faster order processing",
-        quote:
-          "Dealers submit orders through a form, the warehouse gets notified instantly. Excel is no longer needed.",
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Digital product presentation and clear user experience",
+        description:
+          "A web project focused on brand presentation, clear content flow, and conversion-oriented page structure.",
+        badges: ["Landing / web", "UX-focused", "Conversion flow"],
       },
       {
-        name: "Dilnoza Mirzaeva",
-        company: "Real estate agency",
-        result: "From request to viewing in 4 hours",
-        quote:
-          "Viewings, listings and approvals in one panel. The team works faster without the chaos.",
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Corporate introduction and trustworthy digital presence",
+        description:
+          "A professional web structure that builds corporate trust and presents services clearly.",
+        badges: ["Corporate presence", "Global domain", "Professional look"],
       },
     ],
-    logoWallTitle: "Trusted by",
-    stats: "50+ companies · 200+ automated processes · 3 countries",
-    learnMore: "Learn more",
   },
   problem: {
     title: "When everything lives in Telegram, Excel and people's heads — control slips away",
