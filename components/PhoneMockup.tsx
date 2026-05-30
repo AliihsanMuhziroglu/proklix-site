@@ -1,4 +1,5 @@
 import type { Dictionary } from "@/dictionaries";
+import { ProklixLogo } from "./ProklixLogo";
 
 type Props = {
   dict: Dictionary;
@@ -19,11 +20,14 @@ const BOT_COLORS = {
   success: "#1D9E75",
 } as const;
 
-function BoltIcon({ className }: { className?: string }) {
+function BotAvatar({ color }: { color?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" />
-    </svg>
+    <div
+      className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-white p-0.5"
+      style={{ boxShadow: `0 0 0 1.5px ${color}` }}
+    >
+      <ProklixLogo variant="icon" className="h-full w-full object-contain" />
+    </div>
   );
 }
 
@@ -96,14 +100,7 @@ function TgBubble({
       className={`animate-slide-up flex gap-1.5 ${isBot ? "" : "flex-row-reverse"}`}
       style={{ animationDelay: `${delay}ms` }}
     >
-      {isBot && (
-        <div
-          className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-[9px] font-medium text-white"
-          style={{ background: color }}
-        >
-          PX
-        </div>
-      )}
+      {isBot && <BotAvatar color={color} />}
       {isBot ? (
         <div className="max-w-[130px] rounded-xl rounded-tl-sm border border-gray-100 bg-white p-2">
           {label && (
@@ -150,10 +147,9 @@ export function PhoneMockup({ dict }: Props) {
           >
             <div className="flex items-center gap-1.5">
               <div
-                className="flex h-[22px] w-[22px] items-center justify-center rounded-md"
-                style={{ background: "rgba(255,255,255,0.2)" }}
+                className="flex h-[22px] w-[22px] items-center justify-center overflow-hidden rounded-md bg-white p-0.5"
               >
-                <BoltIcon className="h-3 w-3 text-white" />
+                <ProklixLogo variant="icon" className="h-full w-full object-contain" />
               </div>
               <span className="text-xs font-medium text-white">Proklix</span>
             </div>

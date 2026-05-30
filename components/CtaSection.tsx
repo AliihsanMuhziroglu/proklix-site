@@ -19,22 +19,20 @@ export function CtaSection({ dict, className = "bg-brand-600" }: Props) {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4">
-          <Button
-            variant="primary"
-            size="lg"
+          <a
             href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            icon={<TelegramIcon className="h-5 w-5" />}
-            className="w-full bg-white text-brand-600 hover:bg-brand-50 active:bg-brand-100 sm:w-auto sm:min-w-[220px]"
+            className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-lg bg-white px-6 py-3.5 text-base font-medium text-brand-600 transition-colors hover:bg-brand-50 active:bg-brand-100 sm:w-auto sm:min-w-[220px]"
           >
+            <TelegramIcon className="h-5 w-5 shrink-0 text-brand-600" />
             {cta.ctaTelegram}
-          </Button>
+          </a>
           <Button
             variant="ghost"
             size="lg"
             href={`tel:${PHONE}`}
-            className="w-full border-white/40 text-white hover:bg-white/10 sm:w-auto sm:min-w-[220px]"
+            className="w-full border-white/40 text-white hover:border-white/60 hover:bg-white/10 hover:text-white sm:w-auto sm:min-w-[220px]"
           >
             {cta.ctaCall}: {PHONE_DISPLAY}
           </Button>
