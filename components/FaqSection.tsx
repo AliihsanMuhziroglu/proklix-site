@@ -66,7 +66,9 @@ export function FaqSection({ dict }: Props) {
                   >
                     <button
                       type="button"
+                      id={`faq-button-${i}`}
                       onClick={() => setOpenIndex(isOpen ? null : i)}
+                      aria-controls={`faq-panel-${i}`}
                       className="flex w-full items-start justify-between gap-3 px-4 py-3.5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-600 sm:px-5 sm:py-4"
                       aria-expanded={isOpen}
                     >
@@ -84,13 +86,17 @@ export function FaqSection({ dict }: Props) {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
-                    {isOpen && (
-                      <div className="border-t border-slate-100 px-4 pb-4 pt-3 sm:px-5 sm:pb-5 sm:pt-3.5">
-                        <p className="text-[13px] leading-relaxed text-slate-600 sm:text-sm">
-                          {item.answer}
-                        </p>
-                      </div>
-                    )}
+                    <div
+                      id={`faq-panel-${i}`}
+                      role="region"
+                      aria-labelledby={`faq-button-${i}`}
+                      hidden={!isOpen}
+                      className="border-t border-slate-100 px-4 pb-4 pt-3 sm:px-5 sm:pb-5 sm:pt-3.5"
+                    >
+                      <p className="text-[13px] leading-relaxed text-slate-600 sm:text-sm">
+                        {item.answer}
+                      </p>
+                    </div>
                   </article>
                 </div>
               );

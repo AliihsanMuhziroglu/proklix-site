@@ -58,105 +58,89 @@ function IconEye({ className }: IconProps) {
 }
 
 const cardIcons = [IconForm, IconCheck, IconTask, IconTelegram, IconPlug, IconEye];
-
 const TELEGRAM_FLOW_STEP_INDEX = 2;
 
 export function PositioningSection({ dict }: Props) {
   const { title, subtitle, flowSteps, items } = dict.positioning;
 
   return (
-    <section id="platform" className="border-b border-slate-100 bg-slate-50 py-12 sm:py-16">
+    <section id="platform" className="border-b border-slate-100 bg-slate-50 py-10 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
             {title}
           </h2>
-          <p className="mx-auto mt-3 max-w-[760px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
+          <p className="mx-auto mt-3 max-w-[640px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
             {subtitle}
           </p>
         </div>
 
-        <div className="mt-8 sm:mt-10">
-          <div className="flex flex-col lg:flex-row lg:items-stretch">
-            {flowSteps.map((step, i) => {
-              const isTelegram = i === TELEGRAM_FLOW_STEP_INDEX;
-              return (
-                <div key={step.title} className="contents">
-                  <div
-                    className={`flex flex-col rounded-2xl border bg-white p-3.5 shadow-sm sm:p-4 lg:min-w-0 lg:flex-1 ${
-                      isTelegram
-                        ? "border-blue-200 ring-1 ring-blue-100"
-                        : "border-slate-200"
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${
-                          isTelegram
-                            ? "bg-blue-600 text-white"
-                            : "bg-slate-100 text-navy-900"
-                        }`}
-                      >
-                        {i + 1}
-                      </span>
-                      <h3
-                        className={`text-[13px] font-semibold leading-snug sm:text-sm ${
-                          isTelegram ? "text-blue-800" : "text-navy-950"
-                        }`}
-                      >
-                        {step.title}
-                      </h3>
-                    </div>
-                    <p className="mt-2 text-[12px] leading-relaxed text-slate-600 sm:text-[13px]">
-                      {step.description}
-                    </p>
-                  </div>
-                  {i < flowSteps.length - 1 && (
-                    <div
-                      className="flex shrink-0 items-center justify-center py-1.5 text-slate-300 lg:px-1.5 lg:py-0"
-                      aria-hidden="true"
+        <div className="mt-6 flex flex-col gap-1.5 sm:mt-8 lg:flex-row lg:items-stretch lg:gap-1">
+          {flowSteps.map((step, i) => {
+            const isTelegram = i === TELEGRAM_FLOW_STEP_INDEX;
+            return (
+              <div key={step.title} className="contents">
+                <div
+                  className={`flex flex-col rounded-xl border bg-white p-3 shadow-sm lg:min-w-0 lg:flex-1 ${
+                    isTelegram ? "border-blue-200 ring-1 ring-blue-100" : "border-slate-200"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
+                        isTelegram ? "bg-blue-600 text-white" : "bg-slate-100 text-navy-900"
+                      }`}
                     >
-                      <span className="text-base leading-none lg:hidden">↓</span>
-                      <span className="hidden text-sm leading-none lg:inline">→</span>
-                    </div>
-                  )}
+                      {i + 1}
+                    </span>
+                    <h3
+                      className={`text-[12px] font-semibold leading-snug sm:text-[13px] ${
+                        isTelegram ? "text-blue-800" : "text-navy-950"
+                      }`}
+                    >
+                      {step.title}
+                    </h3>
+                  </div>
+                  <p className="mt-1.5 text-[11px] leading-relaxed text-slate-600 sm:text-xs">
+                    {step.description}
+                  </p>
                 </div>
-              );
-            })}
-          </div>
+                {i < flowSteps.length - 1 && (
+                  <div
+                    className="flex shrink-0 items-center justify-center py-0.5 text-slate-300 lg:px-1 lg:py-0"
+                    aria-hidden="true"
+                  >
+                    <span className="text-sm leading-none lg:hidden">↓</span>
+                    <span className="hidden text-xs leading-none lg:inline">→</span>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+        <div className="mt-6 grid grid-cols-2 gap-2.5 sm:mt-8 sm:grid-cols-3 sm:gap-3 lg:grid-cols-6">
           {items.map((item, i) => {
             const Icon = cardIcons[i] ?? IconForm;
             const isTelegram = i === 3;
             return (
               <div
                 key={item.title}
-                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+                className="flex flex-col rounded-xl border border-slate-200 bg-white p-3 shadow-sm"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div
-                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${
-                      isTelegram
-                        ? "border-blue-200 bg-blue-50 text-blue-600"
-                        : "border-slate-200 bg-slate-50 text-navy-800/80"
-                    }`}
-                  >
-                    <Icon className="h-[18px] w-[18px]" />
-                  </div>
-                  <span
-                    className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
-                      isTelegram
-                        ? "border-blue-200 bg-blue-50 text-blue-700"
-                        : "border-slate-200 bg-slate-50 text-slate-500"
-                    }`}
-                  >
-                    {item.badge}
-                  </span>
+                <div
+                  className={`flex h-8 w-8 items-center justify-center rounded-lg border ${
+                    isTelegram
+                      ? "border-blue-200 bg-blue-50 text-blue-600"
+                      : "border-slate-200 bg-slate-50 text-navy-800/80"
+                  }`}
+                >
+                  <Icon className="h-4 w-4" />
                 </div>
-                <h3 className="mt-3 text-sm font-bold leading-snug text-navy-950">{item.title}</h3>
-                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
+                <h3 className="mt-2 text-[12px] font-bold leading-snug text-navy-950 sm:text-[13px]">
+                  {item.title}
+                </h3>
+                <p className="mt-1 text-[11px] leading-relaxed text-slate-600 sm:text-xs">
                   {item.description}
                 </p>
               </div>

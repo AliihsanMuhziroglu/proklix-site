@@ -23,8 +23,6 @@ export function Header({ locale, dict }: Props) {
     { href: "#sectors", label: dict.header.forWhom },
     { href: "#pricing", label: dict.header.pricing },
     { href: "#faq", label: dict.header.faq },
-    { href: `/${locale}/blog`, label: dict.header.blog, isRoute: true },
-    { href: "#contact", label: dict.header.contact },
   ];
 
   return (
@@ -40,26 +38,16 @@ export function Header({ locale, dict }: Props) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-2.5 xl:flex 2xl:gap-3">
-          {nav.map((item) =>
-            item.isRoute ? (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="whitespace-nowrap text-[13px] font-medium text-slate-600 transition hover:text-navy-950 2xl:text-sm"
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <a
-                key={item.href}
-                href={item.href}
-                className="whitespace-nowrap text-[13px] font-medium text-slate-600 transition hover:text-navy-950 2xl:text-sm"
-              >
-                {item.label}
-              </a>
-            ),
-          )}
+        <nav className="hidden items-center gap-2 lg:flex lg:gap-2.5 xl:gap-3">
+          {nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="whitespace-nowrap text-[12px] font-medium text-slate-600 transition hover:text-navy-950 lg:text-[13px] xl:text-sm"
+            >
+              {item.label}
+            </a>
+          ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
@@ -81,7 +69,7 @@ export function Header({ locale, dict }: Props) {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 xl:hidden"
+            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 lg:hidden"
             aria-expanded={menuOpen}
             aria-label="Menu"
           >
@@ -99,29 +87,25 @@ export function Header({ locale, dict }: Props) {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 xl:hidden">
+        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
           <nav className="flex flex-col gap-1">
-            {nav.map((item) =>
-              item.isRoute ? (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
-                >
-                  {item.label}
-                </a>
-              ),
-            )}
+            {nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-slate-50"
+              >
+                {item.label}
+              </a>
+            ))}
+            <Link
+              href={`/${locale}/blog`}
+              onClick={() => setMenuOpen(false)}
+              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-500 transition hover:bg-slate-50"
+            >
+              {dict.header.blog}
+            </Link>
             <a
               href={`tel:${PHONE}`}
               className="rounded-lg px-3 py-3 text-sm font-semibold text-blue-600"

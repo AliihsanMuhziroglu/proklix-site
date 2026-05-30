@@ -24,7 +24,7 @@ export function BeforeAfterSection({ dict }: Props) {
   const { beforeAfter } = dict;
 
   return (
-    <section className="overflow-hidden bg-white py-12 sm:py-16">
+    <section className="overflow-hidden bg-white py-10 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
@@ -48,7 +48,7 @@ export function BeforeAfterSection({ dict }: Props) {
                 </p>
               </div>
             </div>
-            <ul className="mt-5 space-y-2.5 sm:space-y-3">
+            <ul className="mt-4 space-y-2 sm:space-y-2.5">
               {beforeAfter.without.items.map((item) => (
                 <li
                   key={item}
@@ -91,7 +91,7 @@ export function BeforeAfterSection({ dict }: Props) {
                   </p>
                 </div>
               </div>
-              <ul className="mt-5 space-y-2.5 sm:space-y-3">
+              <ul className="mt-4 space-y-2 sm:space-y-2.5">
                 {beforeAfter.with.items.map((item) => (
                   <li
                     key={item}
@@ -118,17 +118,8 @@ export function BeforeAfterSection({ dict }: Props) {
           </div>
         </div>
 
-        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:mt-10 sm:p-6">
+        <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:mt-8 sm:p-5">
           <h3 className="text-sm font-bold text-navy-950 sm:text-base">{beforeAfter.callout.title}</h3>
-          <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-slate-600 sm:text-sm">
-            {beforeAfter.callout.description}
-          </p>
-          <a
-            href="#contact"
-            className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-2xl border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-navy-950 hover:text-white"
-          >
-            {beforeAfter.callout.cta}
-          </a>
         </div>
       </div>
     </section>

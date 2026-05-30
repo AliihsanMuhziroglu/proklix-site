@@ -40,14 +40,6 @@ function IconIntegration({ className }: IconProps) {
   );
 }
 
-function IconModule({ className }: IconProps) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-  );
-}
-
 const categoryIcons = {
   build: IconBuild,
   daily: IconDaily,
@@ -55,122 +47,54 @@ const categoryIcons = {
   integration: IconIntegration,
 } as const;
 
-function isTelegramModule(title: string) {
-  return title.toLowerCase().includes("telegram");
-}
-
 export function ModulesSection({ dict }: Props) {
   const { modules } = dict;
 
   return (
-    <section id="modules" className="overflow-hidden bg-white py-12 sm:py-16">
+    <section id="modules" className="overflow-hidden bg-white py-10 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
             {modules.title}
           </h2>
-          <p className="mx-auto mt-3 max-w-[760px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
+          <p className="mx-auto mt-3 max-w-[640px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
             {modules.subtitle}
           </p>
-          <div className="mt-4 inline-flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 shadow-sm sm:mt-5 sm:gap-x-2 sm:px-4 sm:py-2.5">
-            {modules.flowSteps.map((step, i) => (
-              <span key={step} className="inline-flex items-center gap-1.5 sm:gap-2">
-                <span className="text-[10px] font-semibold text-navy-900 sm:text-xs">{step}</span>
-                {i < modules.flowSteps.length - 1 && (
-                  <span className="text-[10px] text-slate-300 sm:text-xs" aria-hidden="true">
-                    →
-                  </span>
-                )}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5">
           {modules.categories.map((category) => {
-            const CategoryIcon = categoryIcons[category.id as keyof typeof categoryIcons] ?? IconModule;
-            const isIntegration = category.id === "integration";
+            const CategoryIcon = categoryIcons[category.id as keyof typeof categoryIcons] ?? IconBuild;
 
             return (
               <div
                 key={category.id}
-                className={`rounded-2xl border bg-white p-4 shadow-sm sm:p-5 ${
-                  isIntegration ? "border-slate-300" : "border-slate-200"
-                }`}
+                className="rounded-2xl border border-slate-200 bg-slate-50/50 p-4 sm:p-5"
               >
-                <div className="flex items-start gap-3">
-                  <div
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${
-                      isIntegration
-                        ? "border-slate-300 bg-slate-100 text-navy-800"
-                        : "border-slate-200 bg-slate-50 text-navy-800/80"
-                    }`}
-                  >
-                    <CategoryIcon className="h-5 w-5" />
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy-800/80">
+                    <CategoryIcon className="h-[18px] w-[18px]" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-navy-950 sm:text-base">{category.title}</h3>
-                    <p className="mt-0.5 text-[12px] leading-relaxed text-slate-500 sm:text-[13px]">
-                      {category.description}
-                    </p>
+                    <h3 className="text-sm font-bold text-navy-950">{category.title}</h3>
+                    <p className="text-[12px] leading-relaxed text-slate-500">{category.description}</p>
                   </div>
                 </div>
 
-                <ul className="mt-4 space-y-2">
-                  {category.items.map((item) => {
-                    const isTelegram = isTelegramModule(item.title);
-                    return (
-                      <li
-                        key={item.title}
-                        className={`rounded-xl border p-3 ${
-                          isTelegram
-                            ? "border-blue-200 bg-blue-50/40"
-                            : "border-slate-100 bg-slate-50/60"
-                        }`}
-                      >
-                        <div className="flex items-start gap-2.5">
-                          <span
-                            className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md ${
-                              isTelegram
-                                ? "bg-blue-100 text-blue-700"
-                                : "bg-white text-slate-500 ring-1 ring-slate-200"
-                            }`}
-                          >
-                            <IconModule className="h-3 w-3" />
-                          </span>
-                          <div className="min-w-0">
-                            <h4
-                              className={`text-[13px] font-semibold leading-snug sm:text-sm ${
-                                isTelegram ? "text-blue-900" : "text-navy-950"
-                              }`}
-                            >
-                              {item.title}
-                            </h4>
-                            <p className="mt-1 text-[12px] leading-relaxed text-slate-600 sm:text-[13px]">
-                              {item.description}
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                    );
-                  })}
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {category.items.map((item) => (
+                    <li
+                      key={item.title}
+                      title={item.description}
+                      className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700 sm:text-xs"
+                    >
+                      {item.title}
+                    </li>
+                  ))}
                 </ul>
               </div>
             );
           })}
-        </div>
-
-        <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm sm:mt-8 sm:p-5 lg:p-6">
-          <h3 className="text-sm font-bold text-navy-950 sm:text-base">{modules.callout.title}</h3>
-          <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-slate-600 sm:text-sm">
-            {modules.callout.description}
-          </p>
-          <a
-            href="#contact"
-            className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-2xl border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-navy-950 hover:text-white"
-          >
-            {modules.callout.cta}
-          </a>
         </div>
       </div>
     </section>

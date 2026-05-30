@@ -47,7 +47,9 @@ export function Hero({ dict }: Props) {
               {dict.hero.ctaTelegram}
             </a>
             <a
-              href="#contact"
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl border border-navy-900 px-6 py-3.5 text-base font-semibold text-navy-900 transition hover:bg-navy-950 hover:text-white sm:w-auto"
             >
               {dict.hero.ctaAnalysis}

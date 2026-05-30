@@ -81,7 +81,7 @@ export function IntegrationSection({ dict }: Props) {
   return (
     <section
       id="integrations"
-      className="relative isolate overflow-hidden bg-navy-950 py-12 text-white sm:py-16"
+      className="relative isolate overflow-hidden bg-navy-950 py-10 text-white sm:py-14"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -153,23 +153,6 @@ export function IntegrationSection({ dict }: Props) {
               </div>
             );
           })}
-        </div>
-
-        <div className="mt-8 rounded-2xl border border-white/15 bg-white/[0.07] p-4 shadow-sm sm:mt-10 sm:p-5 lg:p-6">
-          <h3 className="text-sm font-bold text-white sm:text-base">{integration.example.title}</h3>
-          <p className="mt-2 text-[13px] leading-relaxed text-slate-300 sm:text-sm">
-            {integration.example.flow}
-          </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {integration.example.chips.map((chip) => (
-              <span
-                key={chip}
-                className="rounded-full border border-white/10 bg-navy-950/40 px-2.5 py-1 text-[10px] font-medium text-slate-300 sm:text-[11px]"
-              >
-                {chip}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

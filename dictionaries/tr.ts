@@ -20,9 +20,9 @@ export const tr: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Talepler, onaylar, görevler ve entegrasyonlar tek Telegram odaklı sistemde",
+    title: "Talepten onaya, görevden entegrasyona — operasyonunuz Telegram'da yönetilsin",
     subtitle:
-      "Proklix; talepleri, formları, onayları, görevleri, dosyaları ve işlem geçmişini tek bir akışta toplar. Mevcut CRM, web sitesi, depo, Excel veya özel API sistemlerinize bağlanarak operasyonu Telegram üzerinden yönetilebilir hale getirir.",
+      "Talepleri, formları, onayları, görevleri, dosyaları ve işlem geçmişini tek akışta toplar. Mevcut CRM, web sitesi, depo, Excel veya özel API sistemlerinize bağlanır.",
     trustTag: "Taşkent ve Özbekistan'daki işletmeler için",
     ctaTelegram: "Telegram'dan Yaz",
     ctaAnalysis: "Ücretsiz süreç analizi al",
@@ -32,7 +32,7 @@ export const tr: DictionaryEntry = {
   positioning: {
     title: "Sadece CRM değil. Sadece bot değil. Tam operasyon akışı.",
     subtitle:
-      "Proklix; talepleri toplar, sorumlulara görev atar, onayları yönetir, mevcut sistemlerden veri alır ve tüm sürecin geçmişini kaydeder.",
+      "Talepleri toplar, görev atar, onayları yönetir, mevcut sistemlerden veri alır ve sürecin geçmişini kaydeder.",
     flowSteps: [
       {
         title: "Veri gelir",
@@ -59,45 +59,39 @@ export const tr: DictionaryEntry = {
       {
         badge: "Form",
         title: "Talepler ve formlar",
-        description:
-          "Web sitesi, Telegram veya dahili ekranlardan gelen talepleri standart forma çevirin. Alanlar, dosyalar ve açıklamalar kaybolmaz.",
+        description: "Web, Telegram veya dahili ekranlardan gelen talepleri standart forma çevirir.",
       },
       {
-        badge: "Approval",
+        badge: "Onay",
         title: "Onay akışları",
-        description:
-          "Satın alma, teklif, masraf veya servis gibi süreçleri adım adım yönetin. Her aşamada kimin karar vereceği bellidir.",
+        description: "Satın alma, teklif veya servis süreçlerinde kimin karar vereceği bellidir.",
       },
       {
-        badge: "Task",
+        badge: "Görev",
         title: "Görev yönetimi",
-        description:
-          "Her iş bir sorumluya atanır. Görevler özel sohbetlerde kaybolmaz; durum, süre ve geçmiş takip edilir.",
+        description: "Her iş sorumluya atanır; durum ve geçmiş sohbetlerde kaybolmaz.",
       },
       {
         badge: "Telegram",
         title: "Telegram bildirimleri",
-        description:
-          "Çalışanlar yeni görevleri, onayları ve geri dönüşleri doğrudan Telegram'da görür. Ek uygulama öğrenme yükü azalır.",
+        description: "Görevler ve onaylar doğrudan Telegram'da görünür; ek uygulama yükü azalır.",
       },
       {
-        badge: "Integration",
-        title: "Mevcut sistem entegrasyonu",
-        description:
-          "CRM, web sitesi, depo, Excel veya özel API kaynaklarından veri alıp süreçlerin içine bağlayın.",
+        badge: "Entegrasyon",
+        title: "Mevcut sistem bağlantısı",
+        description: "CRM, web sitesi, depo, Excel veya API kaynaklarından veri alınabilir.",
       },
       {
-        badge: "Audit",
+        badge: "Geçmiş",
         title: "Kontrol ve geçmiş",
-        description:
-          "Her talebin durumu, kimde olduğu, hangi kararların alındığı ve hangi dosyaların eklendiği tek yerden izlenir.",
+        description: "Durum, kararlar, dosyalar ve sorumluluk tek yerden izlenir.",
       },
     ],
   },
   integration: {
     title: "Mevcut sistemlerinizin üzerinde çalışır",
     subtitle:
-      "Web sitenizi, CRM'inizi, depo yazılımınızı veya Excel tablolarınızı hemen değiştirmeniz gerekmez. Proklix mevcut verilerinize bağlanır, süreçleri çalıştırır, görevleri Telegram'a taşır ve sonuçları tekrar kayıt altına alır.",
+      "CRM, web sitesi, depo veya Excel düzeninizi hemen değiştirmeniz gerekmez. Proklix veriye bağlanır, süreci çalıştırır ve sonuçları kayıt altına alır.",
     flowSteps: [
       {
         title: "Veri kaynağı",
@@ -150,8 +144,8 @@ export const tr: DictionaryEntry = {
       {
         title: "Google Sheets / Excel",
         description:
-          "Verileri hâlâ tablolarda tutan işletmeler için hızlı başlangıç: import, export veya kontrollü veri aktarımı.",
-        examples: ["Import", "Export", "Hızlı başlangıç"],
+          "Tablolarda tutulan veriler için hızlı başlangıç: veri aktarımı veya kontrollü import/export.",
+        examples: ["Veri aktarımı", "Import", "Export"],
       },
       {
         title: "Özel API",
@@ -170,8 +164,9 @@ export const tr: DictionaryEntry = {
   useCases: {
     title: "Her departman için farklı süreçler çalıştırılabilir",
     subtitle:
-      "Proklix tek bir hazır kalıba sıkışmaz. Satıştan depoya, satın almadan saha ekiplerine kadar tekrar eden iş akışları form, onay, görev ve sonuç mantığıyla kurulabilir.",
+      "Satıştan depoya, satın almadan saha ekiplerine — tekrar eden iş akışları form, onay, görev ve sonuç mantığıyla kurulabilir.",
     flowSteps: ["Form", "Onay", "Görev", "Sonuç"],
+    featuredLabel: "Öne çıkanlar",
     categories: [
       { id: "sales", label: "Satış ve müşteri" },
       { id: "finance", label: "Satın alma ve finans" },
@@ -199,7 +194,7 @@ export const tr: DictionaryEntry = {
         categoryId: "sales",
         title: "Servis talebi",
         description:
-          "Müşteri veya yönetici servis talebi oluşturur. Sorumlu atanır, müdahale sonucu ve dosyalar aynı kayıtta tutulur.",
+          "Servis talebi açılır, sorumlu atanır; müdahale sonucu ve dosyalar aynı kayıtta kalır.",
       },
       {
         categoryId: "finance",
@@ -210,15 +205,9 @@ export const tr: DictionaryEntry = {
       },
       {
         categoryId: "finance",
-        title: "Gider onayı",
-        description:
-          "Masraf fişi, açıklama ve dosyalar eklenir. Onay zinciri tamamlanınca sonuç rapora düşer.",
-      },
-      {
-        categoryId: "finance",
         title: "Belge onayı",
         description:
-          "Sözleşme, fatura veya iç belge adım adım onaydan geçer. Versiyonlar ve kararlar kaybolmaz.",
+          "Sözleşme, fatura veya iç belge adım adım onaydan geçer; versiyonlar kaybolmaz.",
       },
       {
         categoryId: "warehouse",
@@ -229,16 +218,9 @@ export const tr: DictionaryEntry = {
       },
       {
         categoryId: "warehouse",
-        title: "Depo transferi",
-        description:
-          "Depolar arası transfer talebi açılır. Depo sorumlusu görev alır, işlem ve geçmiş kayıt altına alınır.",
-        hasIntegration: true,
-      },
-      {
-        categoryId: "warehouse",
         title: "Ürün / stok kontrolü",
         description:
-          "Ürün listesi mevcut sistemden veya tablodan gelir. Kontrol görevi atanır, sapma ve fotoğraflar aynı kayıtta toplanır.",
+          "Ürün listesi mevcut sistemden gelir; kontrol görevi atanır, sapma ve fotoğraflar kayda girer.",
         hasIntegration: true,
       },
       {
@@ -249,15 +231,9 @@ export const tr: DictionaryEntry = {
       },
       {
         categoryId: "field",
-        title: "Fotoğraflı görev tamamlama",
-        description:
-          "Saha çalışanı görevi Telegram'da alır. Fotoğraf, açıklama ve tamamlanma durumu yönetime raporlanır.",
-      },
-      {
-        categoryId: "field",
         title: "Bakım / arıza bildirimi",
         description:
-          "Arıza veya bakım talebi açılır. Sorumlu atanır, müdahale adımları ve sonuç geçmişe kaydedilir.",
+          "Arıza veya bakım talebi açılır; sorumlu atanır, müdahale adımları geçmişe kaydedilir.",
       },
       {
         categoryId: "internal",
@@ -267,30 +243,24 @@ export const tr: DictionaryEntry = {
       },
       {
         categoryId: "internal",
-        title: "Erişim / yetki talepleri",
-        description:
-          "Yeni erişim veya yetki talebi form üzerinden gider. Onay zinciri tamamlanınca karar ve geçmiş saklanır.",
-      },
-      {
-        categoryId: "internal",
         title: "İç onay süreçleri",
         description:
-          "İç politika, bütçe veya operasyon kararları adım adım onaydan geçer. Kim ne zaman onayladı görünür.",
+          "İç politika, bütçe veya operasyon kararları adım adım onaydan geçer.",
       },
     ],
     customCard: {
       title: "Bunların dışında özel süreciniz de kurulabilir",
       description:
-        "Firmanızda tekrar eden bir iş varsa; form, onay, görev, dosya, bildirim, rapor ve entegrasyon adımlarıyla Proklix'e uyarlanabilir.",
-      cta: "Bir sürecimi analiz et",
+        "Firmanızda tekrar eden bir iş varsa Proklix'e uyarlanabilir.",
+      cta: "Telegram'dan sürecimi anlat",
     },
     footerNote:
-      "En iyi başlangıç: önce tek bir süreci seçip Proklix'te çalışır hale getirmek. Sonra diğer departmanlara yaymak.",
+      "En iyi başlangıç: tek bir süreci seçip çalışır hale getirmek, sonra diğer departmanlara yaymak.",
   },
   beforeAfter: {
     title: "Dağınık takipten kontrollü operasyona geçin",
     subtitle:
-      "Proklix; sohbetlerde kaybolan talepleri, manuel onayları, dağınık dosyaları ve sistemler arası kopyalama işini tek akışta toplar.",
+      "Sohbetlerde kaybolan talepleri, manuel onayları ve sistemler arası kopyalamayı tek akışta toplar.",
     transformLabel: "Kaos → Kontrol",
     without: {
       title: "Proklix olmadan",
@@ -300,9 +270,7 @@ export const tr: DictionaryEntry = {
         "Excel dosyaları geç veya eksik güncellenir",
         "Kimin sorumlu olduğu belirsiz kalır",
         "Onaylar mesajla ve manuel takip edilir",
-        "Dosyalar, fotoğraflar ve yorumlar farklı yerlerde kalır",
-        "İşlem geçmişi ve karar zinciri net görünmez",
-        "Veriler sistemler arasında elle kopyalanır",
+        "Dosyalar farklı yerlerde dağılır",
       ],
     },
     with: {
@@ -314,8 +282,6 @@ export const tr: DictionaryEntry = {
         "Görevler Telegram üzerinden ilgili kişiye gider",
         "Dosya, fotoğraf ve yorumlar sürece bağlı kalır",
         "Kim, ne zaman, hangi kararı verdi görülebilir",
-        "Yönetici tek ekrandan genel durumu takip eder",
-        "Mevcut CRM, web sitesi, depo veya Excel verileri sürece bağlanabilir",
       ],
     },
     resultChips: [
@@ -323,21 +289,19 @@ export const tr: DictionaryEntry = {
       "Daha net sorumluluk",
       "Daha hızlı onay",
       "Daha görünür yönetim",
-      "Daha temiz geçmiş",
     ],
     callout: {
       title: "En büyük fark: süreç kişilerin hafızasında değil, sistemde yaşar.",
-      description:
-        "Bir talep açıldığında kimin sorumlu olduğu, hangi aşamada beklediği, hangi dosyaların eklendiği ve hangi kararların alındığı Proklix içinde kayıtlı kalır.",
-      cta: "Bir sürecimi analiz et",
+      description: "",
+      cta: "Telegram'dan yaz",
     },
   },
   sectors: {
     title: "Manuel takip, onay ve saha kontrolü olan işletmeler için",
     subtitle:
-      "Sektörünüz farklı olabilir; ihtiyaç genelde aynıdır: talepler kaybolmasın, sorumlu belli olsun, onaylar kayıtlı ilerlesin, dosyalar sürece bağlı kalsın ve yönetici genel durumu görebilsin.",
-    positioningLine:
-      "Proklix en çok; Telegram, Excel, web sitesi, CRM veya depo sistemi arasında iş takip eden ekiplerde değer üretir.",
+      "Sektörünüz farklı olabilir; ihtiyaç genelde aynıdır: talepler kaybolmasın, sorumlu belli olsun, onaylar kayıtlı ilerlesin.",
+    otherIndustriesNote:
+      "Restoran, emlak, klinik ve benzeri operasyonel işletmelere de uyarlanabilir.",
     exampleLabel: "Örnek süreç",
     items: [
       {
@@ -372,47 +336,17 @@ export const tr: DictionaryEntry = {
         sectorSlug: "oborudovanie",
       },
       {
-        title: "İnşaat ve saha ekipleri",
-        description:
-          "Saha işleri, malzeme talepleri, fotoğraflı raporlar, iş tamamlama ve yönetici onayları tek süreçte toplanır.",
-        pills: ["Saha", "Malzeme", "Rapor"],
-        example: "malzeme talebi → saha görevi → fotoğraflı rapor",
-        sectorSlug: "stroitelstvo",
-      },
-      {
         title: "Lojistik ve dış ticaret",
         description:
-          "Belge takibi, teslim aşamaları, müşteri bildirimleri, görev atamaları ve durum güncellemeleri yönetilebilir.",
+          "Belge takibi, teslim aşamaları, görev atamaları ve durum güncellemeleri yönetilebilir.",
         pills: ["Belge", "Teslimat", "Durum"],
         example: "belge girişi → kontrol → teslimat bildirimi",
         sectorSlug: "logistika",
       },
       {
-        title: "Emlak ve kiralama",
-        description:
-          "Mülk talepleri, gösterim randevuları, sözleşme adımları, müşteri notları ve onay geçmişi düzenli tutulur.",
-        pills: ["Talep", "Randevu", "Sözleşme"],
-        example: "müşteri talebi → gösterim → sözleşme onayı",
-        sectorSlug: "nedvizhimost",
-      },
-      {
-        title: "Klinikler ve hizmet işletmeleri",
-        description:
-          "Randevu sonrası iç görevler, personel talepleri, belge onayları, bakım işleri ve raporlar takip edilebilir.",
-        pills: ["Randevu", "İç görev", "Rapor"],
-        example: "iç talep → sorumlu atama → tamamlandı",
-      },
-      {
-        title: "Restoranlar ve kafeler",
-        description:
-          "Satın alma talepleri, vardiya kontrolleri, arıza bildirimleri, personel görevleri ve yönetici onayları kayıtlı ilerler.",
-        pills: ["Satın alma", "Vardiya", "Arıza"],
-        example: "ihtiyaç bildirimi → onay → görev tamamlama",
-      },
-      {
         title: "Küçük üretim tesisleri",
         description:
-          "Hammadde talepleri, üretim görevleri, kalite kontrol, ekip işleri ve operasyon geçmişi tek ekrandan izlenebilir.",
+          "Hammadde talepleri, üretim görevleri, kalite kontrol ve operasyon geçmişi izlenebilir.",
         pills: ["Hammadde", "Üretim", "Kalite"],
         example: "hammadde talebi → üretim görevi → kalite kontrol",
       },
@@ -420,8 +354,8 @@ export const tr: DictionaryEntry = {
     callout: {
       title: "Sektörünüz burada yoksa sorun değil",
       description:
-        "Firmanızda tekrar eden talep, onay, görev, dosya, rapor veya entegrasyon ihtiyacı varsa Proklix o sürece göre uyarlanabilir.",
-      cta: "Bir sürecimi analiz et",
+        "Tekrar eden talep, onay, görev veya entegrasyon ihtiyacınız varsa Proklix o sürece göre uyarlanabilir.",
+      cta: "Telegram'dan yaz",
     },
   },
   sectorPageLabels: {
@@ -434,51 +368,45 @@ export const tr: DictionaryEntry = {
   howWeStart: {
     title: "Büyük sistemi değil, ilk gerçek süreci başlatın",
     subtitle:
-      "Proklix'i kurmaya tüm şirketi aynı anda dönüştürerek başlamayız. Önce en çok zaman kaybettiren bir süreci seçer, çalışır hale getirir, sonra diğer süreçlere yayarız.",
+      "Tüm şirketi aynı anda dönüştürmeyiz. Önce en çok zaman kaybettiren bir süreci seçer, çalışır hale getirir, sonra yayarız.",
     steps: [
       {
         label: "Analiz",
         title: "Süreci birlikte analiz ederiz",
-        description:
-          "Talepler nerede başlıyor, kim onaylıyor, hangi dosyalar ekleniyor ve nerede kayboluyor netleştiririz.",
+        description: "Talepler nerede başlıyor, kim onaylıyor, nerede kayboluyor netleştiririz.",
       },
       {
         label: "Kurulum",
-        title: "İlk workflow'u kurarız",
-        description:
-          "Form alanlarını, adımları, sorumluları, durumları ve Telegram bildirimlerini oluştururuz.",
+        title: "İlk iş akışını kurarız",
+        description: "Form alanları, adımlar, sorumlular ve Telegram bildirimlerini oluştururuz.",
       },
       {
         label: "Entegrasyon",
         title: "Gerekli verileri bağlarız",
-        description:
-          "Web sitesi, CRM, depo, Excel veya özel API gibi kaynaklar gerekiyorsa sürece entegre edilir.",
+        description: "Web sitesi, CRM, depo, Excel veya API kaynakları sürece entegre edilir.",
       },
       {
         label: "Canlı kullanım",
         title: "Telegram'da kullanıma açarız",
-        description:
-          "Çalışanlar görevleri ve onayları Telegram üzerinden alır; yöneticiler durumu sistemden izler.",
+        description: "Çalışanlar görevleri Telegram'dan alır; yöneticiler durumu panelden izler.",
       },
       {
         label: "Genişleme",
         title: "Ölçer, geliştirir ve yayarız",
-        description:
-          "İlk süreç oturduktan sonra raporlar, roller, yeni süreçler ve ek entegrasyonlar eklenir.",
+        description: "İlk süreç oturduktan sonra yeni süreçler ve entegrasyonlar eklenir.",
       },
     ],
     callout: {
       title: "En iyi başlangıç: tek bir acıtan süreci seçmek",
       description:
-        "Satın alma onayı, müşteri talebi, stok sayımı, ticari teklif veya saha görevi gibi bir süreçle başlayıp sonucu hızlıca görmek daha sağlıklıdır.",
-      cta: "İlk sürecimi analiz et",
+        "Satın alma onayı, stok sayımı veya ticari teklif gibi bir süreçle başlayıp sonucu hızlıca görmek daha sağlıklıdır.",
+      cta: "Telegram'dan ilk sürecimi anlat",
     },
   },
   modules: {
     title: "Proklix'in temel yapı taşları",
-    subtitle:
-      "Her modül tek başına değil, aynı sürecin parçası olarak çalışır: veri toplanır, görev atanır, onay ilerler, dosyalar eklenir, geçmiş kaydedilir ve yönetim sonucu görür.",
-    flowSteps: ["Form", "Workflow", "Görev", "Onay", "Geçmiş", "Rapor", "Entegrasyon"],
+    subtitle: "Form, görev, onay, geçmiş ve entegrasyon aynı sürecin parçası olarak çalışır.",
+    flowSteps: ["Form", "İş akışı", "Görev", "Onay", "Geçmiş", "Rapor", "Entegrasyon"],
     categories: [
       {
         id: "build",
@@ -540,9 +468,8 @@ export const tr: DictionaryEntry = {
               "Kim, ne zaman, hangi kararı verdi; yorumlar, dosyalar ve durum değişiklikleri kayıtlı kalır.",
           },
           {
-            title: "Raporlar ve dashboard",
-            description:
-              "Yönetim açık talepleri, bekleyen onayları, tamamlanan işleri ve ekip durumunu görebilir.",
+            title: "Raporlar ve yönetim paneli",
+            description: "Açık talepler, bekleyen onaylar ve ekip durumu tek panelden görülür.",
           },
           {
             title: "Kullanıcı ve rol yönetimi",
@@ -567,9 +494,8 @@ export const tr: DictionaryEntry = {
               "Firmanıza özel sistemler API veya özel bağlantılarla sürece entegre edilebilir.",
           },
           {
-            title: "Import / export süreçleri",
-            description:
-              "Excel ve tablo tabanlı veriler import, export veya kontrollü aktarım ile bağlanabilir.",
+            title: "Veri aktarımı",
+            description: "Excel ve tablo verileri import, export veya kontrollü aktarımla bağlanabilir.",
           },
         ],
       },
@@ -577,14 +503,13 @@ export const tr: DictionaryEntry = {
     callout: {
       title: "Modüller ayrı ayrı değil, tek süreçte birleşir",
       description:
-        "Örneğin bir satın alma talebinde form doldurulur, yönetici onaylar, muhasebeye görev gider, dosyalar eklenir, tüm kararlar geçmişe kaydedilir ve gerekirse sonuç mevcut sisteme aktarılır.",
-      cta: "Bir sürecimi analiz et",
+        "Örneğin satın alma talebinde form doldurulur, yönetici onaylar, dosyalar eklenir ve kararlar geçmişe kaydedilir.",
+      cta: "Telegram'dan yaz",
     },
   },
   workflow: {
     title: "Örnek iş akışı",
-    subtitle:
-      "Bir talep geldiğinde Proklix onu sadece kaydetmez; veriyi alır, sorumluya görev verir, onayı yönetir, Telegram bildirimlerini gönderir ve tüm geçmişi saklar.",
+    subtitle: "Bir talep geldiğinde veri alınır, görev atanır, onay yönetilir ve geçmiş saklanır.",
     tabs: [
       {
         id: "proposal",
@@ -627,10 +552,9 @@ export const tr: DictionaryEntry = {
               "Müşteriye nihai teklif iletilir, durum güncellenir ve süreç kapanır.",
           },
           {
-            badge: "Audit",
+            badge: "Geçmiş",
             title: "Geçmiş",
-            description:
-              "Tüm versiyonlar, kararlar, yorumlar ve dosyalar audit/rapor için saklanır.",
+            description: "Versiyonlar, kararlar ve dosyalar işlem geçmişinde saklanır.",
           },
         ],
       },
@@ -675,7 +599,7 @@ export const tr: DictionaryEntry = {
               "Onaylanan sayım sonucu kayıt altına alınır ve gerekirse mevcut sisteme geri aktarılır.",
           },
           {
-            badge: "Audit",
+            badge: "Geçmiş",
             title: "Geçmiş",
             description:
               "Kim saydı, kim onayladı, hangi farklar çıktı ve hangi fotoğraflar eklendi saklanır.",
@@ -719,7 +643,7 @@ export const tr: DictionaryEntry = {
               "Onaylanan satın alma talebi muhasebe veya operasyon tarafına aktarılır.",
           },
           {
-            badge: "Audit",
+            badge: "Geçmiş",
             title: "Geçmiş",
             description: "Tüm karar zinciri, yorumlar ve belgeler kayıtlı kalır.",
           },
@@ -765,7 +689,7 @@ export const tr: DictionaryEntry = {
               "Servis tamamlanır, durum kapanır ve müşteri/ekip bilgilendirilebilir.",
           },
           {
-            badge: "Audit",
+            badge: "Geçmiş",
             title: "Geçmiş",
             description:
               "Yapılan işlem, eklenen fotoğraflar, yorumlar ve süre bilgisi saklanır.",
@@ -776,14 +700,14 @@ export const tr: DictionaryEntry = {
     summary: {
       title: "Bu sadece örnek bir akış",
       description:
-        "Aynı mantık müşteri talepleri, stok sayımı, satın alma, saha görevleri, belge onayı ve firmaya özel süreçlere uyarlanabilir.",
-      cta: "Benzer sürecimi analiz et",
+        "Aynı mantık müşteri talepleri, stok sayımı, satın alma, saha görevleri ve firmaya özel süreçlere uyarlanabilir.",
+      cta: "Telegram'dan benzer sürecimi anlat",
     },
   },
   projects: {
     title: "Proklix gerçek B2B ihtiyaçlarından doğdu",
     subtitle:
-      "B2B kataloglar, müşteri talepleri, Telegram üzerinden başvurular, yerel SEO, operasyon takibi ve sektöre özel süreçlerde edindiğimiz deneyimi Proklix'e taşıyoruz.",
+      "B2B kataloglar, Telegram talepleri ve operasyon süreçlerinde edindiğimiz deneyimi Proklix'e taşıyoruz.",
     trustStrip: [
       "B2B katalog",
       "Telegram talepleri",
@@ -831,8 +755,8 @@ export const tr: DictionaryEntry = {
     callout: {
       title: "Bu projelerden çıkan ortak ihtiyaç aynıydı",
       description:
-        "Talepler sohbetlerde kayboluyor, bilgiler farklı sistemlerde duruyor, onaylar manuel ilerliyor ve yönetici sürecin tamamını tek yerden göremiyor. Proklix bu problemi çözmek için tasarlandı.",
-      cta: "Benzer sürecimi analiz et",
+        "Talepler sohbetlerde kayboluyor, onaylar manuel ilerliyor ve yönetici sürecin tamamını göremiyordu. Proklix bu problemi çözmek için tasarlandı.",
+      cta: "Telegram'dan yaz",
     },
   },
   pricing: {
@@ -852,10 +776,12 @@ export const tr: DictionaryEntry = {
           "Dinamik form ve durum takibi",
           "Telegram bildirimleri",
           "Temel görev ve onay akışı",
-          "Basit dashboard görünümü",
+          "Yönetim paneli görünümü",
           "Kapsam analizden sonra belirlenir",
         ],
-        cta: "İlk sürecimi analiz et",
+        cta: "Telegram'dan ilk sürecimi anlat",
+        highlighted: true,
+        badge: "En düşük riskli başlangıç",
       },
       {
         name: "Birden fazla süreç + entegrasyon",
@@ -866,30 +792,30 @@ export const tr: DictionaryEntry = {
         features: [
           "Birden fazla bağlı süreç",
           "CRM / katalog / talep akışı",
-          "Raporlar ve dashboard",
-          "Temel entegrasyon veya import/export",
+          "Raporlar ve yönetim paneli",
+          "Temel entegrasyon veya veri aktarımı",
           "Telegram görev ve onay bildirimleri",
           "Kapsam analizden sonra belirlenir",
         ],
-        cta: "Teklif al",
-        highlighted: true,
-        badge: "En mantıklı başlangıç",
+        cta: "Telegram'dan teklif al",
+        badge: "Büyüyen ekipler için",
       },
       {
         name: "İşletmenize özel operasyon sistemi",
         subtitle:
-          "Özel CRM, workflow, entegrasyon, rol yapısı ve raporlama isteyen işletmeler için.",
+          "Özel iş akışı, entegrasyon, rol yapısı ve raporlama isteyen işletmeler için.",
         bestFor:
           "Birden fazla departman, özel API bağlantıları ve kapsamlı operasyon kontrolü isteyen şirketler.",
         features: [
           "Özel API entegrasyonları",
-          "Roller, erişimler, audit ve raporlar",
+          "Roller, erişimler, işlem geçmişi ve raporlar",
           "Birden fazla departman ve süreç",
-          "Özel dashboard ve operasyon ekranları",
+          "Özel yönetim paneli ve operasyon ekranları",
           "Eğitim ve destek",
           "Kapsam analizden sonra belirlenir",
         ],
-        cta: "Özel proje görüşmesi al",
+        cta: "Telegram'dan özel proje görüşmesi al",
+        badge: "Özel operasyon yapısı",
       },
     ],
     explanation: {
@@ -928,7 +854,7 @@ export const tr: DictionaryEntry = {
         category: "system",
         question: "Proklix CRM, bot veya ERP mi?",
         answer:
-          "Proklix bunların yerine geçen tek bir klasik sistem değildir. Proklix; talepler, formlar, onaylar, görevler, Telegram bildirimleri, işlem geçmişi ve entegrasyonları bir araya getiren Telegram odaklı workflow ve operasyon platformudur. Mevcut CRM, web sitesi, depo yazılımı veya Excel düzeninizle birlikte çalışabilir.",
+          "Proklix bunların yerine geçen tek bir klasik sistem değildir. Talepler, formlar, onaylar, görevler, Telegram bildirimleri, işlem geçmişi ve entegrasyonları bir araya getiren Telegram odaklı operasyon platformudur. Mevcut CRM, web sitesi, depo veya Excel düzeninizle birlikte çalışabilir.",
       },
       {
         category: "integration",
@@ -956,7 +882,7 @@ export const tr: DictionaryEntry = {
       },
       {
         category: "system",
-        question: "Bu sadece satış ekipleri için mi?",
+        question: "Bu sadece satış için mi?",
         answer:
           "Hayır. Proklix satış dışında satın alma, gider onayı, stok sayımı, depo transferi, servis görevi, saha kontrolü, belge onayı, İK/admin talepleri ve firmaya özel operasyon süreçleri için de kullanılabilir.",
       },
@@ -995,7 +921,7 @@ export const tr: DictionaryEntry = {
   cta: {
     title: "Kaotik bir sürecinizi gösterin, Proklix'te nasıl toparlanacağını anlatalım",
     description:
-      "20 dakikalık kısa görüşmede sürecinizi dinleyelim; talep nereden geliyor, kim onaylıyor, hangi sistemlere bağlanıyor ve MVP için nereden başlanır birlikte çıkaralım.",
+      "Kısa bir görüşmede sürecinizi dinleyelim; talep nereden geliyor, kim onaylıyor ve nereden başlanır birlikte çıkaralım.",
     ctaTelegram: "Telegram'dan yaz",
     ctaCall: "Ara",
     phone: "+998 77 257 43 54",

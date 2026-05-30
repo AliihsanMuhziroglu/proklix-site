@@ -169,6 +169,7 @@ export interface DictionaryEntry {
     categories: UseCaseCategory[];
     items: UseCaseItem[];
     integrationLabel: string;
+    featuredLabel?: string;
     customCard: {
       title: string;
       description: string;
@@ -200,7 +201,8 @@ export interface DictionaryEntry {
   sectors: {
     title: string;
     subtitle: string;
-    positioningLine: string;
+    positioningLine?: string;
+    otherIndustriesNote?: string;
     exampleLabel: string;
     items: SectorCardItem[];
     callout: {

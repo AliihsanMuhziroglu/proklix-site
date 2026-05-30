@@ -172,6 +172,7 @@ export const en: DictionaryEntry = {
     subtitle:
       "Proklix is not locked into one ready-made template. From sales to warehouse, purchasing to field teams, recurring workflows can be built with form, approval, task and outcome logic.",
     flowSteps: ["Form", "Approval", "Task", "Result"],
+    featuredLabel: "Featured",
     categories: [
       { id: "sales", label: "Sales & customer" },
       { id: "finance", label: "Purchasing & finance" },

@@ -172,6 +172,7 @@ export const uz: DictionaryEntry = {
     subtitle:
       "Proklix bitta tayyor shablonga siqilmaydi. Savdodan omborga, xariddan maydon jamoalarigacha takrorlanadigan ish oqimlari forma, tasdiqlash, vazifa va natija mantig'i bilan qurilishi mumkin.",
     flowSteps: ["Forma", "Tasdiqlash", "Vazifa", "Natija"],
+    featuredLabel: "Tanlangan",
     categories: [
       { id: "sales", label: "Savdo va mijoz" },
       { id: "finance", label: "Xarid va moliya" },
