@@ -102,6 +102,8 @@ export interface DictionaryEntry {
     trustTag: string;
     ctaTelegram: string;
     ctaAnalysis: string;
+    integrationChips: string[];
+    ctaHelper: string;
   };
   positioning: {
     title: string;
@@ -202,22 +204,22 @@ export interface DictionaryEntry {
   };
   dashboard: {
     title: string;
+    flowLabels: string[];
+    sourceLabel: string;
     metricRequests: string;
     metricInProgress: string;
     metricPendingApproval: string;
     metricCompleted: string;
-    feedItems: string[];
-    sidebarRequests: string;
-    sidebarTasks: string;
-    sidebarIntegrations: string;
-    tableHeaderProcess: string;
-    tableHeaderStatus: string;
-    tableHeaderSource: string;
+    cards: {
+      title: string;
+      source: string;
+      statusKey: "new" | "pending" | "telegram" | "completed";
+    }[];
     statusNew: string;
     statusPending: string;
     statusTelegram: string;
-    statusSynced: string;
-    statusSaved: string;
+    statusCompleted: string;
+    statusIntegrated: string;
   };
 }
 

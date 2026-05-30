@@ -40,13 +40,13 @@ export function Header({ locale, dict }: Props) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-4 xl:flex">
+        <nav className="hidden items-center gap-2.5 xl:flex 2xl:gap-3">
           {nav.map((item) =>
             item.isRoute ? (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-navy-950"
+                className="whitespace-nowrap text-[13px] font-medium text-slate-600 transition hover:text-navy-950 2xl:text-sm"
               >
                 {item.label}
               </Link>
@@ -54,7 +54,7 @@ export function Header({ locale, dict }: Props) {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-navy-950"
+                className="whitespace-nowrap text-[13px] font-medium text-slate-600 transition hover:text-navy-950 2xl:text-sm"
               >
                 {item.label}
               </a>
