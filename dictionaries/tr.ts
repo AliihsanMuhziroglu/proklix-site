@@ -993,13 +993,24 @@ export const tr: DictionaryEntry = {
     },
   },
   cta: {
-    title: "Bize kaotik bir sürecinizi gösterin, Proklix'te nasıl toplanacağını gösterelim",
+    title: "Kaotik bir sürecinizi gösterin, Proklix'te nasıl toparlanacağını anlatalım",
     description:
-      "20 dakikada sürecinizi inceler ve MVP için nereden başlanacağını öneririz. Taahhüt yok.",
-    ctaTelegram: "Telegram'dan Yaz",
+      "20 dakikalık kısa görüşmede sürecinizi dinleyelim; talep nereden geliyor, kim onaylıyor, hangi sistemlere bağlanıyor ve MVP için nereden başlanır birlikte çıkaralım.",
+    ctaTelegram: "Telegram'dan yaz",
     ctaCall: "Ara",
     phone: "+998 77 257 43 54",
-    formTitle: "Veya talep bırakın",
+    helperLine: "En hızlı dönüş Telegram üzerinden yapılır.",
+    helper: {
+      title: "Mesaja şunları yazmanız yeterli:",
+      checklist: [
+        "Hangi süreci kontrol etmek istiyorsunuz?",
+        "Süreç şu an Telegram, Excel, CRM veya başka sistemde mi ilerliyor?",
+        "Kim onaylıyor, kim görev alıyor?",
+        "En çok nerede zaman veya bilgi kaybı oluyor?",
+      ],
+      example:
+        "Örnek: Satın alma taleplerimiz Telegram'da geliyor, müdür onaylıyor, muhasebe Excel'e geçiriyor. Bunu Proklix'e taşımak istiyoruz.",
+    },
   },
   contactForm: {
     name: "Ad",

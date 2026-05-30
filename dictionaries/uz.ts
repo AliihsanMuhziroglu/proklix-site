@@ -859,13 +859,24 @@ export const uz: DictionaryEntry = {
     },
   },
   cta: {
-    title: "Bitta tartibsiz jarayoningizni ko'rsating, biz uni Proklix'da qanday yig'ishni ko'rsatamiz",
+    title: "Tartibsiz jarayoningizni ko'rsating — Proklix'da qanday tartibga solishini tushuntiramiz",
     description:
-      "20 daqiqada jarayoningizni ko'rib chiqamiz va MVP uchun qayerdan boshlashni taklif qilamiz. Majburiyat yo'q.",
-    ctaTelegram: "Telegram'da yozish",
-    ctaCall: "Qo'ng'iroq qilish",
+      "20 daqiqalik qisqa uchrashuvda jarayoningizni tinglaymiz: ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va MVP uchun qayerdan boshlash kerak.",
+    ctaTelegram: "Telegram'dan yozish",
+    ctaCall: "Qo'ng'iroq",
     phone: "+998 77 257 43 54",
-    formTitle: "Yoki ariza qoldiring",
+    helperLine: "Eng tez javob Telegram orqali beriladi.",
+    helper: {
+      title: "Xabarda shularni yozishingiz kifoya:",
+      checklist: [
+        "Qaysi jarayonni nazorat qilmoqchisiz?",
+        "Jarayon hozir Telegram, Excel, CRM yoki boshqa tizimda ketayaptimi?",
+        "Kim tasdiqlaydi, kim vazifa oladi?",
+        "Eng ko'p vaqt yoki ma'lumot qayerda yo'qoladi?",
+      ],
+      example:
+        "Misol: Xarid arizalarimiz Telegram'da keladi, menejer tasdiqlaydi, buxgalteriya Excel'ga o'tkazadi. Buni Proklix'ga ko'chirmoqchimiz.",
+    },
   },
   contactForm: {
     name: "Ism",

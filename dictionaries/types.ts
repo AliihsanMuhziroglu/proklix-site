@@ -302,7 +302,12 @@ export interface DictionaryEntry {
     ctaTelegram: string;
     ctaCall: string;
     phone: string;
-    formTitle: string;
+    helperLine: string;
+    helper: {
+      title: string;
+      checklist: string[];
+      example: string;
+    };
   };
   contactForm: {
     name: string;

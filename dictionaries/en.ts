@@ -987,13 +987,24 @@ export const en: DictionaryEntry = {
     },
   },
   cta: {
-    title: "Show us one chaotic process, we'll show you how to build it in Proklix",
+    title: "Show us a chaotic process — we'll explain how Proklix can organize it",
     description:
-      "In 20 minutes we'll review your process and suggest where to start the MVP. No obligation.",
+      "In a short 20-minute call we'll listen to your process: where requests come from, who approves, which systems connect and where to start the MVP.",
     ctaTelegram: "Message on Telegram",
     ctaCall: "Call",
     phone: "+998 77 257 43 54",
-    formTitle: "Or leave a request",
+    helperLine: "Fastest response is via Telegram.",
+    helper: {
+      title: "Just include this in your message:",
+      checklist: [
+        "Which process do you want to get under control?",
+        "Does it currently run through Telegram, Excel, CRM or another system?",
+        "Who approves and who takes the tasks?",
+        "Where do you lose the most time or information?",
+      ],
+      example:
+        "Example: Purchase requests come via Telegram, the manager approves and accounting moves them to Excel. We want to move this into Proklix.",
+    },
   },
   contactForm: {
     name: "Name",
