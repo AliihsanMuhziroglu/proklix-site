@@ -775,39 +775,59 @@ export const en: DictionaryEntry = {
     },
   },
   projects: {
-    title: "Experience with real B2B operations",
+    title: "Proklix was born from real B2B needs",
     subtitle:
-      "Examples of projects where we built requests, catalogs, integrations and operational processes for B2B companies.",
-    cta: "View website",
+      "We bring our experience from B2B catalogs, customer requests, Telegram applications, local SEO, operations tracking and sector-specific processes into Proklix.",
+    trustStrip: [
+      "B2B catalog",
+      "Telegram requests",
+      "Local SEO",
+      "Operational processes",
+      "Integration logic",
+    ],
+    problemLabel: "Problem",
+    insightLabel: "Experience carried into Proklix",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
         category: "B2B cleaning equipment catalog",
-        description:
-          "Product catalog, multilingual structure, SEO and Telegram request flow for B2B sales.",
-        badges: ["B2B catalog", "Telegram requests", "RU / UZ"],
+        problem:
+          "Multilingual product catalog, SEO, B2B sales requests and customer communication via Telegram.",
+        insight:
+          "Product/catalog data, quote requests, customer applications and operational tracking workflows.",
+        badges: ["B2B catalog", "RU / UZ", "Telegram requests", "SEO", "Product data"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
         category: "Cleaning services website",
-        description:
-          "Multilingual site with Telegram requests for cleaning services in Tashkent.",
-        badges: ["Requests", "Telegram", "Local SEO"],
+        problem:
+          "Collecting service requests in Tashkent, local visibility and a Telegram-first application flow.",
+        insight:
+          "Service requests, field tasks, checklists and turning customer applications into structured workflows.",
+        badges: ["Telegram", "Local SEO", "Service request", "Field task"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Clinic management platform",
-        description:
-          "Digital platform for patient management, appointments and clinic operational processes.",
-        badges: ["SaaS", "Processes", "Demo request"],
+        category: "Operations platform for clinics",
+        problem:
+          "Need to manage patients, appointments, in-clinic tasks and operational processes more systematically.",
+        insight:
+          "SaaS logic, task flows, user roles, process tracking and a sector-based operations model.",
+        badges: ["SaaS", "Processes", "Demo request", "Clinic operations"],
       },
     ],
+    callout: {
+      title: "These projects shared the same underlying need",
+      description:
+        "Requests get lost in chats, information sits in different systems, approvals move manually and managers cannot see the full process in one place. Proklix was designed to solve this.",
+      cta: "Analyze a similar process",
+    },
   },
   pricing: {
     title: "Proklix packages",

@@ -781,39 +781,59 @@ export const tr: DictionaryEntry = {
     },
   },
   projects: {
-    title: "Gerçek B2B operasyonlarındaki deneyim",
+    title: "Proklix gerçek B2B ihtiyaçlarından doğdu",
     subtitle:
-      "B2B işletmeler için talepler, kataloglar, entegrasyonlar ve operasyonel süreçler kurduğumuz proje örnekleri.",
-    cta: "Siteyi aç",
+      "B2B kataloglar, müşteri talepleri, Telegram üzerinden başvurular, yerel SEO, operasyon takibi ve sektöre özel süreçlerde edindiğimiz deneyimi Proklix'e taşıyoruz.",
+    trustStrip: [
+      "B2B katalog",
+      "Telegram talepleri",
+      "Yerel SEO",
+      "Operasyon süreçleri",
+      "Entegrasyon mantığı",
+    ],
+    problemLabel: "Problem",
+    insightLabel: "Proklix'e taşınan deneyim",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
-        category: "B2B temizlik ekipmanı katalogu",
-        description:
-          "Ürün katalogu, çok dilli yapı, SEO ve B2B satış için Telegram talep akışı.",
-        badges: ["B2B katalog", "Telegram talepleri", "RU / UZ"],
+        category: "B2B temizlik ekipmanı kataloğu",
+        problem:
+          "Çok dilli ürün kataloğu, SEO, B2B satış talepleri ve Telegram üzerinden müşteri iletişimi.",
+        insight:
+          "Ürün/katalog verisi, teklif talepleri, müşteri başvuruları ve operasyonel takip süreçleri.",
+        badges: ["B2B katalog", "RU / UZ", "Telegram talepleri", "SEO", "Ürün verisi"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
         category: "Temizlik hizmetleri web sitesi",
-        description:
-          "Taşkent'te temizlik hizmetleri için Telegram talepli çok dilli site.",
-        badges: ["Talepler", "Telegram", "Yerel SEO"],
+        problem:
+          "Taşkent'te temizlik hizmetleri için talep toplama, yerel görünürlük ve Telegram odaklı başvuru akışı.",
+        insight:
+          "Hizmet talebi, saha görevi, kontrol listesi ve müşteri başvurusunu sürece çevirme mantığı.",
+        badges: ["Telegram", "Yerel SEO", "Hizmet talebi", "Saha görevi"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Klinikler için platform",
-        description:
-          "Hasta yönetimi, randevular ve klinik operasyonel süreçler için dijital platform.",
-        badges: ["SaaS", "Süreçler", "Demo talebi"],
+        category: "Klinikler için operasyon platformu",
+        problem:
+          "Hasta, randevu, klinik içi görevler ve operasyonel süreçleri daha düzenli yönetme ihtiyacı.",
+        insight:
+          "SaaS mantığı, görev akışları, kullanıcı rolleri, süreç takibi ve sektör bazlı operasyon modeli.",
+        badges: ["SaaS", "Süreçler", "Demo talebi", "Klinik operasyon"],
       },
     ],
+    callout: {
+      title: "Bu projelerden çıkan ortak ihtiyaç aynıydı",
+      description:
+        "Talepler sohbetlerde kayboluyor, bilgiler farklı sistemlerde duruyor, onaylar manuel ilerliyor ve yönetici sürecin tamamını tek yerden göremiyor. Proklix bu problemi çözmek için tasarlandı.",
+      cta: "Benzer sürecimi analiz et",
+    },
   },
   pricing: {
     title: "Proklix paketleri",

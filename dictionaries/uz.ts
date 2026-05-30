@@ -647,39 +647,59 @@ export const uz: DictionaryEntry = {
     },
   },
   projects: {
-    title: "Real B2B jarayonlaridagi tajriba",
+    title: "Proklix haqiqiy B2B ehtiyojlaridan paydo bo'ldi",
     subtitle:
-      "B2B kompaniyalar uchun arizalar, kataloglar, integratsiyalar va operatsion jarayonlar qurilgan loyihalar misollari.",
-    cta: "Saytni ochish",
+      "B2B kataloglar, mijoz arizalari, Telegram orqali murojaatlar, mahalliy SEO, operatsiya nazorati va sohaga xos jarayonlardagi tajribamizni Proklix'ga o'tkazamiz.",
+    trustStrip: [
+      "B2B katalog",
+      "Telegram arizalar",
+      "Mahalliy SEO",
+      "Operatsion jarayonlar",
+      "Integratsiya mantigi",
+    ],
+    problemLabel: "Muammo",
+    insightLabel: "Proklix'ga o'tkazilgan tajriba",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
         category: "B2B tozalash uskunalari katalogi",
-        description:
-          "Mahsulot katalogi, ko'p tilli tuzilma, SEO va B2B savdo uchun Telegram ariza oqimi.",
-        badges: ["B2B katalog", "Telegram arizalar", "RU / UZ"],
+        problem:
+          "Ko'p tilli mahsulot katalogi, SEO, B2B savdo arizalari va Telegram orqali mijoz aloqasi.",
+        insight:
+          "Mahsulot/katalog ma'lumotlari, taklif arizalari, mijoz murojaatlari va operatsion kuzatuv jarayonlari.",
+        badges: ["B2B katalog", "RU / UZ", "Telegram arizalar", "SEO", "Mahsulot ma'lumoti"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
         category: "Tozalash xizmatlari sayti",
-        description:
-          "Toshkentda tozalash xizmatlari uchun Telegram arizali ko'p tilli sayt.",
-        badges: ["Arizalar", "Telegram", "Mahalliy SEO"],
+        problem:
+          "Toshkentda tozalash xizmatlari uchun ariza yig'ish, mahalliy ko'rinish va Telegram markazli murojaat oqimi.",
+        insight:
+          "Xizmat arizasi, maydon vazifasi, nazorat ro'yxati va mijoz murojaatini jarayonga aylantirish mantigi.",
+        badges: ["Telegram", "Mahalliy SEO", "Xizmat arizasi", "Maydon vazifasi"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Klinikalar uchun platforma",
-        description:
-          "Bemorlar, yozuvlar va klinika operatsion jarayonlarini boshqarish uchun raqamli platforma.",
-        badges: ["SaaS", "Jarayonlar", "Demo ariza"],
+        category: "Klinikalar uchun operatsion platforma",
+        problem:
+          "Bemor, uchrashuv, klinika ichidagi vazifalar va operatsion jarayonlarni tartibliroq boshqarish ehtiyoji.",
+        insight:
+          "SaaS mantigi, vazifa oqimlari, foydalanuvchi rollari, jarayon kuzatuvi va soha bo'yicha operatsion model.",
+        badges: ["SaaS", "Jarayonlar", "Demo ariza", "Klinika operatsiyasi"],
       },
     ],
+    callout: {
+      title: "Bu loyihalarda umumiy ehtiyoq bir xil edi",
+      description:
+        "Arizalar chatlarda yo'qoladi, ma'lumotlar turli tizimlarda qoladi, tasdiqlashlar qo'lda ketadi va rahbar butun jarayonni bitta joydan ko'ra olmaydi. Proklix shu muammoni hal qilish uchun yaratilgan.",
+      cta: "O'xshash jarayonimni tahlil qiling",
+    },
   },
   pricing: {
     title: "Proklix paketlari",

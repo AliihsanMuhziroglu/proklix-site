@@ -45,7 +45,8 @@ export interface ProjectItem {
   website: string;
   url: string;
   category: string;
-  description: string;
+  problem: string;
+  insight: string;
   badges: string[];
 }
 
@@ -246,8 +247,15 @@ export interface DictionaryEntry {
   projects: {
     title: string;
     subtitle: string;
-    cta: string;
+    trustStrip: string[];
+    problemLabel: string;
+    insightLabel: string;
     items: ProjectItem[];
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   pricing: {
     title: string;
