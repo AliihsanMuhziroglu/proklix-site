@@ -33,7 +33,7 @@ export function LandingPage({ locale, dict }: Props) {
     <>
       <Header locale={locale} dict={dict} />
       <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
-        <Hero dict={dict} className={sectionBg.white} />
+        <Hero dict={dict} />
         <PositioningSection dict={dict} className={sectionBg.muted} />
         <IntegrationSection dict={dict} className={sectionBg.white} />
         <UseCasesSection dict={dict} className={sectionBg.tint} />
