@@ -157,8 +157,24 @@ export interface DictionaryEntry {
   };
   beforeAfter: {
     title: string;
-    without: { title: string; items: string[] };
-    with: { title: string; items: string[] };
+    subtitle: string;
+    transformLabel: string;
+    without: {
+      title: string;
+      subtitle: string;
+      items: string[];
+    };
+    with: {
+      title: string;
+      subtitle: string;
+      items: string[];
+    };
+    resultChips: string[];
+    callout: {
+      title: string;
+      description: string;
+      cta: string;
+    };
   };
   sectors: {
     title: string;
