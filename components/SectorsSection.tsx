@@ -1,14 +1,56 @@
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { getSectorUrl, sectorSlugs } from "@/lib/sectors";
+import { getSectorUrl } from "@/lib/sectors";
 
 type Props = {
   dict: Dictionary;
   locale: Locale;
 };
 
-const icons = ["🏢", "📦", "🌾", "🔧", "🚚", "🏗️"];
+const sectorIcons = ["📦", "🧹", "🏭", "🔧", "🏗️", "🚚", "🏢", "🏥", "🍽️", "⚙️"];
+
+function SectorCard({
+  item,
+  icon,
+  viewSector,
+  locale,
+}: {
+  item: Dictionary["sectors"]["items"][number];
+  icon: string;
+  viewSector: string;
+  locale: Locale;
+}) {
+  const content = (
+    <>
+      <span className="text-xl" aria-hidden="true">
+        {icon}
+      </span>
+      <h3 className="mt-3 text-sm font-semibold leading-snug text-navy-950 sm:text-base">
+        {item.title}
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.description}</p>
+      {item.sectorSlug && (
+        <span className="mt-3 inline-flex text-sm font-semibold text-blue-600 group-hover:underline">
+          {viewSector} →
+        </span>
+      )}
+    </>
+  );
+
+  const className =
+    "group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-slate-300 hover:shadow-md";
+
+  if (item.sectorSlug) {
+    return (
+      <Link href={getSectorUrl(locale, item.sectorSlug)} className={className}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <div className={className}>{content}</div>;
+}
 
 export function SectorsSection({ dict, locale }: Props) {
   return (
@@ -19,22 +61,13 @@ export function SectorsSection({ dict, locale }: Props) {
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {dict.sectors.items.map((item, i) => (
-            <Link
+            <SectorCard
               key={item.title}
-              href={getSectorUrl(locale, sectorSlugs[i])}
-              className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-200 hover:shadow-md"
-            >
-              <span className="text-2xl" aria-hidden="true">
-                {icons[i]}
-              </span>
-              <h3 className="mt-3 text-sm font-semibold leading-snug text-navy-950 sm:text-base">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.description}</p>
-              <span className="mt-3 inline-flex text-sm font-semibold text-blue-600 group-hover:underline">
-                {dict.sectors.viewSector} →
-              </span>
-            </Link>
+              item={item}
+              icon={sectorIcons[i] ?? "📋"}
+              viewSector={dict.sectors.viewSector}
+              locale={locale}
+            />
           ))}
         </div>
       </div>

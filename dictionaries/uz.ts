@@ -2,172 +2,252 @@ import type { DictionaryEntry } from "./types";
 
 export const uz: DictionaryEntry = {
   meta: {
-    title: "Proklix | CRM, workflow va Telegram biznes tizimlari",
+    title:
+      "Proklix — CRM, workflow, arizalar, tasdiqlashlar va Telegram integratsiyalari O'zbekiston biznesi uchun",
     description:
-      "Proklix Toshkent va O'zbekistondagi bizneslar uchun mijoz so'rovlari, takliflar, tasdiqlar, vazifalar va jarayon nazoratini web panel va Telegram orqali raqamlashtiradi.",
+      "Proklix O'zbekistondagi kompaniyalarga arizalar, tasdiqlashlar, vazifalar, Telegram bildirishnomalari va mavjud tizimlar bilan integratsiyani boshqarishga yordam beradi.",
   },
   header: {
-    solutions: "Yechimlar",
+    platform: "Platforma",
+    integrations: "Integratsiyalar",
     processes: "Jarayonlar",
     forWhom: "Kimlar uchun",
     pricing: "Tariflar",
+    faq: "FAQ",
     blog: "Blog",
     contact: "Aloqa",
     cta: "Telegram'da yozish",
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "So'rovlar, takliflar, tasdiqlar va vazifalar — bitta tizimda",
+    title: "Arizalar, tasdiqlashlar, vazifalar va integratsiyalar — bitta Telegram-first tizimda",
     subtitle:
-      "Proklix Toshkent va O'zbekistondagi kompaniyalar uchun mijoz so'rovlarini, tijorat takliflarini, vazifalarni, tasdiqlash va jarayon nazoratini bitta web panelda jamlaydi. Telegram bildirishnomalari orqali jamoa tez harakat qiladi, rahbar jarayonni aniq ko'radi.",
+      "Proklix kompaniyalarga chatlardagi tartibsizliksiz ish jarayonlarini boshqarishga yordam beradi: arizalar, formalar, tasdiqlashlar, vazifalar, fayllar, harakatlar tarixi, hisobotlar va mavjud tizimlar bilan integratsiya.",
     trustTag: "Toshkent va O'zbekiston kompaniyalari uchun",
     ctaTelegram: "Telegram'da yozish",
-    ctaAnalysis: "Bepul jarayon tahlilini olish",
-    watchDemo: "Demoni ko'rish",
+    ctaAnalysis: "Jarayonni bepul tahlil qilish",
   },
-  projects: {
-    title: "Tanlangan ishlar",
-    subtitle:
-      "B2B kataloglar, xizmat saytlari va operatsion platformalar uchun ishlab chiqilgan raqamli mahsulot va jarayonlardan namunalar.",
-    cta: "Saytni ko'rish",
+  positioning: {
+    title: "Oddiy CRM emas. Oddiy bot emas. To'liq ish jarayoni.",
     items: [
       {
-        title: "Clemar",
-        website: "clemar.uz",
-        url: "https://clemar.uz",
-        category: "Professional tozalash uskunalari va B2B mahsulot katalogi",
+        title: "Formalar",
         description:
-          "O'zbekiston bozoriga yo'naltirilgan tozalash uskunalari katalogi uchun mahsulot/kategoriya tuzilmasi, ko'p tilli kontent, SEO saqlanishi, Telegram orqali savdo oqimi va zamonaviy katalog tajribasi ustida ish olib borildi.",
-        badges: ["B2B katalog", "SEO o'tish", "RU / UZ tuzilma", "Telegram savdo"],
+          "Sayt, Telegram yoki ichki formalar orqali ma'lumot to'plang — maydonlar va fayllar yo'qolmaydi.",
       },
       {
-        title: "Tozago",
-        website: "tozago.uz",
-        url: "https://tozago.uz",
-        category: "Toshkent uchun professional tozalash xizmatlari sayti",
+        title: "Tasdiqlashlar",
         description:
-          "Uy, ofis va tijorat obyektlari tozaligi xizmatlari uchun xizmatlar aniq ko'rsatilgan, ko'p tilli, SEO mos va Telegram orqali tezkor so'rov olishga yo'naltirilgan web tuzilma ishlab chiqildi.",
-        badges: ["Xizmat sayti", "Ko'p tilli", "Telegram so'rov", "Lokal SEO"],
+          "Qadam-baqadam tasdiqlash: menejer, ombor, buxgalteriya, rahbar — har biri o'z bosqichini ko'radi.",
       },
       {
-        title: "Klinidex",
-        website: "klinidex.com",
-        url: "https://klinidex.com",
-        category: "Klinikalar va stomatologlar uchun boshqaruv platformasi",
+        title: "Vazifalar",
         description:
-          "Klinika va stomatologiya bizneslari uchun bemorlar, yozuvlar, vazifalar va operatsion jarayonlarni tartibli boshqarishga qaratilgan zamonaviy raqamli platforma taqdimoti tayyorlandi.",
-        badges: ["SaaS platforma", "Klinika boshqaruvi", "Demo so'rov", "Jarayon nazorati"],
+          "Mas'ul shaxslarga muddat, status va tarix bilan vazifa bering — shaxsiy chatlarda yo'qolmaydi.",
+      },
+      {
+        title: "Telegram",
+        description:
+          "Telegram bildirishnomalari: yangi ariza, tasdiqlash kutilmoqda, tayinlangan vazifa.",
+      },
+      {
+        title: "Integratsiyalar",
+        description:
+          "Mavjud tizimlarni API, import/eksport yoki loyiha bo'yicha maxsus sozlash orqali ulang.",
+      },
+      {
+        title: "Nazorat",
+        description:
+          "Har bir jarayonning statusi, tarixi va natijasini ko'ring — rahbar bitta ekranda umumiy manzarani ko'radi.",
       },
     ],
   },
-  problem: {
-    title: "Telegram tezkor kanal. Lekin jarayon tizimga tushmasa, ishlar tarqalib ketadi.",
+  integration: {
+    title: "Mavjud tizimlaringiz ustida ishlaydi",
     subtitle:
-      "So'rovlar, takliflar, tasdiqlar va vazifalar faqat chatlarda qolsa, kim nima qilgani, jarayon qayerda kutayotgani va mijozga qachon javob berilishi noaniq bo'lib qoladi.",
+      "Siz darhol sayt, CRM, ombor dasturi yoki Excel'ni almashtirishingiz shart emas. Proklix mavjud ma'lumotlarga ulanib, jarayonlarni ishga tushirishi va natijani qaytarishi mumkin.",
+    flowLabels: [
+      "Sayt / CRM / Ombor / Excel",
+      "Proklix jarayoni",
+      "Telegram vazifasi",
+      "Natija va tarix",
+      "Ma'lumot yangilanishi",
+    ],
     items: [
       {
-        title: "So'rov keldi — lekin kimga tushgani aniq emas",
+        title: "Sayt / e-commerce",
         description:
-          "Mijoz Telegramdan yozadi, biri ko'radi, biri unutadi. So'rov tizimga tushmaguncha kuzatuv xodimlar xotirasida qoladi.",
+          "Arizalar, mahsulotlar, buyurtmalar va mijoz formasi — API yoki import orqali ulanishi mumkin.",
       },
       {
-        title: "Taklifning yakuniy ko'rinishi xabarlarda yo'qoladi",
+        title: "CRM",
         description:
-          "Narx, chegirma, qoldiq va shartlar turli suhbatlarga tarqaladi. Rahbar qaysi taklif tasdiqlanganini kech biladi.",
+          "Mijozlar, statuslar, menejerlar va muloqot tarixi — CRM bilan loyiha bo'yicha integratsiya qilinishi mumkin.",
       },
       {
-        title: "Tasdiq qayerda kutayotgani tushunarsiz",
+        title: "Ombor / qoldiqlar",
         description:
-          "Savdo, ombor, buxgalteriya yoki rahbar alohida so'raladi. Jarayon qaysi bosqichda ekanligi bitta ekranda ko'rinmaydi.",
+          "Qoldiqlar, inventarizatsiya, ko'chirishlar va foto hisobotlar — API, eksport yoki qo'lda almashinuv orqali.",
       },
       {
-        title: "Excel haqiqiy holatni ko'rsatmaydi",
+        title: "ERP / buxgalteriya",
         description:
-          "Jadval yangilanmaydi, versiyalar aralashadi, jamoa boshqa ma'lumot bilan ishlaydi. Hisobot olish uchun qayta-qayta so'rash kerak bo'ladi.",
+          "Xaridlar, xarajatlar, hisob-fakturalar va tasdiqlashlar — aniq jarayon va kirish huquqi bo'yicha ulanadi.",
       },
       {
-        title: "Vazifalar odamlarga bog'liq qoladi",
+        title: "Google Sheets / Excel",
         description:
-          "Kim qo'ng'iroq qiladi, kim taklif yuboradi, kim to'lovni eslatadi — aniq bo'lmasa, ishlar kechikadi.",
+          "Ma'lumotlar hali jadvalda bo'lgan kompaniyalar uchun tez start — Excel'ni almashtirmasdan import/eksport.",
       },
       {
-        title: "Tarix bo'lmasa, nazorat ham bo'lmaydi",
+        title: "Custom API",
         description:
-          "So'rovni kim oldi, narxni kim o'zgartirdi, kim tasdiqladi, mijozga qachon javob berildi — hammasi tarqoq qoladi.",
+          "Joriy tizimingiz uchun maxsus integratsiyalar — jarayon tahlilidan keyin muhokama qilinadi.",
       },
     ],
   },
-  solution: {
-    title: "Proklix biznesingizda qaysi jarayonlarni tizimga bog'laydi?",
-    subtitle:
-      "Veb-sayt, mijoz kuzatuvi, taklif, tasdiq va Telegram bildirishnomalari alohida emas — bitta ish oqimining qismlari sifatida quriladi.",
+  useCases: {
+    title: "Proklix'da qanday jarayonlarni yuritish mumkin?",
+    flowHint: "Forma → Tasdiqlash → Vazifa → Natija",
     items: [
       {
-        title: "Korporativ sayt va katalog",
+        title: "Mijoz arizasi",
         description:
-          "Mahsulotlar, xizmatlar va taklif olish oqimi bitta professional tuzilmada jamlanadi.",
+          "Mijoz sayt yoki Telegram orqali ariza qoldiradi. Menejer vazifa oladi, status rahbar ko'radi.",
       },
       {
-        title: "CRM va mijoz kuzatuvi",
+        title: "Tijorat taklifini tasdiqlash",
         description:
-          "Mijoz kartochkalari, suhbat tarixi, statuslar va mas'ul shaxslar bitta panelda ko'rinadi.",
+          "Menejer TT shakllantiradi, rahbar Telegram'da tasdiqlaydi, mijoz yakuniy versiyani oladi.",
       },
       {
-        title: "So'rov va taklif jarayoni",
+        title: "Xarid arizasi",
         description:
-          "Kiruvchi so'rov qayd etiladi, mas'ul shaxsga biriktiriladi, narx/taklif jarayoni kuzatiladi.",
+          "Xodim xarid arizasi beradi, rahbar va buxgalteriya qadam-baqadam tasdiqlaydi, tarix saqlanadi.",
       },
       {
-        title: "Workflow va tasdiqlash oqimlari",
+        title: "Xarajatlarni tasdiqlash",
         description:
-          "Savdo vakili, ombor, buxgalteriya yoki rahbar tasdiqlari belgilangan bosqichlar bilan ilerlaydi.",
+          "Xarajat chek bilan qayd etiladi, tasdiqlash zanjir bo'ylab ketadi, natija hisobotga tushadi.",
       },
       {
-        title: "Telegram bildirishnomalari",
+        title: "Inventarizatsiya",
         description:
-          "Yangi so'rov, tasdiq kutayotgan taklif, vazifa tayinlash va jarayon yangilanishlari Telegram orqali keladi.",
+          "Mahsulot ro'yxati ombor yoki saytdan keladi. Xodim Telegram'da sanaydi, foto biriktiradi, rahbar natijani ko'radi.",
       },
       {
-        title: "Boshqaruv paneli va hisobotlar",
+        title: "Mahsulot ko'chirish",
         description:
-          "Rahbar qaysi ish kimda turganini, qaysi jarayon to'xtaganini va umumiy holatni aniq ko'radi.",
+          "Omborlar o'rtasida ko'chirish arizasi, tasdiqlash, omborchiga vazifa, tarixda qayd.",
+      },
+      {
+        title: "Maydon vazifalari va chek-listlar",
+        description:
+          "Maydonga chiqadigan xodimga Telegram vazifasi: chek-list, foto, bajarilish statusi, rahbarga hisobot.",
+      },
+      {
+        title: "Servis arizasi",
+        description:
+          "Mijoz yoki menejer ariza yaratadi, ijrochi tayinlanadi, status va tarix bir ekranda.",
+      },
+      {
+        title: "Hujjatlarni tasdiqlash",
+        description:
+          "Hujjat tasdiqlash bosqichlaridan o'tadi, ishtirokchilar bildirishnoma oladi, versiyalar saqlanadi.",
+      },
+      {
+        title: "Ichki HR/admin arizalar",
+        description:
+          "Ta'til, xarid, kirish, ma'lumotnomalar — ichki arizalar tasdiqlash marshruti va tarix bilan.",
       },
     ],
+  },
+  beforeAfter: {
+    title: "Proklix'dan keyin nima o'zgaradi",
+    without: {
+      title: "Proklix'siz",
+      items: [
+        "Arizalar chatlarda yo'qoladi",
+        "Excel yangilanmaydi",
+        "Kim mas'ul — noaniq",
+        "Tasdiqlashlar qo'lda ketadi",
+        "Fayllar xabarlar bo'ylab tarqalgan",
+        "To'liq harakatlar tarixi yo'q",
+        "Ma'lumotlar tizimlar o'rtasida qo'lda nusxalanadi",
+      ],
+    },
+    with: {
+      title: "Proklix bilan",
+      items: [
+        "Har bir ariza statusga ega",
+        "Mas'ul tayinlangan",
+        "Tasdiqlash qadam-baqadam ketadi",
+        "Telegram ishtirokchilarni xabardor qiladi",
+        "Fayllar jarayonga biriktirilgan",
+        "Harakatlar tarixi saqlanadi",
+        "Ma'lumotlarni mavjud tizimlar bilan bog'lash mumkin",
+      ],
+    },
   },
   sectors: {
-    title:
-      "Ko'p so'rov, savdo va qo'lda nazorat bo'lgan kompaniyalar uchun ayniqsa foydali",
+    title: "Qo'lda nazorat ko'p bo'lgan kompaniyalar uchun",
     viewSector: "Sektor haqida batafsil",
     items: [
       {
-        title: "Ko'chmas mulk va ijaraga berish",
+        title: "B2B kataloglar va savdo",
         description:
-          "So'rovlar, ob'ektlar, ko'rsatishlar, shartnomalar va to'lovlar bitta jarayonda.",
+          "Arizalar, mahsulotlar, narxlar, tijorat takliflari, tasdiqlashlar va Telegram bildirishnomalari.",
+        sectorSlug: "b2b-katalog",
       },
       {
-        title: "B2B katalog va savdo kompaniyalari",
+        title: "Tozalash va maydon xizmati",
         description:
-          "Mahsulotlar, so'rovlar, narxlar, takliflar va mijoz statuslari — bitta panelda.",
+          "Mijoz arizalari, maydon vazifalari, chek-listlar, foto hisobotlar va bajarilish nazorati.",
       },
       {
-        title: "Agro va distribyutsiya",
+        title: "Omborlar va distribyutorlar",
         description:
-          "Diler so'rovlari, buyurtmalar, ombor, hududlar va mas'ul menejerlar.",
+          "Qoldiqlar, inventarizatsiya, ko'chirishlar, diler arizalari va yetkazib berish statuslari.",
+        sectorSlug: "agro",
       },
       {
-        title: "Uskuna va texnik mahsulotlar",
+        title: "Uskunalar savdosi",
         description:
-          "Katalog, maslahat, to'plamlar, so'rovlar va tijorat takliflari.",
+          "Katalog, maslahatlar, arizalar, tijorat takliflari va tasdiqlashlar.",
+        sectorSlug: "oborudovanie",
+      },
+      {
+        title: "Qurilish va maydon brigadalari",
+        description:
+          "Ob'ektdagi vazifalar, tasdiqlashlar, foto hisobotlar, arizalar va muddat nazorati.",
+        sectorSlug: "stroitelstvo",
       },
       {
         title: "Logistika va tashqi savdo",
         description:
-          "So'rovlar, hujjatlar, yetkazish bosqichlari, statuslar va mijozga xabarlar.",
+          "Arizalar, hujjatlar, yetkazib berish bosqichlari, statuslar va ishtirokchilarga bildirishnomalar.",
+        sectorSlug: "logistika",
       },
       {
-        title: "Qurilish va maydon ishlari",
+        title: "Ko'chmas mulk va ijaraga berish",
         description:
-          "Vazifalar, tasdiqlar, foto hisobotlar, so'rovlar va bajarilish nazorati.",
+          "Arizalar, ob'ektlar, ko'rishlar, shartnomalar, to'lovlar va muloqot tarixi.",
+        sectorSlug: "nedvizhimost",
+      },
+      {
+        title: "Klinikalar va xizmat biznesi",
+        description:
+          "Yozuvlar, ichki arizalar, xodimlarga vazifalar, tasdiqlashlar va hisobotlar.",
+      },
+      {
+        title: "Restoranlar va kafelar",
+        description:
+          "Xarid arizalari, smenalar, ta'mirlash, tasdiqlashlar va nazorat.",
+      },
+      {
+        title: "Kichik ishlab chiqarish",
+        description:
+          "Xom ashyo arizalari, tasdiqlashlar, brigadalarga vazifalar, hisob va operatsiyalar tarixi.",
       },
     ],
   },
@@ -179,137 +259,345 @@ export const uz: DictionaryEntry = {
     step: "Qadam",
   },
   howWeStart: {
-    title: "Katta tizim emas, bitta jarayondan boshlaymiz",
+    title: "Bitta jarayondan boshlaymiz",
     steps: [
       {
         title: "Joriy jarayonni tahlil qilamiz",
         description:
-          "20 daqiqada so'rovlar, tasdiqlar va nazorat qayerda yo'qolishini aniqlaymiz.",
+          "Hozir arizalar, vazifalar va tasdiqlashlar qayerda yo'qolayotganini ko'rib chiqamiz.",
       },
       {
-        title: "Tez MVP yig'amiz",
-        description: "Birinchi ishlaydigan versiyani qisqa muddatda ishga tushiramiz.",
-      },
-      {
-        title: "Haqiqiy ish bo'yicha yaxshilaymiz",
+        title: "Birinchi workflow yaratamiz",
         description:
-          "Hisobot, rollar, statuslar, bildirishnomalar va yangi jarayonlarni qo'shamiz.",
+          "Forma, qadamlar, mas'ullar, statuslar va bildirishnomalarni yaratamiz.",
+      },
+      {
+        title: "Ma'lumot va tizimlarni ulaymiz",
+        description:
+          "Kerak bo'lsa sayt, CRM, ombor, Excel yoki API ulaymiz.",
+      },
+      {
+        title: "Telegram'da ishga tushiramiz",
+        description:
+          "Xodimlar vazifalar va tasdiqlashlarni to'g'ridan-to'g'ri Telegram'da oladi.",
+      },
+      {
+        title: "Yaxshilaymiz va kengaytiramiz",
+        description:
+          "Yangi jarayonlar, hisobotlar, rollar va integratsiyalar qo'shamiz.",
+      },
+    ],
+  },
+  modules: {
+    title: "Proklix nimalardan iborat",
+    items: [
+      {
+        title: "Dinamik formalar",
+        description: "Jarayoningiz uchun maydonlar, fayllar va shartlar bilan forma konstruktori.",
+      },
+      {
+        title: "Workflow builder",
+        description: "Qadamlar, statuslar, tasdiqlash marshrutlari va o'tish qoidalari.",
+      },
+      {
+        title: "Vazifalar inbox",
+        description: "Shaxsiy va jamoa inbox: nima tayinlangan, nima harakat talab qiladi.",
+      },
+      {
+        title: "Arizalarni kuzatish",
+        description: "Har bir ariza raqam, status, mas'ul va tarix bilan.",
+      },
+      {
+        title: "Telegram bildirishnomalari",
+        description: "Yangi arizalar, tasdiqlashlar va vazifalar haqida Telegram bildirishnomalari.",
+      },
+      {
+        title: "Fayl va foto yuklash",
+        description: "Fayllar va fotolar jarayonga biriktiriladi, chatlarda yo'qolmaydi.",
+      },
+      {
+        title: "Jarayonlar tarixi",
+        description: "To'liq audit trail: kim, qachon va nima o'zgartirdi.",
+      },
+      {
+        title: "Hisobotlar va dashboard",
+        description: "Arizalar, tasdiqlashlar, vazifalar va tor joylar bo'yicha umumiy ko'rinish.",
+      },
+      {
+        title: "Foydalanuvchilarni boshqarish",
+        description: "Rollar, kirish huquqlari, bo'limlar va multi-tenant tuzilma.",
+      },
+      {
+        title: "Maxsus integratsiyalar",
+        description: "Sayt, CRM, ombor, Excel yoki API ga loyiha bo'yicha ulanish.",
       },
     ],
   },
   workflow: {
-    title: "Misol: tijorat taklif jarayoni",
-    steps: [
-      "Mijoz so'rov qoldiradi",
-      "Menejer tafsilotlarni aniqlashtiradi",
-      "Narx yoki zaxira tekshiriladi",
-      "Rahbar taklifni tasdiqlaydi",
-      "Mijoz javob oladi",
-      "Telegram bildirishnoma yuboradi",
-      "Tarix panelda saqlanadi",
+    title: "Ish jarayoni misoli",
+    tabs: [
+      {
+        id: "proposal",
+        label: "Tijorat taklifi",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Mijoz sayt, Telegram yoki forma orqali ariza qoldiradi.",
+          },
+          {
+            title: "Ma'lumot manbasi",
+            description: "Mijoz ma'lumotlari va mahsulotlar CRM yoki katalogdan olinadi.",
+          },
+          {
+            title: "Mas'ul",
+            description: "Menejer vazifa oladi, tafsilotlarni aniqlaydi va TT shakllantiradi.",
+          },
+          {
+            title: "Tasdiqlash",
+            description: "Rahbar narx va shartlarni tekshiradi, tasdiqlaydi yoki qaytaradi.",
+          },
+          {
+            title: "Telegram bildirishnomasi",
+            description: "Ishtirokchilar har bir muhim bosqichda bildirishnoma oladi.",
+          },
+          {
+            title: "Natija",
+            description: "Mijoz yakuniy taklifni oladi, status yangilanadi.",
+          },
+          {
+            title: "Tarix",
+            description: "Barcha versiyalar va harakatlar audit va hisobotlar uchun saqlanadi.",
+          },
+        ],
+      },
+      {
+        id: "stock",
+        label: "Inventarizatsiya",
+        steps: [
+          {
+            title: "Ma'lumot manbasi",
+            description: "Mahsulot ro'yxati sayt, ombor yoki jadvaldan olinadi.",
+          },
+          {
+            title: "Telegram vazifasi",
+            description: "Mas'ul inventarizatsiya vazifasini Telegram'da oladi.",
+          },
+          {
+            title: "Bajarish",
+            description: "Xodim mahsulotlarni sanaydi va foto biriktiradi.",
+          },
+          {
+            title: "Tasdiqlash",
+            description: "Rahbar natija va farqlarni tekshiradi.",
+          },
+          {
+            title: "Natija",
+            description: "Yakun tarixda saqlanadi va tizimga qaytarilishi mumkin.",
+          },
+        ],
+      },
+      {
+        id: "purchase",
+        label: "Xarid tasdiqlash",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Xodim forma orqali xarid arizasi beradi.",
+          },
+          {
+            title: "Tasdiqlash",
+            description: "Rahbar va buxgalteriya qadam-baqadam tasdiqlaydi.",
+          },
+          {
+            title: "Telegram bildirishnomasi",
+            description: "Har bir ishtirokchi o'z bosqichi uchun vazifa oladi.",
+          },
+          {
+            title: "Natija",
+            description: "Xarid tasdiqlanadi yoki izoh bilan rad etiladi.",
+          },
+          {
+            title: "Tarix",
+            description: "To'liq tasdiqlash zanjiri audit uchun saqlanadi.",
+          },
+        ],
+      },
+      {
+        id: "service",
+        label: "Servis vazifasi",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Mijoz yoki menejer servis arizasi yaratadi.",
+          },
+          {
+            title: "Mas'ul",
+            description: "Ijrochi tayinlanadi, vazifa Telegram'ga ketadi.",
+          },
+          {
+            title: "Bajarish",
+            description: "Ijrochi ishni bajaradi, foto va status biriktiradi.",
+          },
+          {
+            title: "Telegram bildirishnomasi",
+            description: "Mijoz va menejer jarayon yangilanishlarini oladi.",
+          },
+          {
+            title: "Natija",
+            description: "Ariza yopiladi, tarix va fayllar saqlanadi.",
+          },
+        ],
+      },
     ],
-    stepDetails: [
-      "Mijoz sayt, Telegram yoki forma orqali so'rov qoldiradi — u darhol CRMga tushadi.",
-      "Menejer tafsilotlarni aniqlashtiradi, izoh qo'shadi va mas'ul tayinlaydi.",
-      "Narx, zaxira yoki texnik shartlar tekshiriladi — ma'lumotlar kartochkada qayd etiladi.",
-      "Rahbar Telegram bildirishnomasini oladi va tasdiqlaydi yoki qayta ishlashga qaytaradi.",
-      "Mijoz yakuniy taklifni oladi — barcha versiyalar tarixda saqlanadi.",
-      "Telegram har bir muhim bosqichda butun jamoaga bildirishnoma yuboradi.",
-      "To'liq harakatlar tarixi audit va hisobotlar uchun panelda mavjud.",
+  },
+  projects: {
+    title: "Real B2B jarayonlaridagi tajriba",
+    subtitle:
+      "B2B kompaniyalar uchun arizalar, kataloglar, integratsiyalar va operatsion jarayonlar qurilgan loyihalar misollari.",
+    cta: "Saytni ochish",
+    items: [
+      {
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "B2B tozalash uskunalari katalogi",
+        description:
+          "Mahsulot katalogi, ko'p tilli tuzilma, SEO va B2B savdo uchun Telegram ariza oqimi.",
+        badges: ["B2B katalog", "Telegram arizalar", "RU / UZ"],
+      },
+      {
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Tozalash xizmatlari sayti",
+        description:
+          "Toshkentda tozalash xizmatlari uchun Telegram arizali ko'p tilli sayt.",
+        badges: ["Arizalar", "Telegram", "Mahalliy SEO"],
+      },
+      {
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Klinikalar uchun platforma",
+        description:
+          "Bemorlar, yozuvlar va klinika operatsion jarayonlarini boshqarish uchun raqamli platforma.",
+        badges: ["SaaS", "Jarayonlar", "Demo ariza"],
+      },
     ],
   },
   pricing: {
     title: "Proklix paketlari",
     subtitle:
-      "Belgilangan narx yo'q — jarayoningizga mos yechimni tanlaymiz. Har bir paketda nimalar bor:",
+      "Hajm va muddatlar jarayon tahlilidan keyin belgilanadi. Har bir paket tarkibi:",
     plans: [
       {
-        name: "Start",
-        description: "Bitta jarayon, tez MVP",
+        name: "Birinchi jarayon",
+        description: "Bitta workflow kerak bo'lgan kompaniyalar uchun: arizalar, tasdiqlashlar yoki TT.",
         features: [
-          "1 asosiy jarayon (so'rovlar yoki KP)",
-          "Web panel + Telegram bildirishnomalari",
-          "5 foydalanuvchigacha",
-          "Asosiy statuslar va rollar",
-          "2–3 haftada ishga tushirish",
+          "1 asosiy jarayon",
+          "Telegram bildirishnomalari",
+          "Asosiy dashboard",
+          "Cheklangan foydalanuvchilar soni",
+          "Hajm tahlildan keyin belgilanadi",
         ],
         cta: "Taklif olish",
       },
       {
-        name: "O'sish",
-        description: "Bir nechta jarayon va integratsiyalar",
+        name: "Bir nechta jarayon + integratsiyalar",
+        description: "2–3 jarayon, hisobotlar va bir yoki bir nechta integratsiya kerak bo'lgan kompaniyalar uchun.",
         features: [
-          "3 tagacha bog'langan jarayon",
-          "CRM + katalog yoki so'rovlar",
-          "Tasdiqlash workflow",
+          "Bir nechta bog'langan jarayonlar",
+          "CRM / katalog / ariza oqimi",
           "Hisobotlar va dashboard",
-          "20 foydalanuvchigacha",
-          "Ustuvor qo'llab-quvvatlash",
+          "Asosiy integratsiya yoki import/eksport",
+          "Hajm tahlildan keyin belgilanadi",
         ],
         cta: "Taklif olish",
         highlighted: true,
       },
       {
-        name: "Korporativ",
-        description: "Biznesingiz uchun to'liq tizim",
+        name: "Biznes uchun operatsion tizim",
+        description: "Maxsus CRM, workflow, integratsiyalar va hisobot kerak bo'lgan kompaniyalar uchun.",
         features: [
-          "Cheksiz jarayonlar",
-          "Maxsus integratsiyalar",
-          "Ko'p tilli (RU/UZ/TR/EN)",
-          "Rollar, huquqlar, audit",
-          "Jamoa o'qitishi",
-          "Maxsus qo'llab-quvvatlash",
+          "Maxsus API integratsiyalari",
+          "Rollar, audit, hisobotlar",
+          "Bir nechta bo'lim",
+          "O'qitish va qo'llab-quvvatlash",
+          "Hajm tahlildan keyin belgilanadi",
         ],
         cta: "Taklif olish",
       },
     ],
   },
-  trust: {
-    title: "Haqiqiy biznes uchun amaliy yondashuv",
-    description:
-      "Biz abstrakt platforma sotmaymiz. Avval sizning aniq jarayoningizni tahlil qilamiz, keyin tushunarli tizim yig'amiz: sayt, CRM, so'rovlar, tasdiqlar, bildirishnomalar va hisobotlar.",
-    points: [
-      "Mahalliy fokus: Toshkent va O'zbekiston",
-      "Telegram-first aloqa",
-      "Ko'p tilli tuzilma: RU / UZ / TR / EN",
-      "Birinchi versiyani tez ishga tushirish",
+  faq: {
+    title: "Tez-tez beriladigan savollar",
+    items: [
+      {
+        question: "Proklix — bu CRM, bot yoki ERP?",
+        answer:
+          "Proklix hammasini birdan almashtirmaydi. Bu workflow platformasi: arizalar, formalar, tasdiqlashlar, vazifalar, bildirishnomalar va mavjud tizimlar bilan integratsiyalar.",
+      },
+      {
+        question: "Saytimiz, CRM yoki omborni ulash mumkinmi?",
+        answer:
+          "Ha, agar API, eksport/import yoki boshqa texnik kirish bo'lsa. Integratsiyalar aniq jarayon bo'yicha muhokama qilinadi.",
+      },
+      {
+        question: "Bitta jarayondan boshlash mumkinmi?",
+        answer:
+          "Ha. Odatda bitta jarayondan boshlash yaxshi: arizalar, TT, xaridlar, inventarizatsiya yoki xarajatlarni tasdiqlash.",
+      },
+      {
+        question: "Xodimlar yangi ilova o'rnatishi kerakmi?",
+        answer:
+          "Asosiy harakatlar Telegram/WebApp orqali qilinadi. Bu allaqachon Telegram'da ishlaydigan jamoalar uchun qulay.",
+      },
+      {
+        question: "Rus va o'zbek tillari qo'llab-quvvatlanadimi?",
+        answer:
+          "Ha, sayt va jarayonlar loyiha bo'yicha RU / UZ / EN / TR tillarida qilinishi mumkin.",
+      },
+      {
+        question: "Bu faqat savdo uchunmi?",
+        answer:
+          "Yo'q. Proklix har qanday takrorlanadigan jarayonlar uchun mos: arizalar, tasdiqlashlar, vazifalar, ombor, servis, hujjatlar, xaridlar, xarajatlar.",
+      },
     ],
-    fitLine:
-      "B2B katalog, savdo kompaniyalari, distribyutorlar va xizmat bizneslari uchun mos.",
   },
   cta: {
-    title: "Jarayoningizni bepul tahlil qiling",
+    title: "Bitta tartibsiz jarayoningizni ko'rsating — biz uni Proklix'da qanday yig'ishni ko'rsatamiz",
     description:
-      "20 daqiqada hozirgi so'rov, taklif, tasdiq va nazorat qanday o'tishini ko'rib chiqamiz. Suhbatdan keyin nima avtomatlashtirish mumkin, qayerdan boshlash va birinchi MVP qanday yig'ilishi aniq bo'ladi.",
+      "20 daqiqada jarayoningizni ko'rib chiqamiz va MVP uchun qayerdan boshlashni taklif qilamiz. Majburiyat yo'q.",
     ctaTelegram: "Telegram'da yozish",
-    ctaCall: "Qo'ng'iroq",
+    ctaCall: "Qo'ng'iroq qilish",
     phone: "+998 77 257 43 54",
-    formTitle: "Yoki so'rov qoldiring — qo'ng'iroq qilamiz",
+    formTitle: "Yoki ariza qoldiring",
   },
   contactForm: {
     name: "Ism",
     company: "Kompaniya",
     phone: "Telefon",
-    process: "Qaysi jarayon?",
+    process: "Qaysi jarayonni nazorat qilmoqchisiz?",
     processPlaceholder: "Jarayonni tanlang",
     processOptions: [
-      "So'rovlar va CRM",
+      "Arizalar / CRM",
       "Tijorat takliflari",
-      "Tasdiqlar",
-      "B2B katalog",
-      "Telegram avtomatizatsiyasi",
+      "Tasdiqlashlar",
+      "Ombor / inventarizatsiya",
+      "Maydon vazifalari",
+      "Sayt / e-commerce integratsiyasi",
       "Boshqa",
     ],
-    submit: "So'rov yuborish",
+    submit: "Arizani yuborish",
     submitting: "Yuborilmoqda…",
     success: "Rahmat! Tez orada siz bilan bog'lanamiz.",
-    error: "Yuborib bo'lmadi. Telegram orqali yozing.",
+    error: "Yuborib bo'lmadi. Telegram'da yozing.",
   },
   blog: {
     meta: {
       title: "Proklix blogi | CRM, avtomatizatsiya va B2B",
       description:
-        "O'zbekistondagi bizneslar uchun CRM, Telegram avtomatizatsiyasi va B2B kataloglari haqida maqolalar.",
+        "O'zbekistondagi biznes uchun CRM, Telegram avtomatizatsiyasi va B2B kataloglar haqida maqolalar.",
     },
     title: "Proklix blogi",
     subtitle: "B2B uchun CRM, avtomatizatsiya va raqamli jarayonlar bo'yicha amaliy materiallar.",
@@ -322,33 +610,35 @@ export const uz: DictionaryEntry = {
   },
   footer: {
     tagline:
-      "Web, CRM, workflow va Telegram — so'rov, taklif va jarayon nazorati uchun raqamli tizimlar.",
+      "Telegram-first workflow platformasi: arizalar, tasdiqlashlar, vazifalar va mavjud tizimlar bilan integratsiyalar.",
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Toshkent / O'zbekiston",
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix paneli",
-    metricRequests: "24 so'rov",
+    title: "Proklix — operatsion panel",
+    metricRequests: "24 ariza",
     metricInProgress: "8 jarayonda",
-    metricPendingApproval: "5 tasdiq kutmoqda",
+    metricPendingApproval: "5 tasdiqlash kutilmoqda",
     metricCompleted: "11 yakunlangan",
     feedItems: [
-      "Mijozdan yangi so'rov",
-      "Tijorat taklif tasdiqni kutmoqda",
-      "Telegram bildirishnoma yuborildi",
-      "Mas'ul tayinlandi",
-      "Jarayon yakunlandi",
+      "Yangi ariza",
+      "Tasdiqlash kutilmoqda",
+      "Vazifa Telegram'ga yuborildi",
+      "CRM'dan ma'lumot olindi",
+      "Tarix saqlandi",
     ],
-    sidebarRequests: "So'rovlar",
-    sidebarClients: "Mijozlar",
-    sidebarReports: "Hisobotlar",
-    tableHeaderClient: "Mijoz",
+    sidebarRequests: "Arizalar",
+    sidebarTasks: "Vazifalar",
+    sidebarIntegrations: "Integratsiyalar",
+    tableHeaderProcess: "Jarayon",
     tableHeaderStatus: "Status",
-    tableHeaderManager: "Menejer",
-    statusNew: "Yangi",
-    statusInProgress: "Jarayonda",
-    statusApproved: "Tasdiqlangan",
+    tableHeaderSource: "Manba",
+    statusNew: "Yangi ariza",
+    statusPending: "Tasdiqlash kutilmoqda",
+    statusTelegram: "Telegram vazifasi",
+    statusSynced: "CRM ma'lumoti",
+    statusSaved: "Tarix saqlandi",
   },
 };

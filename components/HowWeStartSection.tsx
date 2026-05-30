@@ -11,16 +11,16 @@ export function HowWeStartSection({ dict }: Props) {
         <h2 className="mx-auto max-w-3xl text-center text-xl font-bold tracking-tight text-navy-950 sm:text-3xl">
           {dict.howWeStart.title}
         </h2>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
           {dict.howWeStart.steps.map((step, i) => (
             <div
               key={step.title}
-              className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              className="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white">
+              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-navy-950 text-sm font-bold text-white">
                 {i + 1}
               </div>
-              <h3 className="text-base font-semibold text-navy-950">{step.title}</h3>
+              <h3 className="text-sm font-semibold leading-snug text-navy-950">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.description}</p>
             </div>
           ))}

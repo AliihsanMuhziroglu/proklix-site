@@ -2,171 +2,252 @@ import type { DictionaryEntry } from "./types";
 
 export const tr: DictionaryEntry = {
   meta: {
-    title: "Proklix | Web, CRM, Workflow ve Telegram İş Takip Sistemleri",
+    title:
+      "Proklix — CRM, workflow, talepler, onaylar ve Telegram entegrasyonları Özbekistan işletmeleri için",
     description:
-      "Proklix; Taşkent ve Özbekistan'daki işletmeler için müşteri talebi, teklif, onay, görev ve takip süreçlerini web panel ve Telegram bildirimleriyle dijitalleştirir.",
+      "Proklix, Özbekistan'daki işletmelerin talepleri, onayları, görevleri, Telegram bildirimlerini ve mevcut sistemlerle entegrasyonları yönetmesine yardımcı olur.",
   },
   header: {
-    solutions: "Çözümler",
+    platform: "Platform",
+    integrations: "Entegrasyonlar",
     processes: "Süreçler",
     forWhom: "Kimler İçin",
     pricing: "Fiyatlandırma",
+    faq: "SSS",
     blog: "Blog",
     contact: "İletişim",
     cta: "Telegram'dan Yaz",
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Talep, teklif, onay ve görevler tek sistemde",
+    title: "Talepler, onaylar, görevler ve entegrasyonlar — tek Telegram-first sistemde",
     subtitle:
-      "Proklix; Taşkent ve Özbekistan'daki işletmeler için müşteri taleplerini, teklifleri, görevleri, onayları ve takip süreçlerini web panelde toplar. Telegram bildirimleriyle ekip hızlı aksiyon alır, yönetici süreci net görür.",
+      "Proklix, işletmelerin sohbet kaosunu yönetmeden operasyonları yürütmesine yardımcı olur: talepler, formlar, onaylar, görevler, dosyalar, işlem geçmişi, raporlar ve mevcut sistemlerle entegrasyon.",
     trustTag: "Taşkent ve Özbekistan'daki işletmeler için",
     ctaTelegram: "Telegram'dan Yaz",
-    ctaAnalysis: "Ücretsiz Süreç Analizi Al",
-    watchDemo: "Demoyu izle",
+    ctaAnalysis: "Ücretsiz süreç analizi al",
   },
-  projects: {
-    title: "Seçili çalışmalar",
-    subtitle:
-      "B2B katalog, hizmet sitesi ve operasyon platformu tarafında farklı sektörler için geliştirdiğimiz dijital ürün ve süreç çalışmalarından örnekler.",
-    cta: "Siteyi incele",
+  positioning: {
+    title: "Sadece CRM değil. Sadece bot değil. Tam iş akışı.",
     items: [
       {
-        title: "Clemar",
-        website: "clemar.uz",
-        url: "https://clemar.uz",
-        category: "Profesyonel temizlik ekipmanları ve B2B ürün kataloğu",
+        title: "Formlar",
         description:
-          "Özbekistan pazarına yönelik temizlik ekipmanları kataloğu için ürün/kategori yapısı, çok dilli içerik, SEO korunumu, Telegram odaklı satış akışı ve modern katalog deneyimi üzerine çalışıldı.",
-        badges: ["B2B katalog", "SEO geçişi", "RU / UZ yapı", "Telegram satış akışı"],
+          "Web sitesi, Telegram veya dahili formlarla veri toplayın — alanlar ve dosyalar kaybolmaz.",
       },
       {
-        title: "Tozago",
-        website: "tozago.uz",
-        url: "https://tozago.uz",
-        category: "Taşkent için profesyonel temizlik hizmetleri sitesi",
+        title: "Onaylar",
         description:
-          "Ev, ofis ve ticari alan temizliği için hizmetlerin net anlatıldığı, çok dilli, SEO uyumlu ve Telegram üzerinden hızlı talep almaya odaklanan web yapısı geliştirildi.",
-        badges: ["Hizmet sitesi", "Çok dilli yapı", "Telegram talep", "Yerel SEO"],
+          "Adım adım onay süreçleri: yönetici, depo, muhasebe, direktör — herkes kendi aşamasını görür.",
       },
       {
-        title: "Klinidex",
-        website: "klinidex.com",
-        url: "https://klinidex.com",
-        category: "Klinikler ve stomatologlar için yönetim platformu",
+        title: "Görevler",
         description:
-          "Klinik ve stomatoloji işletmeleri için randevu, hasta, operasyon ve yönetim süreçlerini daha düzenli hale getirmeyi hedefleyen modern dijital platform sunumu hazırlandı.",
-        badges: ["SaaS platform", "Klinik yönetimi", "Demo talep", "Operasyon takibi"],
+          "Sorumlulara deadline, durum ve geçmişle görev atayın — özel sohbetlerde kaybolmaz.",
+      },
+      {
+        title: "Telegram",
+        description:
+          "Telegram bildirimleri gönderin: yeni talep, bekleyen onay, atanan görev.",
+      },
+      {
+        title: "Entegrasyonlar",
+        description:
+          "Mevcut sistemleri API, import/export veya projeye özel kurulumla bağlayın.",
+      },
+      {
+        title: "Kontrol",
+        description:
+          "Her sürecin durumunu, geçmişini ve sonucunu görün — yönetim tek ekranda genel resmi görür.",
       },
     ],
   },
-  problem: {
-    title: "Telegram hızlıdır. Ama süreç kayıt altına alınmazsa işler dağılır.",
+  integration: {
+    title: "Mevcut sistemlerinizin üzerinde çalışır",
     subtitle:
-      "Talep, teklif, onay ve görevler sadece sohbetlerde kalırsa kimin ne yaptığı, hangi işin nerede beklediği ve müşteriye ne zaman dönüldüğü belirsizleşir.",
+          "Web sitenizi, CRM'inizi, depo yazılımınızı veya Excel'i hemen değiştirmeniz gerekmez. Proklix mevcut verilere bağlanabilir, iş akışlarını çalıştırabilir ve sonuçları geri gönderebilir.",
+    flowLabels: [
+      "Web sitesi / CRM / Depo / Excel",
+      "Proklix süreci",
+      "Telegram görevi",
+      "Sonuç ve geçmiş",
+      "Veri güncelleme",
+    ],
     items: [
       {
-        title: "Talep geldi ama kime düştü belli değil",
+        title: "Web sitesi / e-ticaret",
         description:
-          "Müşteri Telegram'dan yazar, biri görür, biri unutur. Talep sisteme düşmediği için takip kişilerin hafızasına kalır.",
+          "Talepler, ürünler, siparişler ve müşteri formları — API veya import ile bağlanabilir.",
       },
       {
-        title: "Teklifin son hali mesajlarda kaybolur",
+        title: "CRM",
         description:
-          "Fiyat, iskonto, stok ve şartlar farklı konuşmalara dağılır. Yönetici hangi teklifin onaylandığını geç görür.",
+          "Müşteriler, durumlar, yöneticiler ve iletişim geçmişi — CRM'inizle projeye göre entegre edilebilir.",
       },
       {
-        title: "Onay nerede bekliyor anlaşılmaz",
+        title: "Depo / stok",
         description:
-          "Satış, depo, muhasebe veya yönetici onayı ayrı ayrı sorulur. Sürecin hangi aşamada olduğu tek ekranda görünmez.",
+          "Stok seviyeleri, envanter, transferler ve foto raporlar — API, export veya manuel değişimle.",
       },
       {
-        title: "Excel gerçek durumu göstermez",
+        title: "ERP / muhasebe",
         description:
-          "Tablo güncellenmez, sürümler karışır, ekip başka bilgiyle çalışır. Rapor almak için tekrar tekrar sormak gerekir.",
+          "Satın almalar, giderler, faturalar ve onaylar — belirli süreç ve erişim seviyesine göre bağlanır.",
       },
       {
-        title: "Görevler kişilere bağlı kalır",
+        title: "Google Sheets / Excel",
         description:
-          "Kim arayacak, kim teklif gönderecek, kim ödeme hatırlatacak net değilse işler gecikir.",
+          "Verilerin hâlâ tablolarda olduğu işletmeler için hızlı başlangıç — Excel'i değiştirmeden import/export.",
       },
       {
-        title: "Geçmiş yoksa kontrol de yok",
+        title: "Custom API",
         description:
-          "Talebi kim aldı, fiyatı kim değiştirdi, onayı kim verdi, müşteriye ne zaman dönüldü — hepsi dağınık kalır.",
+          "Mevcut sisteminiz için özel entegrasyonlar — süreç analizinden sonra görüşülür.",
       },
     ],
   },
-  solution: {
-    title: "Proklix işinizde hangi süreçleri sisteme bağlar?",
-    subtitle:
-      "Web sitesi, müşteri takibi, teklif, onay ve Telegram bildirimleri ayrı ayrı değil; aynı iş akışının parçaları olarak kurulur.",
+  useCases: {
+    title: "Proklix'te hangi süreçler çalıştırılabilir?",
+    flowHint: "Form → Onay → Görev → Sonuç",
     items: [
       {
-        title: "Kurumsal site ve katalog",
+        title: "Müşteri talebi",
         description:
-          "Ürünleriniz, hizmetleriniz ve teklif alma akışınız tek bir profesyonel yapıda toplanır.",
+          "Müşteri web sitesi veya Telegram'dan talep bırakır. Yönetici görev alır, durum yönetime görünür.",
       },
       {
-        title: "CRM ve müşteri takibi",
+        title: "Ticari teklif onayı",
         description:
-          "Müşteri kartları, görüşme geçmişi, durumlar ve sorumlu kişiler tek panelde görünür.",
+          "Yönetici teklifi hazırlar, direktör Telegram'da onaylar, müşteri nihai versiyonu alır.",
       },
       {
-        title: "Talep ve teklif süreci",
+        title: "Satın alma talebi",
         description:
-          "Gelen talep kayda alınır, sorumlu kişiye atanır, fiyat/teklif süreci takip edilir.",
+          "Çalışan satın alma talebi verir, yönetici ve muhasebe adım adım onaylar, geçmiş kaydedilir.",
       },
       {
-        title: "Workflow ve onay akışları",
+        title: "Gider onayı",
         description:
-          "Satış temsilcisi, depo, muhasebe veya yönetici onayları belirli adımlarla ilerler.",
+          "Gider fişle kaydedilir, onay zincir boyunca ilerler, sonuç raporlara gider.",
       },
       {
-        title: "Telegram bildirimleri",
+        title: "Envanter sayımı",
         description:
-          "Yeni talep, onay bekleyen teklif, görev ataması ve süreç güncellemeleri Telegram'dan bildirilir.",
+          "Ürün listesi depo veya web sitesinden gelir. Çalışan Telegram'da sayar, foto ekler, yönetici sonucu görür.",
       },
       {
-        title: "Yönetim paneli ve raporlar",
+        title: "Depo transferi",
         description:
-          "Yönetici hangi işin kimde beklediğini, hangi sürecin tıkandığını ve genel durumu net görür.",
+          "Depolar arası transfer talebi, onay, depo personeline görev, geçmişe kayıt.",
+      },
+      {
+        title: "Saha görevleri ve kontrol listeleri",
+        description:
+          "Saha çalışanına Telegram görevi: kontrol listesi, foto, tamamlanma durumu, yöneticiye rapor.",
+      },
+      {
+        title: "Servis talebi",
+        description:
+          "Müşteri veya yönetici talep oluşturur, sorumlu atanır, durum ve geçmiş tek ekranda.",
+      },
+      {
+        title: "Belge onayı",
+        description:
+          "Belge onay adımlarından geçer, katılımcılar bildirim alır, versiyonlar kaydedilir.",
+      },
+      {
+        title: "İK / admin talepleri",
+        description:
+          "İzin, satın alma, erişim, belgeler — onay rotası ve geçmişi olan dahili talepler.",
       },
     ],
+  },
+  beforeAfter: {
+    title: "Proklix'ten sonra ne değişir",
+    without: {
+      title: "Proklix olmadan",
+      items: [
+        "Talepler sohbetlerde kaybolur",
+        "Excel güncellenmez",
+        "Kim sorumlu belirsiz",
+        "Onaylar manuel yapılır",
+        "Dosyalar mesajlara dağılmış",
+        "Tam işlem geçmişi yok",
+        "Veriler sistemler arasında manuel kopyalanır",
+      ],
+    },
+    with: {
+      title: "Proklix ile",
+      items: [
+        "Her talebin durumu var",
+        "Sorumlu atanmış",
+        "Onay adım adım ilerler",
+        "Telegram katılımcıları bilgilendirir",
+        "Dosyalar sürece eklenmiş",
+        "İşlem geçmişi kaydedilir",
+        "Veriler mevcut sistemlerle bağlanabilir",
+      ],
+    },
   },
   sectors: {
-    title: "Çok talep, satış ve manuel kontrol olan işletmeler için özellikle uygun",
-    viewSector: "Sektör hakkında daha fazla",
+    title: "Çok manuel kontrol gerektiren işletmeler için",
+    viewSector: "Sektör hakkında",
     items: [
       {
-        title: "Emlak ve kiralama",
+        title: "B2B kataloglar ve ticaret",
         description:
-          "Talepler, portföy, gösterimler, sözleşmeler ve ödemeler tek süreçte yürütülebilir.",
+          "Talepler, ürünler, fiyatlar, ticari teklifler, onaylar ve Telegram bildirimleri.",
+        sectorSlug: "b2b-katalog",
       },
       {
-        title: "B2B katalog ve ticaret firmaları",
+        title: "Temizlik ve saha hizmeti",
         description:
-          "Ürünler, talepler, fiyatlar, teklifler ve müşteri statüleri — tek panelde.",
+          "Müşteri talepleri, saha görevleri, kontrol listeleri, foto raporlar ve uygulama kontrolü.",
       },
       {
-        title: "Tarım ve distribütörlük",
+        title: "Depolar ve distribütörler",
         description:
-          "Bayi talepleri, siparişler, stok, bölgeler ve sorumlu satış yöneticileri.",
+          "Stok, envanter, transferler, bayi talepleri ve teslimat durumları.",
+        sectorSlug: "agro",
       },
       {
-        title: "Ekipman ve teknik ürünler",
+        title: "Ekipman satışı",
         description:
-          "Katalog, danışmanlık, setler, talepler ve ticari teklif süreçleri.",
+          "Katalog, danışmanlık, talepler, ticari teklifler ve onaylar.",
+        sectorSlug: "oborudovanie",
+      },
+      {
+        title: "İnşaat ve saha ekipleri",
+        description:
+          "Saha görevleri, onaylar, foto raporlar, talepler ve deadline kontrolü.",
+        sectorSlug: "stroitelstvo",
       },
       {
         title: "Lojistik ve dış ticaret",
         description:
-          "Talepler, evraklar, teslimat aşamaları, statüler ve müşteri bildirimleri.",
+          "Talepler, belgeler, teslimat aşamaları, durumlar ve katılımcı bildirimleri.",
+        sectorSlug: "logistika",
       },
       {
-        title: "İnşaat ve saha operasyonları",
+        title: "Emlak ve kiralama",
         description:
-          "Görevler, onaylar, foto raporlar, talepler ve iş takibi.",
+          "Talepler, mülkler, gösterimler, sözleşmeler, ödemeler ve etkileşim geçmişi.",
+        sectorSlug: "nedvizhimost",
+      },
+      {
+        title: "Klinikler ve hizmet işletmeleri",
+        description:
+          "Randevular, dahili talepler, personel görevleri, onaylar ve raporlar.",
+      },
+      {
+        title: "Restoranlar ve kafeler",
+        description:
+          "Dahili satın alma talepleri, vardiyalar, onarım, onaylar ve kontrol.",
+      },
+      {
+        title: "Küçük üretim tesisleri",
+        description:
+          "Hammadde talepleri, onaylar, ekip görevleri, takip ve operasyon geçmişi.",
       },
     ],
   },
@@ -178,140 +259,348 @@ export const tr: DictionaryEntry = {
     step: "Adım",
   },
   howWeStart: {
-    title: "Dev bir sistemle değil, tek bir süreçle başlıyoruz",
+    title: "Tek bir süreçle başlayın",
     steps: [
       {
-        title: "Mevcut süreci analiz ediyoruz",
+        title: "Mevcut süreci analiz edin",
         description:
-          "20 dakikada taleplerin, onayların ve kontrolün nerede kaybolduğunu netleştiriyoruz.",
+          "Taleplerin, görevlerin ve onayların şu an nerede kaybolduğunu inceleriz.",
       },
       {
-        title: "Hızlı MVP kuruyoruz",
-        description: "İlk çalışan sürümü kısa sürede devreye alıyoruz.",
+        title: "İlk workflow'u oluşturun",
+        description:
+          "Form, adımlar, sorumlular, durumlar ve bildirimleri oluştururuz.",
       },
       {
-        title: "Gerçek kullanıma göre geliştiriyoruz",
+        title: "Veri ve sistemleri bağlayın",
         description:
-          "Rapor, rol, statü, bildirim ve yeni süreçleri adım adım ekliyoruz.",
+          "Gerekirse web sitesi, CRM, depo, Excel veya API bağlarız.",
+      },
+      {
+        title: "Telegram'da başlatın",
+        description:
+          "Çalışanlar görevleri ve onayları doğrudan Telegram'da alır.",
+      },
+      {
+        title: "Geliştirin ve genişletin",
+        description:
+          "Yeni süreçler, raporlar, roller ve entegrasyonlar ekleriz.",
+      },
+    ],
+  },
+  modules: {
+    title: "Proklix nelerden oluşur",
+    items: [
+      {
+        title: "Dinamik formlar",
+        description: "Süreciniz için alanlar, dosyalar ve koşullarla form oluşturucu.",
+      },
+      {
+        title: "Workflow builder",
+        description: "Adımlar, durumlar, onay rotaları ve geçiş kuralları.",
+      },
+      {
+        title: "Görev inbox'u",
+        description: "Kişisel ve ekip inbox'u: ne atandı, ne aksiyon bekliyor.",
+      },
+      {
+        title: "Talep takibi",
+        description: "Her talep numara, durum, sorumlu ve geçmişle.",
+      },
+      {
+        title: "Telegram bildirimleri",
+        description: "Yeni talepler, onaylar ve görevler için Telegram bildirimleri.",
+      },
+      {
+        title: "Dosya ve foto yükleme",
+        description: "Dosyalar ve fotolar sürece eklenir, sohbetlerde kaybolmaz.",
+      },
+      {
+        title: "Süreç geçmişi",
+        description: "Tam audit trail: kim, ne zaman, ne değiştirdi.",
+      },
+      {
+        title: "Raporlar ve dashboard",
+        description: "Talepler, onaylar, görevler ve darboğazlar özeti.",
+      },
+      {
+        title: "Kullanıcı yönetimi",
+        description: "Roller, erişim hakları, departmanlar ve multi-tenant yapı.",
+      },
+      {
+        title: "Özel entegrasyonlar",
+        description: "Web sitesi, CRM, depo, Excel veya API'ye projeye göre bağlantı.",
       },
     ],
   },
   workflow: {
-    title: "Örnek: ticari teklif süreci",
-    steps: [
-      "Müşteri talep bırakır",
-      "Satış temsilcisi detayları netleştirir",
-      "Fiyat veya stok kontrol edilir",
-      "Yönetici teklifi onaylar",
-      "Müşteriye yanıt gider",
-      "Telegram bildirim gönderir",
-      "Geçmiş panelde saklanır",
+    title: "Örnek iş akışı",
+    tabs: [
+      {
+        id: "proposal",
+        label: "Ticari teklif",
+        steps: [
+          {
+            title: "Tetikleyici",
+            description: "Müşteri web sitesi, Telegram veya form ile talep bırakır.",
+          },
+          {
+            title: "Veri kaynağı",
+            description: "Müşteri verileri ve ürünler CRM veya katalogdan çekilir.",
+          },
+          {
+            title: "Sorumlu",
+            description: "Yönetici görev alır, detayları netleştirir ve teklifi hazırlar.",
+          },
+          {
+            title: "Onay",
+            description: "Direktör fiyat ve koşulları kontrol eder, onaylar veya geri gönderir.",
+          },
+          {
+            title: "Telegram bildirimi",
+            description: "Katılımcılar her kritik aşamada bildirim alır.",
+          },
+          {
+            title: "Sonuç",
+            description: "Müşteri nihai teklifi alır, durum güncellenir.",
+          },
+          {
+            title: "Geçmiş",
+            description: "Tüm versiyonlar ve işlemler audit ve raporlar için kaydedilir.",
+          },
+        ],
+      },
+      {
+        id: "stock",
+        label: "Envanter sayımı",
+        steps: [
+          {
+            title: "Veri kaynağı",
+            description: "Ürün listesi web sitesi, depo veya tablodan gelir.",
+          },
+          {
+            title: "Telegram görevi",
+            description: "Sorumlu envanter görevini Telegram'da alır.",
+          },
+          {
+            title: "Uygulama",
+            description: "Çalışan ürünleri sayar ve foto ekler.",
+          },
+          {
+            title: "Onay",
+            description: "Yönetici sonucu ve farkları kontrol eder.",
+          },
+          {
+            title: "Sonuç",
+            description: "Sonuç geçmişe kaydedilir ve sisteme geri gönderilebilir.",
+          },
+        ],
+      },
+      {
+        id: "purchase",
+        label: "Satın alma onayı",
+        steps: [
+          {
+            title: "Tetikleyici",
+            description: "Çalışan form ile satın alma talebi verir.",
+          },
+          {
+            title: "Onay",
+            description: "Yönetici ve muhasebe adım adım onaylar.",
+          },
+          {
+            title: "Telegram bildirimi",
+            description: "Her katılımcı kendi aşaması için görev alır.",
+          },
+          {
+            title: "Sonuç",
+            description: "Satın alma onaylanır veya yorumla reddedilir.",
+          },
+          {
+            title: "Geçmiş",
+            description: "Tam onay zinciri audit için kaydedilir.",
+          },
+        ],
+      },
+      {
+        id: "service",
+        label: "Servis görevi",
+        steps: [
+          {
+            title: "Tetikleyici",
+            description: "Müşteri veya yönetici servis talebi oluşturur.",
+          },
+          {
+            title: "Sorumlu",
+            description: "Sorumlu atanır, görev Telegram'a gider.",
+          },
+          {
+            title: "Uygulama",
+            description: "Sorumlu işi tamamlar, foto ve durum ekler.",
+          },
+          {
+            title: "Telegram bildirimi",
+            description: "Müşteri ve yönetici ilerleme güncellemeleri alır.",
+          },
+          {
+            title: "Sonuç",
+            description: "Talep kapatılır, geçmiş ve dosyalar kaydedilir.",
+          },
+        ],
+      },
     ],
-    stepDetails: [
-      "Müşteri site, Telegram veya form üzerinden talep bırakır — doğrudan CRM'e düşer.",
-      "Satış temsilcisi detayları netleştirir, yorum ekler ve sorumlu atar.",
-      "Fiyat, stok veya teknik koşullar kontrol edilir — veriler karta kaydedilir.",
-      "Yönetici Telegram bildirimi alır ve onaylar veya revizyona geri gönderir.",
-      "Müşteri nihai teklifi alır — tüm sürümler geçmişte saklanır.",
-      "Telegram her kritik aşamada tüm ekibe bildirim gönderir.",
-      "Tam işlem geçmişi denetim ve raporlar için panelde mevcuttur.",
+  },
+  projects: {
+    title: "Gerçek B2B operasyonlarındaki deneyim",
+    subtitle:
+      "B2B işletmeler için talepler, kataloglar, entegrasyonlar ve operasyonel süreçler kurduğumuz proje örnekleri.",
+    cta: "Siteyi aç",
+    items: [
+      {
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "B2B temizlik ekipmanı katalogu",
+        description:
+          "Ürün katalogu, çok dilli yapı, SEO ve B2B satış için Telegram talep akışı.",
+        badges: ["B2B katalog", "Telegram talepleri", "RU / UZ"],
+      },
+      {
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Temizlik hizmetleri web sitesi",
+        description:
+          "Taşkent'te temizlik hizmetleri için Telegram talepli çok dilli site.",
+        badges: ["Talepler", "Telegram", "Yerel SEO"],
+      },
+      {
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Klinikler için platform",
+        description:
+          "Hasta yönetimi, randevular ve klinik operasyonel süreçler için dijital platform.",
+        badges: ["SaaS", "Süreçler", "Demo talebi"],
+      },
     ],
   },
   pricing: {
     title: "Proklix paketleri",
     subtitle:
-      "Sabit fiyat yok — sürecinize uygun çözümü birlikte belirleriz. Her pakette neler var:",
+      "Kapsam ve süre süreç analizinden sonra belirlenir. Her paketin tipik içeriği:",
     plans: [
       {
-        name: "Başlangıç",
-        description: "Tek süreç, hızlı MVP",
+        name: "İlk süreç",
+        description: "Tek workflow isteyen işletmeler için: talepler, onaylar veya ticari teklifler.",
         features: [
-          "1 ana süreç (talepler veya teklifler)",
-          "Web panel + Telegram bildirimleri",
-          "5 kullanıcıya kadar",
-          "Temel statüler ve roller",
-          "2–3 haftada devreye alma",
+          "1 ana süreç",
+          "Telegram bildirimleri",
+          "Temel dashboard",
+          "Sınırlı kullanıcı sayısı",
+          "Kapsam analizden sonra belirlenir",
         ],
         cta: "Teklif al",
       },
       {
-        name: "Büyüme",
-        description: "Birden fazla süreç ve entegrasyon",
+        name: "Birden fazla süreç + entegrasyonlar",
+        description: "2–3 süreç, raporlar ve bir veya daha fazla entegrasyon isteyen işletmeler için.",
         features: [
-          "3'e kadar bağlı süreç",
-          "CRM + katalog veya talepler",
-          "Onay workflow'ları",
+          "Birden fazla bağlı süreç",
+          "CRM / katalog / talep akışı",
           "Raporlar ve dashboard",
-          "20 kullanıcıya kadar",
-          "Öncelikli destek",
+          "Temel entegrasyon veya import/export",
+          "Kapsam analizden sonra belirlenir",
         ],
         cta: "Teklif al",
         highlighted: true,
       },
       {
-        name: "Kurumsal",
-        description: "İşletmenize özel tam sistem",
+        name: "İşletmenize özel operasyon sistemi",
+        description: "Özel CRM, workflow, entegrasyonlar ve raporlama isteyen işletmeler için.",
         features: [
-          "Sınırsız süreç",
-          "Özel entegrasyonlar",
-          "Çok dilli (RU/UZ/TR/EN)",
-          "Roller, yetkiler, denetim",
-          "Ekip eğitimi",
-          "Özel destek",
+          "Özel API entegrasyonları",
+          "Roller, audit, raporlar",
+          "Birden fazla departman",
+          "Eğitim ve destek",
+          "Kapsam analizden sonra belirlenir",
         ],
         cta: "Teklif al",
       },
     ],
   },
-  trust: {
-    title: "Gerçek işletmeler için pratik yaklaşım",
-    description:
-      "Soyut bir platform satmıyoruz. Önce sizin somut sürecinizi dinliyoruz, sonra anlaşılır bir sistem kuruyoruz: site, CRM, talepler, onaylar, bildirimler ve raporlar.",
-    points: [
-      "Yerel odak: Taşkent ve Özbekistan",
-      "Telegram-first iletişim",
-      "Çok dilli yapı: RU / UZ / TR / EN",
-      "İlk sürümü hızlı devreye alma",
+  faq: {
+    title: "Sık sorulan sorular",
+    items: [
+      {
+        question: "Proklix CRM, bot veya ERP mi?",
+        answer:
+          "Proklix her şeyi birden değiştirmez. Bu bir workflow platformudur: talepler, formlar, onaylar, görevler, bildirimler ve mevcut sistemlerle entegrasyonlar.",
+      },
+      {
+        question: "Web sitemizi, CRM'imizi veya depomuzu bağlayabilir misiniz?",
+        answer:
+          "Evet, API erişimi, export/import veya başka teknik yol varsa. Entegrasyonlar süreç bazında belirlenir.",
+      },
+      {
+        question: "Tek bir süreçle başlayabilir miyiz?",
+        answer:
+          "Evet. Genellikle tek süreçle başlamak en iyisidir: talepler, teklifler, satın almalar, envanter veya gider onayı.",
+      },
+      {
+        question: "Çalışanların yeni uygulama yüklemesi gerekiyor mu?",
+        answer:
+          "Ana işlemler Telegram/WebApp üzerinden yapılabilir. Zaten Telegram kullanan ekipler için uygundur.",
+      },
+      {
+        question: "Rusça ve Özbekçe destekleniyor mu?",
+        answer:
+          "Evet, site ve süreçler proje gereksinimlerine göre RU / UZ / EN / TR dillerinde yapılabilir.",
+      },
+      {
+        question: "Bu sadece satış için mi?",
+        answer:
+          "Hayır. Proklix tekrarlanan her süreç için uygundur: talepler, onaylar, görevler, depo, servis, belgeler, satın almalar, giderler.",
+      },
     ],
-    fitLine:
-      "B2B katalog, ticaret, distribütör ve hizmet işletmeleri için uygundur.",
   },
   cta: {
-    title: "Süreciniz için ücretsiz analiz alın",
+    title: "Bize kaotik bir sürecinizi gösterin — Proklix'te nasıl toplanacağını gösterelim",
     description:
-      "20 dakikada mevcut talep, teklif, onay ve takip sürecinizi konuşalım. Sonrasında hangi sürecin otomasyona uygun olduğunu ve ilk MVP'nin nasıl kurulabileceğini net çıkaralım.",
+      "20 dakikada sürecinizi inceler ve MVP için nereden başlanacağını öneririz. Taahhüt yok.",
     ctaTelegram: "Telegram'dan Yaz",
     ctaCall: "Ara",
     phone: "+998 77 257 43 54",
-    formTitle: "Veya talep bırakın — sizi arayalım",
+    formTitle: "Veya talep bırakın",
   },
   contactForm: {
     name: "Ad",
     company: "Şirket",
     phone: "Telefon",
-    process: "Hangi süreç?",
+    process: "Hangi süreci kontrol etmek istiyorsunuz?",
     processPlaceholder: "Süreç seçin",
     processOptions: [
-      "Talepler ve CRM",
+      "Talepler / CRM",
       "Ticari teklifler",
       "Onaylar",
-      "B2B katalog",
-      "Telegram otomasyonu",
+      "Depo / envanter",
+      "Saha görevleri",
+      "Web sitesi / e-ticaret entegrasyonu",
       "Diğer",
     ],
     submit: "Talep gönder",
     submitting: "Gönderiliyor…",
     success: "Teşekkürler! En kısa sürede sizinle iletişime geçeceğiz.",
-    error: "Gönderilemedi. Lütfen Telegram'dan yazın.",
+    error: "Gönderilemedi. Telegram'dan yazın.",
   },
   blog: {
     meta: {
-      title: "Proklix Blog | CRM, Otomasyon ve B2B",
+      title: "Proklix Blog | CRM, otomasyon ve B2B",
       description:
-        "Özbekistan'daki işletmeler için CRM, Telegram otomasyonu ve B2B katalogları hakkında makaleler.",
+        "Özbekistan'daki işletmeler için CRM, Telegram otomasyonu ve B2B kataloglar hakkında makaleler.",
     },
     title: "Proklix Blog",
-    subtitle: "B2B için CRM, otomasyon ve dijital süreçler hakkında pratik içerikler.",
+    subtitle: "B2B için CRM, otomasyon ve dijital süreçler hakkında pratik materyaller.",
     readMore: "Oku",
     backToBlog: "Tüm makaleler",
   },
@@ -321,33 +610,35 @@ export const tr: DictionaryEntry = {
   },
   footer: {
     tagline:
-      "Web, CRM, workflow ve Telegram — talep, teklif ve süreç kontrolü için dijital sistemler.",
+      "Telegram-first workflow platformu: talepler, onaylar, görevler ve mevcut sistemlerle entegrasyonlar.",
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Taşkent / Özbekistan",
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix Paneli",
+    title: "Proklix — operasyon paneli",
     metricRequests: "24 talep",
-    metricInProgress: "8 işlemde",
+    metricInProgress: "8 devam ediyor",
     metricPendingApproval: "5 onay bekliyor",
     metricCompleted: "11 tamamlandı",
     feedItems: [
-      "Müşteriden yeni talep",
-      "Ticari teklif onay bekliyor",
-      "Telegram bildirimi gönderildi",
-      "Sorumlu atandı",
-      "Süreç tamamlandı",
+      "Yeni talep",
+      "Onay bekliyor",
+      "Görev Telegram'a gönderildi",
+      "CRM'den veri alındı",
+      "Geçmiş kaydedildi",
     ],
     sidebarRequests: "Talepler",
-    sidebarClients: "Müşteriler",
-    sidebarReports: "Raporlar",
-    tableHeaderClient: "Müşteri",
+    sidebarTasks: "Görevler",
+    sidebarIntegrations: "Entegrasyonlar",
+    tableHeaderProcess: "Süreç",
     tableHeaderStatus: "Durum",
-    tableHeaderManager: "Yönetici",
-    statusNew: "Yeni",
-    statusInProgress: "İşlemde",
-    statusApproved: "Onaylandı",
+    tableHeaderSource: "Kaynak",
+    statusNew: "Yeni talep",
+    statusPending: "Onay bekliyor",
+    statusTelegram: "Telegram görevi",
+    statusSynced: "CRM verisi",
+    statusSaved: "Geçmiş kaydedildi",
   },
 };

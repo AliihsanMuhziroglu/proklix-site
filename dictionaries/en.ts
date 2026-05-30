@@ -2,171 +2,252 @@ import type { DictionaryEntry } from "./types";
 
 export const en: DictionaryEntry = {
   meta: {
-    title: "Proklix | CRM, Workflow and Telegram Business Systems in Uzbekistan",
+    title:
+      "Proklix — CRM, workflow, requests, approvals and Telegram integrations for business in Uzbekistan",
     description:
-      "Proklix helps companies in Tashkent and Uzbekistan manage requests, offers, approvals, tasks and workflows through a web dashboard and Telegram notifications.",
+      "Proklix helps companies in Uzbekistan manage requests, approvals, tasks, Telegram notifications and integrations with existing systems.",
   },
   header: {
-    solutions: "Solutions",
+    platform: "Platform",
+    integrations: "Integrations",
     processes: "Processes",
     forWhom: "Who It's For",
     pricing: "Pricing",
+    faq: "FAQ",
     blog: "Blog",
     contact: "Contact",
     cta: "Message on Telegram",
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Requests, offers, approvals and tasks — in one system",
+    title: "Requests, approvals, tasks and integrations — in one Telegram-first system",
     subtitle:
-      "Proklix helps companies in Tashkent and Uzbekistan bring customer requests, commercial offers, tasks, approvals and process control into one web dashboard with Telegram notifications.",
+      "Proklix helps companies manage operations without chat chaos: requests, forms, approvals, tasks, files, action history, reports and integrations with existing systems.",
     trustTag: "For companies in Tashkent and Uzbekistan",
     ctaTelegram: "Message on Telegram",
-    ctaAnalysis: "Get a Free Process Review",
-    watchDemo: "Watch demo",
+    ctaAnalysis: "Get a free process analysis",
   },
-  projects: {
-    title: "Selected work",
-    subtitle:
-      "Examples of digital product and process work across B2B catalogs, service websites and operational platforms.",
-    cta: "View website",
+  positioning: {
+    title: "Not just CRM. Not just a bot. A complete workflow.",
     items: [
       {
-        title: "Clemar",
-        website: "clemar.uz",
-        url: "https://clemar.uz",
-        category: "Professional cleaning equipment and B2B product catalog",
+        title: "Forms",
         description:
-          "For a cleaning equipment catalog in Uzbekistan, we worked on product/category structure, multilingual content, SEO preservation, Telegram-focused sales flow and a modern catalog experience.",
-        badges: ["B2B catalog", "SEO migration", "RU / UZ structure", "Telegram sales flow"],
+          "Collect data through website forms, Telegram or internal forms — without losing fields or files.",
       },
       {
-        title: "Tozago",
-        website: "tozago.uz",
-        url: "https://tozago.uz",
-        category: "Professional cleaning services website for Tashkent",
+        title: "Approvals",
         description:
-          "A multilingual, SEO-friendly website structure for home, office and commercial cleaning services, focused on clear service presentation and fast Telegram requests.",
-        badges: ["Service website", "Multilingual", "Telegram requests", "Local SEO"],
+          "Run step-by-step approvals: manager, warehouse, finance, director — each sees their stage.",
       },
       {
-        title: "Klinidex",
-        website: "klinidex.com",
-        url: "https://klinidex.com",
-        category: "Management platform for clinics and dental practices",
+        title: "Tasks",
         description:
-          "A modern digital presentation for a clinic and dental practice management platform focused on patients, appointments, tasks and operational process control.",
-        badges: ["SaaS platform", "Clinic management", "Demo request", "Process control"],
+          "Assign tasks to owners with deadlines, status and history — they don't get lost in private chats.",
+      },
+      {
+        title: "Telegram",
+        description:
+          "Send Telegram notifications: new request, pending approval, assigned task.",
+      },
+      {
+        title: "Integrations",
+        description:
+          "Connect existing systems via API, import/export or custom project setup.",
+      },
+      {
+        title: "Control",
+        description:
+          "See status, history and outcome of every process — management gets the full picture on one screen.",
       },
     ],
   },
-  problem: {
-    title: "Telegram is fast. But without a system, processes get lost.",
+  integration: {
+    title: "Works on top of your existing systems",
     subtitle:
-      "When requests, offers, approvals and tasks stay only in chats, it becomes unclear who owns what, where the process is waiting and when the customer will get a response.",
+      "You do not need to replace your website, CRM, warehouse software or Excel immediately. Proklix can connect to existing data, run workflows and send results back.",
+    flowLabels: [
+      "Website / CRM / Warehouse / Excel",
+      "Proklix workflow",
+      "Telegram task",
+      "Result & history",
+      "Data update",
+    ],
     items: [
       {
-        title: "A request came in — but who owns it?",
+        title: "Website / e-commerce",
         description:
-          "The client writes on Telegram, someone sees it, someone forgets. Until it enters the system, follow-up lives in people's heads.",
+          "Requests, products, orders and customer forms — can connect via API or import.",
       },
       {
-        title: "The final quote version disappears in messages",
+        title: "CRM",
         description:
-          "Price, discount, stock and terms spread across different threads. Management only learns late which quote was approved.",
+          "Clients, statuses, managers and communication history — can integrate with your CRM per project.",
       },
       {
-        title: "Hard to see where approval is stuck",
+        title: "Warehouse / stock",
         description:
-          "Sales, warehouse, finance or management are asked separately. The stage of the process isn't visible on one screen.",
+          "Stock levels, inventory, transfers and photo reports — via API, export or manual exchange.",
       },
       {
-        title: "Excel doesn't reflect what's really happening",
+        title: "ERP / accounting",
         description:
-          "The sheet isn't updated, versions get mixed up, the team works from other sources. Getting a report means asking again and again.",
+          "Purchases, expenses, invoices and approvals — connected for a specific process and access level.",
       },
       {
-        title: "Tasks stay tied to individuals",
+        title: "Google Sheets / Excel",
         description:
-          "Who will call back, send the quote or remind about payment — if that isn't clear, work slips.",
+          "Quick start for companies where data still lives in spreadsheets — import/export without replacing Excel.",
       },
       {
-        title: "No history means no control",
+        title: "Custom API",
         description:
-          "Who took the request, who changed the price, who approved, when the client was answered — it all stays scattered.",
+          "Custom integrations for your current system — discussed after process analysis.",
       },
     ],
   },
-  solution: {
-    title: "Which business processes does Proklix connect into one system?",
-    subtitle:
-      "Website, customer tracking, quotes, approvals and Telegram alerts are not separate tools — they are built as parts of the same workflow.",
+  useCases: {
+    title: "What can you run in Proklix?",
+    flowHint: "Form → Approval → Task → Result",
     items: [
       {
-        title: "Corporate site and catalog",
+        title: "Customer request",
         description:
-          "Your products, services and quote request flow come together in one professional structure.",
+          "Client submits a request on the website or Telegram. Manager gets a task, status visible to leadership.",
       },
       {
-        title: "CRM and customer tracking",
+        title: "Commercial proposal approval",
         description:
-          "Client cards, conversation history, statuses and owners are visible in one panel.",
+          "Manager prepares the proposal, director approves in Telegram, client receives the final version.",
       },
       {
-        title: "Request and quote process",
+        title: "Purchase request",
         description:
-          "Every inbound request is logged, assigned to an owner and tracked through pricing and quoting.",
+          "Employee submits a purchase request, manager and finance approve step by step, history is saved.",
       },
       {
-        title: "Workflow and approval flows",
+        title: "Expense approval",
         description:
-          "Sales rep, warehouse, finance or manager approvals move forward in defined steps.",
+          "Expense is recorded with receipt, approval runs through the chain, result goes to reports.",
       },
       {
-        title: "Telegram notifications",
+        title: "Stock count",
         description:
-          "New requests, pending approvals, task assignments and process updates are delivered via Telegram.",
+          "Product list comes from warehouse or website. Employee counts in Telegram, attaches photos, manager sees the result.",
       },
       {
-        title: "Admin dashboard and reports",
+        title: "Warehouse transfer",
         description:
-          "Leaders see clearly who is holding each task, where processes stall and the overall status.",
+          "Transfer request between warehouses, approval, task to warehouse staff, recorded in history.",
+      },
+      {
+        title: "Field tasks & checklists",
+        description:
+          "Task to field employee in Telegram: checklist, photos, completion status, report to manager.",
+      },
+      {
+        title: "Service request",
+        description:
+          "Client or manager creates a request, assignee is set, status and history on one screen.",
+      },
+      {
+        title: "Document approval",
+        description:
+          "Document goes through approval steps, participants get notifications, versions are saved.",
+      },
+      {
+        title: "HR / admin requests",
+        description:
+          "Leave, purchases, access, certificates — internal requests with approval route and history.",
       },
     ],
+  },
+  beforeAfter: {
+    title: "What changes after Proklix",
+    without: {
+      title: "Without Proklix",
+      items: [
+        "Requests get lost in chats",
+        "Excel doesn't get updated",
+        "Unclear who is responsible",
+        "Approvals done manually",
+        "Files scattered across messages",
+        "No full action history",
+        "Data copied manually between systems",
+      ],
+    },
+    with: {
+      title: "With Proklix",
+      items: [
+        "Every request has a status",
+        "Owner is assigned",
+        "Approval runs step by step",
+        "Telegram notifies participants",
+        "Files attached to the process",
+        "Action history is saved",
+        "Data can link to existing systems",
+      ],
+    },
   },
   sectors: {
-    title: "Especially useful where there are many requests, sales and manual oversight",
-    viewSector: "Learn more about this sector",
+    title: "For companies with a lot of manual control",
+    viewSector: "Learn more",
     items: [
       {
-        title: "Real estate and rentals",
+        title: "B2B catalogs & trading",
         description:
-          "Requests, listings, viewings, contracts and payments in one process.",
+          "Requests, products, prices, commercial proposals, approvals and Telegram notifications.",
+        sectorSlug: "b2b-katalog",
       },
       {
-        title: "B2B catalogs and trading companies",
+        title: "Cleaning & field service",
         description:
-          "Products, requests, pricing, offers and client statuses — in one panel.",
+          "Customer requests, field tasks, checklists, photo reports and execution control.",
       },
       {
-        title: "Agro and distribution",
+        title: "Warehouses & distributors",
         description:
-          "Dealer requests, orders, warehouse, regions and assigned managers.",
+          "Stock, inventory, transfers, dealer requests and delivery statuses.",
+        sectorSlug: "agro",
       },
       {
-        title: "Equipment and technical goods",
+        title: "Equipment sales",
         description:
-          "Catalog, consultations, bundles, requests and commercial offers.",
+          "Catalog, consultations, requests, commercial proposals and approvals.",
+        sectorSlug: "oborudovanie",
       },
       {
-        title: "Logistics and foreign trade",
+        title: "Construction & field teams",
         description:
-          "Requests, documents, delivery stages, statuses and client notifications.",
+          "On-site tasks, approvals, photo reports, requests and deadline control.",
+        sectorSlug: "stroitelstvo",
       },
       {
-        title: "Construction and field work",
+        title: "Logistics & import/export",
         description:
-          "Tasks, approvals, photo reports, requests and execution control.",
+          "Requests, documents, delivery stages, statuses and participant notifications.",
+        sectorSlug: "logistika",
+      },
+      {
+        title: "Real estate & rental",
+        description:
+          "Requests, properties, viewings, contracts, payments and interaction history.",
+        sectorSlug: "nedvizhimost",
+      },
+      {
+        title: "Clinics & service businesses",
+        description:
+          "Appointments, internal requests, staff tasks, approvals and reports.",
+      },
+      {
+        title: "Restaurants & cafes",
+        description:
+          "Internal purchase requests, shifts, repairs, approvals and control.",
+      },
+      {
+        title: "Small factories & production",
+        description:
+          "Raw material requests, approvals, team tasks, tracking and operation history.",
       },
     ],
   },
@@ -178,140 +259,348 @@ export const en: DictionaryEntry = {
     step: "Step",
   },
   howWeStart: {
-    title: "We start with one process, not a huge system",
+    title: "Start with one workflow",
     steps: [
       {
-        title: "We analyze your current process",
+        title: "Analyze current process",
         description:
-          "In 20 minutes we pinpoint where requests, approvals and control break down.",
+          "We review where requests, tasks and approvals get lost today.",
       },
       {
-        title: "We build a fast MVP",
-        description: "We launch a first working version in a short timeframe.",
+        title: "Build first workflow",
+        description:
+          "We create the form, steps, owners, statuses and notifications.",
       },
       {
-        title: "We improve from real use",
+        title: "Connect data & systems",
         description:
-          "We add reports, roles, statuses, notifications and new processes step by step.",
+          "If needed, we connect website, CRM, warehouse, Excel or API.",
+      },
+      {
+        title: "Launch in Telegram",
+        description:
+          "Employees receive tasks and approvals directly in Telegram.",
+      },
+      {
+        title: "Improve and expand",
+        description:
+          "We add new processes, reports, roles and integrations.",
+      },
+    ],
+  },
+  modules: {
+    title: "What Proklix includes",
+    items: [
+      {
+        title: "Dynamic forms",
+        description: "Form builder with fields, files and conditions for your process.",
+      },
+      {
+        title: "Workflow builder",
+        description: "Steps, statuses, approval routes and transition rules.",
+      },
+      {
+        title: "Task inbox",
+        description: "Personal and team inbox: what's assigned, what needs action.",
+      },
+      {
+        title: "Submission tracking",
+        description: "Every request with number, status, owner and history.",
+      },
+      {
+        title: "Telegram notifications",
+        description: "Notifications for new requests, approvals and tasks in Telegram.",
+      },
+      {
+        title: "File & photo uploads",
+        description: "Files and photos attach to the process, not lost in chats.",
+      },
+      {
+        title: "Process history",
+        description: "Full audit trail: who changed what and when.",
+      },
+      {
+        title: "Reports & dashboard",
+        description: "Summary of requests, approvals, tasks and bottlenecks.",
+      },
+      {
+        title: "User management",
+        description: "Roles, access rights, departments and multi-tenant structure.",
+      },
+      {
+        title: "Custom integrations",
+        description: "Connect to website, CRM, warehouse, Excel or API per project.",
       },
     ],
   },
   workflow: {
-    title: "Example: commercial offer process",
-    steps: [
-      "Client submits a request",
-      "Manager clarifies details",
-      "Price or stock is checked",
-      "Director approves the offer",
-      "Client receives a response",
-      "Telegram sends notifications",
-      "History is saved in the panel",
+    title: "Example workflow",
+    tabs: [
+      {
+        id: "proposal",
+        label: "Commercial proposal",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Client submits a request via website, Telegram or form.",
+          },
+          {
+            title: "Data source",
+            description: "Client data and products pulled from CRM or catalog.",
+          },
+          {
+            title: "Owner",
+            description: "Manager gets a task, clarifies details and prepares the proposal.",
+          },
+          {
+            title: "Approval",
+            description: "Director checks price and terms, approves or returns for revision.",
+          },
+          {
+            title: "Telegram notification",
+            description: "Participants get notifications at each key stage.",
+          },
+          {
+            title: "Result",
+            description: "Client receives the final proposal, status is updated.",
+          },
+          {
+            title: "History",
+            description: "All versions and actions saved for audit and reports.",
+          },
+        ],
+      },
+      {
+        id: "stock",
+        label: "Stock count",
+        steps: [
+          {
+            title: "Data source",
+            description: "Product list comes from website, warehouse or spreadsheet.",
+          },
+          {
+            title: "Telegram task",
+            description: "Owner receives inventory task in Telegram.",
+          },
+          {
+            title: "Execution",
+            description: "Employee counts products and attaches photos.",
+          },
+          {
+            title: "Approval",
+            description: "Manager checks result and discrepancies.",
+          },
+          {
+            title: "Result",
+            description: "Outcome saved in history and can be sent back to the system.",
+          },
+        ],
+      },
+      {
+        id: "purchase",
+        label: "Purchase approval",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Employee submits purchase request via form.",
+          },
+          {
+            title: "Approval",
+            description: "Manager and finance approve step by step.",
+          },
+          {
+            title: "Telegram notification",
+            description: "Each participant gets a task for their stage.",
+          },
+          {
+            title: "Result",
+            description: "Purchase approved or rejected with comment.",
+          },
+          {
+            title: "History",
+            description: "Full approval chain saved for audit.",
+          },
+        ],
+      },
+      {
+        id: "service",
+        label: "Service task",
+        steps: [
+          {
+            title: "Trigger",
+            description: "Client or manager creates a service request.",
+          },
+          {
+            title: "Owner",
+            description: "Assignee is set, task goes to Telegram.",
+          },
+          {
+            title: "Execution",
+            description: "Assignee completes work, attaches photos and status.",
+          },
+          {
+            title: "Telegram notification",
+            description: "Client and manager get progress updates.",
+          },
+          {
+            title: "Result",
+            description: "Request closed, history and files saved.",
+          },
+        ],
+      },
     ],
-    stepDetails: [
-      "The client submits a request via the website, Telegram or a form — it goes straight into the CRM.",
-      "The manager clarifies details, adds comments and assigns an owner.",
-      "Price, stock or technical conditions are checked — data is recorded in the card.",
-      "The director gets a Telegram notification and approves or sends back for revision.",
-      "The client receives the final offer — all versions are saved in history.",
-      "Telegram sends notifications at every key stage to the whole team.",
-      "Full action history is available in the panel for audit and reporting.",
+  },
+  projects: {
+    title: "Experience with real B2B operations",
+    subtitle:
+      "Examples of projects where we built requests, catalogs, integrations and operational processes for B2B companies.",
+    cta: "View website",
+    items: [
+      {
+        title: "Clemar",
+        website: "clemar.uz",
+        url: "https://clemar.uz",
+        category: "B2B cleaning equipment catalog",
+        description:
+          "Product catalog, multilingual structure, SEO and Telegram request flow for B2B sales.",
+        badges: ["B2B catalog", "Telegram requests", "RU / UZ"],
+      },
+      {
+        title: "Tozago",
+        website: "tozago.uz",
+        url: "https://tozago.uz",
+        category: "Cleaning services website",
+        description:
+          "Multilingual site with Telegram requests for cleaning services in Tashkent.",
+        badges: ["Requests", "Telegram", "Local SEO"],
+      },
+      {
+        title: "Klinidex",
+        website: "klinidex.com",
+        url: "https://klinidex.com",
+        category: "Clinic management platform",
+        description:
+          "Digital platform for patient management, appointments and clinic operational processes.",
+        badges: ["SaaS", "Processes", "Demo request"],
+      },
     ],
   },
   pricing: {
     title: "Proklix packages",
     subtitle:
-      "There is no fixed price — we'll tailor a solution to your process. Here's what each package includes:",
+      "Scope and timeline are defined after process analysis. Here is what each package typically includes:",
     plans: [
       {
-        name: "Start",
-        description: "One process, fast MVP",
+        name: "First process",
+        description: "For companies that need one workflow: requests, approvals or commercial proposals.",
         features: [
-          "1 key process (requests or offers)",
-          "Web panel + Telegram notifications",
-          "Up to 5 users",
-          "Basic statuses and roles",
-          "Launch in 2–3 weeks",
+          "1 key workflow",
+          "Telegram notifications",
+          "Basic dashboard",
+          "Limited number of users",
+          "Scope defined after analysis",
         ],
-        cta: "Get a quote",
+        cta: "Get a proposal",
       },
       {
-        name: "Growth",
-        description: "Multiple processes and integrations",
+        name: "Multiple processes + integrations",
+        description: "For companies with 2–3 workflows, reports and one or more integrations.",
         features: [
-          "Up to 3 linked processes",
-          "CRM + catalog or requests",
-          "Approval workflows",
+          "Multiple linked workflows",
+          "CRM / catalog / request flow",
           "Reports and dashboard",
-          "Up to 20 users",
-          "Priority support",
+          "Basic integration or import/export",
+          "Scope defined after analysis",
         ],
-        cta: "Get a quote",
+        cta: "Get a proposal",
         highlighted: true,
       },
       {
-        name: "Enterprise",
-        description: "Full system for your business",
+        name: "Operations system for your business",
+        description: "For companies needing custom CRM, workflow, integrations and reporting.",
         features: [
-          "Unlimited processes",
-          "Custom integrations",
-          "Multilingual (RU/UZ/TR/EN)",
-          "Roles, permissions, audit",
-          "Team training",
-          "Dedicated support",
+          "Custom API integrations",
+          "Roles, audit, reports",
+          "Multiple departments",
+          "Training and support",
+          "Scope defined after analysis",
         ],
-        cta: "Get a quote",
+        cta: "Get a proposal",
       },
     ],
   },
-  trust: {
-    title: "A practical approach for real businesses",
-    description:
-      "We don't sell an abstract platform. First we map your specific process, then we build a clear system: website, CRM, requests, approvals, notifications and reports.",
-    points: [
-      "Local focus: Tashkent and Uzbekistan",
-      "Telegram-first communication",
-      "Multilingual setup: RU / UZ / TR / EN",
-      "Fast launch of the first version",
+  faq: {
+    title: "Frequently asked questions",
+    items: [
+      {
+        question: "Is Proklix a CRM, bot or ERP?",
+        answer:
+          "Proklix doesn't replace everything at once. It's a workflow platform: requests, forms, approvals, tasks, notifications and integrations with existing systems.",
+      },
+      {
+        question: "Can you connect our website, CRM or warehouse?",
+        answer:
+          "Yes, if there is API access, export/import or another technical path. Integrations are scoped per process.",
+      },
+      {
+        question: "Can we start with one process?",
+        answer:
+          "Yes. It's usually best to start with one process: requests, proposals, purchases, inventory or expense approval.",
+      },
+      {
+        question: "Do employees need to install a new app?",
+        answer:
+          "Main actions can be done via Telegram/WebApp. This works well for teams already using Telegram.",
+      },
+      {
+        question: "Are Russian and Uzbek supported?",
+        answer:
+          "Yes, site and processes can be built in RU / UZ / EN / TR per project requirements.",
+      },
+      {
+        question: "Is this only for sales?",
+        answer:
+          "No. Proklix fits any repeatable process: requests, approvals, tasks, warehouse, service, documents, purchases, expenses.",
+      },
     ],
-    fitLine:
-      "A good fit for B2B catalogs, trading companies, distributors and service businesses.",
   },
   cta: {
-    title: "Get a free review of your process",
+    title: "Show us one chaotic process — we'll show you how to build it in Proklix",
     description:
-      "In 20 minutes we'll walk through how requests, offers, approvals and control work today. After the call you'll get a clear proposal: what to automate, where to start, and what MVP to build first.",
+      "In 20 minutes we'll review your process and suggest where to start the MVP. No obligation.",
     ctaTelegram: "Message on Telegram",
     ctaCall: "Call",
     phone: "+998 77 257 43 54",
-    formTitle: "Or leave a request — we'll call you back",
+    formTitle: "Or leave a request",
   },
   contactForm: {
     name: "Name",
     company: "Company",
     phone: "Phone",
-    process: "Which process?",
+    process: "Which process do you want to control?",
     processPlaceholder: "Select a process",
     processOptions: [
-      "Requests and CRM",
-      "Commercial offers",
+      "Requests / CRM",
+      "Commercial proposals",
       "Approvals",
-      "B2B catalog",
-      "Telegram automation",
+      "Stock / warehouse",
+      "Field tasks",
+      "Website / e-commerce integration",
       "Other",
     ],
-    submit: "Submit request",
+    submit: "Send request",
     submitting: "Sending…",
     success: "Thank you! We'll contact you shortly.",
-    error: "Failed to send. Please message us on Telegram.",
+    error: "Failed to send. Message us on Telegram.",
   },
   blog: {
     meta: {
-      title: "Proklix Blog | CRM, Automation and B2B",
+      title: "Proklix Blog | CRM, automation and B2B",
       description:
-        "Articles on CRM, Telegram automation and B2B catalogs for businesses in Uzbekistan.",
+        "Articles on CRM, Telegram automation and B2B catalogs for business in Uzbekistan.",
     },
     title: "Proklix Blog",
-    subtitle: "Practical insights on CRM, automation and digital processes for B2B.",
+    subtitle: "Practical materials on CRM, automation and digital processes for B2B.",
     readMore: "Read",
     backToBlog: "All articles",
   },
@@ -321,33 +610,35 @@ export const en: DictionaryEntry = {
   },
   footer: {
     tagline:
-      "Web, CRM, workflow and Telegram — digital systems for requests, offers and process control.",
+      "Telegram-first workflow platform: requests, approvals, tasks and integrations with existing systems.",
     phone: "+998 77 257 43 54",
     telegram: "Telegram",
     location: "Tashkent / Uzbekistan",
     blog: "Blog",
   },
   dashboard: {
-    title: "Proklix Panel",
+    title: "Proklix — operations panel",
     metricRequests: "24 requests",
     metricInProgress: "8 in progress",
     metricPendingApproval: "5 pending approval",
     metricCompleted: "11 completed",
     feedItems: [
-      "New request from client",
-      "Commercial offer awaiting approval",
-      "Notification sent to Telegram",
-      "Owner assigned",
-      "Process completed",
+      "New request",
+      "Pending approval",
+      "Task sent to Telegram",
+      "Data received from CRM",
+      "History saved",
     ],
     sidebarRequests: "Requests",
-    sidebarClients: "Clients",
-    sidebarReports: "Reports",
-    tableHeaderClient: "Client",
+    sidebarTasks: "Tasks",
+    sidebarIntegrations: "Integrations",
+    tableHeaderProcess: "Process",
     tableHeaderStatus: "Status",
-    tableHeaderManager: "Manager",
-    statusNew: "New",
-    statusInProgress: "In progress",
-    statusApproved: "Approved",
+    tableHeaderSource: "Source",
+    statusNew: "New request",
+    statusPending: "Pending approval",
+    statusTelegram: "Task in Telegram",
+    statusSynced: "Data from CRM",
+    statusSaved: "History saved",
   },
 };

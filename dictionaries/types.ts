@@ -33,6 +33,21 @@ export interface RelatedSectorItem {
   sector: SectorSlug;
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface WorkflowTab {
+  id: string;
+  label: string;
+  steps: StepItem[];
+}
+
+export interface SectorCardItem extends CardItem {
+  sectorSlug?: SectorSlug;
+}
+
 export interface SectorPageContent {
   meta: { title: string; description: string };
   breadcrumb: { sectorName: string };
@@ -70,10 +85,12 @@ export interface DictionaryEntry {
     description: string;
   };
   header: {
-    solutions: string;
+    platform: string;
+    integrations: string;
     processes: string;
     forWhom: string;
     pricing: string;
+    faq: string;
     blog: string;
     contact: string;
     cta: string;
@@ -85,27 +102,30 @@ export interface DictionaryEntry {
     trustTag: string;
     ctaTelegram: string;
     ctaAnalysis: string;
-    watchDemo: string;
   };
-  projects: {
+  positioning: {
     title: string;
-    subtitle: string;
-    cta: string;
-    items: ProjectItem[];
-  };
-  problem: {
-    title: string;
-    subtitle: string;
     items: CardItem[];
   };
-  solution: {
+  integration: {
     title: string;
     subtitle: string;
+    flowLabels: string[];
     items: CardItem[];
+  };
+  useCases: {
+    title: string;
+    flowHint: string;
+    items: CardItem[];
+  };
+  beforeAfter: {
+    title: string;
+    without: { title: string; items: string[] };
+    with: { title: string; items: string[] };
   };
   sectors: {
     title: string;
-    items: CardItem[];
+    items: SectorCardItem[];
     viewSector: string;
   };
   sectorPageLabels: {
@@ -119,21 +139,28 @@ export interface DictionaryEntry {
     title: string;
     steps: StepItem[];
   };
+  modules: {
+    title: string;
+    items: CardItem[];
+  };
   workflow: {
     title: string;
-    steps: string[];
-    stepDetails: string[];
+    tabs: WorkflowTab[];
+  };
+  projects: {
+    title: string;
+    subtitle: string;
+    cta: string;
+    items: ProjectItem[];
   };
   pricing: {
     title: string;
     subtitle: string;
     plans: PricingPlan[];
   };
-  trust: {
+  faq: {
     title: string;
-    description: string;
-    points: string[];
-    fitLine: string;
+    items: FaqItem[];
   };
   cta: {
     title: string;
@@ -181,14 +208,16 @@ export interface DictionaryEntry {
     metricCompleted: string;
     feedItems: string[];
     sidebarRequests: string;
-    sidebarClients: string;
-    sidebarReports: string;
-    tableHeaderClient: string;
+    sidebarTasks: string;
+    sidebarIntegrations: string;
+    tableHeaderProcess: string;
     tableHeaderStatus: string;
-    tableHeaderManager: string;
+    tableHeaderSource: string;
     statusNew: string;
-    statusInProgress: string;
-    statusApproved: string;
+    statusPending: string;
+    statusTelegram: string;
+    statusSynced: string;
+    statusSaved: string;
   };
 }
 

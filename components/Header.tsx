@@ -17,10 +17,12 @@ export function Header({ locale, dict }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const nav = [
-    { href: "#solutions", label: dict.header.solutions },
+    { href: "#platform", label: dict.header.platform },
+    { href: "#integrations", label: dict.header.integrations },
     { href: "#processes", label: dict.header.processes },
     { href: "#sectors", label: dict.header.forWhom },
     { href: "#pricing", label: dict.header.pricing },
+    { href: "#faq", label: dict.header.faq },
     { href: `/${locale}/blog`, label: dict.header.blog, isRoute: true },
     { href: "#contact", label: dict.header.contact },
   ];
@@ -38,13 +40,13 @@ export function Header({ locale, dict }: Props) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 lg:flex">
+        <nav className="hidden items-center gap-4 xl:flex">
           {nav.map((item) =>
             item.isRoute ? (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
+                className="text-sm font-medium text-slate-600 transition hover:text-navy-950"
               >
                 {item.label}
               </Link>
@@ -52,7 +54,7 @@ export function Header({ locale, dict }: Props) {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
+                className="text-sm font-medium text-slate-600 transition hover:text-navy-950"
               >
                 {item.label}
               </a>
@@ -63,7 +65,7 @@ export function Header({ locale, dict }: Props) {
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <a
             href={`tel:${PHONE}`}
-            className="hidden text-sm font-semibold text-navy-900 transition hover:text-blue-600 md:inline-flex"
+            className="hidden text-sm font-semibold text-navy-900 transition hover:text-blue-600 lg:inline-flex"
           >
             {dict.header.phone}
           </a>
@@ -79,7 +81,7 @@ export function Header({ locale, dict }: Props) {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 lg:hidden"
+            className="inline-flex rounded-lg border border-slate-200 p-2 text-navy-900 xl:hidden"
             aria-expanded={menuOpen}
             aria-label="Menu"
           >
@@ -97,7 +99,7 @@ export function Header({ locale, dict }: Props) {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
+        <div className="border-t border-slate-100 bg-white px-4 py-4 xl:hidden">
           <nav className="flex flex-col gap-1">
             {nav.map((item) =>
               item.isRoute ? (
