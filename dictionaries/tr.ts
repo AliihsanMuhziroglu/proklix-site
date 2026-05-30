@@ -96,7 +96,6 @@ export const tr: DictionaryEntry = {
           "Talebi kim aldı, fiyatı kim değiştirdi, onayı kim verdi, müşteriye ne zaman dönüldü — hepsi dağınık kalır.",
       },
     ],
-    
   },
   solution: {
     title: "Proklix işinizde hangi süreçleri sisteme bağlar?",

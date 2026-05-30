@@ -96,8 +96,6 @@ export const en: DictionaryEntry = {
           "Who took the request, who changed the price, who approved, when the client was answered — it all stays scattered.",
       },
     ],
-    footer:
-      "Proklix doesn't uproot your Telegram habits — it organizes them with a web panel, clear ownership, status tracking and approval flows.",
   },
   solution: {
     title: "Which business processes does Proklix connect into one system?",

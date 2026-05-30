@@ -96,8 +96,6 @@ export const uz: DictionaryEntry = {
           "So'rovni kim oldi, narxni kim o'zgartirdi, kim tasdiqladi, mijozga qachon javob berildi — hammasi tarqoq qoladi.",
       },
     ],
-    footer:
-      "Proklix bu tartibsizlikni almashtirmaydi — mavjud Telegram odatlaringizni veb-panel, mas'ul shaxs, holat kuzatuvi va tasdiq oqimi bilan tartibga soladi.",
   },
   solution: {
     title: "Proklix biznesingizda qaysi jarayonlarni tizimga bog'laydi?",

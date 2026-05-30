@@ -97,7 +97,6 @@ export interface DictionaryEntry {
     title: string;
     subtitle: string;
     items: CardItem[];
-    footer: string;
   };
   solution: {
     title: string;

@@ -94,9 +94,6 @@ export function ProblemSection({ dict }: Props) {
             );
           })}
         </div>
-        <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-relaxed text-slate-500 sm:text-[15px]">
-          {dict.problem.footer}
-        </p>
       </div>
     </section>
   );
