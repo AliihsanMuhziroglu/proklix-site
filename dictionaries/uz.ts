@@ -813,7 +813,7 @@ export const uz: DictionaryEntry = {
         category: "setup",
         question: "Bitta jarayondan boshlash mumkinmi?",
         answer:
-          "Ha — va bu odatda eng to'g'ri boshlang'ich nuqtadir. Avval xarid tasdiqlash, mijoz arizasi, ombor hisobi, tijorat taklifi yoki maydon vazifasi kabi bitta jarayonni ishlaydigan qilamiz. Keyin kerak bo'lsa yangi jarayonlar va integratsiyalar qo'shiladi.",
+          "Ha, va bu odatda eng to'g'ri boshlang'ich nuqtadir. Avval xarid tasdiqlash, mijoz arizasi, ombor hisobi, tijorat taklifi yoki maydon vazifasi kabi bitta jarayonni ishlaydigan qilamiz. Keyin kerak bo'lsa yangi jarayonlar va integratsiyalar qo'shiladi.",
       },
       {
         category: "usage",
@@ -861,12 +861,12 @@ export const uz: DictionaryEntry = {
     callout: {
       title: "Javob yetarli bo'lmasa, bitta jarayoningizni birga ko'rib chiqamiz.",
       description:
-        "Ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va natija qayerda saqlanadi — birga aniqlaymiz.",
+        "Ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va natija qayerda saqlanadi, birga aniqlaymiz.",
       cta: "Telegram'dan yozish",
     },
   },
   cta: {
-    title: "Tartibsiz jarayoningizni ko'rsating — Proklix'da qanday tartibga solishini tushuntiramiz",
+    title: "Tartibsiz jarayoningizni ko'rsating, Proklix'da qanday tartibga solishini tushuntiramiz",
     description:
       "20 daqiqalik qisqa uchrashuvda jarayoningizni tinglaymiz: ariza qayerdan keladi, kim tasdiqlaydi, qaysi tizimlarga ulanadi va MVP uchun qayerdan boshlash kerak.",
     ctaTelegram: "Telegram'dan yozish",
@@ -956,14 +956,14 @@ export const uz: DictionaryEntry = {
       {
         color: "amber",
         title: "Sotib olish tasdiqlash kutmoqda",
-        subtitle: "₸ 4 200 000 — Aziz M.",
+        subtitle: "₸ 4 200 000 · Aziz M.",
         actionPrimary: "Tasdiqlash",
         actionSecondary: "Rad etish",
       },
       {
         color: "green",
         title: "Yangi buyurtma #2847",
-        subtitle: "Clemar — saytdan keldi",
+        subtitle: "Clemar · saytdan keldi",
         actionPrimary: "Qabul qilish",
         actionSecondary: "Ko'rish",
       },

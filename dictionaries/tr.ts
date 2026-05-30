@@ -20,7 +20,7 @@ export const tr: DictionaryEntry = {
     phone: "+998 77 257 43 54",
   },
   hero: {
-    title: "Talepten onaya, görevden entegrasyona — operasyonunuz Telegram'da yönetilsin",
+    title: "Talepten onaya, görevden entegrasyona: operasyonunuz Telegram'da yönetilsin",
     titleMobile: "Operasyonunuzu Telegram üzerinden yönetin",
     subtitle:
       "Talepleri, formları, onayları, görevleri, dosyaları ve işlem geçmişini tek akışta toplar. Mevcut CRM, web sitesi, depo, Excel veya özel API sistemlerinize bağlanır.",
@@ -171,7 +171,7 @@ export const tr: DictionaryEntry = {
   useCases: {
     title: "Her departman için farklı süreçler çalıştırılabilir",
     subtitle:
-      "Satıştan depoya, satın almadan saha ekiplerine — tekrar eden iş akışları form, onay, görev ve sonuç mantığıyla kurulabilir.",
+      "Satıştan depoya, satın almadan saha ekiplerine kadar tekrar eden iş akışları form, onay, görev ve sonuç mantığıyla kurulabilir.",
     flowSteps: ["Form", "Onay", "Görev", "Sonuç"],
     featuredLabel: "Öne çıkanlar",
     categories: [
@@ -1016,14 +1016,14 @@ export const tr: DictionaryEntry = {
       {
         color: "amber",
         title: "Satın alma onayı bekliyor",
-        subtitle: "₸ 4 200 000 — Aziz M.",
+        subtitle: "₸ 4 200 000 · Aziz M.",
         actionPrimary: "Onayla",
         actionSecondary: "Reddet",
       },
       {
         color: "green",
         title: "Yeni sipariş #2847",
-        subtitle: "Clemar — siteden geldi",
+        subtitle: "Clemar · siteden geldi",
         actionPrimary: "Kabul et",
         actionSecondary: "Görüntüle",
       },

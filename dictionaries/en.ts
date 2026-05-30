@@ -941,7 +941,7 @@ export const en: DictionaryEntry = {
         category: "setup",
         question: "Can we start with one process?",
         answer:
-          "Yes — and that is usually the healthiest start. We first get one process working: purchase approval, customer request, stock count, commercial proposal or field task. New processes and integrations can be added when needed.",
+          "Yes, and that is usually the healthiest start. We first get one process working: purchase approval, customer request, stock count, commercial proposal or field task. New processes and integrations can be added when needed.",
       },
       {
         category: "usage",
@@ -994,7 +994,7 @@ export const en: DictionaryEntry = {
     },
   },
   cta: {
-    title: "Show us a chaotic process — we'll explain how Proklix can organize it",
+    title: "Show us a chaotic process, we'll explain how Proklix can organize it",
     description:
       "In a short 20-minute call we'll listen to your process: where requests come from, who approves, which systems connect and where to start the MVP.",
     ctaTelegram: "Message on Telegram",
@@ -1084,14 +1084,14 @@ export const en: DictionaryEntry = {
       {
         color: "amber",
         title: "Purchase approval pending",
-        subtitle: "₸ 4 200 000 — Aziz M.",
+        subtitle: "₸ 4 200 000 · Aziz M.",
         actionPrimary: "Approve",
         actionSecondary: "Reject",
       },
       {
         color: "green",
         title: "New order #2847",
-        subtitle: "Clemar — from website",
+        subtitle: "Clemar · from website",
         actionPrimary: "Accept",
         actionSecondary: "View",
       },

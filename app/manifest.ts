@@ -3,7 +3,7 @@ import { SITE_NAME } from "@/lib/constants";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${SITE_NAME} — CRM, workflow и Telegram-интеграции`,
+    name: `${SITE_NAME}: CRM, workflow и Telegram-интеграции`,
     short_name: SITE_NAME,
     description:
       "Proklix строит CRM, системы заявок, согласований и Telegram-интеграции для компаний в Узбекистане.",

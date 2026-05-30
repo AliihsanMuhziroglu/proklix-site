@@ -53,7 +53,7 @@ export function Footer({ dict, locale = "tr" }: Props) {
             <p className="mt-3 text-xs text-slate-500">{footer.location}</p>
           </div>
 
-          {/* Contact — early on mobile */}
+          {/* Contact - early on mobile */}
           <div className="order-2 lg:order-4">
             <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-300">
               {footer.contactTitle}
