@@ -97,7 +97,7 @@ export const en: DictionaryEntry = {
       },
     ],
     footer:
-      "Proklix doesn't replace your Telegram workflow — it structures it with a web panel, clear ownership, status tracking and approval flows.",
+      "Proklix doesn't uproot your Telegram habits — it organizes them with a web panel, clear ownership, status tracking and approval flows.",
   },
   solution: {
     title: "Which business processes does Proklix connect into one system?",

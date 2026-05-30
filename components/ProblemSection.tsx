@@ -79,20 +79,22 @@ export function ProblemSection({ dict }: Props) {
             return (
               <div
                 key={item.title}
-                className="flex h-full flex-col rounded-2xl border border-slate-200/80 bg-slate-50/50 p-5 shadow-sm"
+                className="flex h-full flex-col rounded-2xl border border-slate-200/70 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
               >
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200/80 bg-white text-slate-600 shadow-sm">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200/80 bg-slate-50 text-navy-800/70">
                   <Icon className="h-[18px] w-[18px]" />
                 </div>
-                <h3 className="mt-4 text-sm font-semibold leading-snug text-navy-950 sm:text-base">
+                <h3 className="mt-4 text-sm font-bold leading-snug text-navy-950 sm:text-base">
                   {item.title}
                 </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{item.description}</p>
+                <p className="mt-2 min-h-[4.5rem] flex-1 text-sm leading-relaxed text-slate-600">
+                  {item.description}
+                </p>
               </div>
             );
           })}
         </div>
-        <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-relaxed text-slate-500">
+        <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-relaxed text-slate-500 sm:text-[15px]">
           {dict.problem.footer}
         </p>
       </div>

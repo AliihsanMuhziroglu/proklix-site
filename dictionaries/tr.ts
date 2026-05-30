@@ -96,8 +96,7 @@ export const tr: DictionaryEntry = {
           "Talebi kim aldı, fiyatı kim değiştirdi, onayı kim verdi, müşteriye ne zaman dönüldü — hepsi dağınık kalır.",
       },
     ],
-    footer:
-      "Proklix bu dağınıklığı değiştirmez; mevcut Telegram alışkanlığınızı web panel, sorumlu kişi, durum takibi ve onay akışıyla düzenli hale getirir.",
+    
   },
   solution: {
     title: "Proklix işinizde hangi süreçleri sisteme bağlar?",
