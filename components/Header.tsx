@@ -26,9 +26,14 @@ export function Header({ locale, dict }: Props) {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href={`/${locale}`} className="flex shrink-0 items-center gap-2.5">
-          <ProklixLogo size={36} className="h-9 w-9 shrink-0" />
-          <span className="text-lg font-bold tracking-tight text-navy-950">Proklix</span>
+        <Link
+          href={`/${locale}`}
+          className="group flex shrink-0 items-center gap-3 rounded-xl py-1 pr-1 transition-opacity hover:opacity-90"
+        >
+          <ProklixLogo className="h-10 w-10 shrink-0 drop-shadow-sm" />
+          <span className="text-[1.125rem] font-bold leading-none tracking-tight text-navy-950">
+            Proklix
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">

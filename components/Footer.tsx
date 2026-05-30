@@ -12,9 +12,9 @@ export function Footer({ dict }: Props) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <div className="flex items-center justify-center gap-2.5 sm:justify-start">
-              <ProklixLogo size={32} className="h-8 w-8 shrink-0" />
-              <span className="text-lg font-bold text-white">Proklix</span>
+            <div className="flex items-center justify-center gap-3 sm:justify-start">
+              <ProklixLogo className="h-9 w-9 shrink-0" />
+              <span className="text-lg font-bold leading-none tracking-tight text-white">Proklix</span>
             </div>
             <p className="mt-2 max-w-sm text-sm leading-relaxed">{dict.footer.tagline}</p>
           </div>
