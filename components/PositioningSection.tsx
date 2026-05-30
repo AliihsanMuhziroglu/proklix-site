@@ -43,7 +43,7 @@ function IconTelegram({ className }: IconProps) {
 function IconPlug({ className }: IconProps) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M11 4H7a2 2 0 00-2 2v3m16 5v3a2 2 0 01-2 2h-4m-5-8l-2-2m0 0l-2 2m2-2v12" />
     </svg>
   );
 }
@@ -57,37 +57,106 @@ function IconEye({ className }: IconProps) {
   );
 }
 
-const icons = [IconForm, IconCheck, IconTask, IconTelegram, IconPlug, IconEye];
+const cardIcons = [IconForm, IconCheck, IconTask, IconTelegram, IconPlug, IconEye];
+
+const TELEGRAM_FLOW_STEP_INDEX = 2;
 
 export function PositioningSection({ dict }: Props) {
+  const { title, subtitle, flowSteps, items } = dict.positioning;
+
   return (
-    <section id="platform" className="border-b border-slate-100 bg-white py-14 sm:py-20">
+    <section id="platform" className="border-b border-slate-100 bg-slate-50 py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mx-auto max-w-3xl text-center text-xl font-bold tracking-tight text-navy-950 sm:text-3xl">
-          {dict.positioning.title}
-        </h2>
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-          {dict.positioning.items.map((item, i) => {
-            const Icon = icons[i] ?? IconForm;
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-xl font-bold tracking-tight text-navy-950 sm:text-2xl lg:text-3xl">
+            {title}
+          </h2>
+          <p className="mx-auto mt-3 max-w-[760px] text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
+            {subtitle}
+          </p>
+        </div>
+
+        <div className="mt-8 sm:mt-10">
+          <div className="flex flex-col lg:flex-row lg:items-stretch">
+            {flowSteps.map((step, i) => {
+              const isTelegram = i === TELEGRAM_FLOW_STEP_INDEX;
+              return (
+                <div key={step.title} className="contents">
+                  <div
+                    className={`flex flex-col rounded-2xl border bg-white p-3.5 shadow-sm sm:p-4 lg:min-w-0 lg:flex-1 ${
+                      isTelegram
+                        ? "border-blue-200 ring-1 ring-blue-100"
+                        : "border-slate-200"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${
+                          isTelegram
+                            ? "bg-blue-600 text-white"
+                            : "bg-slate-100 text-navy-900"
+                        }`}
+                      >
+                        {i + 1}
+                      </span>
+                      <h3
+                        className={`text-[13px] font-semibold leading-snug sm:text-sm ${
+                          isTelegram ? "text-blue-800" : "text-navy-950"
+                        }`}
+                      >
+                        {step.title}
+                      </h3>
+                    </div>
+                    <p className="mt-2 text-[12px] leading-relaxed text-slate-600 sm:text-[13px]">
+                      {step.description}
+                    </p>
+                  </div>
+                  {i < flowSteps.length - 1 && (
+                    <div
+                      className="flex shrink-0 items-center justify-center py-1.5 text-slate-300 lg:px-1.5 lg:py-0"
+                      aria-hidden="true"
+                    >
+                      <span className="text-base leading-none lg:hidden">↓</span>
+                      <span className="hidden text-sm leading-none lg:inline">→</span>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+          {items.map((item, i) => {
+            const Icon = cardIcons[i] ?? IconForm;
             const isTelegram = i === 3;
             return (
               <div
                 key={item.title}
-                className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-slate-300 hover:shadow-md"
               >
-                <div
-                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${
-                    isTelegram
-                      ? "border-blue-200 bg-blue-50 text-blue-600"
-                      : "border-slate-200 bg-slate-50 text-navy-800/70"
-                  }`}
-                >
-                  <Icon className="h-[18px] w-[18px]" />
+                <div className="flex items-start justify-between gap-3">
+                  <div
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${
+                      isTelegram
+                        ? "border-blue-200 bg-blue-50 text-blue-600"
+                        : "border-slate-200 bg-slate-50 text-navy-800/80"
+                    }`}
+                  >
+                    <Icon className="h-[18px] w-[18px]" />
+                  </div>
+                  <span
+                    className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+                      isTelegram
+                        ? "border-blue-200 bg-blue-50 text-blue-700"
+                        : "border-slate-200 bg-slate-50 text-slate-500"
+                    }`}
+                  >
+                    {item.badge}
+                  </span>
                 </div>
-                <h3 className="mt-4 text-sm font-bold leading-snug text-navy-950 sm:text-base">
-                  {item.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                <h3 className="mt-3 text-sm font-bold leading-snug text-navy-950">{item.title}</h3>
+                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
                   {item.description}
                 </p>
               </div>

@@ -6,6 +6,10 @@ export interface CardItem {
   description: string;
 }
 
+export interface PositioningCardItem extends CardItem {
+  badge: string;
+}
+
 export interface StepItem {
   title: string;
   description: string;
@@ -107,7 +111,9 @@ export interface DictionaryEntry {
   };
   positioning: {
     title: string;
-    items: CardItem[];
+    subtitle: string;
+    flowSteps: StepItem[];
+    items: PositioningCardItem[];
   };
   integration: {
     title: string;

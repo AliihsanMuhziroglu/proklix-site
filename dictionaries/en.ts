@@ -30,37 +30,67 @@ export const en: DictionaryEntry = {
     ctaHelper: "In the first call, we'll map one of your processes together.",
   },
   positioning: {
-    title: "Not just CRM. Not just a bot. A complete workflow.",
+    title: "Not just CRM. Not just a bot. A complete operational workflow.",
+    subtitle:
+      "Proklix collects requests, assigns tasks to owners, manages approvals, pulls data from existing systems and records the full history of every process.",
+    flowSteps: [
+      {
+        title: "Data arrives",
+        description: "Sources: Website, CRM, Excel, warehouse, custom API",
+      },
+      {
+        title: "Process starts",
+        description: "A form, request, record or customer action is created",
+      },
+      {
+        title: "Task assigned",
+        description: "The owner receives a notification in Telegram",
+      },
+      {
+        title: "Approved",
+        description: "Manager approves, rejects or requests revision",
+      },
+      {
+        title: "Result saved",
+        description: "Status, files, comments and history are stored",
+      },
+    ],
     items: [
       {
-        title: "Forms",
+        badge: "Form",
+        title: "Requests and forms",
         description:
-          "Collect data through website forms, Telegram or internal forms, without losing fields or files.",
+          "Turn incoming requests from your website, Telegram or internal screens into a standard form. Fields, files and notes are never lost.",
       },
       {
-        title: "Approvals",
+        badge: "Approval",
+        title: "Approval flows",
         description:
-          "Run step-by-step approvals: manager, warehouse, finance, director, each sees their stage.",
+          "Manage purchase, quote, expense or service processes step by step. Every stage has a clear decision owner.",
       },
       {
-        title: "Tasks",
+        badge: "Task",
+        title: "Task management",
         description:
-          "Assign tasks to owners with deadlines, status and history, they don't get lost in private chats.",
+          "Every job is assigned to an owner. Tasks don't get lost in private chats; status, deadlines and history are tracked.",
       },
       {
-        title: "Telegram",
+        badge: "Telegram",
+        title: "Telegram notifications",
         description:
-          "Send Telegram notifications: new request, pending approval, assigned task.",
+          "Staff see new tasks, approvals and updates directly in Telegram. Less training on another app.",
       },
       {
-        title: "Integrations",
+        badge: "Integration",
+        title: "Existing system integration",
         description:
-          "Connect existing systems via API, import/export or custom project setup.",
+          "Pull data from CRM, website, warehouse, Excel or custom API sources and connect it into your workflows.",
       },
       {
-        title: "Control",
+        badge: "Audit",
+        title: "Control and history",
         description:
-          "See status, history and outcome of every process, management gets the full picture on one screen.",
+          "Track every request's status, current owner, decisions made and files attached from one place.",
       },
     ],
   },

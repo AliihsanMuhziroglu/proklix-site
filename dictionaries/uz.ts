@@ -30,37 +30,67 @@ export const uz: DictionaryEntry = {
     ctaHelper: "Birinchi uchrashuvda bir jarayoningizni birgalikda chizamiz.",
   },
   positioning: {
-    title: "Oddiy CRM emas. Oddiy bot emas. To'liq ish jarayoni.",
+    title: "Oddiy CRM emas. Oddiy bot emas. To'liq operatsion jarayon.",
+    subtitle:
+      "Proklix arizalarni yig'adi, mas'ullarga vazifa beradi, tasdiqlashlarni boshqaradi, mavjud tizimlardan ma'lumot oladi va har bir jarayon tarixini saqlaydi.",
+    flowSteps: [
+      {
+        title: "Ma'lumot keladi",
+        description: "Manbalar: veb-sayt, CRM, Excel, ombor, maxsus API",
+      },
+      {
+        title: "Jarayon boshlanadi",
+        description: "Forma, ariza, yozuv yoki mijoz harakati yaratiladi",
+      },
+      {
+        title: "Vazifa tayinlanadi",
+        description: "Mas'ul shaxs Telegram'da bildirishnoma oladi",
+      },
+      {
+        title: "Tasdiqlanadi",
+        description: "Rahbar tasdiqlaydi, rad etadi yoki qayta ishlash so'raydi",
+      },
+      {
+        title: "Natija saqlanadi",
+        description: "Status, fayllar, izohlar va tarix saqlanadi",
+      },
+    ],
     items: [
       {
-        title: "Formalar",
+        badge: "Form",
+        title: "Arizalar va formalar",
         description:
-          "Sayt, Telegram yoki ichki formalar orqali ma'lumot to'plang, maydonlar va fayllar yo'qolmaydi.",
+          "Veb-sayt, Telegram yoki ichki ekranlardan kelgan arizalarni standart formaga aylantiring. Maydonlar, fayllar va tavsiflar yo'qolmaydi.",
       },
       {
-        title: "Tasdiqlashlar",
+        badge: "Approval",
+        title: "Tasdiqlash oqimlari",
         description:
-          "Qadam-baqadam tasdiqlash: menejer, ombor, buxgalteriya, rahbar, har biri o'z bosqichini ko'radi.",
+          "Xarid, taklif, xarajat yoki servis kabi jarayonlarni bosqichma-bosqich boshqaring. Har bosqichda kim qaror qilishini bilasiz.",
       },
       {
-        title: "Vazifalar",
+        badge: "Task",
+        title: "Vazifa boshqaruvi",
         description:
-          "Mas'ul shaxslarga muddat, status va tarix bilan vazifa bering, shaxsiy chatlarda yo'qolmaydi.",
+          "Har bir ish mas'ulga tayinlanadi. Vazifalar shaxsiy chatlarda yo'qolmaydi; status, muddat va tarix kuzatiladi.",
       },
       {
-        title: "Telegram",
+        badge: "Telegram",
+        title: "Telegram bildirishnomalari",
         description:
-          "Telegram bildirishnomalari: yangi ariza, tasdiqlash kutilmoqda, tayinlangan vazifa.",
+          "Xodimlar yangi vazifalar, tasdiqlashlar va javoblarni to'g'ridan-to'g'ri Telegram'da ko'radi. Qo'shimcha ilova o'rganish yuki kamayadi.",
       },
       {
-        title: "Integratsiyalar",
+        badge: "Integration",
+        title: "Mavjud tizim integratsiyasi",
         description:
-          "Mavjud tizimlarni API, import/eksport yoki loyiha bo'yicha maxsus sozlash orqali ulang.",
+          "CRM, veb-sayt, ombor, Excel yoki maxsus API manbalaridan ma'lumot olib, jarayonlarga ulang.",
       },
       {
-        title: "Nazorat",
+        badge: "Audit",
+        title: "Nazorat va tarix",
         description:
-          "Har bir jarayonning statusi, tarixi va natijasini ko'ring, rahbar bitta ekranda umumiy manzarani ko'radi.",
+          "Har bir arizaning statusi, kimda ekanligi, qanday qarorlar qabul qilingani va qaysi fayllar qo'shilgani bitta joydan kuzatiladi.",
       },
     ],
   },

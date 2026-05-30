@@ -30,37 +30,67 @@ export const tr: DictionaryEntry = {
     ctaHelper: "İlk görüşmede bir sürecinizi birlikte çıkaralım.",
   },
   positioning: {
-    title: "Sadece CRM değil. Sadece bot değil. Tam iş akışı.",
+    title: "Sadece CRM değil. Sadece bot değil. Tam operasyon akışı.",
+    subtitle:
+      "Proklix; talepleri toplar, sorumlulara görev atar, onayları yönetir, mevcut sistemlerden veri alır ve tüm sürecin geçmişini kaydeder.",
+    flowSteps: [
+      {
+        title: "Veri gelir",
+        description: "Kaynaklar: Web sitesi, CRM, Excel, depo, özel API",
+      },
+      {
+        title: "Süreç başlar",
+        description: "Form, talep, kayıt veya müşteri işlemi oluşturulur",
+      },
+      {
+        title: "Görev atanır",
+        description: "Sorumlu kişi Telegram'da bildirim alır",
+      },
+      {
+        title: "Onaylanır",
+        description: "Yönetici onaylar, reddeder veya revizyon ister",
+      },
+      {
+        title: "Sonuç kaydedilir",
+        description: "Durum, dosyalar, yorumlar ve geçmiş saklanır",
+      },
+    ],
     items: [
       {
-        title: "Formlar",
+        badge: "Form",
+        title: "Talepler ve formlar",
         description:
-          "Web sitesi, Telegram veya dahili formlarla veri toplayın, alanlar ve dosyalar kaybolmaz.",
+          "Web sitesi, Telegram veya dahili ekranlardan gelen talepleri standart forma çevirin. Alanlar, dosyalar ve açıklamalar kaybolmaz.",
       },
       {
-        title: "Onaylar",
+        badge: "Approval",
+        title: "Onay akışları",
         description:
-          "Adım adım onay süreçleri: yönetici, depo, muhasebe, direktör, herkes kendi aşamasını görür.",
+          "Satın alma, teklif, masraf veya servis gibi süreçleri adım adım yönetin. Her aşamada kimin karar vereceği bellidir.",
       },
       {
-        title: "Görevler",
+        badge: "Task",
+        title: "Görev yönetimi",
         description:
-          "Sorumlulara deadline, durum ve geçmişle görev atayın, özel sohbetlerde kaybolmaz.",
+          "Her iş bir sorumluya atanır. Görevler özel sohbetlerde kaybolmaz; durum, süre ve geçmiş takip edilir.",
       },
       {
-        title: "Telegram",
+        badge: "Telegram",
+        title: "Telegram bildirimleri",
         description:
-          "Telegram bildirimleri gönderin: yeni talep, bekleyen onay, atanan görev.",
+          "Çalışanlar yeni görevleri, onayları ve geri dönüşleri doğrudan Telegram'da görür. Ek uygulama öğrenme yükü azalır.",
       },
       {
-        title: "Entegrasyonlar",
+        badge: "Integration",
+        title: "Mevcut sistem entegrasyonu",
         description:
-          "Mevcut sistemleri API, import/export veya projeye özel kurulumla bağlayın.",
+          "CRM, web sitesi, depo, Excel veya özel API kaynaklarından veri alıp süreçlerin içine bağlayın.",
       },
       {
-        title: "Kontrol",
+        badge: "Audit",
+        title: "Kontrol ve geçmiş",
         description:
-          "Her sürecin durumunu, geçmişini ve sonucunu görün, yönetim tek ekranda genel resmi görür.",
+          "Her talebin durumu, kimde olduğu, hangi kararların alındığı ve hangi dosyaların eklendiği tek yerden izlenir.",
       },
     ],
   },
