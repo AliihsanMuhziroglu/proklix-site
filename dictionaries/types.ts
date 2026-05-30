@@ -101,6 +101,7 @@ export interface DictionaryEntry {
   };
   solution: {
     title: string;
+    subtitle: string;
     items: CardItem[];
   };
   sectors: {

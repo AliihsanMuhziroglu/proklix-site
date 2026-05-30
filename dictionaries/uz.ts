@@ -100,37 +100,39 @@ export const uz: DictionaryEntry = {
       "Proklix bu tartibsizlikni almashtirmaydi — mavjud Telegram odatlaringizni veb-panel, mas'ul shaxs, holat kuzatuvi va tasdiq oqimi bilan tartibga soladi.",
   },
   solution: {
-    title: "Proklix biznesingiz uchun nima qurishi mumkin?",
+    title: "Proklix biznesingizda qaysi jarayonlarni tizimga bog'laydi?",
+    subtitle:
+      "Veb-sayt, mijoz kuzatuvi, taklif, tasdiq va Telegram bildirishnomalari alohida emas — bitta ish oqimining qismlari sifatida quriladi.",
     items: [
       {
         title: "Korporativ sayt va katalog",
         description:
-          "Mahsulot tuzilmasi, saytdan kelgan so'rovlar va mijoz hamda jamoa uchun yagona kirish.",
+          "Mahsulotlar, xizmatlar va taklif olish oqimi bitta professional tuzilmada jamlanadi.",
       },
       {
-        title: "CRM va mijozlar bazasi",
+        title: "CRM va mijoz kuzatuvi",
         description:
-          "Mijoz kartochkalari, aloqa, bitim statuslari va barcha tarix bir joyda.",
+          "Mijoz kartochkalari, suhbat tarixi, statuslar va mas'ul shaxslar bitta panelda ko'rinadi.",
       },
       {
-        title: "So'rov va taklif tizimi",
+        title: "So'rov va taklif jarayoni",
         description:
-          "Kiruvchi so'rovdan tijorat taklifigacha — mas'ul shaxs va muddatlar bilan.",
+          "Kiruvchi so'rov qayd etiladi, mas'ul shaxsga biriktiriladi, narx/taklif jarayoni kuzatiladi.",
       },
       {
-        title: "Workflow va tasdiqlashlar",
+        title: "Workflow va tasdiqlash oqimlari",
         description:
-          "Tasdiqlash yo'nalishi: menejer → rahbar → yakuniy qaror.",
+          "Savdo vakili, ombor, buxgalteriya yoki rahbar tasdiqlari belgilangan bosqichlar bilan ilerlaydi.",
       },
       {
         title: "Telegram bildirishnomalari",
         description:
-          "Jamoa darhol xabardor: yangi so'rov, tasdiq kutayotgan taklif, tayinlash, yakun.",
+          "Yangi so'rov, tasdiq kutayotgan taklif, vazifa tayinlash va jarayon yangilanishlari Telegram orqali keladi.",
       },
       {
         title: "Boshqaruv paneli va hisobotlar",
         description:
-          "Rahbar yuklama, jarayon bosqichlari va tor joylarni qo'lda yig'masdan ko'radi.",
+          "Rahbar qaysi ish kimda turganini, qaysi jarayon to'xtaganini va umumiy holatni aniq ko'radi.",
       },
     ],
   },

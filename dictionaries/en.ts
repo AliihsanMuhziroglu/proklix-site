@@ -100,37 +100,39 @@ export const en: DictionaryEntry = {
       "Proklix doesn't replace your Telegram workflow — it structures it with a web panel, clear ownership, status tracking and approval flows.",
   },
   solution: {
-    title: "What can Proklix build for your business?",
+    title: "Which business processes does Proklix connect into one system?",
+    subtitle:
+      "Website, customer tracking, quotes, approvals and Telegram alerts are not separate tools — they are built as parts of the same workflow.",
     items: [
       {
-        title: "Corporate website and catalog",
+        title: "Corporate site and catalog",
         description:
-          "Product structure, inbound requests from the site, and one entry point for clients and your team.",
+          "Your products, services and quote request flow come together in one professional structure.",
       },
       {
-        title: "CRM and customer database",
+        title: "CRM and customer tracking",
         description:
-          "Client cards, contacts, deal statuses and full interaction history in one place.",
+          "Client cards, conversation history, statuses and owners are visible in one panel.",
       },
       {
-        title: "Request and offer system",
+        title: "Request and quote process",
         description:
-          "From inbound request to commercial offer — with owners and deadlines.",
+          "Every inbound request is logged, assigned to an owner and tracked through pricing and quoting.",
       },
       {
-        title: "Workflow and approvals",
+        title: "Workflow and approval flows",
         description:
-          "Approval routes: manager → director → final decision.",
+          "Sales rep, warehouse, finance or manager approvals move forward in defined steps.",
       },
       {
         title: "Telegram notifications",
         description:
-          "The team gets instant signals: new request, pending approval, assignment, completion.",
+          "New requests, pending approvals, task assignments and process updates are delivered via Telegram.",
       },
       {
         title: "Admin dashboard and reports",
         description:
-          "Leaders see workload, process stages and bottlenecks without manual data collection.",
+          "Leaders see clearly who is holding each task, where processes stall and the overall status.",
       },
     ],
   },

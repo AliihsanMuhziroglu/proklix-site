@@ -100,37 +100,39 @@ export const tr: DictionaryEntry = {
       "Proklix bu dağınıklığı değiştirmez; mevcut Telegram alışkanlığınızı web panel, sorumlu kişi, durum takibi ve onay akışıyla düzenli hale getirir.",
   },
   solution: {
-    title: "Proklix işletmeniz için ne kurabilir?",
+    title: "Proklix işinizde hangi süreçleri sisteme bağlar?",
+    subtitle:
+      "Web sitesi, müşteri takibi, teklif, onay ve Telegram bildirimleri ayrı ayrı değil; aynı iş akışının parçaları olarak kurulur.",
     items: [
       {
-        title: "Kurumsal web sitesi ve katalog",
+        title: "Kurumsal site ve katalog",
         description:
-          "Ürün yapısı, siteden gelen talepler ve müşteri ile ekip için tek giriş noktası.",
+          "Ürünleriniz, hizmetleriniz ve teklif alma akışınız tek bir profesyonel yapıda toplanır.",
       },
       {
-        title: "CRM ve müşteri veritabanı",
+        title: "CRM ve müşteri takibi",
         description:
-          "Müşteri kartları, iletişim, deal statüleri ve tüm etkileşim geçmişi bir yerde.",
+          "Müşteri kartları, görüşme geçmişi, durumlar ve sorumlu kişiler tek panelde görünür.",
       },
       {
-        title: "Talep ve teklif sistemi",
+        title: "Talep ve teklif süreci",
         description:
-          "Gelen talepten ticari teklife — sorumlu kişi ve terminlerle birlikte.",
+          "Gelen talep kayda alınır, sorumlu kişiye atanır, fiyat/teklif süreci takip edilir.",
       },
       {
         title: "Workflow ve onay akışları",
         description:
-          "Onay rotası: satış temsilcisi → yönetici → nihai karar.",
+          "Satış temsilcisi, depo, muhasebe veya yönetici onayları belirli adımlarla ilerler.",
       },
       {
         title: "Telegram bildirimleri",
         description:
-          "Ekip anında haberdar: yeni talep, onay bekleyen teklif, atama, tamamlanan süreç.",
+          "Yeni talep, onay bekleyen teklif, görev ataması ve süreç güncellemeleri Telegram'dan bildirilir.",
       },
       {
         title: "Yönetim paneli ve raporlar",
         description:
-          "Yönetici yükü, süreç aşamalarını ve darboğazları manuel toplamadan görür.",
+          "Yönetici hangi işin kimde beklediğini, hangi sürecin tıkandığını ve genel durumu net görür.",
       },
     ],
   },
