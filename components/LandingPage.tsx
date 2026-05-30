@@ -32,7 +32,7 @@ export function LandingPage({ locale, dict }: Props) {
   return (
     <>
       <Header locale={locale} dict={dict} />
-      <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
+      <main className="w-full max-w-full min-w-0 overflow-x-clip pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <Hero dict={dict} />
         <PositioningSection dict={dict} className={sectionBg.muted} />
         <IntegrationSection dict={dict} className={sectionBg.white} />

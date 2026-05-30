@@ -40,19 +40,19 @@ export function Header({ locale, dict }: Props) {
     "rounded-lg px-3 py-3 text-sm font-medium text-navy-900 transition hover:bg-brand-50 hover:text-brand-600";
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 w-full max-w-full overflow-x-clip border-b border-slate-100 bg-white/90 backdrop-blur-md">
+      <div className="mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-2 px-4 py-2.5 sm:px-6 lg:gap-3 lg:px-8 lg:py-3">
         <Link
           href={`/${locale}`}
-          className="group flex shrink-0 items-center gap-3 rounded-xl py-1 pr-1 transition-opacity hover:opacity-90"
+          className="group flex min-w-0 shrink items-center gap-2 rounded-xl py-1 transition-opacity hover:opacity-90 sm:gap-3"
         >
-          <ProklixLogo className="h-10 w-10 shrink-0 drop-shadow-sm" />
-          <span className="text-[1.125rem] font-bold leading-none tracking-tight text-navy-950">
+          <ProklixLogo className="h-9 w-9 shrink-0 drop-shadow-sm sm:h-10 sm:w-10" />
+          <span className="truncate text-base font-bold leading-none tracking-tight text-navy-950 sm:text-[1.125rem]">
             Proklix
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-2 lg:flex lg:gap-2.5 xl:gap-3">
+        <nav className="hidden min-w-0 items-center gap-2 lg:flex lg:gap-2.5 xl:gap-3">
           {nav.map((item) =>
             item.isRoute ? (
               <Link key={item.href} href={item.href} className={navLinkClass}>
@@ -66,7 +66,7 @@ export function Header({ locale, dict }: Props) {
           )}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <a
             href={`tel:${PHONE}`}
             className="hidden text-sm font-semibold text-navy-900 transition hover:text-brand-600 lg:inline-flex"
@@ -80,7 +80,7 @@ export function Header({ locale, dict }: Props) {
             href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex"
+            className="hidden lg:inline-flex"
           >
             {dict.header.cta}
           </Button>
@@ -140,7 +140,7 @@ export function Header({ locale, dict }: Props) {
               href={TELEGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 w-full"
+              className="mt-2 w-full min-w-0"
             >
               {dict.header.cta}
             </Button>

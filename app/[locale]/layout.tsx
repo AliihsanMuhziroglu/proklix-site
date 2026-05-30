@@ -12,7 +12,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className="bg-white text-navy-950 antialiased">{children}</body>
+      <body className="w-full max-w-full overflow-x-clip bg-white text-navy-950 antialiased">{children}</body>
     </html>
   );
 }

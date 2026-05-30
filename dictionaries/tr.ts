@@ -21,6 +21,7 @@ export const tr: DictionaryEntry = {
   },
   hero: {
     title: "Talepten onaya, görevden entegrasyona — operasyonunuz Telegram'da yönetilsin",
+    titleMobile: "Operasyonunuzu Telegram üzerinden yönetin",
     subtitle:
       "Talepleri, formları, onayları, görevleri, dosyaları ve işlem geçmişini tek akışta toplar. Mevcut CRM, web sitesi, depo, Excel veya özel API sistemlerinize bağlanır.",
     trustTag: "Taşkent ve Özbekistan'daki işletmeler için",

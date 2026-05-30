@@ -4,6 +4,7 @@ import { ProklixLogo } from "./ProklixLogo";
 type Props = {
   dict: Dictionary;
   size?: "md" | "lg";
+  className?: string;
 };
 
 const FRAME = {
@@ -130,14 +131,14 @@ function TgBubble({
   );
 }
 
-export function PhoneMockup({ dict, size = "md" }: Props) {
+export function PhoneMockup({ dict, size = "md", className = "" }: Props) {
   const m = dict.phoneMockup;
   const frame = FRAME[size];
   let animIndex = 0;
   const nextDelay = () => animIndex++ * 80;
 
   return (
-    <div className="flex-shrink-0" style={{ width: frame.width }}>
+    <div className={`flex-shrink-0 ${className}`} style={{ width: frame.width }}>
       <div
         style={{ background: "#2a2a2e", borderRadius: frame.radius, padding: frame.padding }}
       >

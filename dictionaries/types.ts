@@ -137,6 +137,7 @@ export interface DictionaryEntry {
   };
   hero: {
     title: string;
+    titleMobile?: string;
     subtitle: string;
     trustTag: string;
     ctaTelegram: string;
