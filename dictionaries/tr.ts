@@ -26,37 +26,37 @@ export const tr: DictionaryEntry = {
     watchDemo: "Demoyu izle",
   },
   projects: {
-    title: "Örnek projeler",
+    title: "Seçili çalışmalar",
     subtitle:
-      "Farklı sektörlerde kurumsal web, katalog yapısı ve dijital süreç ihtiyaçlarına yönelik projeler geliştirdik.",
-    cta: "Siteyi İncele",
+      "B2B katalog, hizmet sitesi ve operasyon platformu tarafında farklı sektörler için geliştirdiğimiz dijital ürün ve süreç çalışmalarından örnekler.",
+    cta: "Siteyi incele",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
-        category: "Temizlik ekipmanları ve B2B ürün kataloğu",
+        category: "Profesyonel temizlik ekipmanları ve B2B ürün kataloğu",
         description:
-          "Kurumsal görünüm, ürün/kategori yapısı, çok dilli içerik ve satış odaklı katalog deneyimi üzerine çalışıldı.",
-        badges: ["B2B katalog", "Kurumsal site", "Çok dilli yapı"],
+          "Özbekistan pazarına yönelik temizlik ekipmanları kataloğu için ürün/kategori yapısı, çok dilli içerik, SEO korunumu, Telegram odaklı satış akışı ve modern katalog deneyimi üzerine çalışıldı.",
+        badges: ["B2B katalog", "SEO geçişi", "RU / UZ yapı", "Telegram satış akışı"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
-        category: "Dijital ürün sunumu ve sade kullanıcı deneyimi",
+        category: "Taşkent için profesyonel temizlik hizmetleri sitesi",
         description:
-          "Marka sunumu, net içerik akışı ve dönüşüm odaklı sayfa yapısı için geliştirilen web projesi.",
-        badges: ["Landing / web", "UX odaklı", "Dönüşüm kurgusu"],
+          "Ev, ofis ve ticari alan temizliği için hizmetlerin net anlatıldığı, çok dilli, SEO uyumlu ve Telegram üzerinden hızlı talep almaya odaklanan web yapısı geliştirildi.",
+        badges: ["Hizmet sitesi", "Çok dilli yapı", "Telegram talep", "Yerel SEO"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Kurumsal tanıtım ve güven veren dijital sunum",
+        category: "Klinikler ve stomatologlar için yönetim platformu",
         description:
-          "Kurumsal güveni artıran, hizmetleri net anlatan ve profesyonel görünüm sunan web yapısı geliştirildi.",
-        badges: ["Kurumsal sunum", "Global domain", "Profesyonel görünüm"],
+          "Klinik ve stomatoloji işletmeleri için randevu, hasta, operasyon ve yönetim süreçlerini daha düzenli hale getirmeyi hedefleyen modern dijital platform sunumu hazırlandı.",
+        badges: ["SaaS platform", "Klinik yönetimi", "Demo talep", "Operasyon takibi"],
       },
     ],
   },

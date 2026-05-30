@@ -5,6 +5,8 @@ type Props = {
   dict: Dictionary;
 };
 
+const LOGO_AREA_HEIGHT = "h-36 sm:h-40";
+
 const projectLogos: Record<
   string,
   {
@@ -20,27 +22,27 @@ const projectLogos: Record<
   Clemar: {
     src: "/projects/clemar-logo.svg",
     alt: "Clemar",
-    bgClass: "bg-slate-50",
+    bgClass: "bg-gradient-to-b from-slate-50 to-slate-100/80",
     width: 223,
     height: 55,
-    imgClass: "h-12 w-auto max-w-[80%] sm:h-14",
+    imgClass: "h-11 w-auto max-w-[78%] object-contain sm:h-12",
     svg: true,
   },
   Tozago: {
     src: "/projects/tozago-logo.png",
     alt: "Tozago",
-    bgClass: "bg-neutral-950",
+    bgClass: "bg-gradient-to-b from-neutral-950 to-neutral-900",
     width: 320,
     height: 80,
-    imgClass: "h-10 w-auto max-w-[75%] sm:h-12",
+    imgClass: "h-10 w-auto max-w-[72%] object-contain sm:h-11",
   },
   Klinidex: {
     src: "/projects/klinidex-logo.png",
     alt: "Klinidex",
-    bgClass: "bg-white",
+    bgClass: "bg-gradient-to-b from-white to-slate-50",
     width: 200,
     height: 200,
-    imgClass: "h-24 w-auto max-w-[70%] sm:h-28",
+    imgClass: "h-20 w-auto max-w-[68%] object-contain sm:h-[5.5rem]",
   },
 };
 
@@ -59,17 +61,17 @@ export function ProjectsSection({ dict }: Props) {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3 lg:gap-5">
+        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-5">
           {projects.items.map((project) => {
             const logo = projectLogos[project.title];
 
             return (
               <article
                 key={project.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200/80 hover:shadow-lg"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-sm transition-[border-color,box-shadow] duration-200 hover:border-blue-200/70 hover:shadow-md"
               >
                 <div
-                  className={`relative flex aspect-[16/10] items-center justify-center border-b border-slate-100 ${logo?.bgClass ?? "bg-slate-50"}`}
+                  className={`relative flex shrink-0 ${LOGO_AREA_HEIGHT} items-center justify-center border-b border-slate-100/90 ring-1 ring-inset ring-black/[0.03] ${logo?.bgClass ?? "bg-slate-50"}`}
                 >
                   {logo ? (
                     logo.svg ? (
@@ -93,40 +95,41 @@ export function ProjectsSection({ dict }: Props) {
                   ) : null}
                 </div>
 
-                <div className="flex flex-1 flex-col p-5">
+                <div className="flex min-h-0 flex-1 flex-col p-5 sm:p-6">
                   <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                     <h3 className="text-base font-semibold text-navy-950">{project.title}</h3>
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-medium text-blue-600 transition hover:text-blue-700 hover:underline"
+                      className="break-all text-sm font-medium text-blue-600 transition hover:text-blue-700 hover:underline"
                     >
                       {project.website}
                     </a>
                   </div>
-                  <p className="mt-1.5 text-xs font-medium text-slate-500">{project.category}</p>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                  <p className="mt-1.5 min-h-[2.5rem] text-xs font-medium leading-snug text-slate-500 sm:min-h-[2.75rem]">
+                    {project.category}
+                  </p>
+                  <p className="mt-3 min-h-[5.5rem] flex-1 text-sm leading-relaxed text-slate-600 sm:min-h-[6.25rem] lg:min-h-[6.75rem]">
                     {project.description}
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <ul className="mt-4 grid min-h-[4.25rem] grid-cols-2 gap-2">
                     {project.badges.map((badge) => (
-                      <span
-                        key={badge}
-                        className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-medium text-slate-600"
-                      >
-                        {badge}
-                      </span>
+                      <li key={badge}>
+                        <span className="inline-flex w-full items-center justify-center rounded-full border border-slate-200/90 bg-slate-50 px-2 py-1 text-center text-[11px] font-medium leading-tight text-slate-600 sm:text-xs">
+                          {badge}
+                        </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit items-center text-sm font-semibold text-blue-600 transition group-hover:text-blue-700"
+                    className="mt-auto inline-flex w-fit items-center border-t border-slate-100 pt-4 text-sm font-semibold text-blue-600 transition group-hover:text-blue-700"
                   >
                     {projects.cta}
-                    <span className="ml-1 transition group-hover:translate-x-0.5" aria-hidden="true">
+                    <span className="ml-1" aria-hidden="true">
                       →
                     </span>
                   </a>

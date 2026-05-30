@@ -26,37 +26,37 @@ export const uz: DictionaryEntry = {
     watchDemo: "Demoni ko'rish",
   },
   projects: {
-    title: "Namuna loyihalar",
+    title: "Tanlangan ishlar",
     subtitle:
-      "Turli sohalarda korporativ veb-saytlar, katalog tuzilmalari va raqamli jarayon ehtiyojlari uchun loyihalar ishlab chiqdik.",
+      "B2B kataloglar, xizmat saytlari va operatsion platformalar uchun ishlab chiqilgan raqamli mahsulot va jarayonlardan namunalar.",
     cta: "Saytni ko'rish",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
-        category: "Tozalash uskunalari va B2B mahsulot katalogi",
+        category: "Professional tozalash uskunalari va B2B mahsulot katalogi",
         description:
-          "Korporativ ko'rinish, mahsulot/kategoriya tuzilmasi, ko'p tilli kontent va sotuvga yo'naltirilgan katalog tajribasi ustida ishlangan.",
-        badges: ["B2B katalog", "Korporativ sayt", "Ko'p tilli"],
+          "O'zbekiston bozoriga yo'naltirilgan tozalash uskunalari katalogi uchun mahsulot/kategoriya tuzilmasi, ko'p tilli kontent, SEO saqlanishi, Telegram orqali savdo oqimi va zamonaviy katalog tajribasi ustida ish olib borildi.",
+        badges: ["B2B katalog", "SEO o'tish", "RU / UZ tuzilma", "Telegram savdo"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
-        category: "Raqamli mahsulot taqdimoti va sodda foydalanuvchi tajribasi",
+        category: "Toshkent uchun professional tozalash xizmatlari sayti",
         description:
-          "Brend taqdimoti, aniq kontent oqimi va konversiyaga yo'naltirilgan sahifa tuzilmasi uchun ishlab chiqilgan veb loyiha.",
-        badges: ["Landing / web", "UX yo'nalishli", "Konversiya"],
+          "Uy, ofis va tijorat obyektlari tozaligi xizmatlari uchun xizmatlar aniq ko'rsatilgan, ko'p tilli, SEO mos va Telegram orqali tezkor so'rov olishga yo'naltirilgan web tuzilma ishlab chiqildi.",
+        badges: ["Xizmat sayti", "Ko'p tilli", "Telegram so'rov", "Lokal SEO"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Korporativ tanituv va ishonchli raqamli taqdimot",
+        category: "Klinikalar va stomatologlar uchun boshqaruv platformasi",
         description:
-          "Korporativ ishonchni oshiradigan, xizmatlarni aniq tushuntiradigan va professional ko'rinish beradigan veb tuzilma ishlab chiqildi.",
-        badges: ["Korporativ taqdimot", "Global domen", "Professional ko'rinish"],
+          "Klinika va stomatologiya bizneslari uchun bemorlar, yozuvlar, vazifalar va operatsion jarayonlarni tartibli boshqarishga qaratilgan zamonaviy raqamli platforma taqdimoti tayyorlandi.",
+        badges: ["SaaS platforma", "Klinika boshqaruvi", "Demo so'rov", "Jarayon nazorati"],
       },
     ],
   },

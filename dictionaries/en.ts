@@ -26,37 +26,37 @@ export const en: DictionaryEntry = {
     watchDemo: "Watch demo",
   },
   projects: {
-    title: "Example projects",
+    title: "Selected work",
     subtitle:
-      "We have delivered corporate websites, catalog structures, and digital process solutions across different industries.",
-    cta: "View site",
+      "Examples of digital product and process work across B2B catalogs, service websites and operational platforms.",
+    cta: "View website",
     items: [
       {
         title: "Clemar",
         website: "clemar.uz",
         url: "https://clemar.uz",
-        category: "Cleaning equipment and B2B product catalog",
+        category: "Professional cleaning equipment and B2B product catalog",
         description:
-          "Built around a corporate look, product/category structure, multilingual content, and a sales-focused catalog experience.",
-        badges: ["B2B catalog", "Corporate site", "Multilingual"],
+          "For a cleaning equipment catalog in Uzbekistan, we worked on product/category structure, multilingual content, SEO preservation, Telegram-focused sales flow and a modern catalog experience.",
+        badges: ["B2B catalog", "SEO migration", "RU / UZ structure", "Telegram sales flow"],
       },
       {
         title: "Tozago",
         website: "tozago.uz",
         url: "https://tozago.uz",
-        category: "Digital product presentation and clear user experience",
+        category: "Professional cleaning services website for Tashkent",
         description:
-          "A web project focused on brand presentation, clear content flow, and conversion-oriented page structure.",
-        badges: ["Landing / web", "UX-focused", "Conversion flow"],
+          "A multilingual, SEO-friendly website structure for home, office and commercial cleaning services, focused on clear service presentation and fast Telegram requests.",
+        badges: ["Service website", "Multilingual", "Telegram requests", "Local SEO"],
       },
       {
         title: "Klinidex",
         website: "klinidex.com",
         url: "https://klinidex.com",
-        category: "Corporate introduction and trustworthy digital presence",
+        category: "Management platform for clinics and dental practices",
         description:
-          "A professional web structure that builds corporate trust and presents services clearly.",
-        badges: ["Corporate presence", "Global domain", "Professional look"],
+          "A modern digital presentation for a clinic and dental practice management platform focused on patients, appointments, tasks and operational process control.",
+        badges: ["SaaS platform", "Clinic management", "Demo request", "Process control"],
       },
     ],
   },
