@@ -3,6 +3,12 @@ import { getDictionary } from "@/dictionaries";
 import { buildPageMetadata } from "@/lib/metadata";
 import { isValidLocale, type Locale } from "@/lib/i18n";
 import { LandingPage } from "@/components/LandingPage";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  faqSchema,
+  organizationSchema,
+  websiteSchema,
+} from "@/lib/jsonld";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -24,5 +30,21 @@ export default async function LocalePage({ params }: Props) {
 
   const dict = getDictionary(locale);
 
-  return <LandingPage locale={locale as Locale} dict={dict} />;
+  return (
+    <>
+      <JsonLd
+        data={[
+          organizationSchema(),
+          websiteSchema(locale),
+          faqSchema(
+            dict.faq.items.map((item) => ({
+              question: item.question,
+              answer: item.answer,
+            })),
+          ),
+        ]}
+      />
+      <LandingPage locale={locale as Locale} dict={dict} />
+    </>
+  );
 }

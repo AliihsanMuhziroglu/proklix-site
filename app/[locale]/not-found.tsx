@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { defaultLocale } from "@/lib/i18n";
+
+export const metadata: Metadata = {
+  title: "404",
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (
