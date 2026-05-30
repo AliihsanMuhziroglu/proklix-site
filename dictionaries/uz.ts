@@ -169,9 +169,11 @@ export const uz: DictionaryEntry = {
     ],
   },
   sectorPageLabels: {
-    challenge: "Vazifa",
-    solution: "Yechim",
-    result: "Natija",
+    breadcrumbHome: "Proklix",
+    breadcrumbSectors: "Sektorlar",
+    before: "Oldin",
+    after: "Keyin",
+    step: "Qadam",
   },
   howWeStart: {
     title: "Katta tizim emas, bitta jarayondan boshlaymiz",

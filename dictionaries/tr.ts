@@ -167,9 +167,11 @@ export const tr: DictionaryEntry = {
     ],
   },
   sectorPageLabels: {
-    challenge: "Görev",
-    solution: "Çözüm",
-    result: "Sonuç",
+    breadcrumbHome: "Proklix",
+    breadcrumbSectors: "Sektörler",
+    before: "Önce",
+    after: "Sonra",
+    step: "Adım",
   },
   howWeStart: {
     title: "Dev bir sistemle değil, tek bir süreçle başlıyoruz",

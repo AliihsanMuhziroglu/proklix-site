@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { locales } from "@/lib/i18n";
-import { sectorSlugs } from "@/lib/sectors";
+import { getAllSectorUrlParams } from "@/lib/sectors";
 import { blogSlugs } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     });
 
-    for (const sector of sectorSlugs) {
+    for (const { locale, sector } of getAllSectorUrlParams()) {
       entries.push({
         url: `${SITE_URL}/${locale}/${sector}`,
         lastModified: new Date(),

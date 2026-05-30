@@ -167,9 +167,11 @@ export const ru: DictionaryEntry = {
     ],
   },
   sectorPageLabels: {
-    challenge: "Задача",
-    solution: "Решение",
-    result: "Результат",
+    breadcrumbHome: "Proklix",
+    breadcrumbSectors: "Отрасли",
+    before: "До",
+    after: "После",
+    step: "Шаг",
   },
   howWeStart: {
     title: "Начинаем с одного процесса, а не с огромной системы",

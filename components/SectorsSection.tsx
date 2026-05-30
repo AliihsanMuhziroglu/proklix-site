@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { sectorSlugs } from "@/lib/sectors";
+import { getSectorUrl, sectorSlugs } from "@/lib/sectors";
 
 type Props = {
   dict: Dictionary;
@@ -21,7 +21,7 @@ export function SectorsSection({ dict, locale }: Props) {
           {dict.sectors.items.map((item, i) => (
             <Link
               key={item.title}
-              href={`/${locale}/${sectorSlugs[i]}`}
+              href={getSectorUrl(locale, sectorSlugs[i])}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-200 hover:shadow-md"
             >
               <span className="text-2xl" aria-hidden="true">

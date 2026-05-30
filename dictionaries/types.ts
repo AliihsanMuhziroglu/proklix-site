@@ -28,19 +28,31 @@ export interface PricingPlan {
   highlighted?: boolean;
 }
 
+export interface RelatedSectorItem {
+  title: string;
+  sector: SectorSlug;
+}
+
 export interface SectorPageContent {
   meta: { title: string; description: string };
-  hero: { title: string; subtitle: string };
+  breadcrumb: { sectorName: string };
+  hero: {
+    title: string;
+    subtitle: string;
+    mockupFeed: string[];
+  };
   problem: { title: string; items: CardItem[] };
   solution: { title: string; items: CardItem[] };
-  caseStudy: {
+  workflow: { title: string; steps: StepItem[] };
+  useCases: { title: string; items: CardItem[] };
+  beforeAfter: {
     title: string;
-    company: string;
-    challenge: string;
-    solution: string;
-    result: string;
+    before: { title: string; items: string[] };
+    after: { title: string; items: string[] };
   };
-  cta: { title: string; description: string };
+  miniOffer: { title: string; description: string };
+  relatedSectors: { title: string; items: RelatedSectorItem[] };
+  finalCta: { title: string; description: string };
 }
 
 export interface BlogArticle {
@@ -95,9 +107,11 @@ export interface DictionaryEntry {
     viewSector: string;
   };
   sectorPageLabels: {
-    challenge: string;
-    solution: string;
-    result: string;
+    breadcrumbHome: string;
+    breadcrumbSectors: string;
+    before: string;
+    after: string;
+    step: string;
   };
   howWeStart: {
     title: string;
